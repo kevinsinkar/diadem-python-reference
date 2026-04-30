@@ -1,0 +1,60 @@
+---
+title: "DCSRoutineStart"
+description: "Starts a routine on the engine control unit (ECU)."
+---
+
+# DCSRoutineStart
+
+!!! abstract "Command &middot; `ComOnl.chm`"
+    Command: DCSRoutineStart
+
+Starts a routine on the engine control unit (ECU).
+
+## Parameters
+
+<div markdown="1">
+<table class="Borderless">
+<tr><td width="150">DCSDiagRef</td>
+<td>Specifies the diagnostic handle in a vehicle.<div id="exp_DCSDiagRef">
+<table class="Borderless">
+<tr><td><a href="#" data-unresolved="1">Longinteger variable</a></td></tr>
+<tr>
+<td>Access: Read only</td></tr>
+</table>
+</div></td></tr>
+<tr><td width="150">DCSID</td>
+<td>Specifies the routine ID.<div id="exp_DCSID">
+<table class="Borderless">
+<tr><td><a href="#" data-unresolved="1">Longinteger variable</a></td></tr>
+<tr>
+<td>Access: Read only</td></tr>
+</table>
+</div></td></tr>
+<tr><td width="150">DCSData</td>
+<td>Specifies the user-defined date for a service.<div id="exp_DCSData">
+<table class="Borderless">
+<tr><td><a href="#" data-unresolved="1">Variant variable</a></td></tr>
+<tr>
+</tr>
+</table>
+</div></td></tr>
+</table>
+</div>
+
+## Returns
+
+<div markdown="1">
+<table class="Borderless"><tr><td width="150"><em>ReturnValue</em></td>
+<td>Receives the user-defined date for a service. The return value is a DCSData type.<div id="exp_DCSData__1">
+<table class="Borderless">
+<tr><td><a href="#" data-unresolved="1">Variant variable</a></td></tr>
+<tr>
+</tr>
+</table>
+</div></td></tr>
+</table>
+</div>
+
+---
+
+*Source: `ComOnl/DCSRoutineStart.htm`*

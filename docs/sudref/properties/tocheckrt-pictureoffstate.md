@@ -1,0 +1,51 @@
+---
+title: "ToCheckRt.PictureOffState"
+description: "Specifies the graphic for a disabled control in a user dialog box. Click PictureOffstate in the Properties tab to paste, to load, or to edit a graphic. You also"
+---
+
+# ToCheckRt.PictureOffState
+
+!!! abstract "Property &middot; `Sudref.chm`"
+    Property: PictureOffState for CheckBox
+
+Specifies the graphic for a disabled control in a user dialog box. Click PictureOffstate in the Properties tab to paste, to load, or to edit a graphic. You also can specify the color that the transparent control displays. You can embed graphics in the user dialog box or save the link to a file. The user dialog box first searches for graphics files on the DIAdem SCRIPT user path, and then on the DIAdem program path. You can use relative paths or absolute paths. The graphic must be square and the same size as the graphic specified under Picture .
+
+## Signature
+
+```python
+obj.PictureOffState
+```
+
+## Notes
+
+<div markdown="1">
+<table class="Borderless" id="table1">
+<tr>
+<td class="Icon"><img src="../image/note.gif"/></td>
+<td><strong>Note</strong>  The control only displays the graphic if you set the <a href="../tocheckrt-ownerdrawn/">OwnerDrawn</a> property to <span class="Monospace">Yes</span>.</td>
+</tr>
+</table>
+</div>
+
+## Python example
+
+!!! warning "Machine-translated"
+    The original DIAdem topic did not include a Python tab; this
+    example was machine-translated from the VBScript source.
+
+```python
+Checkbox1.Picture = "\SUD\On.bmp"
+CheckBox1.PictureOffState = "\SUD\Off.bmp"
+```
+
+## See also
+
+<div markdown="1">
+<div class="SeeAlso"><h2>See Also</h2>
+<p class="body"><a href="../tocheckrt-picture/">Picture</a> | <a href="#" data-unresolved="1">Objects Overview</a></p><h2>Procedures</h2><p><a href="#" data-unresolved="1">Checking a User Dialog Box Entry</a> | <a href="#" data-unresolved="1">Creating a Dynamic User Dialog Box</a> | <a href="#" data-unresolved="1">Creating a Procedure in the Script of a User Dialog Box</a> | <a href="#" data-unresolved="1">Creating a User Dialog Box without Linking Variables</a> | <a href="#" data-unresolved="1">Creating an Extended Table</a> | <a href="#" data-unresolved="1">Displaying Graphics in Selection Lists</a> | <a href="#" data-unresolved="1">Enabling Controls</a> | <a href="#" data-unresolved="1">Responding to User Entries in User Dialog Boxes</a> | <a href="#" data-unresolved="1">Saving and Restoring the Last Dialog Box Position</a> | <a href="#" data-unresolved="1">Saving Control Groups for User Dialog Boxes</a> | <a href="#" data-unresolved="1">Specifying the Default Button</a> | <a href="#" data-unresolved="1">Tabulator Order in a User Dialog Box</a> | <a href="#" data-unresolved="1">Using a Script to Fill a Selection List</a> | <a href="#" data-unresolved="1">Using Channel Selection Lists</a> | <a href="#" data-unresolved="1">Using Hotkeys in a User Dialog Box</a> | <a href="#" data-unresolved="1">Using the Flex Properties</a></p><h2>Examples</h2><p><a href="#" data-unresolved="1">Checking Dialog Box Entries</a> | <a href="#" data-unresolved="1">Dynamic User Dialog Box</a> | <a href="#" data-unresolved="1">Translating User Dialog Boxes</a> | <a href="#" data-unresolved="1">User Dialog Box for Entering Text and Numbers</a> | <a href="#" data-unresolved="1">User Dialog Box for Sequence Control</a> | <a href="#" data-unresolved="1">User Dialog Box in DIAdem VIEW</a> | <a href="#" data-unresolved="1">User Dialog Box in VIEW for the Calculation of the FFT and Harmonic Frequencies</a> | <a href="#" data-unresolved="1">User Dialog Box with Changing Background Color</a> | <a href="#" data-unresolved="1">User Dialog Box with Curve Preview and Slider Control</a> | <a href="#" data-unresolved="1">User Dialog Box with Extended Table</a> | <a href="#" data-unresolved="1">User Dialog Box with Scalable Table</a> | <a href="#" data-unresolved="1">User Dialog Box with Selection Lists</a> | <a href="#" data-unresolved="1">User Dialog Box with Selection Lists</a> | <a href="#" data-unresolved="1">User Dialog Box with Subdialog Boxes</a> | <a href="#" data-unresolved="1">User Dialog Box with Tables</a> | <a href="#" data-unresolved="1">User Dialog Box with Tree</a> | <a href="#" data-unresolved="1">Wizard for Tolerance Evaluation</a></p>
+</div>
+</div>
+
+---
+
+*Source: `Sudref/properties/SUD_property_PictureOffState_ToCheckRt.HTM`&nbsp;&middot;&nbsp;Python translated from VBS*

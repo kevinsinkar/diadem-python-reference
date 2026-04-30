@@ -1,0 +1,63 @@
+---
+title: "IRepReportOnToolTipInt.OnFormulaDisplay"
+description: "Is triggered in DIAdem REPORT when you press the shift key and move the mouse over a formula. The event starts the user command that you assigned to the OnFormu"
+---
+
+# IRepReportOnToolTipInt.OnFormulaDisplay
+
+!!! abstract "Event &middot; `ReportApi.chm`"
+    Event: OnFormulaDisplay for ToolTipEvents
+
+Is triggered in DIAdem REPORT when you press the shift key and move the mouse over a formula. The event starts the user command that you assigned to the OnFormulaDisplay for ToolTipEvents property. The user command receives two parameters. The first parameter corresponds to a ToolTipFormulaDisplayContext object and provides information about the formula in DIAdem REPORT. The second parameter is a text and corresponds with the tooltip for display. Refer to Working with Events in DIAdem for further information on events in DIAdem.
+
+## Signature
+
+```python
+obj.OnFormulaDisplay
+```
+
+## Notes
+
+<div markdown="1">
+<table class="Borderless"><tr><td class="Icon"><img src="../image/note.gif"/></td><td><strong>Note  </strong>To test the example script, you must first save the second script and register it as a user command in the dialog box that opens when you select <strong>Settings»Extensions»User Commands</strong>.</td></tr></table>
+</div>
+
+## Python example
+
+!!! warning "Machine-translated"
+    The original DIAdem topic did not include a Python tab; this
+    example was machine-translated from the VBScript source.
+
+```python
+dd.Report.NewLayout
+oMyFormula = dd.Report.ActiveSheet.Objects.Add(eReportObjectFormulaDisplay ,"MyFormular")
+oMyPosFormula = oMyFormula.Position.ByCoordinate
+oMyFormula.Text = "a^2+b^2=c^2"
+oMyPosFormula.X1 = 20
+oMyPosFormula.X2 = 40
+oMyPosFormula.Y1 = 20
+oMyPosFormula.Y2 = 35
+
+# This event will be raised if the mouse is moved AND the shift key pressed
+AddUserCommandToEvent("dd.Report.Events.ToolTip.OnFormulaDisplay", "MyToolTipEvent")
+dd.Report.Refresh()
+```
+
+```python
+def MyToolTipEvent(Context,ToolTipText):
+    oSubObject = Context.SubObject
+    ToolTipText = "Sheet: " + Context.Sheet.Name + VBCrLf + "Sub object" + VBCrLf + "Name: " + oSubObject.Name + VBCrLf + "Type: " + GetConstNameForREPORTSubObj(oSubObject, oSubObject.Type)
+    ToolTipText = ToolTipText + VBCrLf + "X position: " + Context.Position.X + VBCrLf + "Y position: " + Context.Position.Y
+```
+
+## See also
+
+<div markdown="1">
+<div class="SeeAlso"><h2>See Also</h2>
+<p><a href="#" data-unresolved="1">Objects Overview</a></p>
+</div>
+</div>
+
+---
+
+*Source: `ReportApi/events/Report_event_OnFormulaDisplay_IRepReportOnToolTipInt.htm`&nbsp;&middot;&nbsp;Python translated from VBS*

@@ -1,0 +1,62 @@
+---
+title: "IRepSpiderSettingsInt"
+description: "The SpiderSettings object provides general properties of a spider axis system in DIAdem REPORT."
+---
+
+# IRepSpiderSettingsInt
+
+!!! abstract "Object &middot; `ReportApi.chm`"
+    Object: SpiderSettings
+
+The SpiderSettings object provides general properties of a spider axis system in DIAdem REPORT.
+
+## Python example
+
+```python
+dd.Report.NewLayout()
+dd.Data.Root.Clear()
+dd.DataFileLoad("Example.tdm","TDM","")
+
+oMyAxisSystem = dd.Report.ActiveSheet.Objects.Add(dd.eReportObjectSpider, "MySpiderAxisSystem")
+oMyPos = oMyAxisSystem.Position.ByCoordinate
+oMyPos.X1 = 20
+oMyPos.X2 = 80
+oMyPos.Y1 = 20
+oMyPos.Y2 = 80
+
+oMySpiderSettings = oMyAxisSystem.Settings
+oMySpiderSettings.DisplayMode = dd.eSpiderDisplayModeSpider
+oMySpiderSettings.ShowBorder = True
+oMySpiderSettings.BorderLine.Color.ColorIndex = dd.eColorIndexDarkRed
+oMySpiderSettings.BackgroundColor.ColorIndex = dd.eColorIndexYellow
+oMySpiderSettings.AngleDirection = dd.eAngleDirectionClockwise
+
+oMyCurve = oMyAxisSystem.CurvesSpider.Add(dd.eSpiderShapeLine, "MySpiderCurve")
+oMyCurve.Shape.Channel.Reference = "[5]/[3]"
+
+dd.Report.Refresh()
+```
+
+## Members
+
+<div markdown="1">
+<div class="Properties">
+<h2>Properties</h2>
+<p><a href="../../properties/irepspidersettingsint-angledirection/">AngleDirection</a> | <a href="../../properties/irepspidersettingsint-backgroundcolor/">BackgroundColor</a> | <a href="../../properties/irepspidersettingsint-borderline/">BorderLine</a> | <a href="../../properties/irepspidersettingsint-displaymode/">DisplayMode</a> | <a href="../../properties/irepspidersettingsint-grid/">Grid</a> | <a href="../../properties/irepspidersettingsint-showborder/">ShowBorder</a></p>
+</div>
+<div class="ReturnFrom"><h2>Returned From</h2>
+<p><a href="../irepspiderint/">Spider</a>.<a href="../../properties/irepspiderint-settings/">Settings</a></p>
+</div>
+</div>
+
+## See also
+
+<div markdown="1">
+<div class="SeeAlso"><h2>See also</h2>
+<p><a href="#" data-unresolved="1">Objects Overview</a></p>
+</div>
+</div>
+
+---
+
+*Source: `ReportApi/Objects/Report_Objects_IRepSpiderSettingsInt.htm`*

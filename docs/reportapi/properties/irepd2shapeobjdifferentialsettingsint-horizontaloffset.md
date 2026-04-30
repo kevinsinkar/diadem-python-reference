@@ -1,0 +1,55 @@
+---
+title: "IRepD2ShapeObjDifferentialSettingsInt.HorizontalOffset"
+description: "Specifies the displacement of the bars or the displacement of the upper and lower lines, as a percentage, for special forms such as bars, outlined bars, and spi"
+---
+
+# IRepD2ShapeObjDifferentialSettingsInt.HorizontalOffset
+
+!!! abstract "Property &middot; `ReportApi.chm`"
+    Property: HorizontalOffset for 2DDifferentialSettings
+
+Specifies the displacement of the bars or the displacement of the upper and lower lines, as a percentage, for special forms such as bars, outlined bars, and spikes in a 2D axis system in DIAdem REPORT. Assign the property Width to a value in order to see a displacement.
+
+## Signature
+
+```python
+obj.HorizontalOffset
+```
+
+## Python example
+
+```python
+dd.Report.NewLayout()
+dd.Data.Root.Clear()
+dd.DataFileLoad(dd.DataReadPath + "Report_Data.tdm","TDM","")
+oMy2DAxisSystem = dd.Report.ActiveSheet.Objects.Add(dd.eReportObject2DAxisSystem, "My2DAxisSystem")
+oMyPos = oMy2DAxisSystem.Position.ByCoordinate
+oMyPos.X1 = 20
+oMyPos.X2 = 80
+oMyPos.Y1 = 20
+oMyPos.Y2 = 80
+oMyCurve = oMy2DAxisSystem.Curves2D.Add(dd.e2DShapeDifferential, "MyCurve")
+oMyShape = oMyCurve.Shape
+oMyShape.XChannel.Reference = "[2]/[1]"
+oMyShape.YChannel.Reference = "[2]/[2]"
+oMyShape.YChannelDifferential.Reference = "[2]/[3]"
+oMySettings = oMyShape.Settings
+oMySettings.Type = dd.e2DDifferentialRange
+oMySettings.BorderLine.Color.SetPredefinedColor(dd.eColorIndexBlue)
+oMySettings.BorderLine.Width = dd.eLineWidth0100
+oMySettings.Width = 10
+oMySettings.HorizontalOffset = 50
+dd.Report.Refresh()
+```
+
+## See also
+
+<div markdown="1">
+<div class="SeeAlso"><h2>See Also</h2>
+<p><a href="#" data-unresolved="1">Objects Overview</a></p>
+</div>
+</div>
+
+---
+
+*Source: `ReportApi/properties/Report_property_HorizontalOffset_IRepD2ShapeObjDifferentialSettingsInt.htm`*

@@ -1,0 +1,53 @@
+---
+title: "IExcelFormatter.TimeFormat"
+description: "Specifies the time format used in the workbook."
+---
+
+# IExcelFormatter.TimeFormat
+
+!!! abstract "Property &middot; `DataPlugin.chm`"
+    Property: TimeFormat for CellFormatter
+
+Specifies the time format used in the workbook.
+
+## Signature
+
+```python
+obj.TimeFormat
+```
+
+## Python example
+
+!!! warning "Machine-translated"
+    The original DIAdem topic did not include a Python tab; this
+    example was machine-translated from the VBScript source.
+
+```python
+2004-06-28 16:28:20;  29,8¶
+2004-06-28 16:28:21;  36,4¶
+2004-06-28 16:28:22;  44,1¶
+2004-06-28 16:28:23;  53,9¶
+2004-06-28 16:28:24;  68,4¶
+```
+
+```python
+Workbook.Formatter.TimeFormat = "YYYY-MM-DD hh:mm:ss"
+
+oChannel= oBlock.Channels.Add("Channel",eTime)
+oGroup.Channels.AddDirectAccessChannel(oChannel)
+
+oChannel= oBlock.Channels.Add("Channel")
+oGroup.Channels.AddDirectAccessChannel(oChannel)
+```
+
+## See also
+
+<div markdown="1">
+<div class="SeeAlso">
+<h2>Examples</h2><p><a href="#" data-unresolved="1">Checking DataPlugins for Timeout</a></p>
+</div>
+</div>
+
+---
+
+*Source: `DataPlugin/Properties/DataPlugin_property_TimeFormat_IExcelFormatter.htm`&nbsp;&middot;&nbsp;Python translated from VBS*

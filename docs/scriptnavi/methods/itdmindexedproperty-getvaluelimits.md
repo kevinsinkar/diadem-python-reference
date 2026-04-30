@@ -1,0 +1,53 @@
+---
+title: "ITDMIndexedProperty.GetValueLimits"
+description: "Returns in a DataFinder the indexed value range for a property , or for an optimized custom property that is an integer or numeric data type, or for a date/time"
+---
+
+# ITDMIndexedProperty.GetValueLimits
+
+!!! abstract "Method &middot; `ScriptNavi.chm`"
+    Method: GetValueLimits for IndexedProperty
+
+Returns in a DataFinder the indexed value range for a property , or for an optimized custom property that is an integer or numeric data type, or for a date/time property.
+
+## Signature
+
+```python
+return_value = obj.GetValueLimits([AdvancedQuery])
+```
+
+## Notes
+
+<div markdown="1">
+<table class="Borderless" id="table1"><tr><td class="Icon"><img src="../image/note.gif"/></td><td><strong>Note  </strong>Use the <a href="#" data-unresolved="1">Set statement</a> to assign objects to a variable and to make it easier to access these objects.</td></tr></table>
+</div>
+
+## Python example
+
+```python
+oMyProperties = dd.Navigator.Display.CurrDataFinder.QueryForm.GetIndexedProperties(dd.eSearchChannel)
+oMyValueLimits = oMyProperties.Item("Maximum").GetValueLimits
+dd.MsgBoxDisp(oMyValueLimits.Min)
+```
+
+```python
+MyDataFinder = dd.Navigator.ConnectDataFinder("My DataFinder")
+MyProperties = MyDataFinder.GetIndexedProperties(dd.eSearchFile)
+MyAdaptiveQuery = dd.Navigator.ConnectDataFinder("My DataFinder").CreateQuery(dd.eAdvancedQuery)
+MyAdaptiveQuery.Conditions.Add(dd.eSearchFile, "fullpath", "=", dd.DataReadPath + "*")
+MyCreateTimes = MyProperties.Item("createTime").GetValueLimits(MyAdaptiveQuery)
+dd.MsgBoxDisp (dd.RTT(MyCreateTimes.Max.VariantDate))
+dd.MsgBoxDisp (dd.RTT(MyCreateTimes.Min.VariantDate))
+```
+
+## See also
+
+<div markdown="1">
+<div class="SeeAlso"><h2>See Also</h2>
+<p class="body"><a href="#" data-unresolved="1">Objects Overview</a></p><h2>Procedures</h2><p><a href="#" data-unresolved="1">Configuring the Search Results</a> | <a href="#" data-unresolved="1">Defining Search Areas</a> | <a href="#" data-unresolved="1">Executing a Search with OR Operations</a> | <a href="#" data-unresolved="1">Executing a Text Search</a> | <a href="#" data-unresolved="1">Indexing Search Areas</a> | <a href="#" data-unresolved="1">Optimizing Custom Properties</a> | <a href="#" data-unresolved="1">Saving and Loading a Search Query</a> | <a href="#" data-unresolved="1">Searching for Data on a Different Computer in the Network</a> | <a href="#" data-unresolved="1">Searching for Multiple Properties</a> | <a href="#" data-unresolved="1">Sorting Search Results before Executing a Search</a></p><h2>Examples</h2><p><a href="#" data-unresolved="1">Brake Tests for Trucks</a> | <a href="#" data-unresolved="1">Checking DataPlugins for Timeout</a> | <a href="#" data-unresolved="1">Combining DataFinder Search Results</a> | <a href="#" data-unresolved="1">Context Menu for the Search Results of the DataFinder</a> | <a href="#" data-unresolved="1">Creating ATFX Files from the Context Menu of an ASAM Data Store</a> | <a href="#" data-unresolved="1">Customized User Interface</a> | <a href="#" data-unresolved="1">Evaluation Wizard for the Search Results of the DataFinder</a> | <a href="#" data-unresolved="1">Filtering Data with a Dialog Box</a> | <a href="#" data-unresolved="1">Filtering Data without a Dialog Box</a> | <a href="#" data-unresolved="1">Search and Evaluation Functions in User Dialog Boxes</a> | <a href="#" data-unresolved="1">Searching for and Evaluating Channels</a> | <a href="#" data-unresolved="1">Searching for Channels in the NAVIGATOR</a> | <a href="#" data-unresolved="1">Searching for Data Sets Marked "Failed" in Data Stores</a> | <a href="#" data-unresolved="1">Searching for Data Sets Marked "Failed"</a> | <a href="#" data-unresolved="1">Searching for Properties and Evaluating the Associated Channels</a> | <a href="#" data-unresolved="1">Varying Browse Settings of a Data Store</a></p>
+</div>
+</div>
+
+---
+
+*Source: `ScriptNavi/methods/navigator_method_GetValueLimits_ITDMIndexedProperty.htm`*

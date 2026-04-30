@@ -1,0 +1,145 @@
+---
+title: "Properties (INaviData (Data Model Interfaces))"
+---
+
+# Properties
+
+135 properties from `Inavidata.chm`.
+
+| Name | Summary |
+| --- | --- |
+| [`IAssignment.Definition`](iassignment-definition.md) | Specifies the numeric value of an assignment, in the script interface for internal data. A text value (property Value) is assigned to a numeric value (property Definition ) or a value range (property DefinitionRange ) in order to define an assignment. |
+| [`IAssignment.DefinitionRange`](iassignment-definitionrange.md) | Specifies the value range of a channel to which a specific text value is assigned, in the script interface for internal data. A text value (property Value ) is assigned to a numeric value (property Definition ) or to a value range (property DefinitionRange ) in order to define an assignment. |
+| [`IAssignment.Value`](iassignment-value.md) | Specifies the text value of an assignment in an assignment channel in the script interface for internal data. A text value (property Value ) is assigned to a numeric value (property Definition ) or to a value range (property DefinitionRange) in order to define an assignment. |
+| [`IAssignmentList.BoundaryLimitsLeft`](iassignmentlist-boundarylimitsleft.md) | Specifies the interval limit of the minimum value of an assignment in an assignment channel in the script interface for internal data. |
+| [`IAssignmentList.BoundaryLimitsRight`](iassignmentlist-boundarylimitsright.md) | Specifies the interval limit of the maximum value of an assignment in an assignment channel in the script interface for internal data. |
+| [`IAssignmentList.Count`](iassignmentlist-count.md) | Returns the number of assignments in the assignment list of an assignment channel in the script interface for internal data. |
+| [`IDataSettings.CustomPropertyTemplate`](idatasettings-custompropertytemplate.md) | Specifies a custom properties template in the script interface for internal data. |
+| [`IDataTemplate.Active`](idatatemplate-active.md) | Specifies in the script interface for internal data whether a custom properties template is active. |
+| [`IDataTemplate.ChannelGroupProperties`](idatatemplate-channelgroupproperties.md) | Specifies the custom properties of channel groups in the custom properties template , in the script interface for internal data. |
+| [`IDataTemplate.ChannelProperties`](idatatemplate-channelproperties.md) | Specifies the custom properties of channels in the custom properties template , in the script interface for internal data. |
+| [`IDataTemplate.RootProperties`](idatatemplate-rootproperties.md) | Specifies the custom properties of the data set (root) in the custom properties template in the script interface for internal data. |
+| [`IDiademAbstractChannel.DataType`](idiademabstractchannel-datatype.md) | Returns the data type of a channel in the script interface for internal data. |
+| [`IDiademAbstractChannel.IsReadOnly`](idiademabstractchannel-isreadonly.md) | Specifies whether a channel is read-only. |
+| [`IDiademAbstractChannel.Maximum`](idiademabstractchannel-maximum.md) | Specifies the maximum value of a channel. The value of the Maximum property for Channel corresponds to the value of Object .Properties("maximum").value . |
+| [`IDiademAbstractChannel.Minimum`](idiademabstractchannel-minimum.md) | Specifies the minimum value of a channel. The value of the Minimum property for Channel corresponds to the value of Object .Properties("minimum").value . |
+| [`IDiademAbstractChannel.Name`](idiademabstractchannel-name.md) | Receives the name of a BaseChannel object in the script interface for internal data. |
+| [`IDiademAbstractChannel.NoValues`](idiademabstractchannel-novalues.md) | Specifies whether a channel contains NoValues. |
+| [`IDiademAbstractChannel.Properties`](idiademabstractchannel-properties.md) | Contains the Properties collection that is associated with a BaseChannel object in the script interface for internal data. |
+| [`IDiademAbstractChannel.UnitSymbol`](idiademabstractchannel-unitsymbol.md) | Specifies the unit symbol of a channel. |
+| [`IDiademAbstractChannel.ValueIndex`](idiademabstractchannel-valueindex.md) | Determines the row in a numeric channel or a text channel, of which the contents are closest to a specified value or text. |
+| [`IDiademAssignmentChannel.AssignmentList`](idiademassignmentchannel-assignmentlist.md) | Specifies the list of assignments of an assignment channel in the script interface for internal data. |
+| [`IDiademAssignmentChannel.ChannelGroup`](idiademassignmentchannel-channelgroup.md) | Specifies the channel group, which contains a specific assignment channel, in the script interface for internal data. |
+| [`IDiademAssignmentChannel.DataType`](idiademassignmentchannel-datatype.md) | Specifies the data type of an assignment channel in the script interface for internal data. |
+| [`IDiademAssignmentChannel.DefaultValue`](idiademassignmentchannel-defaultvalue.md) | Specifies the default text of an assignment channel in the script interface for internal data. DIAdem displays this default text when all the specified assignments are invalid. |
+| [`IDiademAssignmentChannel.dValues`](idiademassignmentchannel-dvalues.md) | Specifies the single value of an assignment channel at a specific channel position as a Double vector type in the script interface for internal data. |
+| [`IDiademAssignmentChannel.IsReadOnly`](idiademassignmentchannel-isreadonly.md) | Specifies whether an assignment channel is read-only. |
+| [`IDiademAssignmentChannel.Maximum`](idiademassignmentchannel-maximum.md) | Specifies the maximum value of an assignment channel. The value of the Maximum property for Channel corresponds to the value of Object .Properties("maximum").value . |
+| [`IDiademAssignmentChannel.Minimum`](idiademassignmentchannel-minimum.md) | Specifies the minimum value of an assignment channel. The value of the Minimum property for AssignmentChannel corresponds to the value of Object .Properties("minimum").value . |
+| [`IDiademAssignmentChannel.Name`](idiademassignmentchannel-name.md) | Specifies the name of an assignment channel in the script interface for internal data. |
+| [`IDiademAssignmentChannel.NoValues`](idiademassignmentchannel-novalues.md) | Specifies whether a channel contains NoValues. |
+| [`IDiademAssignmentChannel.OperationalFlags`](idiademassignmentchannel-operationalflags.md) | Specifies whether DIAdem assigns a flag to an assignment channel value, in the script interface for internal data. |
+| [`IDiademAssignmentChannel.Properties`](idiademassignmentchannel-properties.md) | Returns the properties of an assignment channel, in the script interface for internal data. |
+| [`IDiademAssignmentChannel.ReservedSize`](idiademassignmentchannel-reservedsize.md) | Specifies the number of values that DIAdem reserves for an assignment channel, in the script interface for internal data. DIAdem automatically adjusts the value of the ReservedSize property if an assignment channel requires more values than specified. |
+| [`IDiademAssignmentChannel.Size`](idiademassignmentchannel-size.md) | Returns the number of values currently used for an assignment channel, in the script interface for internal data. DIAdem automatically adjusts the value of the Size property if you write more values to the channel. |
+| [`IDiademAssignmentChannel.UnitSymbol`](idiademassignmentchannel-unitsymbol.md) | Specifies the unit symbol of an assignment channel. The value of the UnitSymbol property for AssignmentChannel corresponds to the value of Object .Properties("unit_string").value . |
+| [`IDiademAssignmentChannel.ValueIndex`](idiademassignmentchannel-valueindex.md) | Determines the row in an assignment channel with contents closest to a given value. |
+| [`IDiademAssignmentChannel.Values`](idiademassignmentchannel-values.md) | Specifies the single value of an assignment channel at a specific channel position in the script interface for internal data. You can only read the Values property. |
+| [`IDiademCalculationChannel.CalculationReference`](idiademcalculationchannel-calculationreference.md) | Specifies a reference string associated with a Calculation Manager calculation in the calculation group/calculation format, in the script interface for internal data. |
+| [`IDiademCalculationChannel.ChannelGroup`](idiademcalculationchannel-channelgroup.md) | Specifies the channel group which contains a specific calculation channel in the script interface for internal data. |
+| [`IDiademCalculationChannel.DataType`](idiademcalculationchannel-datatype.md) | Specifies the file type of a calculation channel in the script interface for internal data. |
+| [`IDiademCalculationChannel.DestUnit`](idiademcalculationchannel-destunit.md) | Specifies the unit symbol of a formula channel at the next refresh of the channel values with the RunCalculation method in the script interface for internal data. You can only use the DestUnit property in a formula channel that you create with the AddCalculationChannel method. If you specify the "Default" value, DIAdem uses the matching default unit of the active unit set for the result channel. If you specify a unit in the AddCalculationChannel for Channels <Data> method, DIAdem sets the QuantityBased for CalculationChannel <Data> to True and converts the unit to the specified unit. If you specify an empty string as unit symbol, DIAdem specifies the unit symbol. Use the UnitSymbol for CalculationChannel property to determine the current unit symbol of a calculation channel. Refer to the Help page Calculating Quantity-Based and Non-Quantity-Based in DIAdem for the conditions and rules for quantity-based calculations. |
+| [`IDiademCalculationChannel.Formula`](idiademcalculationchannel-formula.md) | Specifies the formula of a calculation channel in the script interface for internal data. |
+| [`IDiademCalculationChannel.IsReadOnly`](idiademcalculationchannel-isreadonly.md) | Specifies whether a calculation channel is read-only in the script interface for internal data. |
+| [`IDiademCalculationChannel.Maximum`](idiademcalculationchannel-maximum.md) | Specifies the maximum of a calculation channel in the script interface for internal data. The value of the Maximum property for CalculationChannel is the same as the value of Value for Property <Data> with the property value maximum . |
+| [`IDiademCalculationChannel.Minimum`](idiademcalculationchannel-minimum.md) | Specifies the maximum of a calculation channel in the script interface for internal data. The value of the Minimum property for CalculationChannel is the same as the value of Value for Property <Data> with the property value minimum . |
+| [`IDiademCalculationChannel.Name`](idiademcalculationchannel-name.md) | Specifies the name of a calculation channel in the script interface for internal data. The value of the Name property for CalculationChannel is the same as the value of Value for Property <Data> with the property value name . |
+| [`IDiademCalculationChannel.NoValues`](idiademcalculationchannel-novalues.md) | Specifies whether a calculation channel contains NoValues. The value of the NoValues property for CalculationChannel is the same as the value of Value for Property <Data> with the property value noValuekey . |
+| [`IDiademCalculationChannel.OperationalFlags`](idiademcalculationchannel-operationalflags.md) | Specifies whether DIAdem assigns a flag to the value of a calculation channel in the script interface for internal data. |
+| [`IDiademCalculationChannel.Properties`](idiademcalculationchannel-properties.md) | Returns the properties of a calculation channel in the script interface for internal data. |
+| [`IDiademCalculationChannel.QuantityBased`](idiademcalculationchannel-quantitybased.md) | Specifies whether DIAdem calculates the calculation channel quantity-based in the script interface for internal data. You can only use the DestUnit property in a formula channel that you create with the AddCalculationChannel method. If you specify the "Default" value, DIAdem uses the default unit of the unit set of the result channel. If you specify a unit in the AddCalculationChannel for Channels <Data> method, DIAdem sets the QuantityBased for CalculationChannel <Data> to True and converts the unit to the specified unit. Refer to the Help page Calculating Quantity-Based and Non-Quantity-Based in DIAdem for the conditions and rules for quantity-based calculations. |
+| [`IDiademCalculationChannel.UnitSymbol`](idiademcalculationchannel-unitsymbol.md) | Specifies the unit symbol of a calculation channel. The value of the UnitSymbol property for CalculationChannel is the same as the value of Value for Property <Data> with the property value unit_string . Use the DestUnit for CalculationChannel property to specify the unit symbol of a calculation channel at the next refresh of the channel values with the RunCalculation method. |
+| [`IDiademCalculationChannel.ValueIndex`](idiademcalculationchannel-valueindex.md) | Determines the row in a calculation channel with contents closest to a given value. |
+| [`IDiademCalculationChannel.Values`](idiademcalculationchannel-values.md) | Specifies the single value of a calculation channel at a specific channel position in the script interface for internal data. You can only read the Values property. |
+| [`IDiademChannel.ChannelGroup`](idiademchannel-channelgroup.md) | Specifies the channel group to which a channel is assigned in the script interface for internal data. |
+| [`IDiademChannel.DataType`](idiademchannel-datatype.md) | Returns the data type of a channel in the script interface for internal data. |
+| [`IDiademChannel.IsReadOnly`](idiademchannel-isreadonly.md) | Specifies whether a channel is read-only. |
+| [`IDiademChannel.Maximum`](idiademchannel-maximum.md) | Specifies the maximum value of a channel. The value of the Maximum property for Channel corresponds to the value of Object .Properties("maximum").value . |
+| [`IDiademChannel.Minimum`](idiademchannel-minimum.md) | Specifies the minimum value of a channel. The value of the Minimum property for Channel corresponds to the value of Object .Properties("minimum").value . |
+| [`IDiademChannel.Name`](idiademchannel-name.md) | Receives the name of a Channel object in the script interface for internal data. |
+| [`IDiademChannel.NoValues`](idiademchannel-novalues.md) | Specifies whether a channel contains NoValues. |
+| [`IDiademChannel.OperationalFlags`](idiademchannel-operationalflags.md) | Specifies whether DIAdem assigns a flag to the value of a channel in the script interface for internal data. |
+| [`IDiademChannel.Properties`](idiademchannel-properties.md) | Contains the Properties collection that is associated with a ChannelGroup object in the script interface for internal data. |
+| [`IDiademChannel.ReservedSize`](idiademchannel-reservedsize.md) | Specifies the number of values that DIAdem reserves for a channel, in the script interface for internal data. DIAdem automatically adjusts the value of the ReservedSize property if a channel requires more values than specified. |
+| [`IDiademChannel.Size`](idiademchannel-size.md) | Returns the number of values currently used for a channel, in the script interface for internal data. DIAdem automatically adjusts the value of the Size property if you write more values to the channel. |
+| [`IDiademChannel.UnitSymbol`](idiademchannel-unitsymbol.md) | Specifies the unit symbol of a channel. The value of the UnitSymbol property for Channel corresponds to the value of Object .Properties("unit_string").value . |
+| [`IDiademChannel.ValueIndex`](idiademchannel-valueindex.md) | Determines the row in a numeric channel or a text channel, of which the contents are closest to a specified value or text. |
+| [`IDiademChannel.Values`](idiademchannel-values.md) | Specifies the single value of a channel at a specific channel position in the script interface for internal data. |
+| [`IDiademChannelGroup.Channels`](idiademchannelgroup-channels.md) | Contains the Channels collection associated with a ChannelGroup object in the script interface for internal data. |
+| [`IDiademChannelGroup.IsActive`](idiademchannelgroup-isactive.md) | Specifies whether a channel group is the default group in the script interface for internal data. |
+| [`IDiademChannelGroup.Name`](idiademchannelgroup-name.md) | Receives the name of a ChannelGroup object in the script interface for internal data. |
+| [`IDiademChannelGroup.Properties`](idiademchannelgroup-properties.md) | Contains the Properties collection that is associated with a ChannelGroup object in the script interface for internal data. |
+| [`IDiademChannelGroup.Root`](idiademchannelgroup-root.md) | Contains the parent object that is associated with a ChannelGroup object in the script interface for internal data. |
+| [`IDiademChannelGroups.Count`](idiademchannelgroups-count.md) | Returns the number of elements of a ChannelGroups collection, in the script interface for internal data. |
+| [`IDiademChannels.Count`](idiademchannels-count.md) | Returns the number of elements of a Channels collection, in the script interface for internal data. |
+| [`IDiademComplexChannel.ChannelGroup`](idiademcomplexchannel-channelgroup.md) | Specifies the channel group to which a complex channel is assigned in the script interface for internal data. |
+| [`IDiademComplexChannel.DataType`](idiademcomplexchannel-datatype.md) | Returns the data type of a complex channel in the script interface for internal data. |
+| [`IDiademComplexChannel.IsReadOnly`](idiademcomplexchannel-isreadonly.md) | Specifies whether a complex channel is read-only. |
+| [`IDiademComplexChannel.Maximum`](idiademcomplexchannel-maximum.md) | Specifies the maximum value of a complex channel . The value of the Maximum property for ComplexChannel corresponds to the value of Object .Properties("maximum").value . |
+| [`IDiademComplexChannel.Minimum`](idiademcomplexchannel-minimum.md) | Specifies the minimum value of a complex channel . The value of the Minimum property for ComplexChannel corresponds to the value of Object .Properties("minimum").value . |
+| [`IDiademComplexChannel.Name`](idiademcomplexchannel-name.md) | Receives the name of a ComplexChannel object in the script interface for internal data. |
+| [`IDiademComplexChannel.NoValues`](idiademcomplexchannel-novalues.md) | Specifies whether a complex channel contains NoValues. |
+| [`IDiademComplexChannel.OperationalFlags`](idiademcomplexchannel-operationalflags.md) | Specifies whether or not DIAdem assigns a flag to a complex channel value in the script interface for internal data. |
+| [`IDiademComplexChannel.Properties`](idiademcomplexchannel-properties.md) | Contains the Properties collection that is associated with a ComplexChannel object in the script interface for internal data. |
+| [`IDiademComplexChannel.ReservedSize`](idiademcomplexchannel-reservedsize.md) | Specifies the number of values that DIAdem reserves for a complex channel in the script interface for internal data. DIAdem automatically adjusts the value of the ReservedSize property if a channel requires more values than specified. |
+| [`IDiademComplexChannel.UnitSymbol`](idiademcomplexchannel-unitsymbol.md) | Specifies the unit symbol of a complex channel . The value of the UnitSymbol property for ComplexChannel corresponds to the value of Object .Properties("unit_string").value . |
+| [`IDiademComplexChannel.ValueIndex`](idiademcomplexchannel-valueindex.md) | Determines the row in a complex channel with contents closest to a given value. |
+| [`IDiademComplexChannel.Values`](idiademcomplexchannel-values.md) | Specifies the single value of a complex channel at a specific channel position in the script interface for internal data. |
+| [`IDiademElementList.Count`](idiademelementlist-count.md) | Returns the number of elements of a ElementList collection, in the script interface for internal data. |
+| [`IDiademImplicitChannel.ChannelGroup`](idiademimplicitchannel-channelgroup.md) | Specifies the channel group which contains the specified implicit channel in the script interface for internal data. |
+| [`IDiademImplicitChannel.DataType`](idiademimplicitchannel-datatype.md) | Specifies the data type of an implicit channel in the script interface for internal data. |
+| [`IDiademImplicitChannel.Increment`](idiademimplicitchannel-increment.md) | Specifies the step width of the values of an implicit channel in the script interface for internal data. |
+| [`IDiademImplicitChannel.IsReadOnly`](idiademimplicitchannel-isreadonly.md) | Specifies whether an implicit channel is read-only. |
+| [`IDiademImplicitChannel.Maximum`](idiademimplicitchannel-maximum.md) | Specifies the maximum of an implicit channel. The value of the Maximum property for ImplicitChannel corresponds to the value of Object .Properties("maximum").value . |
+| [`IDiademImplicitChannel.Minimum`](idiademimplicitchannel-minimum.md) | Specifies the minimum value of an implicit channel. The value of the Minimum property for ImplicitChannel corresponds to the value of Object .Properties("minimum").value . |
+| [`IDiademImplicitChannel.Name`](idiademimplicitchannel-name.md) | Returns the name of an implicit channel in the script interface for internal data. |
+| [`IDiademImplicitChannel.NoValues`](idiademimplicitchannel-novalues.md) | Specifies whether an implicit channel contains NoValues. |
+| [`IDiademImplicitChannel.OperationalFlags`](idiademimplicitchannel-operationalflags.md) | Specifies whether DIAdem assigns a flag to the value of an implicit channel in the script interface for internal data. |
+| [`IDiademImplicitChannel.Properties`](idiademimplicitchannel-properties.md) | Returns the properties of an implicit channel in the script interface for internal data. |
+| [`IDiademImplicitChannel.Size`](idiademimplicitchannel-size.md) | Specifies the number of values of an implicit channel in the script interface for internal data. |
+| [`IDiademImplicitChannel.StartValue`](idiademimplicitchannel-startvalue.md) | Returns the start value of an implicit channel in the script interface for internal data. |
+| [`IDiademImplicitChannel.UnitSymbol`](idiademimplicitchannel-unitsymbol.md) | Specifies the unit symbol of an implicit channel. The value of the UnitSymbol property for Implicit Channel corresponds to the value of Object .Properties("unit_string").value . |
+| [`IDiademImplicitChannel.ValueIndex`](idiademimplicitchannel-valueindex.md) | Determines the row in an implicit channel with contents closest to a given value. |
+| [`IDiademImplicitChannel.Values`](idiademimplicitchannel-values.md) | Specifies the single value of an implicit channel at a specific channel position in the script interface for internal data. The property Size specifies the number of values in an implicit channel. |
+| [`IDiademProperties.Count`](idiademproperties-count.md) | Returns the number of elements of a Properties collection, in the script interface for internal data. |
+| [`IDiademProperty.Custom`](idiademproperty-custom.md) | Specifies in the script interface for internal data whether a property is a custom property. |
+| [`IDiademProperty.DataType`](idiademproperty-datatype.md) | Specifies in the script interface for internal data the data type of a property or of a custom property. |
+| [`IDiademProperty.DisplayName`](idiademproperty-displayname.md) | Specifies the display name of a property in the script interface for internal data. The display name is the property name that DIAdem displays on the user interface. |
+| [`IDiademProperty.Element`](idiademproperty-element.md) | Specifies in the script interface for internal data the element to which a property belongs. The element might be a root type, a channel group type, or a channel type. |
+| [`IDiademProperty.Hidden`](idiademproperty-hidden.md) | Specifies in the script interface for internal data, whether DIAdem displays the property of a data element in the user interface. In DIAdem you can hide only the register properties. However, the properties are maintained in the associated collections. |
+| [`IDiademProperty.Name`](idiademproperty-name.md) | Returns the name of a property in the script interface for internal data. In the Data Preparation Procedure DIAdem uses the term Identifier for the name of a property. |
+| [`IDiademProperty.ReadOnly`](idiademproperty-readonly.md) | Specifies whether a property is read-only in the script interface for internal data. |
+| [`IDiademProperty.Value`](idiademproperty-value.md) | Specifies the value of a property in the script interface for internal data. |
+| [`IDiademPropertyList.Count`](idiadempropertylist-count.md) | Specifies the number of properties which you dragged and dropped onto another object. These properties might be DIAdem base properties or custom properties of the channels, the channel groups, or the root. |
+| [`IDiademRoot.ActiveChannelGroup`](idiademroot-activechannelgroup.md) | Specifies the default channel group in the script interface for internal data. |
+| [`IDiademRoot.ChannelGroups`](idiademroot-channelgroups.md) | Contains the ChannelGroups collection associated with a Root object in the script interface for internal data. |
+| [`IDiademRoot.Name`](idiademroot-name.md) | Specifies the name of the Root object in the script interface for internal data. |
+| [`IDiademRoot.Properties`](idiademroot-properties.md) | Contains the Properties collection associated with a Root object in the script interface for internal data. |
+| [`IDiademUSIElement.Name`](idiademusielement-name.md) | Specifies the name of an element in the script interface for internal data. The element might be a root type, a channel group type, or a channel type. |
+| [`IDiademUSIElement.Properties`](idiademusielement-properties.md) | Contains the Properties collection that is associated with a ChannelGroup object in the script interface for internal data. |
+| [`IDiademVideoChannel.ChannelGroup`](idiademvideochannel-channelgroup.md) | Specifies the channel group which contains the specified video channel in the script interface for internal data. |
+| [`IDiademVideoChannel.IsReadOnly`](idiademvideochannel-isreadonly.md) | Specifies whether a video channel is read-only in the script interface for internal data. |
+| [`IDiademVideoChannel.Name`](idiademvideochannel-name.md) | Specifies the name of a video channel in the script interface for internal data. The value of the Name for VideoChannel property is the same as the value of Value for Property <Data> with the property value name . |
+| [`IDiademVideoChannel.Properties`](idiademvideochannel-properties.md) | Returns the properties of a video channel in the script interface for internal data. |
+| [`IDropInformation.DataStoreElements`](idropinformation-datastoreelements.md) | Specifies the data elements from a data store which you drag and drop onto an XTable . For example, the data elements can be search results or selected elements. |
+| [`IDropInformation.DiademElements`](idropinformation-diademelements.md) | Specifies the elements from the script interface for internal data which you drag and drop onto another object. These elements can be channels, channel groups, or the root. The generated ElementList collection is with read only access. |
+| [`IDropInformation.DiademProperties`](idropinformation-diademproperties.md) | Specifies the properties which drag and drop onto another object. These properties might be DIAdem base properties or custom properties of the channels, the channel groups, or the root. The generated PropertyList collection is read only. |
+| [`IDropInformation.FileList`](idropinformation-filelist.md) | Returns in user dialog boxes a collection of all files from a file list which you drag and drop to another object. |
+| [`IDropInformation.Text`](idropinformation-text.md) | Specifies a text you drag and drop to a different object. |
+| [`IFileList.Count`](ifilelist-count.md) | Specifies the number of elements in a file list which you drag and drop onto another object. |
+| [`INaviData.Root`](inavidata-root.md) | Specifies the collection of all the channel groups and all the Properties of the data set in the script interface for internal data. |
+| [`INaviData.Settings`](inavidata-settings.md) | Specifies the access to the general DIAdem settings in the script interface for internal data. |
+| [`ITemplateProperties.Count`](itemplateproperties-count.md) | Returns the number of elements of a TemplateProperties collection, in the script interface for internal data. |
+| [`ITemplateProperty.DataType`](itemplateproperty-datatype.md) | Specifies the data type of a custom property from the custom properties template , in the script interface for internal data. |
+| [`ITemplateProperty.Name`](itemplateproperty-name.md) | Returns the name of a TemplateProperty object in the script interface for internal data. |
+| [`ITemplateProperty.Value`](itemplateproperty-value.md) | Specifies the initial value of a custom property from the custom properties template , in the script interface for internal data. |

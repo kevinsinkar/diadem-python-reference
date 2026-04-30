@@ -1,0 +1,49 @@
+---
+title: "IProcessedChannel.AddWaveformProperties"
+description: "Adds waveform properties to a channel, which combines values form other channels ( ChannelsToProcess ), in order to create a waveform channel. Waveform channels"
+---
+
+# IProcessedChannel.AddWaveformProperties
+
+!!! abstract "Method &middot; `DataPlugin.chm`"
+    Method: AddWaveformProperties for ProcessedChannel
+
+Adds waveform properties to a channel, which combines values form other channels ( ChannelsToProcess ), in order to create a waveform channel. Waveform channels contain the x-part and the y-part of a curve in a channel. The y-part contains the (measurement) values. The x-part might be the measured time. The Waveform properties specify the x-part that is a linear specification with a start value and a step width.
+
+## Signature
+
+```python
+obj.AddWaveformProperties(Increment, StartOffset, [XChannelName], [XChannelUnit], [StartTime], [TimePreference], [NumberOfSamples])
+```
+
+## Enumeration values
+
+| Name | Value | Description |
+| --- | ---: | --- |
+| `eTimeAbsolute` | 1 | Absolute time |
+| `eTimeRelative` | 2 | Relative Time |
+
+## Python example
+
+!!! warning "Machine-translated"
+    The original DIAdem topic did not include a Python tab; this
+    example was machine-translated from the VBScript source.
+
+```python
+for Channel in Channelgroup.Channels:
+    if Channel.IsKindOf(eDirectAccess) and (Channel.DataType = eR64):
+        ProcessedChn.Channels.Add(Channel)
+ProcessedChn.AddWaveformProperties(1, 0, "Time", "s")
+```
+
+## See also
+
+<div markdown="1">
+<div class="SeeAlso"><h2>See Also</h2>
+<p><a href="#" data-unresolved="1">Objects Overview</a></p><h2>Examples</h2><p><a href="#" data-unresolved="1">Checking DataPlugins for Timeout</a></p>
+</div>
+</div>
+
+---
+
+*Source: `DataPlugin/Methods/DataPlugin_method_AddWaveformProperties_IProcessedChannel.htm`&nbsp;&middot;&nbsp;Python translated from VBS*

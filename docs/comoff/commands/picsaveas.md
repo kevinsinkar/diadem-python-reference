@@ -1,0 +1,18 @@
+---
+title: "PicSaveAs"
+---
+
+# PicSaveAs
+
+!!! abstract "Command &middot; `ComOff.chm`"
+    Command: PicSaveAs (Obsolete)
+
+## Notes
+
+<div markdown="1">
+<table class="Borderless"><tr><td class="Icon"><img src="./image/note.gif"/></td><td><strong>Note </strong>This command is obsolete. Use the object-oriented interface in DIAdem REPORT instead. Use the method <a href="../../../reportapi/methods/irepreportint-savelayout/">SaveLayout</a> to save a report in DIAdem REPORT.<br attr="ext"/>Use the example <a href="#" data-unresolved="1">Searching for Obsolete Commands and Variables</a> to search for outdated commands and variables in your scripts.</td></tr></table>
+</div>
+
+---
+
+*Source: `ComOff/PicSaveAs.htm`*

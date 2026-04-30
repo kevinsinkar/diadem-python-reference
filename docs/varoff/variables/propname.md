@@ -1,0 +1,18 @@
+---
+title: "PropName"
+---
+
+# PropName
+
+!!! abstract "Variable &middot; `VarOff.chm`"
+    Variable: PropName (Obsolete)
+
+## Notes
+
+<div markdown="1">
+<table class="Borderless"><tr><td class="Icon"><img src="./image/note.gif"/></td><td><strong>Note </strong>This variable is obsolete. Use the object-oriented interface of the internal data instead. The methods and properties of the <a href="../../../inavidata/objects/idiademproperty/">Property</a> object replace the <span class="Monospace">PropName</span> variable.<br attr="ext"/>Use the example <a href="#" data-unresolved="1">Searching for Obsolete Commands and Variables</a> to search for outdated commands and variables in your scripts.</td></tr></table>
+</div>
+
+---
+
+*Source: `VarOff/PropName.htm`*

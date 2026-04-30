@@ -1,0 +1,47 @@
+---
+title: "IDirectAccessChannel.AddWaveformProperties"
+description: "Adds waveform properties to the DirectAccess channel to generate a waveform channel. Waveform channels contain the x-part and the y-part of a curve in a channel"
+---
+
+# IDirectAccessChannel.AddWaveformProperties
+
+!!! abstract "Method &middot; `DataPlugin.chm`"
+    Method: AddWaveformProperties for DirectAccessChannel
+
+Adds waveform properties to the DirectAccess channel to generate a waveform channel. Waveform channels contain the x-part and the y-part of a curve in a channel. The y-part contains the (measurement) values. The x-part might be the measured time. The Waveform properties specify the x-part that is a linear specification with a start value and a step width.
+
+## Signature
+
+```python
+obj.AddWaveformProperties(Increment, StartOffset, [XChannelName], [XChannelUnit], [StartTime], [TimePreference], [NumberOfSamples])
+```
+
+## Enumeration values
+
+| Name | Value | Description |
+| --- | ---: | --- |
+| `eTimeAbsolute` | 1 |  |
+| `eTimeRelative` | 2 |  |
+
+## Python example
+
+!!! warning "Machine-translated"
+    The original DIAdem topic did not include a Python tab; this
+    example was machine-translated from the VBScript source.
+
+```python
+oChn.AddWaveformProperties(1, 0, "Time", "s")
+oMyGrp.Channels.AddDirectAccessChannel(oChn)
+```
+
+## See also
+
+<div markdown="1">
+<div class="SeeAlso"><h2>See Also</h2>
+<p><a href="#" data-unresolved="1">Root Object Overview</a> | <a href="#" data-unresolved="1">File Object Overview</a> | <a href="#" data-unresolved="1">Workbook Object Overview</a></p><h2>Examples</h2><p><a href="#" data-unresolved="1">Checking DataPlugins for Timeout</a></p>
+</div>
+</div>
+
+---
+
+*Source: `DataPlugin/Methods/DataPlugin_method_AddWaveformProperties_IDirectAccessChannel.htm`&nbsp;&middot;&nbsp;Python translated from VBS*

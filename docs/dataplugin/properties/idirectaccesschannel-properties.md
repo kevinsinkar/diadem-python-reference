@@ -1,0 +1,41 @@
+---
+title: "IDirectAccessChannel.Properties"
+description: "Contains the Properties collection associated with a DirectAccess channel."
+---
+
+# IDirectAccessChannel.Properties
+
+!!! abstract "Property &middot; `DataPlugin.chm`"
+    Property: Properties for DirectAccessChannel
+
+Contains the Properties collection associated with a DirectAccess channel.
+
+## Signature
+
+```python
+return_value = obj.Properties
+```
+
+## Python example
+
+!!! warning "Machine-translated"
+    The original DIAdem topic did not include a Python tab; this
+    example was machine-translated from the VBScript source.
+
+```python
+oBlock.BlockWidth = 16
+oMyChn.Properties.Add("BlockWidth",16)
+oChannelGroup.Channels.AddDirectAccessChannel(oMyChn)
+```
+
+## See also
+
+<div markdown="1">
+<div class="SeeAlso"><h2>See Also</h2>
+<p class="body"><a href="#" data-unresolved="1">Root Object Overview</a> | <a href="#" data-unresolved="1">File Object Overview</a> | <a href="#" data-unresolved="1">Workbook Object Overview</a></p><h2>Examples</h2><p><a href="#" data-unresolved="1">Checking DataPlugins for Timeout</a></p>
+</div>
+</div>
+
+---
+
+*Source: `DataPlugin/Properties/DataPlugin_property_Properties_IDirectAccessChannel.htm`&nbsp;&middot;&nbsp;Python translated from VBS*

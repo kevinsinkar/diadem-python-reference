@@ -1,0 +1,21 @@
+---
+title: "Events (NAVIGATOR / Data Portal / Data Finder)"
+---
+
+# Events
+
+11 events from `ScriptNavi.chm`.
+
+| Name | Summary |
+| --- | --- |
+| [`OnAllowSearch.OnAllowSearch`](onallowsearch-onallowsearch.md) | Is triggered in DIAdem NAVIGATOR before you execute a search for data. The event starts the user command that you assigned to the OnAllowSearch for Events <Navigator> property. The user command receives a parameter. This parameter specifies whether DIAdem executes the search after executing the user command (TRUE) or not (FALSE). DIAdem then triggers the event OnSearched and after that displays the search results in the search results list. |
+| [`OnContextMenuPointSelected.OnContextMenuPointSelected`](oncontextmenupointselected-oncontextmenupointselected.md) | Is triggered in DIAdem NAVIGATOR by the selection of an entry in the context menu of the file browser, data browser, or search results list. The event starts the user command that you assigned to the OnContextMenuPointSelected for Events <Navigator> property. |
+| [`OnDataProviderClosing.OnDataProviderClosing`](ondataproviderclosing-ondataproviderclosing.md) | Is triggered in DIAdem NAVIGATOR before a DataFinder or a data store closes. The event starts the user command that you assigned to the OnDataProviderClosing for Events <Navigator> property. |
+| [`OnDataStoreLoading.OnDataStoreLoading`](ondatastoreloading-ondatastoreloading.md) | Is triggered in DIAdem NAVIGATOR before data is loaded from a data store. The event starts the user command that you assigned to the OnDataStoreLoading for Events <Navigator> property. |
+| [`OnDataStoreSaving.OnDataStoreSaving`](ondatastoresaving-ondatastoresaving.md) | Is triggered in DIAdem NAVIGATOR before data stores are saved. The event starts the user command that you assigned to the OnDataStoreSaving for Events <Navigator> property. With this event you can determine, for example, which element is selected in the Data Portal and on which file the focus in the data browser is before you save data. |
+| [`OnFileLoading.OnFileLoading`](onfileloading-onfileloading.md) | Is triggered in DIAdem NAVIGATOR before data is loaded from a file. The event starts the user command that you assigned to the OnFileLoading for Events <Navigator> property. |
+| [`OnInteractionLoaded.OnInteractionLoaded`](oninteractionloaded-oninteractionloaded.md) | Triggers in DIAdem after the command, which is called from the Navigator when data is dragged and dropped into the Data Portal, is executed. The event starts the user command which you assigned to the property Navigator.Events. OnInteractionLoaded . If you drag and drop a file from the file browser into the Data Portal, DIAdem internally executes the associated loading command. Before DIAdem executes the loading command, the program triggers the OnInteractionLoading event. After executing the command, DIAdem triggers the OnInteractionLoaded event. |
+| [`OnInteractionLoading.OnInteractionLoading`](oninteractionloading-oninteractionloading.md) | Triggers in DIAdem before the command, which is called from the Navigator when data is dragged and dropped into the Data Portal, is executed. The event starts the user command which you assigned to the property Navigator.Events. OnInteractionLoading . If you drag and drop a file from the file browser into the Data Portal, DIAdem internally executes the associated loading command. Before DIAdem executes the loading command, the program triggers the OnInteractionLoading event. After executing the command, DIAdem triggers the OnInteractionLoaded event. |
+| [`OnLoaded.OnLoaded`](onloaded-onloaded.md) | Is triggered in DIAdem NAVIGATOR after you load data. The event starts the user command that you assigned to the OnLoaded for Events <Navigator> property. |
+| [`OnSearched.OnSearched`](onsearched-onsearched.md) | Is triggered in DIAdem NAVIGATOR after you execute a search. The event starts the user command that you assigned to the OnSearched for Events <Navigator> property. |
+| [`OnShowingContextMenu.OnShowingContextMenu`](onshowingcontextmenu-onshowingcontextmenu.md) | Is triggered in DIAdem NAVIGATOR when a context menu opens in the file browser, the data browser, or in the search results. The event starts the user command that you assigned to the OnShowingContextMenu for Events <Navigator> property. |

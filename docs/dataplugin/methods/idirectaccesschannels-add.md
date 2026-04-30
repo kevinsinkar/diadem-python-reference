@@ -1,0 +1,78 @@
+---
+title: "IDirectAccessChannels.Add"
+description: "Adds an object to the Channels collection of a StringBlock, FixedWidthBlock, or a BinaryBlock and returns a DirectAccessChannel object."
+---
+
+# IDirectAccessChannels.Add
+
+!!! abstract "Method &middot; `DataPlugin.chm`"
+    Method: Add for DirectAccessChannels
+
+Adds an object to the Channels collection of a StringBlock, FixedWidthBlock, or a BinaryBlock and returns a DirectAccessChannel object.
+
+## Signature
+
+```python
+return_value = obj.Add(Name, DataType)
+```
+
+## Notes
+
+<div markdown="1">
+<table class="Borderless"><tr><td class="Icon"><img height="25" src="../image/note.gif" width="26"/></td><td><strong>Note  </strong>The channel name must be unique.</td></tr></table>
+</div>
+
+## Enumeration values
+
+| Name | Value | Description |
+| --- | ---: | --- |
+| `eI8` | 1 | 8-bit integer values |
+| `eI16` | 2 | 16-bit integer values |
+| `eI32` | 3 | 32-bit integer values |
+| `eI64` | 4 | 64-bit integer values |
+| `eByte` | 5 | Byte |
+| `eU16` | 6 | 16-bit unsigned integer |
+| `eU32` | 7 | 32-bit unsigned integer |
+| `eU64` | 8 | 64-bit unsigned integer |
+| `eR32` | 9 | 32-bit real values |
+| `eR64` | 10 | 64-bit real values |
+| `eString` | 23 | Text |
+| `eEnum` | 24 | Enumeration |
+| `eTime` | 30 | Time values |
+
+## Python example
+
+!!! warning "Machine-translated"
+    The original DIAdem topic did not include a Python tab; this
+    example was machine-translated from the VBScript source.
+
+```python
+12.06.2004; 1.3452¶
+13.06.2004; 1.7834¶
+14.06.2004; 2.0034¶
+15.06.2004; 1.9996¶
+16.06.2004; 1.5649¶
+17.06.2004; 1.8957¶
+```
+
+```python
+File.Formatter.TrimCharacters = " "
+File.Formatter.LineFeeds  = vbNewLine
+File.Formatter.TimeFormat = "DD.MM.YYYY"
+File.Formatter.Delimiters = ";"
+File.Formatter.Decimalpoint = "."
+
+oMyGrp.Channels.AddDirectAccessChannel(oChn1)
+oMyGrp.Channels.AddDirectAccessChannel(oChn2)
+```
+
+## See also
+
+<div markdown="1">
+<div class="SeeAlso"><h2>Examples</h2><p class="body"><a href="#" data-unresolved="1">Checking DataPlugins for Timeout</a></p>
+</div>
+</div>
+
+---
+
+*Source: `DataPlugin/Methods/DataPlugin_method_Add_IDirectAccessChannels.htm`&nbsp;&middot;&nbsp;Python translated from VBS*

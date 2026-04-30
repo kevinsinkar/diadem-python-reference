@@ -1,0 +1,46 @@
+---
+title: "IDocumentNamespace"
+description: "The DocumentNamespace <DataPlugin> object provides the namespace in a document. Use namespaces to group XML elements in a document."
+---
+
+# IDocumentNamespace
+
+!!! abstract "Object &middot; `DataPlugin.chm`"
+    Object: DocumentNamespace <DataPlugin>
+
+The DocumentNamespace <DataPlugin> object provides the namespace in a document. Use namespaces to group XML elements in a document.
+
+## Python example
+
+!!! warning "Machine-translated"
+    The original DIAdem topic did not include a Python tab; this
+    example was machine-translated from the VBScript source.
+
+```python
+for oMyNamespace in Document.Namespaces:
+    for oMyProperty in oMyNamespace.Properties:
+        Root.Properties.Add(oMyProperty.Name,  oMyProperty.Value)
+```
+
+## Members
+
+<div markdown="1">
+<div class="Properties"><h2>Properties</h2>
+<p><a href="../../properties/idocumentnamespace-name/">Name</a> | <a href="../../properties/idocumentnamespace-properties/">Properties</a></p>
+</div>
+<div class="ReturnFrom"><h2>Returned From</h2>
+<p><a href="../../collections/documentnamespaces/">DocumentNamespaces &lt;DataPlugin&gt;</a>.<a href="../../methods/idocumentnamespaces-item/">Item</a></p>
+</div>
+</div>
+
+## See also
+
+<div markdown="1">
+<div class="SeeAlso"><h2>See Also</h2>
+<p><a href="#" data-unresolved="1">Objects Overview</a></p><h2>Examples</h2><p><a href="#" data-unresolved="1">Checking DataPlugins for Timeout</a></p>
+</div>
+</div>
+
+---
+
+*Source: `DataPlugin/Objects/DataPlugin_Objects_IDocumentNamespace.htm`&nbsp;&middot;&nbsp;Python translated from VBS*

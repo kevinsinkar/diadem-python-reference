@@ -1,0 +1,60 @@
+---
+title: "DCSOBDOnboardDeviceControlRequest"
+description: "Executes the \"Request Control Of On-Board Device\". Specifies the behavior of the ECU-I/O ports."
+---
+
+# DCSOBDOnboardDeviceControlRequest
+
+!!! abstract "Command &middot; `ComOnl.chm`"
+    Command: DCSOBDOnboardDeviceControlRequest
+
+Executes the "Request Control Of On-Board Device". Specifies the behavior of the ECU-I/O ports.
+
+## Parameters
+
+<div markdown="1">
+<table class="Borderless">
+<tr><td width="150">DCSDiagRef</td>
+<td>Specifies the diagnostic handle in a vehicle.<div id="exp_DCSDiagRef">
+<table class="Borderless">
+<tr><td><a href="#" data-unresolved="1">Longinteger variable</a></td></tr>
+<tr>
+<td>Access: Read only</td></tr>
+</table>
+</div></td></tr>
+<tr><td width="150">DCSTestID</td>
+<td>Specifies the ID of the I/O port to be modified.<div id="exp_DCSTestID">
+<table class="Borderless">
+<tr><td><a href="#" data-unresolved="1">Longinteger variable</a></td></tr>
+<tr>
+<td>Access: Read only</td></tr>
+</table>
+</div></td></tr>
+<tr><td width="150">DCSData</td>
+<td>Specifies the user-defined date for a service.<div id="exp_DCSData">
+<table class="Borderless">
+<tr><td><a href="#" data-unresolved="1">Variant variable</a></td></tr>
+<tr>
+</tr>
+</table>
+</div></td></tr>
+</table>
+</div>
+
+## Returns
+
+<div markdown="1">
+<table class="Borderless"><tr><td width="150"><em>ReturnValue</em></td>
+<td>Specifies the user-defined date for a service. The return value is a DCSData type.<div id="exp_DCSData__1">
+<table class="Borderless">
+<tr><td><a href="#" data-unresolved="1">Variant variable</a></td></tr>
+<tr>
+</tr>
+</table>
+</div></td></tr>
+</table>
+</div>
+
+---
+
+*Source: `ComOnl/DCSOBDOnboardDeviceControlRequest.htm`*

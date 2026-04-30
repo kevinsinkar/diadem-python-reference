@@ -1,0 +1,51 @@
+---
+title: "ToActionObjCheckInt.Picture"
+description: "Specifies which graphic appears for the button that displays a status on the DIAdem interface. For DIAdem to display a graphic, the graphics file must contain a"
+---
+
+# ToActionObjCheckInt.Picture
+
+!!! abstract "Property &middot; `ToBarManagerInt.chm`"
+    Property: Picture for ActionObjCheckbutton
+
+Specifies which graphic appears for the button that displays a status on the DIAdem interface. For DIAdem to display a graphic, the graphics file must contain a symbol that is same size as the properties ActionObjPictureHeight and ActionObjPictureWidth of the bar that is to contain the symbol. DIAdem uses 16*16 pixels as the default symbol size for the toolbar and 32*32 pixels for the group bar.
+
+## Signature
+
+```python
+return_value = obj.Picture
+```
+
+## Notes
+
+<div markdown="1">
+<table class="Borderless" id="table1">
+<tr>
+<td class="Icon"><img height="25" src="../image/note.gif" width="26"/></td>
+<td><strong>Note  </strong>Specify the name of the ICO file without a path. DIAdem receives user-defined IOC files in the <a href="../tobarmanagerint-resourcepath/">Resource folder</a>. </td>
+</tr>
+</table>
+</div>
+
+## Python example
+
+```python
+oFloating = dd.BarManager.ActionObjs.Add("PtlFloatingOnOff", "CustomCheckButton")
+oFloating.Tooltip = "Floating Portal"
+oFloating.Picture  = "Portal.ico"
+oFloating.OnRefreshCode.Code = "this.Check = PtlFloating"
+oFloating.OnClickCode.Code = "PtlFloating = not this.Check"
+dd.BarManager.Bars("SCRMain").UsedActionObjs.Add(oFloating)
+```
+
+## See also
+
+<div markdown="1">
+<div class="SeeAlso"><h2>See Also</h2>
+<p class="body"><a href="#" data-unresolved="1">Objects Overview</a></p><h2>Examples</h2><p><a href="#" data-unresolved="1">Adding User-Defined Functions to the Group Bar</a> | <a href="#" data-unresolved="1">Creating and Saving a Work Session</a> | <a href="#" data-unresolved="1">Custom Toolbars on DIAdem Panels</a> | <a href="#" data-unresolved="1">Customized User Interface</a> | <a href="#" data-unresolved="1">Merge Bar Definitions</a> | <a href="#" data-unresolved="1">User-Defined Evaluations in DIAdem ANALYSIS</a> | <a href="#" data-unresolved="1">User-Defined Menus</a> | <a href="#" data-unresolved="1">Working with the Bar Manager</a></p>
+</div>
+</div>
+
+---
+
+*Source: `ToBarManagerInt/properties/DIABars_property_Picture_ToActionObjCheckInt.htm`*

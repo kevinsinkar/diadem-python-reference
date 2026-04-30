@@ -1,0 +1,23 @@
+---
+title: "ToStaticCtrlRt.variable"
+description: "Specifies which DIAdem variable links the control to DIAdem in user dialog boxes. Controls that are connected to DIAdem variables read their start values from t"
+---
+
+# ToStaticCtrlRt.variable
+
+!!! abstract "Property &middot; `Sudref.chm`"
+    Property: Variable for Text
+
+Specifies which DIAdem variable links the control to DIAdem in user dialog boxes. Controls that are connected to DIAdem variables read their start values from these variables or write their input values in the variables. In user dialog boxes, you also can use vector variables and matrix variables. Use the properties VariableColIndex and VariableRowIndex to access these variables. You only can use DIAdem variables in the variable properties for the controls. In the properties for a control, you only can insert the variables that are the same data type as the control. For example, the dialog editor does not display any Real type variables for ComboBoxes. Refer to the page on Variable Types for Controls for a list of the variable types that you can assign to the controls. You can enter new variables in the Properties tab in the Variable field or you can select a variable from the list. When you enter the variable, DIAdem automatically enters values for the type, storage type, dimensions, and reset behavior, for DIAdem variables. If DIAdem does not recognize the variables, DIAdem prompts you to enter the values. During the dialog box runtime, the variable must conform to the variable definition in DIAdem. Select Edit»Variables and open the DIAdem Variables dialog box to display the properties of the registered variable, to enter new variables, and to delete existing variables. You cannot link VBS variables from a calling DIAdem script to controls.
+
+## See also
+
+<div markdown="1">
+<div class="SeeAlso"><h2>See Also</h2>
+<p class="body"><a href="../../objects/tostaticctrlrt/">Text</a> | <a href="#" data-unresolved="1">Objects Overview</a></p><h2>Procedures</h2><p><a href="#" data-unresolved="1">Checking a User Dialog Box Entry</a> | <a href="#" data-unresolved="1">Creating a Dynamic User Dialog Box</a> | <a href="#" data-unresolved="1">Creating a Procedure in the Script of a User Dialog Box</a> | <a href="#" data-unresolved="1">Creating a User Dialog Box without Linking Variables</a> | <a href="#" data-unresolved="1">Creating an Extended Table</a> | <a href="#" data-unresolved="1">Displaying Graphics in Selection Lists</a> | <a href="#" data-unresolved="1">Enabling Controls</a> | <a href="#" data-unresolved="1">Responding to User Entries in User Dialog Boxes</a> | <a href="#" data-unresolved="1">Saving and Restoring the Last Dialog Box Position</a> | <a href="#" data-unresolved="1">Saving Control Groups for User Dialog Boxes</a> | <a href="#" data-unresolved="1">Specifying the Default Button</a> | <a href="#" data-unresolved="1">Tabulator Order in a User Dialog Box</a> | <a href="#" data-unresolved="1">Using a Script to Fill a Selection List</a> | <a href="#" data-unresolved="1">Using Channel Selection Lists</a> | <a href="#" data-unresolved="1">Using Hotkeys in a User Dialog Box</a> | <a href="#" data-unresolved="1">Using the Flex Properties</a></p><h2>Examples</h2><p><a href="#" data-unresolved="1">Checking Dialog Box Entries</a> | <a href="#" data-unresolved="1">Dynamic User Dialog Box</a> | <a href="#" data-unresolved="1">Translating User Dialog Boxes</a> | <a href="#" data-unresolved="1">User Dialog Box for Entering Text and Numbers</a> | <a href="#" data-unresolved="1">User Dialog Box for Sequence Control</a> | <a href="#" data-unresolved="1">User Dialog Box in DIAdem VIEW</a> | <a href="#" data-unresolved="1">User Dialog Box in VIEW for the Calculation of the FFT and Harmonic Frequencies</a> | <a href="#" data-unresolved="1">User Dialog Box with Changing Background Color</a> | <a href="#" data-unresolved="1">User Dialog Box with Curve Preview and Slider Control</a> | <a href="#" data-unresolved="1">User Dialog Box with Extended Table</a> | <a href="#" data-unresolved="1">User Dialog Box with Scalable Table</a> | <a href="#" data-unresolved="1">User Dialog Box with Selection Lists</a> | <a href="#" data-unresolved="1">User Dialog Box with Selection Lists</a> | <a href="#" data-unresolved="1">User Dialog Box with Subdialog Boxes</a> | <a href="#" data-unresolved="1">User Dialog Box with Tables</a> | <a href="#" data-unresolved="1">User Dialog Box with Tree</a> | <a href="#" data-unresolved="1">Wizard for Tolerance Evaluation</a></p>
+</div>
+</div>
+
+---
+
+*Source: `Sudref/properties/SUD_property_variable_ToStaticCtrlRt.htm`*

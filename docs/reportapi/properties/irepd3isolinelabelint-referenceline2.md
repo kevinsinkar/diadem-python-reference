@@ -1,0 +1,80 @@
+---
+title: "IRepD3IsolineLabelInt.ReferenceLine2"
+description: "Specifies the second reference line along which DIAdem REPORT displays the contour values of a characteristic diagram in a 3D axis system."
+---
+
+# IRepD3IsolineLabelInt.ReferenceLine2
+
+!!! abstract "Property &middot; `ReportApi.chm`"
+    Property: ReferenceLine2 for 3DIsolineLabel
+
+Specifies the second reference line along which DIAdem REPORT displays the contour values of a characteristic diagram in a 3D axis system.
+
+## Signature
+
+```python
+return_value = obj.ReferenceLine2
+```
+
+## Python example
+
+```python
+dd.Report.NewLayout()
+dd.Data.Root.Clear()
+dd.DataFileLoad(dd.DataReadPath + "Report_Data.tdm","TDM","")
+oMy3DAxisSystem = dd.Report.ActiveSheet.Objects.Add(dd.eReportObject3DAxisSystem,"My3DAxisSystem")
+oMyPos = oMy3DAxisSystem.Position.ByCoordinate
+oMyPos.X1 = 20
+oMyPos.X2 = 80
+oMyPos.Y1 = 20
+oMyPos.Y2 = 80
+oMy3DCurve = oMy3DAxisSystem.Curves3D.Add(dd.e3DShapeCharacteristicDiagram, "MyNew3DCurve")
+oMyShape = oMy3DCurve.Shape
+oMyShape.XChannel.Reference = "[2]/[1]"
+oMyShape.YChannel.Reference = "[2]/[2]"
+oMyShape.ZChannel.Reference = "[2]/[3]"
+oMyShape.DataStructure = dd.e3DDataStructureMatrix
+oMySettings = oMy3DAxisSystem.Settings
+oMySettings.RotationAngleXY = 90
+oMySettings.RotationAngleZ = 270
+oMyLabel = oMyShape.Extensions.Isoline.Label
+oMyLabel.Visible = True
+oMyLabel.ReferenceLineDefinition = dd.e3DLabelReferenceLineManual
+oMyLabel.RepetitionMode = dd.e3DLabelRepetitionPerTwoRefLines
+oMyLabel.Format = "d.dddd"
+oMyReferenceLine1 = oMyLabel.ReferenceLine1
+oMyReferenceLine1.X1 = 0.6
+oMyReferenceLine1.X2 = 1
+oMyReferenceLine1.Y1 = 0
+oMyReferenceLine1.Y2 = 0.6
+oMyReferenceLine2 = oMyLabel.ReferenceLine2
+oMyReferenceLine2.X1 = 0.6
+oMyReferenceLine2.X2 = 1
+oMyReferenceLine2.Y1 = 0.6
+oMyReferenceLine2.Y2 = 1
+iChannelMax = dd.Data.Root.ChannelGroups(2).Channels(3).Properties("maximum").Value
+iChannelMin = dd.Data.Root.ChannelGroups(2).Channels(3).Properties("minimum").Value
+oMyIsoValTable = oMyShape.Settings.IsoValueTable
+oMyIsoValTable.Count = 5
+oMy3DCurve.Shape.Extensions.Isoline.Type = dd.e3DCharacteristicIsoValueFromIsoValueTable
+oMy3DCurve.Shape.Extensions.Isoline.Color.ColorIndex = dd.eColorIndexPalette
+for i in range( 1, oMyIsoValTable.Count+1):
+    oMyIsoValTable.Item(i).Color.SetPredefinedColor(i)
+    oMyIsoValTable.Item(i).Interval = 20
+    oMyIsoValTable.Item(i).LineType = dd.eLineTypeDotted
+    oMyIsoValTable.Item(i).UpperLimit = iChannelMin + (iChannelMax - iChannelMin) / oMyIsoValTable.Count * i
+    oMyIsoValTable.Item(i).Width = dd.eLineWidth0050
+dd.Report.Refresh()
+```
+
+## See also
+
+<div markdown="1">
+<div class="SeeAlso"><h2>See Also</h2>
+<p><a href="#" data-unresolved="1">Objects Overview</a></p>
+</div>
+</div>
+
+---
+
+*Source: `ReportApi/properties/Report_property_ReferenceLine2_IRepD3IsolineLabelInt.htm`*

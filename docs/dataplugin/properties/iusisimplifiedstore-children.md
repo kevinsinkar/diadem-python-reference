@@ -1,0 +1,48 @@
+---
+title: "IUSISimplifiedStore.Children"
+description: "Contains the StoreElements collection associated with a Store object."
+---
+
+# IUSISimplifiedStore.Children
+
+!!! abstract "Property &middot; `DataPlugin.chm`"
+    Property: Children for Store
+
+Contains the StoreElements collection associated with a Store object.
+
+## Signature
+
+```python
+return_value = obj.Children
+```
+
+## Python example
+
+!!! warning "Machine-translated"
+    The original DIAdem topic did not include a Python tab; this
+    example was machine-translated from the VBScript source.
+
+```python
+def ReadStore(FromStore):
+    FindAndCreateGroups(FromStore.Children)
+
+def FindAndCreateGroups(StoreElements):
+    for StoreElement in StoreElements:
+        if StoreElement.IsKindOf(eStoreChannelGroup):
+            TDMGroup = Root.ChannelGroups.Add(StoreElement.Name)
+            TDMGroup.Properties.AddProperties(StoreElement.Properties)
+        else:
+            FindAndCreateGroups(StoreElement.Children)
+```
+
+## See also
+
+<div markdown="1">
+<div class="SeeAlso"><h2>See Also</h2>
+<p class="body"><a href="#" data-unresolved="1">Objects Overview</a></p>
+</div>
+</div>
+
+---
+
+*Source: `DataPlugin/Properties/DataPlugin_property_Children_IUSISimplifiedStore.htm`&nbsp;&middot;&nbsp;Python translated from VBS*

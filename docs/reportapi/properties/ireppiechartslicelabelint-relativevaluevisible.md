@@ -1,0 +1,51 @@
+---
+title: "IRepPieChartSliceLabelInt.RelativeValueVisible"
+description: "Specifies whether DIAdem REPORT displays the relative values in the slice labels of a pie chart."
+---
+
+# IRepPieChartSliceLabelInt.RelativeValueVisible
+
+!!! abstract "Property &middot; `ReportApi.chm`"
+    Property: RelativeValueVisible for PieChartSliceLabel
+
+Specifies whether DIAdem REPORT displays the relative values in the slice labels of a pie chart.
+
+## Signature
+
+```python
+obj.RelativeValueVisible
+```
+
+## Python example
+
+```python
+dd.Data.Root.Clear()
+dd.DataFileLoad(dd.DataReadPath + "Example.tdm","TDM","")
+dd.Report.NewLayout()
+oMyPieChart = dd.Report.ActiveSheet.Objects.Add(dd.eReportObjectPieChart, "MyPieChart")
+oMyPos = oMyPieChart.Position.ByCoordinate
+oMyPos.X1 = 20
+oMyPos.X2 = 80
+oMyPos.Y1 = 20
+oMyPos.Y2 = 80
+oMyCurvePieChart = oMyPieChart.CurvePieChart
+oMyCurvePieChart.Channel.Reference = "[5]/[4]"
+oMySliceLabel = oMyCurvePieChart.SliceLabel
+oMySliceLabel.PhysicalValueVisible = True
+oMySliceLabel.PhysicalValueFormat = "d.dd"
+oMySliceLabel.RelativeValueVisible = True
+oMySliceLabel.RelativeValueFormat = "d.dd"
+dd.Report.Refresh()
+```
+
+## See also
+
+<div markdown="1">
+<div class="SeeAlso"><h2>See Also</h2>
+<p><a href="#" data-unresolved="1">Objects Overview</a></p>
+</div>
+</div>
+
+---
+
+*Source: `ReportApi/properties/Report_property_RelativeValueVisible_IRepPieChartSliceLabelInt.htm`*

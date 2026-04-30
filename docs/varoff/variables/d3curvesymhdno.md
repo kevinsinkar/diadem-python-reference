@@ -1,0 +1,18 @@
+---
+title: "D3CurveSymHdNo"
+---
+
+# D3CurveSymHdNo
+
+!!! abstract "Variable &middot; `VarOff.chm`"
+    Variable: D3CurveSymHdNo (Obsolete)
+
+## Notes
+
+<div markdown="1">
+<table class="Borderless"><tr><td class="Icon"><img src="./image/note.gif"/></td><td><strong>Note </strong>This variable is obsolete. When DIAdem runs a <a href="#" data-unresolved="1">contour line calculation</a>, DIAdem saves the contour value in the <span class="Monospace">ResultIsovalue</span> channel property of the respective result channels.<br attr="ext"/>Use the example <a href="#" data-unresolved="1">Searching for Obsolete Commands and Variables</a> to search for outdated commands and variables in your scripts.</td></tr></table>
+</div>
+
+---
+
+*Source: `VarOff/D3CurveSymHdNo.htm`*
