@@ -15,15 +15,18 @@ a clearly marked callout.
 
 ## How DIAdem exposes itself
 
-DIAdem is a Windows **COM Automation server** with the registered ProgID
-`DIAdem.Application`. From any Windows process you can hand Windows that
+DIAdem is a Windows **COM Automation server**. On current DIAdem 2026
+installs the working ProgID is **`DIAdem.TOCmd`**. (The CHM-era documentation
+often shows `DIAdem.Application`; that ProgID is no longer registered on a
+fresh DIAdem 2026 install — `DIAdem.TOCmd` points at the same coclass and
+exposes the same surface.) From any Windows process you hand Windows the
 ProgID and Windows hands you back a connection to a (possibly hidden)
 running DIAdem instance. From Python this is one line via
 [`pywin32`](https://pypi.org/project/pywin32/):
 
 ```python
 import win32com.client
-dd = win32com.client.Dispatch("DIAdem.Application")
+dd = win32com.client.Dispatch("DIAdem.TOCmd")
 ```
 
 `dd` is now a remote control. Every attribute lookup is a COM call into
@@ -35,7 +38,7 @@ the running DIAdem process; results come back as native Python objects
 ```python
 import win32com.client
 
-dd = win32com.client.Dispatch("DIAdem.Application")
+dd = win32com.client.Dispatch("DIAdem.TOCmd")
 
 # Load a TDM file into the Data Portal
 elements = dd.DataFileLoad("C:/Data/Example.tdm")
@@ -56,7 +59,7 @@ dd.Quit()
 ## Conventions in this reference
 
 - **`dd`** is the conventional handle name for the Dispatch returned by
-  `Dispatch("DIAdem.Application")`.
+  `Dispatch("DIAdem.TOCmd")`.
 - **`obj`** in a method or property signature stands in for whatever
   interface object the method is called on (e.g. `obj.Add(...)` on an
   `IChannelGroups` collection).

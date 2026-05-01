@@ -4,13 +4,16 @@ title: "DIAdem Python Scripting Reference"
 
 # DIAdem Python Scripting Reference
 
-Consolidated from the **DIAdem 2026 Q2** (Edition April 2026) help bundle. 13,431 elements across 29 sources. Generated 2026-04-29 22:21 UTC.
+Consolidated from the **DIAdem 2026 Q2** (Edition April 2026) help bundle. 13,431 elements across 29 sources. Generated 2026-05-01 21:59 UTC.
 
 ## Getting started
 
 ```python
 import win32com.client
-dd = win32com.client.Dispatch("DIAdem.Application")
+# On current DIAdem 2026 installs the working ProgID is "DIAdem.TOCmd".
+# The CHM-era docs often show "DIAdem.Application"; that ProgID is no longer
+# registered on a fresh install. Use DIAdem.TOCmd.
+dd = win32com.client.Dispatch("DIAdem.TOCmd")
 result = dd.DataFileLoad("C:/Example.tdm")
 for ch_group in dd.Data.Root.ChannelGroups:
     print(ch_group.Name)
