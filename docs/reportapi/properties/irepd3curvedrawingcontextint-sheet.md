@@ -29,7 +29,7 @@ return_value = obj.Sheet
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Report.Events.OnDrawing3DAxisSystemCurve", "MyOn3DCurveDrawEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.OnDrawing3DAxisSystemCurve", "MyOn3DCurveDrawEvent")
 
 def MyOn3DCurveDrawEvent(Context, CurrCurve):
     oMyAxis = Context.AxisSystem

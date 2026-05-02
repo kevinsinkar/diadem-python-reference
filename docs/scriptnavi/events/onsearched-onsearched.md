@@ -34,7 +34,7 @@ obj.OnSearched
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Navigator.Events.OnSearched","MyOnSearched")
+dd.AddUserCommandToEvent("dd.Navigator.Events.OnSearched","MyOnSearched")
 
 def MyOnSearched():
     MsgBoxDisp("Searched!")

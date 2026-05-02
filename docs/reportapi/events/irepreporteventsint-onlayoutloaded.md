@@ -29,7 +29,7 @@ obj.OnLayoutLoaded
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Report.Events.OnLayoutLoaded", "MyOnLayoutLoadedEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.OnLayoutLoaded", "MyOnLayoutLoadedEvent")
 
 def MyOnLayoutLoadedEvent():
     if dd.Report.ActiveSheet.Objects.Exists("MyLoadText"):

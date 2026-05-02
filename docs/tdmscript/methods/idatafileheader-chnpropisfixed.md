@@ -19,7 +19,7 @@ bChnPropIsFixed = Object.ChnPropIsFixed(ChannelNumber, PropertyName)
 ## Python example
 
 ```python
-oMyDataFileHeader = DataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
+oMyDataFileHeader = dd.CreateDataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
 if oMyDataFileHeader.ChnPropIsFixed("[1]/[1]","Description") :
     print ("TDM Property")
 else:

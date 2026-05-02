@@ -24,7 +24,7 @@ sGetParentFolderName = Object.GetParentFolderName(Path)
 
 ```python
 def ParentName(sDriveSpec):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     ParentName = fso.GetParentFolderName(sDriveSpec)
 ```
 

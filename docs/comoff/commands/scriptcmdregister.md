@@ -59,7 +59,7 @@ dd.ScriptCMDRegister(ScriptCMDItemName, ScriptCMDTypeLibName, ScriptCMDInterface
 GlobalTestObject = new MyTestClass
 
 # Register typelib for test class
-ScriptCMDRegister("GlobalTestObject",ProgramDrv + "Examples\Documents\CMD_register.tlb", "TestTypelib.IMyTestClass")
+ScriptCMDRegister("GlobalTestObject",dd.ProgramDrv + "Examples\Documents\CMD_register.tlb", "TestTypelib.IMyTestClass")
 
 # VBS Class
 Class MyTestClass

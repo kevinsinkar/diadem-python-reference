@@ -19,7 +19,7 @@ obj.GroupMove(SourceGroupIndex, TargetGroupIndex)
 ## Python example
 
 ```python
-oMyDataFileHeader = DataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
+oMyDataFileHeader = dd.CreateDataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
 oMyDataFileHeader.GroupMove(1,2)
 oMyDataFileHeader.close(True)
 ```

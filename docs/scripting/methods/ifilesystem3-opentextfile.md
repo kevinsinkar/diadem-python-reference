@@ -26,7 +26,7 @@ return_value = obj.OpenTextFile(FileName, [IOMode], [Create], [Format])
 def ReadWriteAppend(sFile):
     ForReading = 1; ForWriting = 2; ForAppending = 8
     TristateUseDefault = -2; TristateTrue = -1; TristateFalse = 0
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     # Open the file for output
     oMyFile = fso.OpenTextFile(sFile, ForWriting, True)
     # Write to the file.

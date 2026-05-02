@@ -24,7 +24,7 @@ bDriveExists = Object.DriveExists(DriveSpec)
 
 ```python
 def DriveStatus(sDrv):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     if fso.DriveExists(sDrv):
         sOutput = ("Drive " + sDrv + " exists.")
     else:

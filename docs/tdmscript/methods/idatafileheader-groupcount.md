@@ -19,7 +19,7 @@ iGroupCount = Object.GroupCount
 ## Python example
 
 ```python
-oMyDataFileHeader = DataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
+oMyDataFileHeader = dd.CreateDataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
 oMyGroupCount = oMyDataFileHeader.GroupCount
 print (oMyGroupCount)
 ```

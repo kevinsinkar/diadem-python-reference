@@ -39,8 +39,8 @@ obj.ID
 
 ```python
 # --- For DIAdem-NAVIGATOR ------------------------------------------
-AddUserCommandToEvent("dd.Navigator.Events.OnShowingContextMenu", "MyOnShowingContextMenu")
-AddUserCommandToEvent("dd.Navigator.Events.OnContextMenuPointSelected","MyOnContextMenuPointSelected")
+dd.AddUserCommandToEvent("dd.Navigator.Events.OnShowingContextMenu", "MyOnShowingContextMenu")
+dd.AddUserCommandToEvent("dd.Navigator.Events.OnContextMenuPointSelected","MyOnContextMenuPointSelected")
 
 def MyNavigatorOnShowingContextMenu(ParentObj, MenuPoints):
     MenuPoints.RemoveAll
@@ -56,8 +56,8 @@ def MyNavigatorOnContextMenuPointSelected(ParentObj, MenuPoint):
     # case 2    MsgBoxDisp("DIAdem-NAVIGATOR: MyMenuPoint2 selected")
 
 # --- For DIAdem-VIEW ------------------------------------------
-AddUserCommandToEvent("dd.View.Events.OnShowingContextMenu", "MyViewOnShowingContextMenu")
-AddUserCommandToEvent("dd.View.Events.OnContextMenuPointSelected","MyViewOnContextMenuPointSelected")
+dd.AddUserCommandToEvent("dd.View.Events.OnShowingContextMenu", "MyViewOnShowingContextMenu")
+dd.AddUserCommandToEvent("dd.View.Events.OnContextMenuPointSelected","MyViewOnContextMenuPointSelected")
 
 def MyViewOnShowingContextMenu(Area, MenuPoints):
     MenuPoints.RemoveAll

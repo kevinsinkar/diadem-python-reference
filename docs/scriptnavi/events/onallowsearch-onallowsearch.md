@@ -34,7 +34,7 @@ obj.OnAllowSearch
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Navigator.Events.OnAllowSearch","MyOnAllowSearch")
+dd.AddUserCommandToEvent("dd.Navigator.Events.OnAllowSearch","MyOnAllowSearch")
 
 def MyOnAllowSearch(AllowSearch):
     if dd.Navigator.Display.CurrDataFinder.QueryForm.ReturnType == eSearchChannel:

@@ -29,7 +29,7 @@ return_value = obj.Sheet
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Report.Events.OnDrop2DTable", "MyOnDrop2DTableEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.OnDrop2DTable", "MyOnDrop2DTableEvent")
 
 def MyOnDrop2DTableEvent(Context, DropContext):
     sOutput = "Names of dropped channels:"

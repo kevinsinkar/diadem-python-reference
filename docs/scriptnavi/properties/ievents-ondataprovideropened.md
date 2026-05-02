@@ -29,8 +29,8 @@ obj.OnDataProviderOpened
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Navigator.Events.OnDataProviderOpened","MyOnDataProviderOpened")
-AddUserCommandToEvent("dd.Navigator.Events.OnDataProviderClosing","MyOnDataProviderClosing")
+dd.AddUserCommandToEvent("dd.Navigator.Events.OnDataProviderOpened","MyOnDataProviderOpened")
+dd.AddUserCommandToEvent("dd.Navigator.Events.OnDataProviderClosing","MyOnDataProviderClosing")
 
 def MyOnDataProviderOpened(CurrDataProvider):
     MsgBoxDisp("Opened dd.Data Provider: " + CurrDataProvider.Name)

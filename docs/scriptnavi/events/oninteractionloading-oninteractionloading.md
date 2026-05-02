@@ -34,8 +34,8 @@ dd.OnInteractionLoading
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Navigator.Events.OnInteractionLoading","MyInteractionLoading")
-AddUserCommandToEvent("dd.Navigator.Events.OnInteractionLoaded","MyInteractionLoaded")
+dd.AddUserCommandToEvent("dd.Navigator.Events.OnInteractionLoading","MyInteractionLoading")
+dd.AddUserCommandToEvent("dd.Navigator.Events.OnInteractionLoaded","MyInteractionLoaded")
 
 def MyInteractionLoading():
     # select MsgBoxDisp("Delete dd.Data Portal before loading new data?","MB_YESNO", None,2)

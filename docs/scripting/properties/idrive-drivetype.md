@@ -24,7 +24,7 @@ obj.DriveType
 
 ```python
 def CreateDriveTypeList():
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyDrives = fso.Drives
     for oMyDrive in oMyDrives:
         sOutput = sOutput + oMyDrive.DriveLetter + "\t"

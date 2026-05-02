@@ -19,7 +19,7 @@ vRootPropValGet = Object.RootPropValGet(PropertyName)
 ## Python example
 
 ```python
-oMyDataFileHeader = DataFileHeaderAccess(dd.DataLibrPath + "Example.tdm","TDM",False)
+oMyDataFileHeader = dd.CreateDataFileHeaderAccess(dd.DataLibrPath + "Example.tdm","TDM",False)
 oMyRootPropVal = oMyDataFileHeader.RootPropValGet("Description")
 print (oMyRootPropVal)
 ```

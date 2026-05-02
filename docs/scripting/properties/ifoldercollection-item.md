@@ -23,8 +23,8 @@ return_value = obj.Item(Key)
     example was machine-translated from the VBScript source.
 
 ```python
-fso = CreateObject("Scripting.FileSystemObject")
-oMyFolder = fso.GetFolder(ProgramDrv)
+fso = win32com.client.Dispatch("Scripting.FileSystemObject")
+oMyFolder = fso.GetFolder(dd.ProgramDrv)
 oMySubFolders = oMyFolder.SubFolders
 dd.MsgBox(oMySubFolders.Item("Resource").Size)
 ```

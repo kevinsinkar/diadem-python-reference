@@ -19,7 +19,7 @@ sChnPropNameGet = Object.ChnPropNameGet(ChannelNumber, ChnPropIndex)
 ## Python example
 
 ```python
-oMyDataFileHeader = DataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
+oMyDataFileHeader = dd.CreateDataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
 oMyChnPropName = oMyDataFileHeader.ChnPropNameGet("1/1",2)
 print (oMyChnPropName)
 ```

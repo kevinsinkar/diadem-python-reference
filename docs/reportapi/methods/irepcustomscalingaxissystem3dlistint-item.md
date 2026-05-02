@@ -71,7 +71,7 @@ def MyCustomScalingEvent3D(Context):
     oMyAxis = oMyAxisSystem.AxisList.Z
     # case else
     return
-MinMax = ValMax(Abs(oMyAxis.Scaling.End),Abs(oMyAxis.Scaling.Begin))
+MinMax = dd.ValMax(Abs(oMyAxis.Scaling.End),Abs(oMyAxis.Scaling.Begin))
 oMyAxis.Scaling.Origin = oMyAxis.Scaling.Begin
 oMyAxis.Scaling.Begin = -MinMax
 oMyAxis.Scaling.End = +MinMax

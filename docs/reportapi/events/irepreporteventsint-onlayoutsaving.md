@@ -29,7 +29,7 @@ obj.OnLayoutSaving
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Report.Events.OnLayoutSaving", "MyOnLayoutSavingEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.OnLayoutSaving", "MyOnLayoutSavingEvent")
 
 def MyOnLayoutSavingEvent(sLayout):
     if dd.Report.ActiveSheet.Objects.Exists("MyLoadText"):

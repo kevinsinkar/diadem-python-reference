@@ -24,7 +24,7 @@ return_value = obj.GetSpecialFolder(SpecialFolder)
 
 ```python
 def CreateTempFile():
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     TemporaryFolder = 2
     oMyTempFolder = fso.GetSpecialFolder(TemporaryFolder)
     sTempName = fso.GetTempName

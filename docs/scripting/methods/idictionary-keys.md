@@ -23,7 +23,7 @@ vKeys = Object.Keys
     example was machine-translated from the VBScript source.
 
 ```python
-MyDic = CreateObject("Scripting.Dictionary")
+MyDic = win32com.client.Dispatch("Scripting.Dictionary")
 MyDic.Add ("a", "Austin")
 MyDic.Add ("b", "Berlin")
 MyDic.Add ("c", "Chicago")

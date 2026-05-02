@@ -34,8 +34,8 @@ obj.Tag
 
 ```python
 # --- For DIAdem-NAVIGATOR ------------------------------------------
-AddUserCommandToEvent("dd.Navigator.Events.OnShowingContextMenu", "MyNavigatorOnShowingContextMenu")
-AddUserCommandToEvent("dd.Navigator.Events.OnContextMenuPointSelected","MyNavigatorOnContextMenuPointSelected")
+dd.AddUserCommandToEvent("dd.Navigator.Events.OnShowingContextMenu", "MyNavigatorOnShowingContextMenu")
+dd.AddUserCommandToEvent("dd.Navigator.Events.OnContextMenuPointSelected","MyNavigatorOnContextMenuPointSelected")
 
 def MyNavigatorSub():
     MsgBoxDisp("MySub was selected")
@@ -48,8 +48,8 @@ def MyNavigatorOnContextMenuPointSelected(ParentObj, MenuPoint):
     Execute MenuPoint.Tag
 
 # --- For DIAdem-VIEW ------------------------------------------
-AddUserCommandToEvent("dd.View.Events.OnShowingContextMenu", "MyViewOnShowingContextMenu")
-AddUserCommandToEvent("dd.View.Events.OnContextMenuPointSelected","MyViewOnContextMenuPointSelected")
+dd.AddUserCommandToEvent("dd.View.Events.OnShowingContextMenu", "MyViewOnShowingContextMenu")
+dd.AddUserCommandToEvent("dd.View.Events.OnContextMenuPointSelected","MyViewOnContextMenuPointSelected")
 
 def MyViewSub():
     MsgBoxDisp("MySub was selected")

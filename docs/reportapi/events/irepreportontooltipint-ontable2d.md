@@ -42,7 +42,7 @@ oMyColumn.Settings.Alignment = eTableAlignmentDecimalPoint
 oMyColumn.Settings.Format = "d.dddd"
 
 # This event will be raised if the mouse is moved AND the shift key pressed
-AddUserCommandToEvent("dd.Report.Events.ToolTip.OnTable2D", "MyToolTipEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.ToolTip.OnTable2D", "MyToolTipEvent")
 dd.Report.Refresh()
 ```
 

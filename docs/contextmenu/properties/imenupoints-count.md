@@ -34,7 +34,7 @@ obj.Count
 
 ```python
 # --- For DIAdem-NAVIGATOR ------------------------------------------
-AddUserCommandToEvent("dd.Navigator.Events.OnShowingContextMenu","MyNavigatorOnShowingContextMenu")
+dd.AddUserCommandToEvent("dd.Navigator.Events.OnShowingContextMenu","MyNavigatorOnShowingContextMenu")
 
 def MyNavigatorOnShowingContextMenu(ParentObj, MenuPoints):
     for Index in range(1, MenuPoints.Count + 1):
@@ -42,7 +42,7 @@ def MyNavigatorOnShowingContextMenu(ParentObj, MenuPoints):
         oMenuPoint.Enable(FALSE)
 
 # --- For DIAdem-VIEW ------------------------------------------
-AddUserCommandToEvent("dd.View.Events.OnShowingContextMenu","MyViewOnShowingContextMenu")
+dd.AddUserCommandToEvent("dd.View.Events.OnShowingContextMenu","MyViewOnShowingContextMenu")
 
 def MyViewOnShowingContextMenu(Area, MenuPoints):
     for Index in range(1, MenuPoints.Count + 1):

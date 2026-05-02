@@ -29,7 +29,7 @@ obj.DoProceed
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Report.Events.OnDrop3DTable", "MyOnDrop3DTableEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.OnDrop3DTable", "MyOnDrop3DTableEvent")
 
 def MyOnDrop3DTableEvent(Context, DropContext):
     sOutput = "Names of dropped channels:"

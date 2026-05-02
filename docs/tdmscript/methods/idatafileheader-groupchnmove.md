@@ -19,7 +19,7 @@ obj.GroupChnMove(SourceChn, TargetChnIndex)
 ## Python example
 
 ```python
-oMyDataFileHeader = DataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
+oMyDataFileHeader = dd.CreateDataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
 oMyDataFileHeader.GroupChnMove("2/1",3)
 oMyDataFileHeader.close(True)
 ```

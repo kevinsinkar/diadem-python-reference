@@ -29,7 +29,7 @@ obj.OnTable3D
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Report.Events.Drop.OnTable3D", "MyOnDrop3DTableEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.Drop.OnTable3D", "MyOnDrop3DTableEvent")
 
 def MyOnDrop3DTableEvent(Context, DropContext):
     sOutput = "Names of dropped channels:"

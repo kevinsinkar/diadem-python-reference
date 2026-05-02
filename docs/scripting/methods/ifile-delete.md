@@ -24,7 +24,7 @@ obj.Delete([Force])
 
 ```python
 def DeleteMyFile(sFile,bForce):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyFile = fso.GetFile(sFile)
     oMyFile.Delete(bForce)
 ```

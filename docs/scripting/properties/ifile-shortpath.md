@@ -24,7 +24,7 @@ obj.ShortPath
 
 ```python
 def FileShortPath(sFile):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyFile = fso.GetFile(sFile)
     FileShortPath = "Shortpath: " + oMyFile.ShortPath
 ```

@@ -24,7 +24,7 @@ sGetExtensionName = Object.GetExtensionName(Path)
 
 ```python
 def GetExtension(sDrive):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     GetExtension = fso.GetExtensionName(sDrive)
 ```
 

@@ -38,7 +38,7 @@ oMyCircle.Position.ByCoordinate.Y1 = 50
 oMyCircle.Position.ByCoordinate.Y2 = 80
 
 # This event will be raised if the mouse is moved AND the shift key pressed
-AddUserCommandToEvent("dd.Report.Events.ToolTip.OnCircle", "MyToolTipEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.ToolTip.OnCircle", "MyToolTipEvent")
 dd.Report.Refresh()
 ```
 

@@ -24,7 +24,7 @@ return_value = obj.GetFolder(FolderPath)
 
 ```python
 def GetFolderObject(sFolder):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     GetFolderObject = fso.GetFolder(sFolder)
 ```
 

@@ -25,7 +25,7 @@ obj.CompareMode
 ```python
 BinaryCompare = 0
 TextCompare = 1
-MyDic = CreateObject("Scripting.Dictionary")
+MyDic = win32com.client.Dispatch("Scripting.Dictionary")
 MyDic.CompareMode = BinaryCompare
 MyDic.Add ("a", "Austin")
 MyDic.Add ("A", "Aachen")

@@ -24,7 +24,7 @@ obj.Attributes
 
 ```python
 def MakeWritable(sFile):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyFile = fso.GetFile(sFile)
     if oMyFile.Attributes and 1:
         oMyFile.Attributes = oMyFile.Attributes - 1

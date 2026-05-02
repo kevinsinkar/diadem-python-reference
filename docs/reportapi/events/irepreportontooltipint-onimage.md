@@ -40,7 +40,7 @@ oMyImage.FileName = MediaLibrPath + "Example1.png"
 oMyImage.BackgroundColor.SetPredefinedColor(eColorIndexNone)
 
 # This event will be raised if the mouse is moved AND the shift key pressed
-AddUserCommandToEvent("dd.Report.Events.ToolTip.OnImage", "MyToolTipEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.ToolTip.OnImage", "MyToolTipEvent")
 dd.Report.Refresh()
 ```
 

@@ -40,7 +40,7 @@ oMy3DCurve.Shape.ZChannel.Reference = "[2]/[3]"
 oMy3DCurve.Shape.DataStructure = e3DDataStructureMatrix
 
 # This event will be raised if the mouse is moved AND the shift key pressed
-AddUserCommandToEvent("dd.Report.Events.ToolTip.OnAxisSystem3D", "MyToolTipEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.ToolTip.OnAxisSystem3D", "MyToolTipEvent")
 dd.Report.Refresh()
 ```
 

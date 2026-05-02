@@ -24,7 +24,7 @@ obj.ShortName
 
 ```python
 def FileShortName(sFile):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyFile = fso.GetFile(sFile)
     FileShortName = "Shortname: " + oMyFile.ShortName
 ```

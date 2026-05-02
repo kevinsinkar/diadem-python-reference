@@ -24,7 +24,7 @@ obj.ShortName
 
 ```python
 def FolderShortName(sFolder):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyFolder = fso.GetFolder(sFolder)
     FolderShortName = "Shortname: " + oMyFolder.ShortName
 ```

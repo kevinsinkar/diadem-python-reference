@@ -13,7 +13,7 @@ The DataFileHeader object provides methods, which you can use to read, write, mo
 ## Python example
 
 ```python
-oMyDataFileHeader = DataFileHeaderAccess(dd.DataLibrPath + "Example.tdm","TDM",False)
+oMyDataFileHeader = dd.CreateDataFileHeaderAccess(dd.DataLibrPath + "Example.tdm","TDM",False)
 ```
 
 ## Members

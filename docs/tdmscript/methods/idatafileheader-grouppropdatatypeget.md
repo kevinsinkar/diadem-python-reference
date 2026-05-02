@@ -19,7 +19,7 @@ iGroupPropDataTypeGet = Object.GroupPropDataTypeGet(GroupIndex, PropertyName)
 ## Python example
 
 ```python
-oMyDataFileHeader = DataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
+oMyDataFileHeader = dd.CreateDataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
 oMyGroupPropDataType = oMyDataFileHeader.GroupPropDataTypeGet(1,"Description")
 print (oMyGroupPropDataType)
 ```

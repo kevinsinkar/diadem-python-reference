@@ -38,8 +38,8 @@ obj.OnContextMenuPointSelected(MenuPoint)
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Report.Events.OnShowingContextMenu", "MyOnShowingContextMenu")
-AddUserCommandToEvent("dd.Report.Events.OnContextMenuPointSelected","MyOnContextMenuPointSelected")
+dd.AddUserCommandToEvent("dd.Report.Events.OnShowingContextMenu", "MyOnShowingContextMenu")
+dd.AddUserCommandToEvent("dd.Report.Events.OnContextMenuPointSelected","MyOnContextMenuPointSelected")
 
 def MyOnShowingContextMenu(oMenuPoints):
     if dd.Report.SelectedObjects.Count > 0:

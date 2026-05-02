@@ -24,7 +24,7 @@ obj.Path
 
 ```python
 def FolderPath(sFolder):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyFolder = fso.GetFolder(sFolder)
     FolderPath = "Path: " + oMyFolder.Path
 ```

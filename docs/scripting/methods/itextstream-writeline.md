@@ -24,7 +24,7 @@ obj.WriteLine([Text])
 
 ```python
 def CreateTxtFile(sFile,sText):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyFile = fso.CreateTextFile(sFile, True)
     oMyFile.WriteLine(sText)
     oMyFile.Close

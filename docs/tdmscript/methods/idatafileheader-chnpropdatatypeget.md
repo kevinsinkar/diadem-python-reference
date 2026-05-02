@@ -19,7 +19,7 @@ iChnPropDataTypeGet = Object.ChnPropDataTypeGet(ChannelNumber, PropertyName)
 ## Python example
 
 ```python
-oMyDataFileHeader = DataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
+oMyDataFileHeader = dd.CreateDataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
 oMyChnPropDataType = oMyDataFileHeader.ChnPropDataTypeGet("[1]/[1]","Description")
 print (oMyChnPropDataType)
 ```

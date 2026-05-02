@@ -45,7 +45,7 @@ oMy2DCurve.Shape.XChannel.Reference = "[6]/[1]"
 oMy2DCurve.Shape.YChannel.Reference = "[6]/[4]"
 
 # This event will be raised if the mouse is moved AND the shift key pressed
-AddUserCommandToEvent("dd.Report.Events.ToolTip.OnAxisSystem2D", "MyToolTipEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.ToolTip.OnAxisSystem2D", "MyToolTipEvent")
 dd.Report.Refresh()
 ```
 

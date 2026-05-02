@@ -24,7 +24,7 @@ obj.Type
 
 ```python
 def ShowFileType(sFile):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyFile = fso.GetFile(sFile)
     ShowFileType = oMyFile.Type
 ```

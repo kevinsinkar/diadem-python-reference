@@ -24,7 +24,7 @@ return_value = obj.Files
 
 ```python
 def CountFiles(folderspec):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyFolder = fso.GetFolder(folderspec)
     oMyFiles = oMyFolder.Files
     CountFiles = "Number of Files: " + oMyFiles.Count

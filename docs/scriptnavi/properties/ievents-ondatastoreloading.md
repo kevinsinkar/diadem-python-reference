@@ -29,7 +29,7 @@ obj.OnDataStoreLoading
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Navigator.Events.OnDataStoreLoading","MyOnDataStoreLoading")
+dd.AddUserCommandToEvent("dd.Navigator.Events.OnDataStoreLoading","MyOnDataStoreLoading")
 
 def MyOnDataStoreLoading(NaviLoadControl, ElementListOrABS, ImportAction):
     if (ElementListOrABS is not None):

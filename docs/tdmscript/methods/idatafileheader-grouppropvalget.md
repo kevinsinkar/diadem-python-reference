@@ -19,7 +19,7 @@ vGroupPropValGet = Object.GroupPropValGet(GroupIndex, PropertyName)
 ## Python example
 
 ```python
-oMyDataFileHeader = DataFileHeaderAccess(dd.DataLibrPath + "Example.tdm","TDM",False)
+oMyDataFileHeader = dd.CreateDataFileHeaderAccess(dd.DataLibrPath + "Example.tdm","TDM",False)
 oMyGroupPropVal = oMyDataFileHeader.GroupPropValGet(1, "Description")
 print (oMyGroupPropVal)
 ```

@@ -29,7 +29,7 @@ obj.OnFinalizeSheetRefresh
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Report.Events.OnFinalizeSheetRefresh", "MyOnFinalizeSheetRefresh")
+dd.AddUserCommandToEvent("dd.Report.Events.OnFinalizeSheetRefresh", "MyOnFinalizeSheetRefresh")
 
 def MyOnFinalizeSheetRefresh(Sheet):
     dd.MsgBox("Sheet: " + Sheet.Name + "\t" + "Number of objects: " + Sheet.Objects.Count)

@@ -30,7 +30,7 @@ obj.Move(Destination)
 
 ```python
 def MoveFiles(sSource,sTarget):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyFolder = fso.GetFolder(sSource)
     oMyFiles = oMyFolder.Files
     for oMyFile in oMyFiles:

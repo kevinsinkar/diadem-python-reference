@@ -38,8 +38,8 @@ obj.OnContextMenuPointSelected
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.View.Events.OnShowingContextMenu", "MyOnShowingContextMenu")
-AddUserCommandToEvent("dd.View.Events.OnContextMenuPointSelected","MyOnContextMenuPointSelected")
+dd.AddUserCommandToEvent("dd.View.Events.OnShowingContextMenu", "MyOnShowingContextMenu")
+dd.AddUserCommandToEvent("dd.View.Events.OnContextMenuPointSelected","MyOnContextMenuPointSelected")
 
 def MyOnShowingContextMenu(oArea, oMenuPoints):
     oMenuPoints.RemoveAll

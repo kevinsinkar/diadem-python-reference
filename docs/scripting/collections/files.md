@@ -18,7 +18,7 @@ Collection of all File objects. You can use the Files collection to count files 
 
 ```python
 def CreateFileList(sFolder):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyFolder = fso.GetFolder(sFolder)
     oMyFiles = oMyFolder.Files
     for oMyFile in oMyFiles:

@@ -30,7 +30,7 @@ obj.MoveFile(Source, Destination)
 
 ```python
 def MoveFiles(sSource,sTarget):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     fso.MoveFile(sSource,sTarget)
 MoveFiles("C:\Examples\Documents\*.tdr", "c:\Temp")
 ```

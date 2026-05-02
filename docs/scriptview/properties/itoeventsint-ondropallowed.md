@@ -38,8 +38,8 @@ obj.OnDropAllowed
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.View.Events.OnDropAllowed", "MyOnDropAllowed")
-AddUserCommandToEvent("dd.View.Events.OnDrop", "MyOnDrop")
+dd.AddUserCommandToEvent("dd.View.Events.OnDropAllowed", "MyOnDropAllowed")
+dd.AddUserCommandToEvent("dd.View.Events.OnDrop", "MyOnDrop")
 
 def MyOnDropAllowed(oContext, oDropInformation, DropEffect):
     oMyElem = oDropInformation.DiademElements

@@ -23,7 +23,7 @@ The D3AxisSystemDropContext object provides information about the 3D axis system
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Report.Events.OnDrop3DAxisSystem", "MyOnDrop3DEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.OnDrop3DAxisSystem", "MyOnDrop3DEvent")
 
 def MyOnDrop3DEvent(Context,DropContext):
     sOutput = "Names of dropped channels:"

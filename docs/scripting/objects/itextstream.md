@@ -17,7 +17,7 @@ The TextStream object enables access to a file.
     example was machine-translated from the VBScript source.
 
 ```python
-fso = CreateObject("Scripting.FileSystemObject")
+fso = win32com.client.Dispatch("Scripting.FileSystemObject")
 MyFile= fso.CreateTextFile(ScriptWritePath + "\testfile.txt", True)
 MyFile.WriteLine("This is the first line")
 MyFile.Close

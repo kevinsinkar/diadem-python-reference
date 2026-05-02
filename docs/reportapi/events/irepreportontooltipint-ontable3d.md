@@ -54,7 +54,7 @@ oMyZ.Font.Size = 2
 oMyZ.Format = "d.dd"
 
 # This event will be raised if the mouse is moved AND the shift key pressed
-AddUserCommandToEvent("dd.Report.Events.ToolTip.OnTable3D", "MyToolTipEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.ToolTip.OnTable3D", "MyToolTipEvent")
 dd.Report.Refresh()
 ```
 

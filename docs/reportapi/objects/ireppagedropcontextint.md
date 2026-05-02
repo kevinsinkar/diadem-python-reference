@@ -23,7 +23,7 @@ The PageDropContext object provides information about the page onto which you dr
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Report.Events.OnDropPage", "MyOnDropPageEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.OnDropPage", "MyOnDropPageEvent")
 
 def MyOnDropPageEvent(Context, DropContext):
     sOutput = "Names of dropped elements:"

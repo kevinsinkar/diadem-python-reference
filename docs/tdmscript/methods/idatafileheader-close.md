@@ -19,7 +19,7 @@ obj.Close(WriteChanges)
 ## Python example
 
 ```python
-oMyDataFileHeader = DataFileHeaderAccess(dd.DataLibrPath + "Example.tdm","TDM",False)
+oMyDataFileHeader = dd.CreateDataFileHeaderAccess(dd.DataLibrPath + "Example.tdm","TDM",False)
 oMyDataFileHeader.ChnPropValSet("[1]/1","Description","Test")
 oMyDataFileHeader.close(True)
 ```

@@ -44,8 +44,8 @@ def MyOnContextMenuPointSelected(oArea, oMenuPoint):
     # case 2
     MsgBoxDisp("MyMenuPoint2 selected")
 
-AddUserCommandToEvent("dd.View.Events.OnShowingContextMenu", "MyOnShowingContextMenu")
-AddUserCommandToEvent("dd.View.Events.OnContextMenuPointSelected","MyOnContextMenuPointSelected")
+dd.AddUserCommandToEvent("dd.View.Events.OnShowingContextMenu", "MyOnShowingContextMenu")
+dd.AddUserCommandToEvent("dd.View.Events.OnContextMenuPointSelected","MyOnContextMenuPointSelected")
 ```
 
 ## Members

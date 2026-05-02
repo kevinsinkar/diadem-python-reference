@@ -30,9 +30,9 @@ obj.CopyFile(Source, Destination, [OverWriteFiles])
 
 ```python
 def CopyMyFile(sSource,sTarget,bOverwrite):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     fso.CopyFile(sSource,sTarget,bOverwrite)
-CopyMyFile(ProgramDrv + "Examples\Documents\*.tdr", "c:\Temp",True)
+CopyMyFile(dd.ProgramDrv + "Examples\Documents\*.tdr", "c:\Temp",True)
 ```
 
 ## See also

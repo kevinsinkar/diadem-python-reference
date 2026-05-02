@@ -25,7 +25,7 @@ sReadAll = Object.ReadAll
 ```python
 def ReadFile(sFile):
     ForReading = 1
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyFile = fso.OpenTextFile(sFile, ForReading, False)
     ReadFile = oMyFile.ReadAll
     oMyFile.Close

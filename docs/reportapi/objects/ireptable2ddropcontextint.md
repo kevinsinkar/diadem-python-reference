@@ -23,7 +23,7 @@ The 2DTableDropContext object provides information about the 2D axis system onto
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Report.Events.OnDrop2DTable", "MyOnDrop2DTableEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.OnDrop2DTable", "MyOnDrop2DTableEvent")
 
 def MyOnDrop2DTableEvent(Context, DropContext):
     sOutput = "Names of dropped channels:"

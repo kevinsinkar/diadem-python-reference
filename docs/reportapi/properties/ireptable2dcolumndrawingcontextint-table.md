@@ -29,7 +29,7 @@ return_value = obj.Table
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Report.Events.OnDrawing2DTableColumn", "MyOnDrawing2DTableColumn")
+dd.AddUserCommandToEvent("dd.Report.Events.OnDrawing2DTableColumn", "MyOnDrawing2DTableColumn")
 
 def MyOnDrawing2DTableColumn(Context, Column):
     oMyTable = Context.Table

@@ -19,7 +19,7 @@ bRootPropExist = Object.RootPropExist(PropertyName)
 ## Python example
 
 ```python
-oMyDataFileHeader = DataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
+oMyDataFileHeader = dd.CreateDataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
 if oMyDataFileHeader.RootPropExist("Test") :
     print ("Exists")
 else:

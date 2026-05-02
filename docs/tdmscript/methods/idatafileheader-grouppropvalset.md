@@ -19,7 +19,7 @@ obj.GroupPropValSet(GroupIndex, PropertyName, PropertyValue)
 ## Python example
 
 ```python
-oMyDataFileHeader = DataFileHeaderAccess(dd.DataLibrPath + "Example.tdm","TDM",False)
+oMyDataFileHeader = dd.CreateDataFileHeaderAccess(dd.DataLibrPath + "Example.tdm","TDM",False)
 oMyDataFileHeader.GroupPropValSet(1,"Description","Test")
 oMyDataFileHeader.close(True)
 ```

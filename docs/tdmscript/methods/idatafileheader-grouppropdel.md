@@ -19,7 +19,7 @@ obj.GroupPropDel(GroupIndex, PropertyName)
 ## Python example
 
 ```python
-oMyDataFileHeader = DataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
+oMyDataFileHeader = dd.CreateDataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
 oMyDataFileHeader.GroupPropDel(1,"Test1")
 oMyDataFileHeader.close(True)
 ```

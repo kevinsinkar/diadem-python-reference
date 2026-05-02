@@ -24,7 +24,7 @@ sGetFileVersion = Object.GetFileVersion(FileName)
 
 ```python
 def FileVersion(sFile):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     FileVersion = fso.GetFileVersion(sFile)
 ```
 

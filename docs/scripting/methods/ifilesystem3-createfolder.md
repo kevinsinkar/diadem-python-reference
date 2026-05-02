@@ -24,7 +24,7 @@ return_value = obj.CreateFolder(Path)
 
 ```python
 def CreateFolderObject(sFolder):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     CreateFolderObject = fso.CreateFolder(sFolder)
 ```
 

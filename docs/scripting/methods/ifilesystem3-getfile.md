@@ -24,7 +24,7 @@ return_value = obj.GetFile(FilePath)
 
 ```python
 def GetFileObject(sFile):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     GetFileObject = fso.GetFile(sFile)
 ```
 

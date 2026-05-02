@@ -34,7 +34,7 @@ return_value = obj.MenuPoints
 
 ```python
 # --- For DIAdem-NAVIGATOR ------------------------------------------
-AddUserCommandToEvent("dd.Navigator.Events.OnShowingContextMenu","MyNavigatorOnShowingContextMenu")
+dd.AddUserCommandToEvent("dd.Navigator.Events.OnShowingContextMenu","MyNavigatorOnShowingContextMenu")
 
 def MyNavigatorOnShowingContextMenu(ParentObj, MenuPoints):
     MenuPoints.RemoveAll()
@@ -44,7 +44,7 @@ def MyNavigatorOnShowingContextMenu(ParentObj, MenuPoints):
     MyMenuPoint.MenuPoints.Add("SubMenuPoint2", 4)
 
 # --- For DIAdem-VIEW ------------------------------------------
-AddUserCommandToEvent("dd.View.Events.OnShowingContextMenu","MyViewOnShowingContextMenu")
+dd.AddUserCommandToEvent("dd.View.Events.OnShowingContextMenu","MyViewOnShowingContextMenu")
 
 def MyViewOnShowingContextMenu(Area, MenuPoints):
     MenuPoints.RemoveAll()

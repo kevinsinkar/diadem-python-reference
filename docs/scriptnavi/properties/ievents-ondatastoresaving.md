@@ -29,7 +29,7 @@ obj.OnDataStoreSaving
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Navigator.Events.OnDataStoreSaving","MyOnDataStoreSaving")
+dd.AddUserCommandToEvent("dd.Navigator.Events.OnDataStoreSaving","MyOnDataStoreSaving")
 
 def MyOnDataStoreSaving():
     MsgBoxDisp("dd.Data will be saved")

@@ -24,7 +24,7 @@ obj.IsRootFolder
 
 ```python
 def CountLevelDepth(sPath):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyFolder = fso.GetFolder(sPath)
     iCount = 0
     while not oMyFolder.IsRootFolder:

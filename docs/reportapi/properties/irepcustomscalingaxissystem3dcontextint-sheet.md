@@ -63,7 +63,7 @@ def MyCustomScalingEvent3D(Context):
     oMySheet = Context.Sheet
     if Context.AxisType == e3DAxisTypeY:
         oMyAxis = oMyAxisSystem.AxisList.Y
-        MinMax = ValMax(Abs(oMyAxis.Scaling.End),Abs(oMyAxis.Scaling.Begin))
+        MinMax = dd.ValMax(Abs(oMyAxis.Scaling.End),Abs(oMyAxis.Scaling.Begin))
         oMyAxis.Scaling.Origin = oMyAxis.Scaling.Begin
     if oMySheet.Index == 1:
         if Context.AxisType == e3DAxisTypeY:

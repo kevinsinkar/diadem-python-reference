@@ -50,7 +50,7 @@ oMy2DCurve.Shape.XChannel.Reference = "[6]/[1]"
 oMy2DCurve.Shape.YChannel.Reference = "[6]/[4]"
 
 # This event will be raised if you click a 2D axis system while you press a keyboard key
-AddUserCommandToEvent("dd.Report.Events.ClickedWithKey.OnAxisSystem2D", "MyClickEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.ClickedWithKey.OnAxisSystem2D", "MyClickEvent")
 dd.Report.Refresh()
 ```
 

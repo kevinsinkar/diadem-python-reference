@@ -35,7 +35,7 @@ obj.OnLoaded
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Navigator.Events.OnLoaded","MyOnLoaded")
+dd.AddUserCommandToEvent("dd.Navigator.Events.OnLoaded","MyOnLoaded")
 
 def MyOnLoaded():
     Txt = ""

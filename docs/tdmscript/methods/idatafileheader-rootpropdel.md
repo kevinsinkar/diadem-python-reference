@@ -19,7 +19,7 @@ obj.RootPropDel(PropertyName)
 ## Python example
 
 ```python
-oMyDataFileHeader = DataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
+oMyDataFileHeader = dd.CreateDataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
 oMyDataFileHeader.RootPropDel("test")
 oMyDataFileHeader.close(True)
 ```

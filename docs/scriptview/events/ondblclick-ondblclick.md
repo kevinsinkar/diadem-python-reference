@@ -38,7 +38,7 @@ obj.OnDblClick
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.View.Events.OnDblClick", "MyOnDblClick")
+dd.AddUserCommandToEvent("dd.View.Events.OnDblClick", "MyOnDblClick")
 
 def MyOnDblClick(oArea, bProceed):
     dd.MsgBox("DblClick: " + oArea.DisplayObjType)

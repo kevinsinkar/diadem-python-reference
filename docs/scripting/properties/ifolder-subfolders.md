@@ -24,7 +24,7 @@ return_value = obj.SubFolders
 
 ```python
 def CountFolders(sFolderSpec):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyFolder = fso.GetFolder(sFolderSpec)
     oMySubFolders = oMyFolder.SubFolders
     CountFolders = "Number of folders: " + oMySubFolders.Count

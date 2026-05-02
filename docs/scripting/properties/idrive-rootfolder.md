@@ -24,7 +24,7 @@ return_value = obj.RootFolder
 
 ```python
 def RootPath(sDrv):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyDrive = fso.GetDrive(fso.GetDriveName(fso.GetAbsolutePathName(sDrv)))
     RootPath = "Root: " + oMyDrive.RootFolder.Path
 ```

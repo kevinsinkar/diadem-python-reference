@@ -17,14 +17,14 @@ The Dictionary object provides an array with a key/element pair. The key and the
     example was machine-translated from the VBScript source.
 
 ```python
-MyDic = CreateObject("Scripting.Dictionary")
+MyDic = win32com.client.Dispatch("Scripting.Dictionary")
 MyDic.Add("a", "Austin")
 MyDic.Add("b", "Berlin")
 MyDic.Add("c", "Chicago")
 ```
 
 ```python
-MyDic = CreateObject("Scripting.Dictionary")
+MyDic = win32com.client.Dispatch("Scripting.Dictionary")
 MyArrA = Array("Austin", "Aachen", "Amsterdam")
 MyArrB = Array("Berlin", "Bangalore", "Brussels")
 MyArrC = Array("Chicago", "Cambridge", "Cannes")

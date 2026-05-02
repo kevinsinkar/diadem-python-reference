@@ -19,7 +19,7 @@ vChnPropValGet = Object.ChnPropValGet(ChannelNumber, PropertyName)
 ## Python example
 
 ```python
-oMyDataFileHeader = DataFileHeaderAccess(dd.DataLibrPath + "Example.tdm","TDM",False)
+oMyDataFileHeader = dd.CreateDataFileHeaderAccess(dd.DataLibrPath + "Example.tdm","TDM",False)
 oMyChnPropVal = oMyDataFileHeader.ChnPropValGet("[1]/1", "Description")
 print (oMyChnPropVal)
 ```

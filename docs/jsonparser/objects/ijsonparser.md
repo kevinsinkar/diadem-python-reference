@@ -18,8 +18,8 @@ The JsonParser object provides methods for reading and writing JSON files in UTF
 
 ```python
 oJsonParser = CreateJsonParser()
-oMySubobject = CreateObject("Scripting.Dictionary")
-oMyMainObject = CreateObject("Scripting.Dictionary")
+oMySubobject = win32com.client.Dispatch("Scripting.Dictionary")
+oMyMainObject = win32com.client.Dispatch("Scripting.Dictionary")
 
 oMySubobject.Add("intVal", CInt(1))
 oMySubobject.Add("doubleVal", CDbl(1.2))
@@ -47,7 +47,7 @@ LogFileWrite("path: " + sPath + "\r\n" + "avg: " + sAvg)
 
 ```python
 oJsonParser = CreateJsonParser()
-oMyMainObject = CreateObject("Scripting.Dictionary")
+oMyMainObject = win32com.client.Dispatch("Scripting.Dictionary")
 
 oMyMainObject.Add("array", Array("TextB", 5678, True))
 oMyMainObject.Add("timestamp", oJsonParser.CreateDateTime(Now, True))

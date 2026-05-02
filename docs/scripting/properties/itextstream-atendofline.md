@@ -25,7 +25,7 @@ obj.AtEndOfLine
 ```python
 def ReadEndOfLine(sFile):
     ForReading = 1
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyFile = fso.OpenTextFile(sFile, ForReading, False)
     while oMyFile.AtEndOfLine != True:
         sOutput = oMyFile.Read(1)

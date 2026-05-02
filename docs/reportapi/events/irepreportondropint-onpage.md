@@ -29,7 +29,7 @@ obj.OnPage
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Report.Events.Drop.OnPage", "MyOnDropPageEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.Drop.OnPage", "MyOnDropPageEvent")
 
 def MyOnDropPageEvent(Context, DropContext):
     sOutput = "Names of dropped elements:"

@@ -18,7 +18,7 @@ Collection of all Folder objects. You can use the Folder collection to count fol
 
 ```python
 def CreateFolderList(sFolder):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyFolder = fso.GetFolder(sFolder)
     oMySubFolders = oMyFolder.SubFolders
     for oMySubFolder in oMySubFolders:

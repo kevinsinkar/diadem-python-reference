@@ -24,7 +24,7 @@ sGetBaseName = Object.GetBaseName(Path)
 
 ```python
 def GetName(sFile):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     GetName = fso.GetBaseName(sFile)
 ```
 

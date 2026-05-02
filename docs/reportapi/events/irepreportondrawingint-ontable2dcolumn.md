@@ -29,7 +29,7 @@ obj.OnTable2DColumn
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Report.Events.Drawing.OnTable2DColumn", "MyOnDrawing2DTableColumn")
+dd.AddUserCommandToEvent("dd.Report.Events.Drawing.OnTable2DColumn", "MyOnDrawing2DTableColumn")
 
 def MyOnDrawing2DTableColumn(Context, Column):
     oMyTable = Context.Table

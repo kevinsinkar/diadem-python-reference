@@ -38,7 +38,7 @@ obj.OnCursorChanged
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.View.Events.OnCursorChanged","DisplayCursor")
+dd.AddUserCommandToEvent("dd.View.Events.OnCursorChanged","DisplayCursor")
 
 def DisplayCursor(oCursor):
     Text = Text + "Mode : " + oCursor.Mode + "\r\n"

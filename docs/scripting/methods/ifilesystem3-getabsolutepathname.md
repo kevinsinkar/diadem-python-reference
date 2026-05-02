@@ -24,7 +24,7 @@ sGetAbsolutePathName = Object.GetAbsolutePathName(Path)
 
 ```python
 def GetAbsolutePath(sPath):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     GetAbsolutePath = fso.GetAbsolutePathName(sPath)
 
 dd.MsgBox(GetAbsolutePath("c:"))  # Returns C:\Program Files\DIAdem

@@ -19,7 +19,7 @@ bGroupPropExist = Object.GroupPropExist(GroupIndex, PropertyName)
 ## Python example
 
 ```python
-oMyDataFileHeader = DataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
+oMyDataFileHeader = dd.CreateDataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
 if oMyDataFileHeader.GroupPropExist(1,"Test") :
     print ("Exists")
 else:

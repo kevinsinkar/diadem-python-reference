@@ -38,7 +38,7 @@ obj.OnActiveSheetChanged
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.View.Events.OnActiveSheetChanged","TransCursor")
+dd.AddUserCommandToEvent("dd.View.Events.OnActiveSheetChanged","TransCursor")
 
 def TransCursor(oNewSheet, oOldSheet):
     oNewSheet.Cursor.Mode = oOldSheet.Cursor.Mode

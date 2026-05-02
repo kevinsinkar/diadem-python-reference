@@ -29,7 +29,7 @@ obj.OnAxisSystem3D
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Report.Events.Drop.OnAxisSystem3D", "MyOnDrop3DAxisSystemEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.Drop.OnAxisSystem3D", "MyOnDrop3DAxisSystemEvent")
 
 def MyOnDrop3DAxisSystemEvent(Context,DropContext):
     sOutput = "Names of dropped channels:"

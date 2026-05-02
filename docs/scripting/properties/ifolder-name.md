@@ -24,7 +24,7 @@ obj.Name
 
 ```python
 def ShowFolderInfo(sFolder):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyFolder = fso.GetFolder(sFolder)
     sOutput = "Folder: " + oMyFolder.Name + "\r\n"
     sOutput = sOutput + "Created: " + oMyFolder.DateCreated + "\r\n"

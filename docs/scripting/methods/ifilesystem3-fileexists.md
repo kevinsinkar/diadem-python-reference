@@ -24,7 +24,7 @@ bFileExists = Object.FileExists(FileSpec)
 
 ```python
 def FileStatus(sFile):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     if (fso.FileExists(sFile)):
         sOutput = sFile + " exists."
     else:

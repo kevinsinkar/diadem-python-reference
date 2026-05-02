@@ -34,9 +34,9 @@ obj.OnShowingContextMenu(ParentObj, MenuPoints)
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Navigator.Events.OnShowingContextMenu","MyOnShowingContextMenu")
+dd.AddUserCommandToEvent("dd.Navigator.Events.OnShowingContextMenu","MyOnShowingContextMenu")
 
-AddUserCommandToEvent("dd.Navigator.Events.OnContextMenuPointSelected","MyOnContextMenuPointSelected")
+dd.AddUserCommandToEvent("dd.Navigator.Events.OnContextMenuPointSelected","MyOnContextMenuPointSelected")
 
 def MyOnShowingContextMenu(ParentObj, MenuPoints):
     if (ParentObj.IsKindOf(eDataBrowser)):  # eDataStoreBrowser or eDataFinderBrowser

@@ -24,7 +24,7 @@ obj.Delete([Force])
 
 ```python
 def DeleteEntireFolder(sFolder,bForce):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyFolder = fso.GetFolder(sFolder)
     oMyFolder.Delete(bForce)
 ```

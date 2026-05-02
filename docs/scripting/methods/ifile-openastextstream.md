@@ -26,7 +26,7 @@ return_value = obj.OpenAsTextStream([IOMode], [Format])
 def ReadWriteAppend(sFile):
     ForReading = 1; ForWriting = 2; ForAppending = 8
     TristateUseDefault = -2; TristateTrue = -1; TristateFalse = 0
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
 
     # Get file object
     oMyFileObj = fso.GetFile(sFile)

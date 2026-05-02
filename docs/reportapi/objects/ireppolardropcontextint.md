@@ -23,7 +23,7 @@ The PolarSystemDropContext object provides information about the polar axis syst
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Report.Events.OnDropPolarSystem", "MyOnDropPolarSystemEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.OnDropPolarSystem", "MyOnDropPolarSystemEvent")
 
 def MyOnDropPolarSystemEvent(Context, DropContext):
     sOutput = "Names of dropped channels:"

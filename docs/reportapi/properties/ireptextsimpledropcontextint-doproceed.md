@@ -29,7 +29,7 @@ obj.DoProceed
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Report.Events.OnDropText", "MyOnDropTextEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.OnDropText", "MyOnDropTextEvent")
 
 def MyOnDropTextEvent(Context, DropContext):
     sOutput = "Names of dropped channels:"

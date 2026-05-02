@@ -25,7 +25,7 @@ sRead = Object.Read(Characters)
 ```python
 def ReadCharacters(sFile):
     ForReading = 1; ForWriting = 2
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyFile= fso.OpenTextFile(sFile, ForWriting, True)
     oMyFile.Write "This is a text"
     oMyFile = fso.OpenTextFile(sFile, ForReading)

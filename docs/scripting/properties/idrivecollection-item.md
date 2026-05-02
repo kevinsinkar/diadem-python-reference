@@ -23,7 +23,7 @@ return_value = obj.Item(Key)
     example was machine-translated from the VBScript source.
 
 ```python
-fso = CreateObject("Scripting.FileSystemObject")
+fso = win32com.client.Dispatch("Scripting.FileSystemObject")
 oMyDrives = fso.Drives
 dd.MsgBox(oMyDrives.Item("C").TotalSize)
 ```

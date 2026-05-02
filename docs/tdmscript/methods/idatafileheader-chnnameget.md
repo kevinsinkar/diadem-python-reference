@@ -19,7 +19,7 @@ sChnNameGet = Object.ChnNameGet(GroupIndex, TargetChnIndex)
 ## Python example
 
 ```python
-oMyDataFileHeader = DataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
+oMyDataFileHeader = dd.CreateDataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
 oMyChnName = oMyDataFileHeader.ChnNameGet(1,2)
 print (oMyChnName)
 ```

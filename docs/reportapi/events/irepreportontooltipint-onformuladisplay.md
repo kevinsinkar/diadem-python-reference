@@ -39,7 +39,7 @@ oMyPosFormula.Y1 = 20
 oMyPosFormula.Y2 = 35
 
 # This event will be raised if the mouse is moved AND the shift key pressed
-AddUserCommandToEvent("dd.Report.Events.ToolTip.OnFormulaDisplay", "MyToolTipEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.ToolTip.OnFormulaDisplay", "MyToolTipEvent")
 dd.Report.Refresh()
 ```
 

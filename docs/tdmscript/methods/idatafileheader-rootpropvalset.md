@@ -19,7 +19,7 @@ obj.RootPropValSet(PropertyName, PropertyValue)
 ## Python example
 
 ```python
-oMyDataFileHeader = DataFileHeaderAccess(dd.DataLibrPath + "Example.tdm","TDM",False)
+oMyDataFileHeader = dd.CreateDataFileHeaderAccess(dd.DataLibrPath + "Example.tdm","TDM",False)
 oMyDataFileHeader.RootPropValSet("Description","Test")
 oMyDataFileHeader.close(True)
 ```

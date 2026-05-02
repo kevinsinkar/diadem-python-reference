@@ -29,7 +29,7 @@ obj.OnFileLoading
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Navigator.Events.OnFileLoading","MyOnFileLoading")
+dd.AddUserCommandToEvent("dd.Navigator.Events.OnFileLoading","MyOnFileLoading")
 def MyOnFileLoading(NaviLoadControl, DataFileName, oMyImportParameter, FileImportFilter, ImportSelection):
     if (isObject(oMyImportParameter)):
         MsgBoxDisp("64Bit - ImportParameter-Object: Import-Mode = " + oMyImportParameter.ImportMode + " " + DataFileName + " with " + FileImportFilter + " " + ImportSelection)

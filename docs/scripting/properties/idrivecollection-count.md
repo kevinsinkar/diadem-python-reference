@@ -24,7 +24,7 @@ obj.Count
 
 ```python
 def CountDrives():
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyDrives = fso.Drives
     CountDrives = "Number of drives: " + oMyDrives.Count
 ```

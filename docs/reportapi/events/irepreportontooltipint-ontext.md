@@ -40,7 +40,7 @@ oMyText.Text = "@@CurrDate@@"
 oMyText.Font.Color.SetPredefinedColor(ePredefinedColorBlue)
 
 # This event will be raised if the mouse is moved AND the shift key pressed
-AddUserCommandToEvent("dd.Report.Events.ToolTip.OnText", "MyToolTipEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.ToolTip.OnText", "MyToolTipEvent")
 dd.Report.Refresh()
 ```
 

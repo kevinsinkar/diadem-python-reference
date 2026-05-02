@@ -19,7 +19,7 @@ obj.GroupSwap(SourceGroupIndex, TargetGroupIndex)
 ## Python example
 
 ```python
-oMyDataFileHeader = DataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
+oMyDataFileHeader = dd.CreateDataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
 oMyDataFileHeader.GroupSwap(1,2)
 oMyDataFileHeader.close(True)
 ```

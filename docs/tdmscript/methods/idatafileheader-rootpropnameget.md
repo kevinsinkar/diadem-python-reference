@@ -19,7 +19,7 @@ sRootPropNameGet = Object.RootPropNameGet(RootPropIndex)
 ## Python example
 
 ```python
-oMyDataFileHeader = DataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
+oMyDataFileHeader = dd.CreateDataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
 oMyRootPropName = oMyDataFileHeader.RootPropNameGet(2)
 print (oMyRootPropName)
 ```

@@ -38,7 +38,7 @@ obj.OnLegendClicked
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.View.Events.OnLegendClicked", "MyOnLegendClicked")
+dd.AddUserCommandToEvent("dd.View.Events.OnLegendClicked", "MyOnLegendClicked")
 
 def MyOnLegendClicked(oArea, oContext):
     dd.MsgBox("Selected curve: " + oContext.CurveIndex)

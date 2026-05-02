@@ -29,8 +29,8 @@ return_value = obj.Add(Name, ID)
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Navigator.Events.OnShowingContextMenu", "MyNavigatorOnShowingContextMenu")
-AddUserCommandToEvent("dd.Navigator.Events.OnContextMenuPointSelected","MyNavigatorOnContextMenuPointSelected")
+dd.AddUserCommandToEvent("dd.Navigator.Events.OnShowingContextMenu", "MyNavigatorOnShowingContextMenu")
+dd.AddUserCommandToEvent("dd.Navigator.Events.OnContextMenuPointSelected","MyNavigatorOnContextMenuPointSelected")
 
 def MyNavigatorOnShowingContextMenu(ParentObj, MenuPoints):
     MenuPoints.RemoveAll
@@ -49,8 +49,8 @@ def MyNavigatorOnContextMenuPointSelected(ParentObj, MenuPoint):
     # case 22   dd.MsgBox("DIAdem-NAVIGATOR: MyMenuPoint22 selected")
 
 # --- For DIAdem-VIEW ------------------------------------------
-AddUserCommandToEvent("dd.View.Events.OnShowingContextMenu", "MyViewOnShowingContextMenu")
-AddUserCommandToEvent("dd.View.Events.OnContextMenuPointSelected","MyViewOnContextMenuPointSelected")
+dd.AddUserCommandToEvent("dd.View.Events.OnShowingContextMenu", "MyViewOnShowingContextMenu")
+dd.AddUserCommandToEvent("dd.View.Events.OnContextMenuPointSelected","MyViewOnContextMenuPointSelected")
 
 def MyViewOnShowingContextMenu(Area, MenuPoints):
     MenuPoints.RemoveAll

@@ -29,7 +29,7 @@ obj.OnInitializeSheetRefresh
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Report.Events.OnInitializeSheetRefresh", "MyOnInitializeSheetRefresh")
+dd.AddUserCommandToEvent("dd.Report.Events.OnInitializeSheetRefresh", "MyOnInitializeSheetRefresh")
 
 def MyOnInitializeSheetRefresh(Sheet):
     dd.MsgBox("Sheet: " + Sheet.Name + "\t" + "Number of objects: " + Sheet.Objects.Count)

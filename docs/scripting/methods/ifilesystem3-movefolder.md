@@ -30,7 +30,7 @@ obj.MoveFolder(Source, Destination)
 
 ```python
 def MoveEntireFolder(sSource,sTarget):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     fso.MoveFolder(sSource,sTarget)
 ```
 

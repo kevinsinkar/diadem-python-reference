@@ -50,7 +50,7 @@ oMyPolarCurve.Shape.XChannel.Reference = "[5]/[1]"
 oMyPolarCurve.Shape.YChannel.Reference = "[5]/[4]"
 
 # This event will be raised if you click a 2D axis system while you press a keyboard key
-AddUserCommandToEvent("dd.Report.Events.ClickedWithKey.OnAxisSystemPolar", "MyClickEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.ClickedWithKey.OnAxisSystemPolar", "MyClickEvent")
 dd.Report.Refresh()
 ```
 

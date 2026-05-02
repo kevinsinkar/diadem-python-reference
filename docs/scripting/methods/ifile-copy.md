@@ -30,12 +30,12 @@ obj.Copy(Destination, [OverWriteFiles])
 
 ```python
 def CopyMyFiles(sSource,sTarget,bOverwrite):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyFolder = fso.GetFolder(sSource)
     oMyFiles = oMyFolder.Files
     for oMyFile in oMyFiles:
         oMyFile.Copy(sTarget,bOverwrite)
-CopyMyFiles(ProgramDrv + "Examples\Documents\", "c:\Temp\Documents\",True)
+CopyMyFiles(dd.ProgramDrv + "Examples\Documents\", "c:\Temp\Documents\",True)
 ```
 
 ## See also

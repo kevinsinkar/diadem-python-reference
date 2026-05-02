@@ -25,7 +25,7 @@ obj.SkipLine
 ```python
 def SkipOneLine(sFile):
     ForReading = 1; ForWriting = 2
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyFile= fso.OpenTextFile(sFile, ForWriting, True)
     oMyFile.Write "First Line" + "\r\n" + "Second Line"
     oMyFile = fso.OpenTextFile(sFile, ForReading)

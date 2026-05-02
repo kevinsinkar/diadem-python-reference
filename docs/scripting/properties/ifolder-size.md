@@ -24,7 +24,7 @@ obj.Size
 
 ```python
 def ShowFolderSize(sFolder):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyFolder = fso.GetFolder(sFolder)
     ShowFolderSize = "Size: " + oMyFolder.Size
 ```

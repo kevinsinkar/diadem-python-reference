@@ -19,7 +19,7 @@ sGroupNameGet = Object.GroupNameGet(GroupIndex)
 ## Python example
 
 ```python
-oMyDataFileHeader = DataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
+oMyDataFileHeader = dd.CreateDataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
 oMyGroupName = oMyDataFileHeader.GroupNameGet(1)
 print (oMyGroupName)
 ```

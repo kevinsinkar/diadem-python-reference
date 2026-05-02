@@ -24,7 +24,7 @@ return_value = obj.CreateTextFile(FileName, [Overwrite], [Unicode])
 
 ```python
 def CreateMyTxtFile(sFolder,sFile,sText):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyFolder = fso.GetFolder(sFolder)
     oMyFile = oMyFolder.CreateTextFile(sFile, True)
     oMyFile.WriteLine(sText)

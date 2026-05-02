@@ -24,7 +24,7 @@ return_value = obj.Drive
 
 ```python
 def FolderDrive(sFolder):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyFolder = fso.GetFolder(sFolder)
     FolderDrive = "Drive: " + oMyFolder.Drive
 ```

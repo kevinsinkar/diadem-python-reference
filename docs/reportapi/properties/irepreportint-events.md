@@ -34,7 +34,7 @@ return_value = obj.Events
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Report.Events.OnFinalizeSheetRefresh","MyOnFinalizeSheetRefresh")
+dd.AddUserCommandToEvent("dd.Report.Events.OnFinalizeSheetRefresh","MyOnFinalizeSheetRefresh")
 
 def MyOnFinalizeSheetRefresh(Sheet):
     MsgBoxDisp("Refresh completed")

@@ -19,7 +19,7 @@ iGroupChnCount = Object.GroupChnCount(GroupIndex)
 ## Python example
 
 ```python
-oMyDataFileHeader = DataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
+oMyDataFileHeader = dd.CreateDataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
 oMyGroupChnCount = oMyDataFileHeader.GroupChnCount(1)
 print (oMyGroupChnCount)
 ```

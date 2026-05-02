@@ -19,7 +19,7 @@ iChnPropCount = Object.ChnPropCount(ChannelNumber)
 ## Python example
 
 ```python
-oMyDataFileHeader = DataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
+oMyDataFileHeader = dd.CreateDataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
 oMyChnPropCount = oMyDataFileHeader.ChnPropCount("[1]/[2]")
 print (oMyChnPropCount)
 ```

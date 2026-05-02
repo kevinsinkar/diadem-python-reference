@@ -17,7 +17,7 @@ You can use the FileSystemObject object to access the file system of your comput
     example was machine-translated from the VBScript source.
 
 ```python
-fso = CreateObject("Scripting.FileSystemObject")
+fso = win32com.client.Dispatch("Scripting.FileSystemObject")
 MyFile= fso.CreateTextFile(ScriptWritePath + "\testfile.txt", True)
 MyFile.WriteLine("This is the first line")
 MyFile.Close

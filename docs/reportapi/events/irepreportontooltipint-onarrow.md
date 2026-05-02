@@ -45,7 +45,7 @@ oMyArrowPosition.Y1 = 30
 oMyArrowPosition.Y2 = 90
 
 # This event will be raised if the mouse is moved AND the shift key pressed
-AddUserCommandToEvent("dd.Report.Events.ToolTip.OnArrow", "MyToolTipEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.ToolTip.OnArrow", "MyToolTipEvent")
 dd.Report.Refresh()
 ```
 

@@ -29,7 +29,7 @@ obj.OnTable2D
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Report.Events.Drop.OnTable2D", "MyOnDrop2DTableEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.Drop.OnTable2D", "MyOnDrop2DTableEvent")
 
 def MyOnDrop2DTableEvent(Context, DropContext):
     sOutput = "Names of dropped channels:"

@@ -67,7 +67,7 @@ def MyCustomScalingEvent2D(Context):
     oMyAxisSystem = Context.AxisSystem
     if Context.AxisType == e2DAxisTypeY:
         oMyAxis = oMyAxisSystem.YAxisList(Context.AxisNumber)
-        MinMax = ValMax(Abs(oMyAxis.Scaling.End),Abs(oMyAxis.Scaling.Begin))
+        MinMax = dd.ValMax(Abs(oMyAxis.Scaling.End),Abs(oMyAxis.Scaling.Begin))
         oMyAxis.Scaling.Origin = oMyAxis.Scaling.Begin
         oMyAxis.Scaling.Begin = -MinMax
         oMyAxis.Scaling.End = +MinMax

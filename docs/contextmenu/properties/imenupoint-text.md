@@ -34,14 +34,14 @@ obj.Text
 
 ```python
 # --- For DIAdem-NAVIGATOR ------------------------------------------
-AddUserCommandToEvent("dd.Navigator.Events.OnShowingContextMenu","MyNavigatorOnShowingContextMenu")
+dd.AddUserCommandToEvent("dd.Navigator.Events.OnShowingContextMenu","MyNavigatorOnShowingContextMenu")
 
 def MyNavigatorOnShowingContextMenu(ParentObj, MenuPoints):
     for MenuPoint in MenuPoints:
         MsgBoxDisp(MenuPoint.Id + " " + MenuPoint.Text)
 
 # --- For DIAdem-VIEW ------------------------------------------
-AddUserCommandToEvent("dd.View.Events.OnShowingContextMenu","MyViewOnShowingContextMenu")
+dd.AddUserCommandToEvent("dd.View.Events.OnShowingContextMenu","MyViewOnShowingContextMenu")
 
 def MyViewOnShowingContextMenu(Area, MenuPoints):
     for MenuPoint in MenuPoints:

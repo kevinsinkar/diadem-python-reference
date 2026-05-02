@@ -18,7 +18,7 @@ You can use the Drive object to access the properties of a drive.
 
 ```python
 def CreateDriveSpaceList():
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyDrives = fso.Drives
     for oMyDrive in oMyDrives:
         sOutput = sOutput + oMyDrive.DriveLetter + "\t"

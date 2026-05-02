@@ -24,7 +24,7 @@ return_value = obj.DateLastAccessed
 
 ```python
 def ShowFileInfo(sFile):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyFile = fso.GetFile(sFile)
     sOutput = "File: " + oMyFile.Name + "\r\n"
     sOutput = sOutput + "Created: " + oMyFile.DateCreated + "\r\n"

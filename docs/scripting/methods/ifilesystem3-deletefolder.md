@@ -24,7 +24,7 @@ obj.DeleteFolder(FolderSpec, [Force])
 
 ```python
 def DeleteMyFolder(sFile):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     fso.DeleteFolder(sFile)
 ```
 

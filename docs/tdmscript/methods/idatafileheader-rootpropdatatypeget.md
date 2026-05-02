@@ -19,7 +19,7 @@ iRootPropDataTypeGet = Object.RootPropDataTypeGet(PropertyName)
 ## Python example
 
 ```python
-oMyDataFileHeader = DataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
+oMyDataFileHeader = dd.CreateDataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
 oMyRootPropDataType = oMyDataFileHeader.RootPropDataTypeGet("Description")
 print (oMyRootPropDataType)
 ```

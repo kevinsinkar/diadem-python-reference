@@ -24,7 +24,7 @@ return_value = obj.GetDrive(DriveSpec)
 
 ```python
 def GetDriveObject(sPath):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     GetDriveObject = fso.GetDrive(fso.GetDriveName(sPath))
 ```
 

@@ -29,7 +29,7 @@ obj.OnText
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Report.Events.Drop.OnText", "MyOnDropTextEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.Drop.OnText", "MyOnDropTextEvent")
 
 def MyOnDropTextEvent(Context, DropContext):
     sOutput = "Names of dropped channels:"

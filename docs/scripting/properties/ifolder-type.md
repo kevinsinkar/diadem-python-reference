@@ -24,7 +24,7 @@ obj.Type
 
 ```python
 def ShowFolderType(sFolder):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyFolder = fso.GetFolder(sFolder)
     ShowFolderType = oMyFolder.Type
 ```

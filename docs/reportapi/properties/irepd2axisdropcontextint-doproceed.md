@@ -29,7 +29,7 @@ obj.DoProceed
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Report.Events.OnDrop2DAxisSystem", " MyOnDrop2DAxisSystemEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.OnDrop2DAxisSystem", " MyOnDrop2DAxisSystemEvent")
 
 def MyOnDrop2DAxisSystemEvent(Context, DropContext):
     sOutput = "Names of dropped channels:"

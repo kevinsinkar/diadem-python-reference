@@ -29,7 +29,7 @@ obj.OnPolarSystemCurve
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Report.Events.Drawing.OnPolarSystemCurve", "MyOnPolarCurveDrawEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.Drawing.OnPolarSystemCurve", "MyOnPolarCurveDrawEvent")
 
 def MyOnPolarCurveDrawEvent(Context, CurrCurve):
     oMyAxis = Context.PolarSystem

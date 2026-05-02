@@ -29,7 +29,7 @@ obj.OnComment
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Report.Events.Drop.OnComment", "MyOnDropCommentEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.Drop.OnComment", "MyOnDropCommentEvent")
 
 def MyOnDropCommentEvent(Context, DropContext):
     sOutput = "Names of dropped channels:"

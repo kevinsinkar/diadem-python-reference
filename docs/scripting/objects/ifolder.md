@@ -18,7 +18,7 @@ You can use the Folder object to access the properties of a folder.
 
 ```python
 def ShowFolderInfo(sFolder):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyFolder = fso.GetFolder(sFolder)
     sOutput = "Folder: " + oMyFolder.Name + "\r\n"
     sOutput = sOutput + "Created: " + oMyFolder.DateCreated + "\r\n"

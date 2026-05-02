@@ -24,7 +24,7 @@ return_value = obj.Add(Name)
 
 ```python
 def AddNewFolder(sPath, sFolderName):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyFolder = fso.GetFolder(sPath)
     oMySubFolders = oMyFolder.SubFolders
     if sFolderName != "":

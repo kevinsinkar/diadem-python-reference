@@ -19,7 +19,7 @@ bRootPropIsFixed = Object.RootPropIsFixed(PropertyName)
 ## Python example
 
 ```python
-oMyDataFileHeader = DataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
+oMyDataFileHeader = dd.CreateDataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
 if oMyDataFileHeader.RootPropIsFixed("Description") :
     print ("TDM Property")
 else:

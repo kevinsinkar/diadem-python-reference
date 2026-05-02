@@ -47,7 +47,7 @@ oMyCurve = oMyAxisSystem.CurvesSpider.Add(eSpiderShapeLine, "MySpiderCurve")
 oMyCurve.Shape.Channel.Reference = "[5]/[3]"
 
 # This event will be raised if the mouse is moved AND the shift key pressed
-AddUserCommandToEvent("dd.Report.Events.ToolTip.OnSpider", "MyToolTipEvent" )
+dd.AddUserCommandToEvent("dd.Report.Events.ToolTip.OnSpider", "MyToolTipEvent" )
 dd.Report.Refresh()
 ```
 

@@ -24,7 +24,7 @@ The SheetEvents object provides the events of a worksheet in DIAdem REPORT. Note
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Report.Events.OnFinalizeSheetRefresh","MyFinalizeRefresh")
+dd.AddUserCommandToEvent("dd.Report.Events.OnFinalizeSheetRefresh","MyFinalizeRefresh")
 
 def MyFinalizeRefresh():
     MsgBoxDisp("Refresh of sheet completed: " + dd.Report.ActiveSheet.Name)

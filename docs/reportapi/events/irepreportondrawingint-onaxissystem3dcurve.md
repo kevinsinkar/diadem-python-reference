@@ -29,7 +29,7 @@ obj.OnAxisSystem3DCurve
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Report.Events.Drawing.OnAxisSystem3DCurve", "MyOn3DCurveDrawEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.Drawing.OnAxisSystem3DCurve", "MyOn3DCurveDrawEvent")
 
 def MyOn3DCurveDrawEvent(Context, CurrCurve):
     oMyAxis = Context.AxisSystem

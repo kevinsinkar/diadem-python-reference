@@ -24,7 +24,7 @@ bFolderExists = Object.FolderExists(FolderSpec)
 
 ```python
 def FolderStatus(sFolder):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     if (fso.FolderExists(sFolder)):
         sOutput = sFolder + " exists."
     else:

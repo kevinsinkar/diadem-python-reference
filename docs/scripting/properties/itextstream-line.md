@@ -25,7 +25,7 @@ obj.Line
 ```python
 def GetFileLines(sFile):
     ForReading = 1
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyFile = fso.OpenTextFile(sFile, ForReading, False)
     sOutput = oMyFile.ReadAll
     GetFileLines = oMyFile.Line

@@ -24,7 +24,7 @@ obj.WriteBlankLines(Lines)
 
 ```python
 def WriteBlanklinesFile(sFile,iLines):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyFile = fso.CreateTextFile(sFile, True)
     oMyFile.WriteBlankLines(iLines)
     oMyFile.Close

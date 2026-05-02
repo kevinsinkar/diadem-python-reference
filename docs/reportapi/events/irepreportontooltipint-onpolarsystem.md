@@ -44,7 +44,7 @@ oMyCurve.Shape.YChannel.Reference = "[5]/[2]"
 oMyCurve.Shape.Line.Color.SetPredefinedColor(eColorIndexBlue)
 
 # This event will be raised if the mouse is moved AND the shift key pressed
-AddUserCommandToEvent("dd.Report.Events.ToolTip.OnPolarSystem", "MyToolTipEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.ToolTip.OnPolarSystem", "MyToolTipEvent")
 dd.Report.Refresh()
 ```
 

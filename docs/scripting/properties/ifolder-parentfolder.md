@@ -24,7 +24,7 @@ return_value = obj.ParentFolder
 
 ```python
 def ShowParentFolder(sFolder):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyFolder = fso.GetFolder(sFolder)
     ShowParentFolder = oMyFolder.ParentFolder
 ```

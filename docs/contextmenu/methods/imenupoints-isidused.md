@@ -30,7 +30,7 @@ bIsIDUsed = Object.IsIDUsed(ID)
 
 ```python
 # --- For DIAdem-NAVIGATOR ------------------------------------------
-AddUserCommandToEvent("dd.Navigator.Events.OnShowingContextMenu","MyNavigatorOnShowingContextMenu")
+dd.AddUserCommandToEvent("dd.Navigator.Events.OnShowingContextMenu","MyNavigatorOnShowingContextMenu")
 
 def MyNavigatorOnShowingContextMenu(ParentObj, MenuPoints):
     MenuPoints.Add("MyMenuPoint1", 1)
@@ -39,7 +39,7 @@ def MyNavigatorOnShowingContextMenu(ParentObj, MenuPoints):
         MenuPoints.Add("MyMenuPoint3",3)
 
 # --- For DIAdem-VIEW ------------------------------------------
-AddUserCommandToEvent("dd.View.Events.OnShowingContextMenu","MyViewOnShowingContextMenu")
+dd.AddUserCommandToEvent("dd.View.Events.OnShowingContextMenu","MyViewOnShowingContextMenu")
 
 def MyViewOnShowingContextMenu(Area, MenuPoints):
     MenuPoints.Add("MyMenuPoint1", 1)

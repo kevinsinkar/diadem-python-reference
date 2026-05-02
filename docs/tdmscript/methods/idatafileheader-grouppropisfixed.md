@@ -19,7 +19,7 @@ bGroupPropIsFixed = Object.GroupPropIsFixed(GroupIndex, PropertyName)
 ## Python example
 
 ```python
-oMyDataFileHeader = DataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
+oMyDataFileHeader = dd.CreateDataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
 if oMyDataFileHeader.GroupPropIsFixed(1,"maximum") :
     print ("TDM Property")
 else:

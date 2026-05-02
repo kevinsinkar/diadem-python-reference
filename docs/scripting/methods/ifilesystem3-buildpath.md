@@ -24,7 +24,7 @@ sBuildPath = Object.BuildPath(Path, Name)
 
 ```python
 def BuildNewPath(sPath):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     BuildNewPath = fso.BuildPath(sPath, "NewFolder")
 ```
 

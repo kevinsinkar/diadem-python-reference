@@ -29,7 +29,7 @@ return_value = obj.Sheet
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Report.Events.OnDrawingPolarSystemCurve", "MyOnPolarCurveDrawEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.OnDrawingPolarSystemCurve", "MyOnPolarCurveDrawEvent")
 
 def MyOnPolarCurveDrawEvent(Context, CurrCurve):
     oMyAxis = Context.PolarSystem

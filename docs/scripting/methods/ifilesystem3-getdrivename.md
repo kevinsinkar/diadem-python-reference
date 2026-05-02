@@ -24,7 +24,7 @@ sGetDriveName = Object.GetDriveName(Path)
 
 ```python
 def GetDrive(sDrive):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     GetDrive = fso.GetDriveName(sDrive)
 ```
 

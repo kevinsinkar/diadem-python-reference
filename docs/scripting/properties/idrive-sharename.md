@@ -24,7 +24,7 @@ obj.ShareName
 
 ```python
 def DriveInfo(sDrv):
-    fso = CreateObject("Scripting.FileSystemObject")
+    fso = win32com.client.Dispatch("Scripting.FileSystemObject")
     oMyDrive = fso.GetDrive(fso.GetDriveName(fso.GetAbsolutePathName(sDrv)))
     DriveInfo = "Drive: " + oMyDrive.DriveLetter + "\r\n" + "Shared name: " + oMyDrive.ShareName
 ```

@@ -23,7 +23,7 @@ The CommentDropContext object provides information about the comment onto which 
     example was machine-translated from the VBScript source.
 
 ```python
-AddUserCommandToEvent("dd.Report.Events.OnDropComment", "MyOnDropCommentEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.OnDropComment", "MyOnDropCommentEvent")
 
 def MyOnDropCommentEvent(Context, DropContext):
     sOutput = "Names of dropped channels:"

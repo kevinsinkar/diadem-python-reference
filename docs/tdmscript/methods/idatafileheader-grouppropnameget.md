@@ -19,7 +19,7 @@ sGroupPropNameGet = Object.GroupPropNameGet(GroupIndex, GroupPropIndex)
 ## Python example
 
 ```python
-oMyDataFileHeader = DataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
+oMyDataFileHeader = dd.CreateDataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
 oMyGroupPropName = oMyDataFileHeader.GroupPropNameGet(1,2)
 print (oMyGroupPropName)
 ```

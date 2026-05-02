@@ -25,7 +25,7 @@ obj.GroupChnSwap(SourceChn, TargetChn)
 ## Python example
 
 ```python
-oMyDataFileHeader = DataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
+oMyDataFileHeader = dd.CreateDataFileHeaderAccess(dd.DataLibrPath + "Example.tdm" ,"TDM", False)
 oMyDataFileHeader.GroupChnSwap("1/1","1/4")
 oMyDataFileHeader.close(True)
 ```

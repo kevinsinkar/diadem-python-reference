@@ -34,7 +34,7 @@ oMyComment = dd.Report.ActiveSheet.Objects.Add(eReportObjectComment,"MyComment")
 oMyComment.Comment.Text = "This is a comment"
 
 # This event will be raised if the mouse is moved AND the shift key pressed
-AddUserCommandToEvent("dd.Report.Events.ToolTip.OnComment", "MyToolTipEvent")
+dd.AddUserCommandToEvent("dd.Report.Events.ToolTip.OnComment", "MyToolTipEvent")
 dd.Report.Refresh()
 ```
 
