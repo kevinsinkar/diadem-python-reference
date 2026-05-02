@@ -8,6 +8,18 @@ description: "Provides an If-Then-Else-EndIf expression in one line and returns 
 !!! abstract "Function &middot; `ComOff.chm`"
     Function: IIf
 
+!!! warning "Read-only on `DIAdem.TOCmd` &mdash; use the bridge"
+    The example assigns to a DIAdem global script variable that the
+    TOCmd dispatch surfaces as **read-only**. From external Python,
+    use the `DIAdem.TOCommand` bridge to set it instead:
+
+    ```python
+    bridge = win32com.client.Dispatch("DIAdem.TOCommand")
+    bridge.BoolVarSet('CalcQuantityBased', ...)   # instead of dd.CalcQuantityBased = ...
+    ```
+
+    See [Runtime gotchas &raquo; Some global script variables are read-only](../../getting-started.md#4-some-global-script-variables-are-read-only-on-tocmd) for the full pattern.
+
 Provides an If-Then-Else-EndIf expression in one line and returns one of the transferred parameters dependent on the evaluation of the expression.
 
 ## Notes

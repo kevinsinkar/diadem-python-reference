@@ -8,6 +8,18 @@ description: "Calculates a single z-value of a three-dimensional interpolation f
 !!! abstract "Command &middot; `ComOff.chm`"
     Command: MatD3InterpPoint
 
+!!! warning "Read-only on `DIAdem.TOCmd` &mdash; use the bridge"
+    The example assigns to a DIAdem global script variable that the
+    TOCmd dispatch surfaces as **read-only**. From external Python,
+    use the `DIAdem.TOCommand` bridge to set it instead:
+
+    ```python
+    bridge = win32com.client.Dispatch("DIAdem.TOCommand")
+    bridge.IntegerVarSet('D3GridCalcAll', ...)   # instead of dd.D3GridCalcAll = ...
+    ```
+
+    See [Runtime gotchas &raquo; Some global script variables are read-only](../../getting-started.md#4-some-global-script-variables-are-read-only-on-tocmd) for the full pattern.
+
 Calculates a single z-value of a three-dimensional interpolation for an x-channel, a y-channel, and a z-matrix.
 
 ## Notes

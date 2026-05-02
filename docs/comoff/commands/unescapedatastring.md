@@ -8,6 +8,18 @@ description: "Decodes the texts encoded with the EscapeDataString command."
 !!! abstract "Command &middot; `ComOff.chm`"
     Command: UnEscapeDatastring
 
+!!! warning "Read-only on `DIAdem.TOCmd` &mdash; use the bridge"
+    The example assigns to a DIAdem global script variable that the
+    TOCmd dispatch surfaces as **read-only**. From external Python,
+    use the `DIAdem.TOCommand` bridge to set it instead:
+
+    ```python
+    bridge = win32com.client.Dispatch("DIAdem.TOCommand")
+    bridge.TextVarSet('UrlDataString', ...)   # instead of dd.UrlDataString = ...
+    ```
+
+    See [Runtime gotchas &raquo; Some global script variables are read-only](../../getting-started.md#4-some-global-script-variables-are-read-only-on-tocmd) for the full pattern.
+
 Decodes the texts encoded with the EscapeDataString command.
 
 ## Parameters

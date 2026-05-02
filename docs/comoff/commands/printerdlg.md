@@ -8,6 +8,18 @@ description: "Opens the printer dialog box in DIAdem and changes the print setti
 !!! abstract "Command &middot; `ComOff.chm`"
     Command: PrinterDlg
 
+!!! warning "Read-only on `DIAdem.TOCmd` &mdash; use the bridge"
+    The example assigns to a DIAdem global script variable that the
+    TOCmd dispatch surfaces as **read-only**. From external Python,
+    use the `DIAdem.TOCommand` bridge to set it instead:
+
+    ```python
+    bridge = win32com.client.Dispatch("DIAdem.TOCommand")
+    bridge.TextVarSet('PrintName', ...)   # instead of dd.PrintName = ...
+    ```
+
+    See [Runtime gotchas &raquo; Some global script variables are read-only](../../getting-started.md#4-some-global-script-variables-are-read-only-on-tocmd) for the full pattern.
+
 Opens the printer dialog box in DIAdem and changes the print settings without printing the current report.
 
 ## Parameters
