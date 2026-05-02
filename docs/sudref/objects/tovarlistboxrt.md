@@ -8,6 +8,16 @@ description: "The EnumListBox object corresponds to the EnumListBox control in a
 !!! abstract "Object &middot; `Sudref.chm`"
     Object: EnumListBox
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 The EnumListBox object corresponds to the EnumListBox control in a user dialog box. You use the EnumListBox object to define a selection list to be displayed in the user dialog box. Specify the displayed selection terms using a dynamic enumeration list variable or an enumeration variable . Note The ListBox control has similar properties. However, you use ListItems in the Properties tab to specify the selection terms for the control.
 
 ## Notes

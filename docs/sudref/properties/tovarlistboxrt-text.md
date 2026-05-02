@@ -8,6 +8,16 @@ description: "Specifies in user dialog boxes the term selected in a selection li
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: Text for EnumListBox
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies in user dialog boxes the term selected in a selection list. The user dialog box executes the EventChange method when the value of the control changes. The variable that you assign to this selection list on the Properties tab under Variable , specifies the value range. Because the selection terms are defined by a dynamic enumeration variable list or by an enumeration variable, you can specify the selection term to be selected, as a script term or as a user interface term of the variable.
 
 ## Signature

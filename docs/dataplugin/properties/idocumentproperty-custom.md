@@ -8,6 +8,15 @@ description: "Specifies whether a meta property of a document is a custom proper
 !!! abstract "Property &middot; `DataPlugin.chm`"
     Property: Custom for DocumentProperty <DataPlugin>
 
+!!! note "Context: DataPlugin script"
+    Examples in this section run inside DIAdem's **DataPlugin host**
+    context, where identifiers like `Root`, `File`, `oBlock`, and
+    related host-supplied objects resolve automatically. From standalone
+    external Python via `Dispatch("DIAdem.TOCmd")` those names raise
+    `NameError`. The DataPlugin API is intended to be used by writing
+    your script inside a `.uri` DataPlugin file that DIAdem then loads;
+    it is not directly callable from external Python.
+
 Specifies whether a meta property of a document is a custom property. Custom properties are user-defined meta properties of a document. A document can be an Office file in XML format, a PDF, JPEG, PNG, or TIFF file.
 
 ## Signature

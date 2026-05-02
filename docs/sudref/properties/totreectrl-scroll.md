@@ -8,6 +8,16 @@ description: "Specifies that a user dialog box displays a scroll bar. The proper
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: Scroll for Tree
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies that a user dialog box displays a scroll bar. The property can have the following settings: 0 - None DIAdem does not display a scroll bar. 1 - Vertical DIAdem displays a vertical scroll bar when the tree is higher than the available space. 2 - VerticalAndHorizontal DIAdem displays a vertical or horizontal scroll bar when the tree is higher or wider than the available space.
 
 ## See also

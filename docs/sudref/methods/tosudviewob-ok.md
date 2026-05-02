@@ -8,6 +8,16 @@ description: "Triggers the EventTerminate event and closes the user dialog box. 
 !!! abstract "Method &middot; `Sudref.chm`"
     Method: OK for Dialog
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Triggers the EventTerminate event and closes the user dialog box. The method has the same effect as clicking a button that has the value OK for the ButtonType property. The method sets the value of the DlgState DIAdem variable to IDOk .
 
 ## Signature

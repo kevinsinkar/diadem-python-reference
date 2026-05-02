@@ -8,6 +8,16 @@ description: "Specifies the color of a tab of the TabPageCtrl control. Use the a
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: Color for Page
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies the color of a tab of the TabPageCtrl control. Use the automatic setting if you want the color to correspond to the color settings for the operating system. Click Color in the Properties tab to open the color selection dialog box. The color selection dialog box offers a basic palette of colors and the option to define more colors.
 
 ## Signature
@@ -34,11 +44,11 @@ obj.Color
     example was machine-translated from the VBScript source.
 
 ```python
-Page1.Color = vbBlue
+Page1.Color = 16711680
 ```
 
 ```python
-Page1.Color = RGB(0,0,255)
+Page1.Color = dd.RGB(0,0,255)
 ```
 
 ## See also

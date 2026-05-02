@@ -8,6 +8,16 @@ description: "Specifies in user dialog boxes how a textbox displays a text when 
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: CaseOrPassword for EditBox
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies in user dialog boxes how a textbox displays a text when you enter it. The property can have the following settings: 0 - None Displays text unaltered. 1 - Lower Case Displays text in lowercase. 2 - Upper Case Displays text in uppercase. 3 - Password Displays one asterisk (*) for each character. You can only enter one row.
 
 ## See also

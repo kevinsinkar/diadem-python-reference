@@ -8,6 +8,16 @@ description: "Specifies in user dialog boxes which cell in the extended table is
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: EnterKeyAction for XTable
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies in user dialog boxes which cell in the extended table is framed after you edit the current cell and press <Enter>. The property can have the following settings: 0 - Move_Not Does not frame a cell. 1 - Move_Up Frames the cell above the edited cell. 2 - Move_Left Frames the cell to the left of the edited cell. 3 - Move_Down Frames the cell below the edited cell. 4 - Move_Right Frames the cell to the right of the edited cell.
 
 ## See also

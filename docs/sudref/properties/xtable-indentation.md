@@ -8,6 +8,16 @@ description: "Specifies in user dialog boxes the text indentation on a button in
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: Indentation for Button <XTable>
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies in user dialog boxes the text indentation on a button in an extended table. The user dialog box indents the text from the left or the right according to the Alignment property for text alignment. This property does not affect centered text.
 
 ## Signature

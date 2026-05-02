@@ -8,6 +8,16 @@ description: "The EditBox object corresponds to the EditBox control in an extend
 !!! abstract "Object &middot; `Sudref.chm`"
     Object: EditBox <XTable>
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 The EditBox object corresponds to the EditBox control in an extended table of a user dialog box. You use the EditBox object to define a textbox that is to be displayed in an extended table. Note You only can access this control within the event procedures of the extended table.
 
 ## Notes
@@ -27,7 +37,7 @@ The EditBox object corresponds to the EditBox control in an extended table of a 
     example was machine-translated from the VBScript source.
 
 ```python
-Cell.ForeColor = vbBlue
+Cell.ForeColor = 16711680
 ```
 
 ## Members

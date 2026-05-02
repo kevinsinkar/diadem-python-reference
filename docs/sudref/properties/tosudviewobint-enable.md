@@ -8,6 +8,16 @@ description: "Specifies whether a user dialog box is enabled."
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: Enable for Dialog <NonModal>
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies whether a user dialog box is enabled.
 
 ## Signature
@@ -34,7 +44,7 @@ obj.Enable
     example was machine-translated from the VBScript source.
 
 ```python
-oMyDlg = SudDlgCreate("Input","Example.sud")
+oMyDlg = dd.SudDlgCreate("Input","Example.sud")
 oMyDlg.Enable = 0  # 0=No, 1=Yes
 dd.Report.Refresh()
 oMyDlg.Enable = 1  # 0=no, 1=yes

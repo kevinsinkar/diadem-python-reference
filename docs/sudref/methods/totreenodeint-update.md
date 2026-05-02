@@ -8,6 +8,16 @@ description: "Refreshes in user dialog boxes a node or a node with a subnode in 
 !!! abstract "Method &middot; `Sudref.chm`"
     Method: Update for TreeNode
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Refreshes in user dialog boxes a node or a node with a subnode in a tree. With this method you can refresh the node after its data was changed. Use the Refresh method to refresh the whole tree. If you change, add, or delete nodes within the events Expand or Collapse , the Update method need not be and must not be called.
 
 ## Signature
@@ -36,7 +46,7 @@ def Tree1_EventInitialize(This):
 def Button1_EventClick(This):
     oMyNode= Tree1.SelectedItem
     if (not oMyNode is None):
-        oMyNode.ForeColor = RGB(255, 0, 0)
+        oMyNode.ForeColor = dd.RGB(255, 0, 0)
         oMyNode.Update(eUpdateModeNode)
 
 def CreateDefaultTree(This):

@@ -8,6 +8,16 @@ description: "Specifies in user dialog boxes the list elements of a control in a
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: ListItems for ListBox <XTable>
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies in user dialog boxes the list elements of a control in an extended table. To change properties of the list elements in the dialog editor click to the right of ListItems in the Cell Type dialog box.
 
 ## See also

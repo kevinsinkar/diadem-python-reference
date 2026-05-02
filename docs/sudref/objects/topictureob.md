@@ -8,6 +8,16 @@ description: "The Picture object corresponds to the Picture control in a user di
 !!! abstract "Object &middot; `Sudref.chm`"
     Object: Picture
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 The Picture object corresponds to the Picture control in a user dialog box. You use the Picture object to define a graphic to be displayed in the user dialog box. You can load a graphic, insert a graphic from the clipboard, or create a new graphic. Note Use the Layout property to specify the size and the position of the graphic.
 
 ## Notes

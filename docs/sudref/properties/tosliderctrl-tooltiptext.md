@@ -8,6 +8,16 @@ description: "Specifies the tooltip for a control in a user dialog box. The tool
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: ToolTipText for Slider
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies the tooltip for a control in a user dialog box. The tooltip appears when the mouse hovers over the control and the ToolTipMode property does not have the value 0 - None . If the ToolTipMode property has the value 1 - Automatic and you move the slider, the control displays the current numeric value. This setting determines that when the mouse hovers over the control, the control displays the text in the ToolTipText property. When you move the slider, the control only displays the value of the ToolTipText property if the ToolTipMode property has the value 2 - Custom .
 
 ## Signature

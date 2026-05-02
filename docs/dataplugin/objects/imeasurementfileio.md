@@ -8,6 +8,15 @@ description: "The File object provides information such as the name, origin, and
 !!! abstract "Object &middot; `DataPlugin.chm`"
     Object: File
 
+!!! note "Context: DataPlugin script"
+    Examples in this section run inside DIAdem's **DataPlugin host**
+    context, where identifiers like `Root`, `File`, `oBlock`, and
+    related host-supplied objects resolve automatically. From standalone
+    external Python via `Dispatch("DIAdem.TOCmd")` those names raise
+    `NameError`. The DataPlugin API is intended to be used by writing
+    your script inside a `.uri` DataPlugin file that DIAdem then loads;
+    it is not directly callable from external Python.
+
 The File object provides information such as the name, origin, and size of the file the DataPlugin is currently processing. You use the File object properties to specify the special format of this file. The file is either a text file or a binary file. Use the methods of the File object to access this file. You can use the methods to read single values, texts, or sections from the file.
 
 ## Python example

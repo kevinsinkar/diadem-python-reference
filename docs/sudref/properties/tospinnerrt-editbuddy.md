@@ -8,6 +8,16 @@ description: "Specifies in user dialog boxes that a SpinBox that comes after an 
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: EditBuddy for SpinBox
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies in user dialog boxes that a SpinBox that comes after an EditBox in the tab order of the controls, modifies the contents of the EditBox . The property can have the following settings: 0 - No The SpinBox does not modify the contents of the EditBox . 1 - Yes Unattached The SpinBox increments or decrements the contents of the EditBox . The EditBox does not attach to the SpinBox in the user dialog box display. 2 - Yes Attached The SpinBox increments or decrements the contents of the EditBox . The EditBox attaches to the SpinBox in the user dialog box display.
 
 ## See also

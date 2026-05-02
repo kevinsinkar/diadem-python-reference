@@ -8,6 +8,16 @@ description: "Specifies that the user can modify the height and width of a user 
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: Resizeable for Dialog
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies that the user can modify the height and width of a user dialog box during run time. Use the Flex properties to specify the behavior of the individual controls when the size of the user dialog box changes. Use the Width and Height control properties to specify the minimum width and height of the dialog box. Refer to the properties MinWidth and MinHeight for the minimum size of a scalable dialog box. The property can have the following settings: 0 - No Prevents resizing of the user dialog box. 1 - Yes Enables resizing of the user dialog box.
 
 ## See also

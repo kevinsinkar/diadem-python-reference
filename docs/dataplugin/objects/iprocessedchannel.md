@@ -8,6 +8,15 @@ description: "The ProcessedChannel object provides a channel, which combines val
 !!! abstract "Object &middot; `DataPlugin.chm`"
     Object: ProcessedChannel
 
+!!! note "Context: DataPlugin script"
+    Examples in this section run inside DIAdem's **DataPlugin host**
+    context, where identifiers like `Root`, `File`, `oBlock`, and
+    related host-supplied objects resolve automatically. From standalone
+    external Python via `Dispatch("DIAdem.TOCmd")` those names raise
+    `NameError`. The DataPlugin API is intended to be used by writing
+    your script inside a `.uri` DataPlugin file that DIAdem then loads;
+    it is not directly callable from external Python.
+
 The ProcessedChannel object provides a channel, which combines values from other channels ( ChannelsToProcess ), and the associated properties.
 
 ## Python example

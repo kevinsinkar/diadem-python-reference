@@ -8,6 +8,16 @@ description: "The XTable object corresponds to the XTable control in a user dial
 !!! abstract "Object &middot; `Sudref.chm`"
     Object: XTable
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 The XTable object corresponds to the XTable control in a user dialog box. You use the XTable object to define an extended table that is to be displayed in the user dialog box. You can label the columns and rows of the extended table with Text type headings. The user dialog box displays these headings in row 0 or in column 0. The actual data in the extended table starts at row 1 and column 1. In the Configure Columns dialog box you assign a cell type to each column of the extended table. The cell type specifies what type of control is assigned to a column. Possible cell types for the extended table are Button <XTable> , CheckBox <XTable> , ChnComboBox <XTable> , ChnListBox <XTable> , ComboBox <XTable> , EditBox <XTable> , ListBox <XTable> and Text <XTable> . Two controls of the selected type are always assigned to a column in the extended table. The user dialog box uses the first control in the display mode of the extended table and the second control in the entry mode. Unlike the controls that are displayed in the table , the extended table controls are not linked to variables. Instead, the contents of the controls are controlled by events, which enable you all kinds of display in the extended table. The display mode and the entry mode in the extended table enable you to react dynamically to specific requirements when table contents are displayed. For example, you can define different colors and formats for displaying and entering table values. Use the events EventValGet and EventValSet to control the contents of the extended table. The user dialog box triggers the EventValSet event to save the value of a cell from the extended table. The user dialog box uses the EventValGet event to display a value in a cell of the extended table. Due to this architecture the extended table never has data but offers an extraordinary flexibility instead. Inside the Configure Columns dialog box you also can specify a <Default> cell type. Use this cell type to facilitate and to speed up the definition of large matrices in the extended table. Use the Cell Type dialog box to configure the properties of the controls for the display mode and the entry mode. The properties list in this dialog box shows only the control properties that are useful in the display mode or in the entry mode in the extended table. Use the events EventColCtrlPreset and EventDefaultColCtrlPreset to initialize the controls in the script context.
 
 ## Python example

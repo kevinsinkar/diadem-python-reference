@@ -59,7 +59,7 @@ def OnDrawingHeaderCell(Context, Cell):
         else:
             # Maximum (in red) with channel unit
             if val(Cell.Value) > 0:
-                Cell.Font.Color.SetRGBColor(RGB(255, 128, 128))
+                Cell.Font.Color.SetRGBColor(dd.RGB(255, 128, 128))
             Cell.Value = Cell.Value + " " + ChnUnit
 ```
 

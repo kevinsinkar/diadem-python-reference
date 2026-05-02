@@ -8,6 +8,16 @@ description: "Returns the transfer parameter of a user dialog box. When you call
 !!! abstract "Method &middot; `Sudref.chm`"
     Method: GetArgument for Dialog
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Returns the transfer parameter of a user dialog box. When you call a user dialog box with SudDlgShow , you can transfer a parameter to the dialog box. However if you use SudDlgCreate to generate a non-modal user dialog box, you cannot use the parameter transfer with the GetArgument method.
 
 ## Signature

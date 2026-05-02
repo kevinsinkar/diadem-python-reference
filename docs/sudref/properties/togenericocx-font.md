@@ -8,6 +8,16 @@ description: "Specifies the font, font style, and font size for ActiveX controls
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: Font for ActiveX
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies the font, font style, and font size for ActiveX controls in user dialog boxes. You can use all the installed fonts.
 
 ## Signature
@@ -33,7 +43,7 @@ obj.Font
     example was machine-translated from the VBScript source.
 
 ```python
-ActiveX1.Font = -FontPointsToPixels(10) + ", None,0,0,0,400,0,0,0,0,3,2,1,34,Arial"
+ActiveX1.Font = -dd.FontPointsToPixels(10) + ", None,0,0,0,400,0,0,0,0,3,2,1,34,Arial"
 ```
 
 ## See also

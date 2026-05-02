@@ -8,6 +8,16 @@ description: "Specifies in user dialog boxes whether the enabled cell in an exte
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: ActiveCellBorder for XTable
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies in user dialog boxes whether the enabled cell in an extended table has a frame. The property can have the following settings: 0 - Always The enabled cell is framed. 1 - Never The enabled cell is not framed. 2 - IfActive The enabled cell is only framed if the focus is on the extended table.
 
 ## See also

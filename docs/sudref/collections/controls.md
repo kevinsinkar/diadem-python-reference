@@ -8,6 +8,16 @@ description: "Collection of all controls of a dialog box or of a tab. You use th
 !!! abstract "Collection &middot; `Sudref.chm`"
     Collection: Controls
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Collection of all controls of a dialog box or of a tab. You use the ObjectType property to determine the type of a control. You use the type to access the properties and the methods of the control.
 
 ## Python example
@@ -34,7 +44,7 @@ for i in range(1, Dialog.Controls.Count + 1):
 if dd.View.Sheets(1).Areas(1).DisplayObjType == "Dialog":
     for i in range(1, oMyDlg.Controls.Count + 1):
         if oMyDlg.Controls(i).ObjectType == "Text":
-            oMyDlg.Controls(i).ForeColor = RGB(255, 0, 0)
+            oMyDlg.Controls(i).ForeColor = dd.RGB(255, 0, 0)
 ```
 
 ## Members

@@ -8,6 +8,16 @@ description: "The ListBox object corresponds to the ListBox control in an extend
 !!! abstract "Object &middot; `Sudref.chm`"
     Object: ListBox <XTable>
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 The ListBox object corresponds to the ListBox control in an extended table of a user dialog box. You use the ListBox object to define a selection list to be displayed in an extended table. Specify the selection terms for display in the dialog box Cell Type which you open if you click Columns on the Properties tab and then click the ... button.
 
 ## Notes

@@ -8,6 +8,16 @@ description: "The ChnCtrl <XTable> object corresponds to the ChnCtrl control in 
 !!! abstract "Object &middot; `Sudref.chm`"
     Object: ChnCtrl <XTable>
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 The ChnCtrl <XTable> object corresponds to the ChnCtrl control in an extended table of a user dialog box. You use the ChnCtrl object to define a channel input field. As soon as you have entered at least two characters in the channel input field, an auto-complete window opens with a list of all channels in the Data Portal that contain these characters at any position in the group name or channel name without taking upper and lower case into account. If, for example, you have selected [Group index]/Channel name as syntax for the channel reference in the DIAdem settings and enter [1]/ , then DIAdem will display all channels of the first channel group. In addition, the channel input field in front of the text displays the type of the currently selected channel as a symbol. You can use the arrow keys or the mouse to select an entry from the auto-complete window. If you enter text that is not contained in a channel reference, DIAdem closes the auto-complete window. The following example assigns the Time channel from the first channel group to the cell of an extended table:
 
 ## Python example

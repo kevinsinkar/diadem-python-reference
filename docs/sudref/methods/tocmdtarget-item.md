@@ -8,6 +8,16 @@ description: "Returns the control for a specific index in user dialog boxes. The
 !!! abstract "Method &middot; `Sudref.chm`"
     Method: Item for Controls
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Returns the control for a specific index in user dialog boxes. The returned object enables you to access the entries in the collection.
 
 ## Signature
@@ -34,13 +44,13 @@ return_value = obj.Item(NameOrIndex)
     example was machine-translated from the VBScript source.
 
 ```python
-Dialog.Controls.Item("MyButton").ForeColor = vbBlue
-Dialog.Controls("MyButton").ForeColor = vbBlue
+Dialog.Controls.Item("MyButton").ForeColor = 16711680
+Dialog.Controls("MyButton").ForeColor = 16711680
 ```
 
 ```python
-Page1.Controls.Item(1).ForeColor = vbBlue
-Page1.Controls(1).ForeColor = vbBlue
+Page1.Controls.Item(1).ForeColor = 16711680
+Page1.Controls(1).ForeColor = 16711680
 ```
 
 ```python

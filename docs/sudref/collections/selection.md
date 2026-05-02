@@ -8,6 +8,16 @@ description: "Collection of all Selections of an extended table in a user dialog
 !!! abstract "Collection &middot; `Sudref.chm`"
     Collection: Selection
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Collection of all Selections of an extended table in a user dialog box. A selection consists of several adjacent, selected table cells. You can use the Selection collection to delete selections in the extended table or to extend existing selections. Use the Selection Properties dialog box to specify the selection options in an extended table. To open this dialog box, select the extended table in the dialog editor and click Selection on the Properties tab.
 
 ## Python example

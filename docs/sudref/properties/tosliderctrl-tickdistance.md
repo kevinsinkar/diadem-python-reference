@@ -8,6 +8,16 @@ description: "Determines the tick distance on the Slider control in user dialog 
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: TickDistance for Slider
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Determines the tick distance on the Slider control in user dialog boxes. If the value range of the control is not a multiple of TickDistance , the last tick distance is smaller than the other tick distances. If TickMode has the value 1 - UseTickDistance , you can read and modify the TickDistance property. If TickMode has the value 0 - Automatic , you can only read the TickDistance property. The TickDistance property then contains the calculated tick distance.
 
 ## Signature

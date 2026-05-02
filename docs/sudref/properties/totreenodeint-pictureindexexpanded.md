@@ -8,6 +8,16 @@ description: "Specifies in user dialog boxes the sub-graphic index, which DIAdem
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: PictureIndexExpanded for TreeNode
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies in user dialog boxes the sub-graphic index, which DIAdem displays in the tree when the node is expanded. The user dialog box divides the graphic you specify with the Picture property into several smaller sub-graphics with the specified width PictureWidth , and assigns these sub-graphics to the respective index. The first sub-graphic has the index 1. If you do not specify an index, the index has the value 0. If the Picture property is set, DIAdem displays a picture at every node.
 
 ## Signature

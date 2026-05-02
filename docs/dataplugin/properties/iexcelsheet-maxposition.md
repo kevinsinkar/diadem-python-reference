@@ -8,6 +8,15 @@ description: "Specifies within the worksheet the position of the cell that conta
 !!! abstract "Property &middot; `DataPlugin.chm`"
     Property: MaxPosition for Sheet
 
+!!! note "Context: DataPlugin script"
+    Examples in this section run inside DIAdem's **DataPlugin host**
+    context, where identifiers like `Root`, `File`, `oBlock`, and
+    related host-supplied objects resolve automatically. From standalone
+    external Python via `Dispatch("DIAdem.TOCmd")` those names raise
+    `NameError`. The DataPlugin API is intended to be used by writing
+    your script inside a `.uri` DataPlugin file that DIAdem then loads;
+    it is not directly callable from external Python.
+
 Specifies within the worksheet the position of the cell that contains the last value.
 
 ## Signature

@@ -8,6 +8,16 @@ description: "Is triggered in user dialog boxes before the curve preview is refr
 !!! abstract "Event &middot; `Sudref.chm`"
     Event: EventPrePaint
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Is triggered in user dialog boxes before the curve preview is refreshed.
 
 ## Signature
@@ -41,7 +51,7 @@ def Curve2DPreview1_EventPrePaint(This):
     dd.Data.Root.ChannelGroups.Add("Temp")
     ChnSmooth("[1]/[2]","Temp/Smoothed",100,"maxNumber")
     oMyCurve = This.Curves.Add("[1]/[1]","Temp/Smoothed")
-    oMyCurve.Color = vbBlue
+    oMyCurve.Color = 16711680
 
 def Curve2DPreview1_EventPostPaint(This):
     dd.Data.Root.ChannelGroups.Remove("Temp")

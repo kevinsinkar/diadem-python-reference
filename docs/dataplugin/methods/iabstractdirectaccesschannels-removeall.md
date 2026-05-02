@@ -8,6 +8,15 @@ description: "Deletes all the elements of the DirectAccessChannels collection or
 !!! abstract "Method &middot; `DataPlugin.chm`"
     Method: RemoveAll for AbstractDirectAccessChannels
 
+!!! note "Context: DataPlugin script"
+    Examples in this section run inside DIAdem's **DataPlugin host**
+    context, where identifiers like `Root`, `File`, `oBlock`, and
+    related host-supplied objects resolve automatically. From standalone
+    external Python via `Dispatch("DIAdem.TOCmd")` those names raise
+    `NameError`. The DataPlugin API is intended to be used by writing
+    your script inside a `.uri` DataPlugin file that DIAdem then loads;
+    it is not directly callable from external Python.
+
 Deletes all the elements of the DirectAccessChannels collection or the BinaryDirectAccessChannels collection.
 
 ## Signature

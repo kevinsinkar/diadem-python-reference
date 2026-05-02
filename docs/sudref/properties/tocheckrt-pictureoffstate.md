@@ -8,6 +8,16 @@ description: "Specifies the graphic for a disabled control in a user dialog box.
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: PictureOffState for CheckBox
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies the graphic for a disabled control in a user dialog box. Click PictureOffstate in the Properties tab to paste, to load, or to edit a graphic. You also can specify the color that the transparent control displays. You can embed graphics in the user dialog box or save the link to a file. The user dialog box first searches for graphics files on the DIAdem SCRIPT user path, and then on the DIAdem program path. You can use relative paths or absolute paths. The graphic must be square and the same size as the graphic specified under Picture .
 
 ## Signature

@@ -8,6 +8,16 @@ description: "Specifies the step width for the Slider control in user dialog box
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: IncrementPage for Slider
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies the step width for the Slider control in user dialog boxes when you use the <Page up> and <Page down> keys. If the value is not set or -1 , DIAdem uses one fifth of the value range.
 
 ## Signature

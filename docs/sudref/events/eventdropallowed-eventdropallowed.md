@@ -8,6 +8,16 @@ description: "Is triggered in user dialog boxes when an element is dragged and d
 !!! abstract "Event &middot; `Sudref.chm`"
     Event: EventDropAllowed
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Is triggered in user dialog boxes when an element is dragged and dropped onto a channel selection list or an entry field. The event is triggered when you move the cursor into the control. Use this event to determine whether dropping onto the control is allowed.
 
 ## Signature

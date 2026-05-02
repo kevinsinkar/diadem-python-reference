@@ -8,6 +8,16 @@ description: "Specifies the default button in user dialog boxes. The default but
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: Default for Button
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies the default button in user dialog boxes. The default button in a dialog box is the button that is selected or highlighted when the dialog box opens. The default button has a wide border. This button is automatically selected if you press <Enter>.
 
 ## Signature

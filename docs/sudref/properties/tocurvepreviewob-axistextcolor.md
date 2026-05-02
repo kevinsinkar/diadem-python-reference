@@ -8,6 +8,16 @@ description: "Specifies in user dialog boxes the color of the axis and scale lab
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: AxisTextColor for Curve2DPreview
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies in user dialog boxes the color of the axis and scale labeling for the Curve2DPreview control. Use the automatic setting if you want the color to correspond to the color settings for the operating system. Click Color in the Properties tab to open the color selection dialog box. The color selection dialog box offers a basic palette of colors and the option to define more colors.
 
 ## Signature
@@ -36,12 +46,12 @@ obj.AxisTextColor
 ```python
 Curve2Dreview1.Curves.RemoveAll
 Curve2DPreview1.Curves.Add("[[1]/[1]","[1]/[2]")
-Curve2DPreview1.AxisTextColor = vbBlue
+Curve2DPreview1.AxisTextColor = 16711680
 Curve2DPreview1.Refresh
 ```
 
 ```python
-Curve2DPreview1.AxisTextColor = RGB(0,0,255)
+Curve2DPreview1.AxisTextColor = dd.RGB(0,0,255)
 ```
 
 ## See also

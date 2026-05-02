@@ -8,6 +8,15 @@ description: "Specifies the character that identifies the beginning and the end 
 !!! abstract "Property &middot; `DataPlugin.chm`"
     Property: StringSign for Formatter
 
+!!! note "Context: DataPlugin script"
+    Examples in this section run inside DIAdem's **DataPlugin host**
+    context, where identifiers like `Root`, `File`, `oBlock`, and
+    related host-supplied objects resolve automatically. From standalone
+    external Python via `Dispatch("DIAdem.TOCmd")` those names raise
+    `NameError`. The DataPlugin API is intended to be used by writing
+    your script inside a `.uri` DataPlugin file that DIAdem then loads;
+    it is not directly callable from external Python.
+
 Specifies the character that identifies the beginning and the end of a text. The text identifier is ignored when the text is read. Text between two text identifiers are not interpreted when text is read.
 
 ## Signature

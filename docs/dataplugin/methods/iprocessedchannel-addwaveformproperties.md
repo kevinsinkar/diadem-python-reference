@@ -8,6 +8,15 @@ description: "Adds waveform properties to a channel, which combines values form 
 !!! abstract "Method &middot; `DataPlugin.chm`"
     Method: AddWaveformProperties for ProcessedChannel
 
+!!! note "Context: DataPlugin script"
+    Examples in this section run inside DIAdem's **DataPlugin host**
+    context, where identifiers like `Root`, `File`, `oBlock`, and
+    related host-supplied objects resolve automatically. From standalone
+    external Python via `Dispatch("DIAdem.TOCmd")` those names raise
+    `NameError`. The DataPlugin API is intended to be used by writing
+    your script inside a `.uri` DataPlugin file that DIAdem then loads;
+    it is not directly callable from external Python.
+
 Adds waveform properties to a channel, which combines values form other channels ( ChannelsToProcess ), in order to create a waveform channel. Waveform channels contain the x-part and the y-part of a curve in a channel. The y-part contains the (measurement) values. The x-part might be the measured time. The Waveform properties specify the x-part that is a linear specification with a start value and a step width.
 
 ## Signature

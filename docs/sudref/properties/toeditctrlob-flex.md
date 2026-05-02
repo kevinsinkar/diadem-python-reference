@@ -8,6 +8,16 @@ description: "Specifies the change in the size and position of the control when 
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: Flex for EditBox
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies the change in the size and position of the control when you scale a user dialog box during runtime. The property has no effect if you assign the value 0 - No to the Resizeable dialog box property.
 
 ## Notes

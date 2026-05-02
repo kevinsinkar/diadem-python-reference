@@ -8,6 +8,16 @@ description: "Specifies in user dialog boxes the background color of a control i
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: BackColor for ComboBox <XTable>
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies in user dialog boxes the background color of a control in an extended table. Use the automatic setting if you want the background color to correspond to the color settings for the operating system. Click BackColor in the Properties tab to open the color selection dialog box. The color selection dialog box offers a basic palette of colors and the option to define more colors. Use a RGB value or a VBS color constant to specify the color.
 
 ## Signature
@@ -34,11 +44,11 @@ obj.BackColor
     example was machine-translated from the VBScript source.
 
 ```python
-Cell.BackColor = vbBlue
+Cell.BackColor = 16711680
 ```
 
 ```python
-Cell.BackColor = RGB(0,0,255)
+Cell.BackColor = dd.RGB(0,0,255)
 ```
 
 ## See also

@@ -8,6 +8,16 @@ description: "Specifies the font, font style, and font size for controls in user
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: Font for ListBox
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies the font, font style, and font size for controls in user dialog boxes. You can use all the installed fonts. To restore the default settings, select Font in the Properties tab, and Default setting in the dialog box that appears. The default settings are the same as the settings of the Windows operating system.
 
 ## Signature
@@ -23,7 +33,7 @@ obj.Font
     example was machine-translated from the VBScript source.
 
 ```python
-ListBox1.Font = -FontPointsToPixels(10) + ", None,0,0,0,400,0,0,0,0,3,2,1,34,Arial"
+ListBox1.Font = -dd.FontPointsToPixels(10) + ", None,0,0,0,400,0,0,0,0,3,2,1,34,Arial"
 ```
 
 ## See also

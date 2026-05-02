@@ -8,6 +8,16 @@ description: "Merges the specified cells of an extended table to one cell, in us
 !!! abstract "Method &middot; `Sudref.chm`"
     Method: MergeCells for XTable
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Merges the specified cells of an extended table to one cell, in user dialog boxes. The new cell contains the row index and the column index of the top left cell of the cells that are to be merged. You also can use this method to separate merged cells. To do this, enter the row index and the column index of the cell that is to be separated.
 
 ## Signature

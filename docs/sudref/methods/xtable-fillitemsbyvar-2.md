@@ -8,6 +8,16 @@ description: "Adds the selection terms from an enumeration variable to an existi
 !!! abstract "Method &middot; `Sudref.chm`"
     Method: FillItemsByVar for ListBox <XTable>
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Adds the selection terms from an enumeration variable to an existing selection list in extended tables in user dialog boxes. The selection terms can be appended to the list as script terms or as user interface terms.
 
 ## Signature

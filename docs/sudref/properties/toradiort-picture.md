@@ -8,6 +8,16 @@ description: "Specifies the graphic for a control in a user dialog box. Click Pi
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: Picture for RadioButton
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies the graphic for a control in a user dialog box. Click Picture in the Properties tab to paste, to load, or to edit a graphic. You also can specify the color that the transparent control displays. You can embed graphics in a user dialog box or save the link in the file. DIAdem searches for graphic files for user dialogs first in the folder where the SUD file is stored, then in the SCRIPT folders defined in the variables ScriptReadPath and ScriptLibrPath , then in the DIAdem program folder and finally in the media folders. which are defined in the variables MediaReadPath and MediaLibrPath . You can use relative paths and absolute paths. The graphic must be the same size as the graphic specified under PictureOffstate . Under Windows, you can set the screen scaling or DPI value to another value than 100%, such as 150% or 200%. With higher scaling under Windows, graphics in DIAdem dialog boxes might be very small. To display graphics in DIAdem with the screen scaling in the correct size, you can save these graphics in the same folder as the original file, but with the same file name and the postfix _pct150 or _pct200. DIAdem automatically selects the appropriate file depending on the Windows scaling factor. The graphics in these files must be scaled according to the scaling factor set under Windows. For example, if the screen scaling is 150 % and you select the file image.jpg in the Picture Definition dialog box and the same folder also contains the file image_150pct.jpg for a scaling factor of 150%, DIAdem automatically uses the file image_pct150.jpg instead of the initially selected file image.jpg. The picture must not be embedded.
 
 ## Signature

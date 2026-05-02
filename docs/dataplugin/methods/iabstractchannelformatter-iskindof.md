@@ -8,6 +8,15 @@ description: "Checks whether the AbstractChannelFormatter object is a certain ty
 !!! abstract "Method &middot; `DataPlugin.chm`"
     Method: IsKindOf for AbstractChannelFormatter
 
+!!! note "Context: DataPlugin script"
+    Examples in this section run inside DIAdem's **DataPlugin host**
+    context, where identifiers like `Root`, `File`, `oBlock`, and
+    related host-supplied objects resolve automatically. From standalone
+    external Python via `Dispatch("DIAdem.TOCmd")` those names raise
+    `NameError`. The DataPlugin API is intended to be used by writing
+    your script inside a `.uri` DataPlugin file that DIAdem then loads;
+    it is not directly callable from external Python.
+
 Checks whether the AbstractChannelFormatter object is a certain type. The AbstractChannelFormatter object contains information about how the values of a channel are represented in the file. Depending on whether the channel belongs to a BinaryBlock, StringBlock, FixedWidthBlock, or CellBlock the AbstractChannelFormatter is a BinaryChannelFormatter , StringChannelFormatter , FixedWidthChannelFormatter , or CellChannelFormatter object.
 
 ## Signature

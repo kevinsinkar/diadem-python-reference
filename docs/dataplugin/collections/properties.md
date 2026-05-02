@@ -8,6 +8,15 @@ description: "A collection of all properties for the Root object, for the Channe
 !!! abstract "Collection &middot; `DataPlugin.chm`"
     Collection: Properties <DataPlugin>
 
+!!! note "Context: DataPlugin script"
+    Examples in this section run inside DIAdem's **DataPlugin host**
+    context, where identifiers like `Root`, `File`, `oBlock`, and
+    related host-supplied objects resolve automatically. From standalone
+    external Python via `Dispatch("DIAdem.TOCmd")` those names raise
+    `NameError`. The DataPlugin API is intended to be used by writing
+    your script inside a `.uri` DataPlugin file that DIAdem then loads;
+    it is not directly callable from external Python.
+
 A collection of all properties for the Root object, for the ChannelGroup object, or for the Channel object. The properties include the base properties of the data model and user-defined custom properties. You can use the Properties collection to delete or to add properties.
 
 ## Python example

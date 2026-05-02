@@ -8,6 +8,16 @@ description: "The ActiveX object provides in a user dialog box an ActiveX contro
 !!! abstract "Object &middot; `Sudref.chm`"
     Object: ActiveX
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 The ActiveX object provides in a user dialog box an ActiveX control that is already registered on your computer. In addition to the properties and methods the dialog editor provides for the ActiveX control, the ActiveX control has its own properties, events, and methods. You can access the integrated methods and properties of an ActiveX control with the method X via the syntax Object.X.Method or Object.X.Property. Refer to the documentation for the ActiveX controls for detailed descriptions.
 
 ## Notes

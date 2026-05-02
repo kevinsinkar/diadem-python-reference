@@ -8,6 +8,16 @@ description: "Specifies how the user dialog box displays the mouse cursor on a d
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: CursorPointer for Dialog <NonModal>
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies how the user dialog box displays the mouse cursor on a dialog box control.
 
 ## Signature
@@ -23,7 +33,7 @@ obj.CursorPointer
     example was machine-translated from the VBScript source.
 
 ```python
-oMyDlg = SudDlgCreate("Input","Example.sud")
+oMyDlg = dd.SudDlgCreate("Input","Example.sud")
 oMyDlg.CursorPointer = 2
 ```
 

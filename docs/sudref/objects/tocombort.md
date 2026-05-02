@@ -8,6 +8,16 @@ description: "The ComboBox object corresponds to the ComboBox control in a user 
 !!! abstract "Object &middot; `Sudref.chm`"
     Object: ComboBox
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 The ComboBox object corresponds to the ComboBox control in a user dialog box. You use the ComboBox object to define a selection list that displays in the dialog box. The list drops down when you click the box. You specify which selection terms are displayed and the return values by clicking ListItems on the Properties tab. Note The EnumComboBox control has similar properties. Use a dynamic enumeration list variable or an enumeration variable to specify the selection terms for the control.
 
 ## Notes

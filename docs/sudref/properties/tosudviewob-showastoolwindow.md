@@ -8,6 +8,16 @@ description: "Specifies whether the user dialog box appears as a symbol bar. The
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: ShowAsToolWindow for Dialog
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies whether the user dialog box appears as a symbol bar. The title of the symbol bar is narrower than in a user dialog box and you can reduce the size of the symbol bar. When you design a symbol bar, select View » Grid Settings to hide the lines for positioning controls. The property can have the following settings: 0 - No Displays the user dialog box as a dialog box. 1 - Yes Displays the user dialog box as a symbol bar.
 
 ## See also

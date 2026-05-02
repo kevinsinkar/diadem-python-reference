@@ -8,6 +8,16 @@ description: "The Text object corresponds to the Table control in a user dialog 
 !!! abstract "Object &middot; `Sudref.chm`"
     Object: Table
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 The Text object corresponds to the Table control in a user dialog box. You use the Table object to define a table to be displayed in the user dialog box. Use the Cells property to specify the table values and use the Columns property to assign table columns to vector variables or matrix variables. Note Use the XTable control to display an extended table. In an extended table you can assign a specific control type to each individual column of the extended table. In the extended table you can display buttons, selection lists, channel selection lists, input fields, texts, or check boxes.
 
 ## Notes
@@ -27,7 +37,7 @@ The Text object corresponds to the Table control in a user dialog box. You use t
     example was machine-translated from the VBScript source.
 
 ```python
-Table1.TitleFontColor = vbBlue
+Table1.TitleFontColor = 16711680
 ```
 
 ## Members

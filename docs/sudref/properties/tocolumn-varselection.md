@@ -8,6 +8,16 @@ description: "Specifies which row or column in a DIAdem matrix variable links a 
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: VarSelection for Column
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies which row or column in a DIAdem matrix variable links a user dialog box to a table. To specify the property value, click Columns in the Properties tab, and select the value for Index in the dialog box that appears.
 
 ## Signature

@@ -8,6 +8,16 @@ description: "Specifies picture alignment in a selection list in a user dialog b
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: PictureAlign for EnumListBox
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies picture alignment in a selection list in a user dialog box. The property can have the following settings: 0 - Left Positions the graphic on the left and displays any text to the right of the graphic. 1 - Right Positions the graphic on the right and displays any text to the left of the graphic. 2 - Center Centers the graphic and does not display any text.
 
 ## Notes

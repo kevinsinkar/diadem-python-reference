@@ -8,6 +8,15 @@ description: "The CellBlock object makes accessing data in a workbook easier. A 
 !!! abstract "Object &middot; `DataPlugin.chm`"
     Object: CellBlock
 
+!!! note "Context: DataPlugin script"
+    Examples in this section run inside DIAdem's **DataPlugin host**
+    context, where identifiers like `Root`, `File`, `oBlock`, and
+    related host-supplied objects resolve automatically. From standalone
+    external Python via `Dispatch("DIAdem.TOCmd")` those names raise
+    `NameError`. The DataPlugin API is intended to be used by writing
+    your script inside a `.uri` DataPlugin file that DIAdem then loads;
+    it is not directly callable from external Python.
+
 The CellBlock object makes accessing data in a workbook easier. A CellBlock can contain one or more DirectAccess channels. The channel values are organized columnwise in this block. You read the contents of a workbook as follows: - use the Workbook.GetCellBlock method and assign the return value to a variable. - add a DirectAccess channel to the CellBlock for each channel to be read, - assign the complete DirectAccess channel to a channel group. Note The file pointer of the worksheet does not move when a CellBlock is read out.
 
 ## Notes

@@ -8,6 +8,16 @@ description: "The ViewConnector object corresponds to the ViewConnector control 
 !!! abstract "Object &middot; `Sudref.chm`"
     Object: ViewConnector
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 The ViewConnector object corresponds to the ViewConnector control in a user dialog box. Use the ViewConnector control in a user dialog box if you want to display the user dialog box in a DIAdem VIEW area which contains a Dialog Box display type. The ViewConnector control is not visible at runtime. Use the events of the ViewConnector control to react to events in DIAdem VIEW, for example, moving the cursor. The events of the ViewConnector control have no impact outside of DIAdem VIEW. You can define only one ViewConnector control in a user dialog box.
 
 ## Python example

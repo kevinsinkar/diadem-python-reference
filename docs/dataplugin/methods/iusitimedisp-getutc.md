@@ -8,6 +8,15 @@ description: "Returns the time information saved in the USITimeDisp object in co
 !!! abstract "Method &middot; `DataPlugin.chm`"
     Method: GetUTC for UsiTimeDisp
 
+!!! note "Context: DataPlugin script"
+    Examples in this section run inside DIAdem's **DataPlugin host**
+    context, where identifiers like `Root`, `File`, `oBlock`, and
+    related host-supplied objects resolve automatically. From standalone
+    external Python via `Dispatch("DIAdem.TOCmd")` those names raise
+    `NameError`. The DataPlugin API is intended to be used by writing
+    your script inside a `.uri` DataPlugin file that DIAdem then loads;
+    it is not directly callable from external Python.
+
 Returns the time information saved in the USITimeDisp object in coordinated world time as UTC time (Universal Time Coordinated). UTC time consists of a date and time specification. The GetUTC method does not execute a plausibility check and assumes that the time information to be converted is in local time. If this is not the case, the results are invalid. Therefore we recommend you know how local time is related to UTC time when you use this method. For example, UTC + 1 hour applies in Germany, which means 1 p. m. UTC is the same as 2 p.m. local time. During the daylight saving time, Germany adds a further hour to the UTC time.
 
 ## Signature

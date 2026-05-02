@@ -8,6 +8,15 @@ description: "Reads a value at the current file position and moves the file poin
 !!! abstract "Method &middot; `DataPlugin.chm`"
     Method: GetNextStringValue for File
 
+!!! note "Context: DataPlugin script"
+    Examples in this section run inside DIAdem's **DataPlugin host**
+    context, where identifiers like `Root`, `File`, `oBlock`, and
+    related host-supplied objects resolve automatically. From standalone
+    external Python via `Dispatch("DIAdem.TOCmd")` those names raise
+    `NameError`. The DataPlugin API is intended to be used by writing
+    your script inside a `.uri` DataPlugin file that DIAdem then loads;
+    it is not directly callable from external Python.
+
 Reads a value at the current file position and moves the file pointer according to the data type of the value.
 
 ## Signature

@@ -8,6 +8,16 @@ description: "The CurvePreview object corresponds to the CurvePreview control in
 !!! abstract "Object &middot; `Sudref.chm`"
     Object: Curve2DPreview
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 The CurvePreview object corresponds to the CurvePreview control in a user dialog box. Use the Curve2DPreview object to define a curve preview to be displayed in the dialog box. Use the Curves property to specify which channels or channel pairs to display in the curve preview.
 
 ## Python example
@@ -19,7 +29,7 @@ The CurvePreview object corresponds to the CurvePreview control in a user dialog
 ```python
 Curve2DPreview1.Curves.RemoveAll
 oMyCurve = Curve2DPreview1.Curves.Add("[1]/[1]","[1]/[2]")
-oMyCurve.Color = vbBlue
+oMyCurve.Color = 16711680
 oMyCurve.Type = 1  # 1=Spikes
 Curve2DPreview1.Refresh
 ```

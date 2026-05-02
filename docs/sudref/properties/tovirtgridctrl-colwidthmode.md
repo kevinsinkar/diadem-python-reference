@@ -8,6 +8,16 @@ description: "Specifies in user dialog boxes how to display the individual colum
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: ColWidthMode for XTable
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies in user dialog boxes how to display the individual columns in an extended table. The property can have the following settings: 0 - KeepColWidth Displays all the table columns with the specified column width. 1 - FitLastColWidth Displays the last table column flush right with the table edge when the table has not been scrolled or when the columns have not been broadened to make a horizontal scroll bar visible.
 
 ## See also

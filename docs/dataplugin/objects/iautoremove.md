@@ -8,6 +8,15 @@ description: "The AutoRemove object offers support when working with ZIP archive
 !!! abstract "Object &middot; `DataPlugin.chm`"
     Object: AutoRemove
 
+!!! note "Context: DataPlugin script"
+    Examples in this section run inside DIAdem's **DataPlugin host**
+    context, where identifiers like `Root`, `File`, `oBlock`, and
+    related host-supplied objects resolve automatically. From standalone
+    external Python via `Dispatch("DIAdem.TOCmd")` those names raise
+    `NameError`. The DataPlugin API is intended to be used by writing
+    your script inside a `.uri` DataPlugin file that DIAdem then loads;
+    it is not directly callable from external Python.
+
 The AutoRemove object offers support when working with ZIP archives. The methods allow you to unzip ZIP archives to a temporary folder and automatically delete the files in this folder. Note that a ZIP archive contains exactly one measurement data file. The DataFinder indexes a ZIP file only once, like any other measurement data file. Addressing within the ZIP archive is not possible.
 
 ## Python example

@@ -8,6 +8,16 @@ description: "You use the ChnComboBox object to define a channel selection list 
 !!! abstract "Object &middot; `Sudref.chm`"
     Object: ChnComboBox <XTable>
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 You use the ChnComboBox object to define a channel selection list that displays in an extended table. The list drops down when you click the box. The user dialog box takes the displayed selection terms from the Data Portal. The channels currently loaded in DIAdem appear in the channel selection list in channel number order. Note You only can access this control within the event procedures of the extended table.
 
 ## Notes

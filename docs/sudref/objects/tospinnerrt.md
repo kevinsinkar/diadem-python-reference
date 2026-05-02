@@ -8,6 +8,16 @@ description: "The SpinBox object corresponds to the SpinBox control in a user di
 !!! abstract "Object &middot; `Sudref.chm`"
     Object: SpinBox
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 The SpinBox object corresponds to the SpinBox control in a user dialog box. You use the SpinBox object to define a control to be displayed in a user dialog box. The control has incrementing and decrementing arrows that change the numeric value in an EditBox . To assign a SpinBox to an EditBox use the Tabulator Order dialog box where you specify that the Spinbox of the user dialog box is enabled directly after the Editbox with <Tab>. If you include a SpinBox in a user dialog box directly after including an EditBox, the two controls are automatically linked. You can use the EditBuddy property for the SpinBox to disable the link.
 
 ## Python example

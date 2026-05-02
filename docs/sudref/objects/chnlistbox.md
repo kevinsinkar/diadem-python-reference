@@ -8,6 +8,16 @@ description: "The ChnListBox object corresponds to the ChnListBox control in an 
 !!! abstract "Object &middot; `Sudref.chm`"
     Object: ChnListBox <XTable>
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 The ChnListBox object corresponds to the ChnListBox control in an extended table of a user dialog box. You use the ChnListBox object to define a button you want to display in an extended table. The user dialog box takes the displayed selection terms from the Data Portal. The channels currently loaded in DIAdem appear in the channel selection list in channel number order.
 
 ## Notes

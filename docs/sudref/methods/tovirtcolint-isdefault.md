@@ -8,6 +8,16 @@ description: "Specifies in user dialog boxes whether <Default> type controls are
 !!! abstract "Method &middot; `Sudref.chm`"
     Method: IsDefault for XTableColumn
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies in user dialog boxes whether <Default> type controls are assigned to a column in the extended table. Use the Configure columns dialog box in the dialog editor to specify the types of the controls that are assigned to an extended table. Click Columns in the Properties tab to modify the properties of the table columns in the dialog editor.
 
 ## Signature

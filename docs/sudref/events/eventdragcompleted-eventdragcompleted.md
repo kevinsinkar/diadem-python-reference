@@ -8,6 +8,16 @@ description: "Is triggered in user dialog box after a drag process from a tree o
 !!! abstract "Event &middot; `Sudref.chm`"
     Event: EventDragCompleted for Tree
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Is triggered in user dialog box after a drag process from a tree or within a tree and when the drag process is complete. In this event you can remove, for example, the dragged node from its original position in tree, if the node was moved. Use the DropEffect parameter to check whether the dropping process was aborted or whether the node was copied or moved. If you do not change the selection in any event while dragging the node, use the SelectedItem property to specify the dragged node. If you do change the selection, you must note the dragged node in a variable in the EventDragStart event.
 
 ## Signature

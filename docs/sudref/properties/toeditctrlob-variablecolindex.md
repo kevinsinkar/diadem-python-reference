@@ -8,6 +8,16 @@ description: "Specifies which column in the DIAdem vector variable or the DIAdem
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: VariableColIndex for EditBox
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies which column in the DIAdem vector variable or the DIAdem matrix variable is linked to the control value in user dialog boxes. Use the Variable property to specify the name of the variable. You use the VariableRowIndex property to access the first dimension of a matrix variable. You use the VariableColIndex property to access the second dimension of a matrix variable. Note If the first number in the variable index is not one, the row and the column index specify the numbers of the element in the row and the column. If the dimensions of a MyVar(10,20) variable start with zero, the row index one and the column index one represent the first element MyVar(0,0) .
 
 ## Notes

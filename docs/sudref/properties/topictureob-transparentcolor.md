@@ -8,6 +8,16 @@ description: "Specifies which color is transparent in the displayed picture in a
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: TransparentColor for Picture
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies which color is transparent in the displayed picture in a user dialog box. To specify the color, click Picture in the Properties tab. Use a RGB value or a VBS color constant to specify the color.
 
 ## Signature
@@ -23,11 +33,11 @@ obj.TransparentColor
     example was machine-translated from the VBScript source.
 
 ```python
-Picture1.TransparentColor = RGB(0, 0, 255)
+Picture1.TransparentColor = dd.RGB(0, 0, 255)
 ```
 
 ```python
-Picture1.TransparentColor = RGB(0,0,255)
+Picture1.TransparentColor = dd.RGB(0,0,255)
 ```
 
 ## See also

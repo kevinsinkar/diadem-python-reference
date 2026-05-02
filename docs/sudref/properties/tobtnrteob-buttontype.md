@@ -8,6 +8,16 @@ description: "Specifies a button type in a user dialog box. The property can hav
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: ButtonType for Button
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies a button type in a user dialog box. The property can have the following settings: 0 - Cancel Triggers the EventClick event, closes the user dialog box, and resets the DIAdem variables for which you selected Reset after cancel under Edit»Variables , to their original value. The user dialog box also sets the DIAdem variable DlgState as IDCancel . Clicking a button with this property is the same as calling the Cancel method. 1 - EventClick Triggers the EventClick event without then closing the user dialog box. 4 - OK Triggers the EventClick event, then closes the user dialog box and transfers to DIAdem the contents of the DIAdem variables that are connected to controls in the dialog box. The user dialog box also sets the DIAdem variable DlgState as IDOk . Clicking a button with this property is the same as calling the OK method.
 
 ## See also

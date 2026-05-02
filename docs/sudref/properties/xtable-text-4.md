@@ -8,6 +8,16 @@ description: "Specifies the text in a text field of a user dialog box. The Valid
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: Text for ChnCtrl <XTable>
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies the text in a text field of a user dialog box. The ValidReference property specifies whether any text or only valid channel references are allowed. While entering a text, the Text property in the EventChange event contains the entered text. If the channel input field does not have the focus, you can only use the Text property to assign any text if the ValidReference property has the value False .
 
 ## Signature

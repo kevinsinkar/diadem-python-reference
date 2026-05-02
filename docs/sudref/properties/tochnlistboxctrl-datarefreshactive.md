@@ -8,6 +8,16 @@ description: "Specifies whether the user dialog box automatically refreshes the 
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: DataRefreshActive for ChnListBox
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies whether the user dialog box automatically refreshes the selection terms of a channel selection list if the names or the positions of the channels in the Data Portal change. If you assign the value 1 to the DataRefreshActive property, the refreshing of the Data Portal triggers the event EventChnListRefreshed in the user dialog box. The property can have the following settings: 0 - No Does not refresh the channel selection list. 1 - Yes Refreshes the channel selection list.
 
 ## Notes

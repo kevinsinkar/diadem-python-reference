@@ -8,6 +8,16 @@ description: "Triggers in user dialog boxes to display the value of a cell of th
 !!! abstract "Event &middot; `Sudref.chm`"
     Event: EventValGet for XTable
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Triggers in user dialog boxes to display the value of a cell of the extended table.
 
 ## Signature
@@ -53,9 +63,9 @@ def XTable1_EventValGet(This, Row, Col, Cell, IsInputCell):
 
 def XTable1_EventDefaultColCtrlPreset(Col, Cell, IsInputCell):
     if IsInputCell:
-        Cell.ForeColor = RGB(0, 0, 255)
+        Cell.ForeColor = dd.RGB(0, 0, 255)
     else:
-        Cell.ForeColor = RGB(255, 0, 0)
+        Cell.ForeColor = dd.RGB(255, 0, 0)
 ```
 
 ## See also

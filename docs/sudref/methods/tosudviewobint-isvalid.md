@@ -8,6 +8,16 @@ description: "Checks whether a user dialog box was closed with the OK button, th
 !!! abstract "Method &middot; `Sudref.chm`"
     Method: IsValid for Dialog <NonModal>
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Checks whether a user dialog box was closed with the OK button, the cancel button, or the Esc key or whether an error occurred which closed the user dialog box. If the Hide method gates out the dialog box, the dialog box is not closed.
 
 ## Signature
@@ -28,7 +38,7 @@ if oMyDlg.IsValid:
 else:
     MsgBoxDisp("Show Inputdialog?","MB_YesNo")
     if MsgState == "IDYes":
-        oMyDlg = SudDlgCreate("Input","C:\Temp\MyDlgs")
+        oMyDlg = dd.SudDlgCreate("Input","C:\Temp\MyDlgs")
         oMyDlg.Show
 ```
 

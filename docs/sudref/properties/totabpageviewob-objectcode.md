@@ -8,6 +8,16 @@ description: "Specifies the unique name of a tab in the TabPageCtrl control in a
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: ObjectCode for Page
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies the unique name of a tab in the TabPageCtrl control in a user dialog box. Use this name to select a tab in the dialog editor, and to edit its properties and events. In scripts you also use the ObjectCode of a tab to access the tab. Do not use the names of DIAdem variables or DIAdem functions as ObjectCode , otherwise you will no longer be able to use them in DIAdem.
 
 ## Signature
@@ -29,7 +39,7 @@ Page1.Scrollbars = TRUE
 ```python
 for i in range(1, Page1.Controls.Count + 1):
     if Pos("RadioButton",Page1.Controls(i).ObjectCode) != 0:
-        Page1.Controls(i).ForeColor = RGB(255, 0, 0)
+        Page1.Controls(i).ForeColor = dd.RGB(255, 0, 0)
 ```
 
 ## See also

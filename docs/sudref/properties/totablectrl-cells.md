@@ -8,6 +8,16 @@ description: "Specifies the contents of table cells in user dialog boxes. To ope
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: Cells for Table
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies the contents of table cells in user dialog boxes. To open the dialog box and enter the table values, click Cells in the Properties tab. You also can double-click the cell and enter the value in the table.
 
 ## Signature

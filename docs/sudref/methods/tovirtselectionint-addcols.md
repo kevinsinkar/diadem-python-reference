@@ -8,6 +8,16 @@ description: "Selects the specified columns of an extended table in user dialog 
 !!! abstract "Method &middot; `Sudref.chm`"
     Method: AddCols for Selection
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Selects the specified columns of an extended table in user dialog boxes. If multiple selection is possible in the extended table, this method adds the specified columns to the columns that are already selected.
 
 ## Signature

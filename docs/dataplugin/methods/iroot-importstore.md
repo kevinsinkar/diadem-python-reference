@@ -8,6 +8,15 @@ description: "Imports a data file with a specified load method. You can only imp
 !!! abstract "Method &middot; `DataPlugin.chm`"
     Method: ImportStore for Root <DataPlugin>
 
+!!! note "Context: DataPlugin script"
+    Examples in this section run inside DIAdem's **DataPlugin host**
+    context, where identifiers like `Root`, `File`, `oBlock`, and
+    related host-supplied objects resolve automatically. From standalone
+    external Python via `Dispatch("DIAdem.TOCmd")` those names raise
+    `NameError`. The DataPlugin API is intended to be used by writing
+    your script inside a `.uri` DataPlugin file that DIAdem then loads;
+    it is not directly callable from external Python.
+
 Imports a data file with a specified load method. You can only import data stores that are based on the TDM model. Note that you must not define any groups or properties for the Root object before calling this method. After importing the data file, you can use the Root object as usual.
 
 ## Signature

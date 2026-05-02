@@ -8,6 +8,15 @@ description: "Uses a specified DataPlugin to open an Excel file. To create this 
 !!! abstract "Method &middot; `DataPlugin.chm`"
     Method: OpenSpreadsheet for DataPlugin
 
+!!! note "Context: DataPlugin script"
+    Examples in this section run inside DIAdem's **DataPlugin host**
+    context, where identifiers like `Root`, `File`, `oBlock`, and
+    related host-supplied objects resolve automatically. From standalone
+    external Python via `Dispatch("DIAdem.TOCmd")` those names raise
+    `NameError`. The DataPlugin API is intended to be used by writing
+    your script inside a `.uri` DataPlugin file that DIAdem then loads;
+    it is not directly callable from external Python.
+
 Uses a specified DataPlugin to open an Excel file. To create this DataPlugin use the file reader Only filename in the Configure DataPlugin dialog box. The DataPlugin cannot access Excel files that are password protected.
 
 ## Signature

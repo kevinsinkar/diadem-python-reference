@@ -8,6 +8,16 @@ description: "Specifies in user dialog boxes whether a dialog box is automatical
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: ScriptLockMode for Dialog
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies in user dialog boxes whether a dialog box is automatically locked during an event. The start of an event locks the dialog box against entries via both the keyboard and the mouse. After the event is performed, the user dialog box automatically unlocks. The property can have the following settings: 0 - None The dialog box is not locked, which is the default behavior up until DIAdem Version 9.1. 1 - Auto The dialog box locks automatically.
 
 ## Notes

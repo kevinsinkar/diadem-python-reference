@@ -8,6 +8,16 @@ description: "Specifies the display mode of the CheckBox control in a user dialo
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: Shape for CheckBox
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies the display mode of the CheckBox control in a user dialog box. The property can have the following settings: 0 - CheckBox Displays the checkbox. 2 - Button (default) Displays a button as in Windows XP. 3 - Toolbar button Displays a button as a toolbar button. You cannot use this setting if you use the CheckBox control in an extended table ( XTable ). 4 - Button (Classic) Displays a button as in Windows Classic.
 
 ## See also

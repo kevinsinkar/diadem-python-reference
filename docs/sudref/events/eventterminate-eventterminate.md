@@ -8,6 +8,16 @@ description: "Triggers when a user dialog box is closed or when the RunTerminate
 !!! abstract "Event &middot; `Sudref.chm`"
     Event: EventTerminate for Dialog
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Triggers when a user dialog box is closed or when the RunTerminate method, the Ok method, or the Cancel method is called. Use the EventQueryClose event to either explicitly avoid closing the user dialog box or to execute it explicitly, depending on the circumstances.
 
 ## Signature

@@ -8,6 +8,16 @@ description: "Triggers the EventRefresh event in user dialog boxes for all the c
 !!! abstract "Method &middot; `Sudref.chm`"
     Method: RefreshAll for Dialog
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Triggers the EventRefresh event in user dialog boxes for all the controls in the user dialog box. The EventRefresh event starts the methods RefreshText and RefreshValue . The RefreshAll method allows all controls to react simultaneously when other controls change.
 
 ## Signature

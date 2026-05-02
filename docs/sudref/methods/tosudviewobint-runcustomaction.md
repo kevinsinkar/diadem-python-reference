@@ -8,6 +8,16 @@ description: "Triggers the EventCustomAction event. You can use this event anywh
 !!! abstract "Method &middot; `Sudref.chm`"
     Method: RunCustomAction for Dialog <NonModal>
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Triggers the EventCustomAction event. You can use this event anywhere, for any purpose.
 
 ## Signature
@@ -23,7 +33,7 @@ obj.RunCustomAction(VarParam)
     example was machine-translated from the VBScript source.
 
 ```python
-oMyDlg = SudDlgCreate("Dialog1","Example.sud")
+oMyDlg = dd.SudDlgCreate("Dialog1","Example.sud")
 sMyAction = "UpperLimit"
 oMyDlg.RunCustomAction(sMyAction)
 ```
@@ -31,7 +41,7 @@ oMyDlg.RunCustomAction(sMyAction)
 ```python
 def Dialog_EventCustomAction(This, VarParam):
     if VarParam == "UpperLimit":
-        This.Color = RGB(255, 0, 0)
+        This.Color = dd.RGB(255, 0, 0)
 ```
 
 ## See also

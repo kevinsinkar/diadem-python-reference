@@ -8,6 +8,16 @@ description: "Returns in user dialog boxes the selected node in a tree. Use the 
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: SelectedItem for Tree
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Returns in user dialog boxes the selected node in a tree. Use the SelectedItem property to request the currently selected node and select a node by assigning it with Set to SelectedItem . If you assign Nothing to the node returned by SelectedItem in the EventSelectedItemChanged event, you can prevent the selection. You cannot select several nodes.
 
 ## Signature

@@ -8,6 +8,16 @@ description: "Returns the index of the element that first appears in a channel s
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: TopIndex for ChnListBox <XTable>
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Returns the index of the element that first appears in a channel selection list of the extended table. This index is independent of the selection made in the channel selection list. If you assign the value 1 to the ShowBlankEntry property, the channel selection list shows a blank entry as the first entry. The returned index is then 0 . If the channel selection list does not show a blank entry, the index is 1 .
 
 ## Signature

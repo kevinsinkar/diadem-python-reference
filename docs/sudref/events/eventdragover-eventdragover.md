@@ -8,6 +8,16 @@ description: "Is triggered in user dialog boxes during a drag process onto a tre
 !!! abstract "Event &middot; `Sudref.chm`"
     Event: EventDragOver for Tree
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Is triggered in user dialog boxes during a drag process onto a tree. The event can only be triggered if the EventDropAllowed event permits dropping. The event is triggered as long as the cursor idles over the control. You specify whether a drop process is possible with the DropEffect parameter. For example, it might depend on the node over which the cursor is. If you want to use the entire area of the Tree object as a drop target and if the drop process is independent of specific nodes, use the EventDropAllowed event and evaluate the DropInformation object.
 
 ## Signature

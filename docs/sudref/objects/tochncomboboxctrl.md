@@ -8,6 +8,16 @@ description: "The ChnComboBox object corresponds to the ChnComboBox control in a
 !!! abstract "Object &middot; `Sudref.chm`"
     Object: ChnComboBox
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 The ChnComboBox object corresponds to the ChnComboBox control in a user dialog box. You use the ChnComboBox object to define a channel selection list that displays in the dialog box. The list drops down when you click the box. The user dialog box takes the displayed selection terms from the Data Portal. The channels currently loaded in DIAdem appear in the channel selection list in channel number order. If you drag a channel from the Data Portal to the channel selection list, you select this channel in the channel selection list. If you drag a channel group to the channel selection list, you select the first channel in this channel group. If you drag the data set from the Data Portal to the channel selection list, you select the first channel of the data set. The user dialog box determines the contents of the channel selection list when the dialog box opens. Use the Refresh method to update the channel selection list while the dialog box is executed.
 
 ## Python example

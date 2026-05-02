@@ -8,6 +8,16 @@ description: "The EditBox object corresponds to the EditBox control in a user di
 !!! abstract "Object &middot; `Sudref.chm`"
     Object: EditBox
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 The EditBox object corresponds to the EditBox control in a user dialog box. You use the EditBox object to define a textbox that is to be displayed in the dialog box. You can link the textbox to a SpinBox . You use the Tab Order dialog box to change the order of the SpinBox and the EditBox in the dialog box. If you include a SpinBox in a user dialog box directly after including an EditBox, the two controls are automatically linked. You can then use the SpinBox to edit the numeric value in the EditBox. You can use the EditBuddy property for the SpinBox to disable the link.
 
 ## Python example
@@ -17,7 +27,7 @@ The EditBox object corresponds to the EditBox control in a user dialog box. You 
     example was machine-translated from the VBScript source.
 
 ```python
-EditBox1.ForeColor = vbBlue
+EditBox1.ForeColor = 16711680
 ```
 
 ## Members

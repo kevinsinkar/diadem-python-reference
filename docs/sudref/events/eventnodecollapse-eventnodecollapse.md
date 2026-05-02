@@ -8,6 +8,16 @@ description: "Is triggered in user dialog boxes when a branch in the tree  colla
 !!! abstract "Event &middot; `Sudref.chm`"
     Event: EventNodeCollapse for Tree
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Is triggered in user dialog boxes when a branch in the tree  collapses interactively. The Expanded property has the value False when the event occurs. If you set the value of the Expanded property to True , you prevent the branch from collapsing. DIAdem neither calls the EventNodeCollapse when building the tree in the EventInitialize event nor when redrawing the tree by calling the EventRefresh .
 
 ## Signature

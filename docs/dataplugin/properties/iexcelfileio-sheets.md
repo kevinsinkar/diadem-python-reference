@@ -8,6 +8,15 @@ description: "Returns a collection of the worksheets of a workbook."
 !!! abstract "Property &middot; `DataPlugin.chm`"
     Property: Sheets for Workbook
 
+!!! note "Context: DataPlugin script"
+    Examples in this section run inside DIAdem's **DataPlugin host**
+    context, where identifiers like `Root`, `File`, `oBlock`, and
+    related host-supplied objects resolve automatically. From standalone
+    external Python via `Dispatch("DIAdem.TOCmd")` those names raise
+    `NameError`. The DataPlugin API is intended to be used by writing
+    your script inside a `.uri` DataPlugin file that DIAdem then loads;
+    it is not directly callable from external Python.
+
 Returns a collection of the worksheets of a workbook.
 
 ## Signature

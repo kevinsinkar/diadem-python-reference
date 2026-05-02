@@ -8,6 +8,15 @@ description: "Specifies in a USITimeDisp type object the seconds since 00:00:00 
 !!! abstract "Property &middot; `DataPlugin.chm`"
     Property: SecondsFrom1904 for UsiTimeDisp
 
+!!! note "Context: DataPlugin script"
+    Examples in this section run inside DIAdem's **DataPlugin host**
+    context, where identifiers like `Root`, `File`, `oBlock`, and
+    related host-supplied objects resolve automatically. From standalone
+    external Python via `Dispatch("DIAdem.TOCmd")` those names raise
+    `NameError`. The DataPlugin API is intended to be used by writing
+    your script inside a `.uri` DataPlugin file that DIAdem then loads;
+    it is not directly callable from external Python.
+
 Specifies in a USITimeDisp type object the seconds since 00:00:00 o'clock on 1/1/1904.
 
 ## Signature

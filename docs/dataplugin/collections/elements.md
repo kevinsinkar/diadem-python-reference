@@ -8,6 +8,15 @@ description: "Collection of all Element objects. These objects contain informati
 !!! abstract "Collection &middot; `DataPlugin.chm`"
     Collection: Elements <DataPlugin>
 
+!!! note "Context: DataPlugin script"
+    Examples in this section run inside DIAdem's **DataPlugin host**
+    context, where identifiers like `Root`, `File`, `oBlock`, and
+    related host-supplied objects resolve automatically. From standalone
+    external Python via `Dispatch("DIAdem.TOCmd")` those names raise
+    `NameError`. The DataPlugin API is intended to be used by writing
+    your script inside a `.uri` DataPlugin file that DIAdem then loads;
+    it is not directly callable from external Python.
+
 Collection of all Element objects. These objects contain information about the currently edited data store. The elements from this collection might be ChannelGroup or Channel types.
 
 ## Notes

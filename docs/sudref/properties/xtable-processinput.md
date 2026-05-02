@@ -8,6 +8,16 @@ description: "Specifies in user dialog boxes whether an expression is interprete
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: ProcessInput for EditBox <XTable>
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies in user dialog boxes whether an expression is interpreted when a DIAdem textbox of an extended table is exited. The property can have the following settings: 0 - No DIAdem does not interpret the expression. 1 - Yes DIAdem interprets the expression if this expression can be directly converted into a number or a text, for example, Pi , 17+4 , sin(55.4) , or T1 . DIAdem cannot evaluate more complex VBS syntax or user commands.
 
 ## See also

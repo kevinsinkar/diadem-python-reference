@@ -8,6 +8,16 @@ description: "Provides access to the methods and properties of an ActiveX contro
 !!! abstract "Method &middot; `Sudref.chm`"
     Method: X for ActiveX
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Provides access to the methods and properties of an ActiveX control. Use the Object.X.Method syntax or the Object.X.Property syntax to access the methods and the properties of an ActiveX control. Refer to the ActiveX documentation for a description of the individual controls and the associated methods and properties.
 
 ## Signature
@@ -23,7 +33,7 @@ return_value = obj.X()
     example was machine-translated from the VBScript source.
 
 ```python
-MSCAL1.X.BackColor = RGB(255, 0, 0)
+MSCAL1.X.BackColor = dd.RGB(255, 0, 0)
 ```
 
 ## See also

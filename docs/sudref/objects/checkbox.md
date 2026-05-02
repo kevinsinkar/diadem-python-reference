@@ -8,6 +8,16 @@ description: "The CheckBox object corresponds to the CheckBox control in an exte
 !!! abstract "Object &middot; `Sudref.chm`"
     Object: CheckBox <XTable>
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 The CheckBox object corresponds to the CheckBox control in an extended table of a user dialog box. You use the CheckBox object to define a checkbox that is to be displayed in an extended table. The control status can be unchecked , checked , or indeterminate . Use the Shape property to select various display modes for the control. Note You only can access this control within the event procedures of the extended table.
 
 ## Notes

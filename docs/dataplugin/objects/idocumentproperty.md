@@ -8,6 +8,15 @@ description: "The DocumentProperty <DataPlugin> object provides a document's met
 !!! abstract "Object &middot; `DataPlugin.chm`"
     Object: DocumentProperty <DataPlugin>
 
+!!! note "Context: DataPlugin script"
+    Examples in this section run inside DIAdem's **DataPlugin host**
+    context, where identifiers like `Root`, `File`, `oBlock`, and
+    related host-supplied objects resolve automatically. From standalone
+    external Python via `Dispatch("DIAdem.TOCmd")` those names raise
+    `NameError`. The DataPlugin API is intended to be used by writing
+    your script inside a `.uri` DataPlugin file that DIAdem then loads;
+    it is not directly callable from external Python.
+
 The DocumentProperty <DataPlugin> object provides a document's meta property. A document might be an Office file in XML format or a PDF, JPEG, PNG, or TIFF file.
 
 ## Python example

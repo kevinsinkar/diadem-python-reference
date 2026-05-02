@@ -8,6 +8,16 @@ description: "Specifies whether DIAdem displays lines between the elements in th
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: NodeLinesDrawn for Tree
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies whether DIAdem displays lines between the elements in the tree. The property can have the following settings: True Draws lines. False Does not draw lines.
 
 ## See also

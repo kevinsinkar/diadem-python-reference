@@ -8,6 +8,16 @@ description: "Specifies which DIAdem variable links the control to DIAdem in use
 !!! abstract "Property &middot; `Sudref.chm`"
     Property: Variable for EnumListBox
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 Specifies which DIAdem variable links the control to DIAdem in user dialog boxes. Controls that are connected to DIAdem variables read their start values from these variables or write their input values in the variables. In user dialog boxes, you also can use vector variables and matrix variables. Use the properties VariableColIndex and VariableRowIndex to access these variables. You only can use DIAdem variables in the variable properties for the controls. In the properties for a control, you only can insert the variables that are the same data type as the control. For example, the dialog editor does not display any Real type variables for ComboBoxes. Refer to the page on Variable Types for Controls for a list of the variable types that you can assign to the controls. You can enter new variables in the Properties tab in the Variable field or you can select a variable from the list. When you enter the variable, DIAdem automatically enters values for the type, storage type, dimensions, and reset behavior, for DIAdem variables. If DIAdem does not recognize the variables, DIAdem prompts you to enter the values. During the dialog box runtime, the variable must conform to the variable definition in DIAdem. Select Edit»Variables and open the DIAdem Variables dialog box to display the properties of the registered variable, to enter new variables, and to delete existing variables. You cannot link VBS variables from a calling DIAdem script to controls.
 
 ## See also

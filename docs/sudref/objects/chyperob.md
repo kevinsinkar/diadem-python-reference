@@ -8,6 +8,16 @@ description: "The Control object corresponds to a control of a dialog box or a t
 !!! abstract "Object &middot; `Sudref.chm`"
     Object: Control
 
+!!! note "Context: SUD dialog editor"
+    Examples in this section reference dialog-control identifiers like
+    `Cell`, `Table1`, `ListBox1`, `ChnComboBox1`, etc. that exist as
+    global-script-engine names **only when DIAdem has loaded a SUD
+    dialog file containing those controls**. They are not accessible
+    from standalone external Python; run these examples inside DIAdem's
+    SUD editor, or use `dd.SudDlgCreate(...)` and `dd.SudDlgShow(...)`
+    to create a dialog instance whose `.GetControl("<name>")` you can
+    access.  See the [Runtime gotchas](../../getting-started.md#1-the-dispatch-surface-is-panel-conditional) section for the full panel-conditional dispatch story.
+
 The Control object corresponds to a control of a dialog box or a tab. A control is of the following type ActiveX , Button , CheckBox , ChnComboBox , ChnListBox , ComboBox , Curve2DPreview , EditBox , EnumComboBox , EnumListBox , Frame , ListBox , Picture , RadioButton , Slider , SpinBox , Table , TabPageCtrl , TaskPanel , Text , Tree , ViewConnector or XTable .
 
 ## Python example
@@ -26,7 +36,7 @@ for i in range(1, Dialog.Controls.Count + 1):
 if dd.View.Sheets(1).Areas(1).DisplayObjType == "Dialog":
     for oMyCtrl in oMyDlg.Controls:
         if oMyCtrl.ObjectType == "Text":
-            oMyCtrl.ForeColor = RGB(255, 0, 0)
+            oMyCtrl.ForeColor = dd.RGB(255, 0, 0)
 ```
 
 ## Members
