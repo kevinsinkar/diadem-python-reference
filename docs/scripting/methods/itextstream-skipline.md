@@ -24,10 +24,10 @@ obj.SkipLine
 
 ```python
 def SkipOneLine(sFile):
-    Const ForReading = 1, ForWriting = 2
+    ForReading = 1; ForWriting = 2
     fso = CreateObject("Scripting.FileSystemObject")
     oMyFile= fso.OpenTextFile(sFile, ForWriting, True)
-    oMyFile.Write "First Line" + vbCrLf + "Second Line"
+    oMyFile.Write "First Line" + "\r\n" + "Second Line"
     oMyFile = fso.OpenTextFile(sFile, ForReading)
     oMyFile.SkipLine
     SkipOneLine = oMyFile.ReadLine

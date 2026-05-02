@@ -24,7 +24,7 @@ The Formatter object contains information about the format of the file that the 
 28.06.2004 16:28:24; 0,001683¶
 
 File.Formatter.TrimCharacters = " "
-File.Formatter.LineFeeds  = vbNewLine
+File.Formatter.LineFeeds  = "\n"
 File.Formatter.TimeFormat = "DD.MM.YYYY hh:mm:ss"
 File.Formatter.Delimiters = ";"
 File.Formatter.DecimalPoint = ","

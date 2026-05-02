@@ -23,7 +23,7 @@ obj.VarSelRowCol
     example was machine-translated from the VBScript source.
 
 ```python
-Table1.Columns(1).VarSelRowCol = 1 '0=Columns, 1=Rows
+Table1.Columns(1).VarSelRowCol = 1  # 0=Columns, 1=Rows
 ```
 
 ## See also

@@ -26,14 +26,14 @@ MsgBoxDisp(Page1.Controls.Count)
 
 ```python
 for i in range(1, Dialog.Controls.Count + 1):
-    if Dialog.Controls(i).ObjectType = "EditBox":
+    if Dialog.Controls(i).ObjectType == "EditBox":
         Dialog.Controls(i).Width = 100
 ```
 
 ```python
-if dd.View.Sheets(1).Areas(1).DisplayObjType = "Dialog":
+if dd.View.Sheets(1).Areas(1).DisplayObjType == "Dialog":
     for i in range(1, oMyDlg.Controls.Count + 1):
-        if oMyDlg.Controls(i).ObjectType = "Text":
+        if oMyDlg.Controls(i).ObjectType == "Text":
             oMyDlg.Controls(i).ForeColor = RGB(255, 0, 0)
 ```
 

@@ -23,9 +23,10 @@ obj.RunCursorTypeChanged()
     example was machine-translated from the VBScript source.
 
 ```python
-def ViewConnector_EventCursorTypeChanged(ByRef This):
+def ViewConnector_EventCursorTypeChanged(This):
+    pass
     # Do something
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
     ViewConnector.RunCursorTypeChanged
 ```
 

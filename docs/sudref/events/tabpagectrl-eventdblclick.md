@@ -23,7 +23,7 @@ dd.EventDblClick(ByRef This, Index)
     example was machine-translated from the VBScript source.
 
 ```python
-def TabPageCtrl1_EventDblClick(ByRef This, Index):
+def TabPageCtrl1_EventDblClick(This, Index):
     MsgBoxDisp("Current tab = "& Index)
 ```
 

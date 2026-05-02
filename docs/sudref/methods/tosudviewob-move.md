@@ -24,8 +24,8 @@ obj.Move(X, Y)
 
 ```python
 MyDlg = SUDDlgCreate("ToolWindow","Example")
-iPos = AppRectangleGet(1) 'returns position below the panel bar in pixels
-Hor = MyDlg.MapXPixelToDlu(iPos(0)) - MyDlg.Left ' calculates into dialog units
+iPos = AppRectangleGet(1)  # returns position below the panel bar in pixels
+Hor = MyDlg.MapXPixelToDlu(iPos(0)) - MyDlg.Left  # calculates into dialog units
 Ver = MyDlg.MapYPixelToDlu(iPos(1)) - MyDlg.Top
 MyDlg.Move(Hor, Ver)
 MyDlg.Show

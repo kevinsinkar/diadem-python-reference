@@ -23,7 +23,7 @@ obj.Refresh()
     example was machine-translated from the VBScript source.
 
 ```python
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
     Curve2DPreview1.Curves.RemoveAll
     Curve2DPreview1.Curves.Add("[1]/[1]","[1]/[2]")
     Curve2DPreview1.Refresh

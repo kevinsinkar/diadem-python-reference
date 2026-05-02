@@ -27,7 +27,7 @@ if oMyDlg.IsValid:
     oMyDlg.Show
 else:
     MsgBoxDisp("Show Inputdialog?","MB_YesNo")
-    if MsgState = "IDYes":
+    if MsgState == "IDYes":
         oMyDlg = SudDlgCreate("Input","C:\Temp\MyDlgs")
         oMyDlg.Show
 ```

@@ -27,12 +27,12 @@ def CreateDriveTotalSizeList():
     fso = CreateObject("Scripting.FileSystemObject")
     oMyDrives = fso.Drives
     for oMyDrive in oMyDrives:
-        sOutput = sOutput + oMyDrive.DriveLetter + VBTab
+        sOutput = sOutput + oMyDrive.DriveLetter + "\t"
         if oMyDrive.IsReady:
             sOutput = sOutput + FormatNumber(oMyDrive.TotalSize,0)
         else:
             sOutput = sOutput + "[not ready]"
-        sOutput = sOutput + VBCrLf
+        sOutput = sOutput + "\r\n"
     CreateDriveTotalSizeList = sOutput
 ```
 

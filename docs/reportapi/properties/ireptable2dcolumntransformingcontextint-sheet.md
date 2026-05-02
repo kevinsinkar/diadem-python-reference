@@ -43,9 +43,10 @@ dd.Report.Refresh()
 ```python
 def MyOnChannelTransformation(TransformContext):
     oMyDataContext = TransformContext.DataContext
-    if TransformContext.Sheet.Name = "Page 1":
-        ChnSum(oMyDataContext.ChannelNumberIn, oMyDataContext.ChannelNumberOut) 'Calculates the sum of the single values
+    if TransformContext.Sheet.Name == "Page 1":
+        ChnSum(oMyDataContext.ChannelNumberIn, oMyDataContext.ChannelNumberOut)  # Calculates the sum of the single values
     else:
+        pass
         # Do nothing
 ```
 

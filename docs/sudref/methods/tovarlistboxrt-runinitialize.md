@@ -23,9 +23,10 @@ obj.RunInitialize()
     example was machine-translated from the VBScript source.
 
 ```python
-def EnumListBox1_EventInitialize(ByRef This):
+def EnumListBox1_EventInitialize(This):
+    pass
     # Do something
-def ComboBox1_EventChange(Byref This):
+def ComboBox1_EventChange(This):
     EnumListBox1.RunInitialize
 ```
 

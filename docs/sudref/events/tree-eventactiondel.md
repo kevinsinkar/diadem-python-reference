@@ -23,7 +23,7 @@ dd.EventActionDel(ByRef This)
     example was machine-translated from the VBScript source.
 
 ```python
-def Tree1_EventActionDel(ByRef This):
+def Tree1_EventActionDel(This):
     if (not Tree1.SelectedItem is None):
         oParentNode = Tree1.SelectedItem.Parent
         if (oParentNode is None):

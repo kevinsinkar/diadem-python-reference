@@ -36,7 +36,7 @@ End Header¶
 ```
 
 ```python
-File.Formatter.LineFeeds  = vbNewLine
+File.Formatter.LineFeeds  = "\n"
 File.Formatter.Delimiters = ":"
 File.Formatter.TrimCharacters = " "
 
@@ -51,7 +51,7 @@ Do
 TagName = File.GetNextStringValue(eString)
 TagValue= File.GetNextStringValue(eString)
 File.SkipLine()
-if TagName = "Name":
+if TagName == "Name":
     ChNames(UBound(ChNames)) = TagValue
     ReDim Preserve ChNames(UBound(ChNames)+1)
 if (TagName is None):

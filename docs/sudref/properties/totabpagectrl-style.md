@@ -23,7 +23,7 @@ obj.Style
     example was machine-translated from the VBScript source.
 
 ```python
-TabPageCtrl1.Style = 1 '0=TabStyleTabs, 1=TabStyleNone
+TabPageCtrl1.Style = 1  # 0=TabStyleTabs, 1=TabStyleNone
 ```
 
 ## See also

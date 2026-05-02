@@ -23,7 +23,7 @@ obj.AbortScript
     example was machine-translated from the VBScript source.
 
 ```python
-Const Timeout = 10
+Timeout = 10
 dd.Data.Root.Clear()
 DataFileLoad("Example.tdm","TDM","")
 ScriptCmdAdd(CurrentScriptPath + "Callback.vbs")
@@ -50,7 +50,7 @@ aInputArg = LocalWorker.GetArgument
 ArrayToChannels(aInputArg(0), Array("tempChannel"))
 oTempChannel = dd.Data.GetChannel("/tempChannel")
 
-RMS(oTempChannel,aInputArg(2))  ' Do some analysis
+RMS(oTempChannel,aInputArg(2))  # Do some analysis
 
 aResults(0) = ChannelsToArray("/tempChannel")
 aResults(1) = aInputArg(1)

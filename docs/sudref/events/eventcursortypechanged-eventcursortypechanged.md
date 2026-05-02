@@ -23,8 +23,9 @@ dd.EventCursorTypeChanged(ByRef This)
     example was machine-translated from the VBScript source.
 
 ```python
-def View_CursorTypeChanged(ByRef This):
+def View_CursorTypeChanged(This):
     if not (This.DisplayObj Is None):
+        pass
 ```
 
 ## See also

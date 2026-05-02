@@ -23,8 +23,8 @@ dd.EventActiveCellMoved(ByRef This, Row, Col)
     example was machine-translated from the VBScript source.
 
 ```python
-def XTable1_EventActiveCellMoved(ByRef This, Row, Col):
-    MsgBoxDisp("Moved to ("& Row + "," + Col& ")")
+def XTable1_EventActiveCellMoved(This, Row, Col):
+    MsgBoxDisp("Moved to ("& Row + "," + Col ")")
 ```
 
 ## See also

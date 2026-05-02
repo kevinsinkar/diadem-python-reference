@@ -31,7 +31,7 @@ obj.Values(iIndex)
 ```python
 ProcessedChn = ChannelGroup.Channels.AddProcessedChannel("MyChannel",eR64,eAddProcessor)
 for Channel in ChannelGroup.Channels:
-    if Channel.IsKindOf(eDirectAccess) and (Channel.DataType = eR64):
+    if Channel.IsKindOf(eDirectAccess) and (Channel.DataType == eR64):
         ProcessedChn.Channels.Add(Channel)
 
 for i in range(1, ProcessedChn.Size + 1):

@@ -29,7 +29,7 @@ XAxis¶
 ```
 
 ```python
-File.Formatter.LineFeeds = vbNewLine
+File.Formatter.LineFeeds = "\n"
 File.Formatter.Delimiters = ";"
 File.Formatter.ThousandSeparator = "."
 File.SkipLine()

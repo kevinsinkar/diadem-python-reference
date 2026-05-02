@@ -65,16 +65,16 @@ dd.Report.Refresh()
 def MyCustomScalingEvent2D(Context):
     oMyAxisSystem = Context.AxisSystem
     oMySheet = Context.Sheet
-    if Context.AxisType = e2DAxisTypeY:
+    if Context.AxisType == e2DAxisTypeY:
         oMyAxis = oMyAxisSystem.YAxisList(Context.AxisNumber)
         MinMax = ValMax(Abs(oMyAxis.Scaling.End),Abs(oMyAxis.Scaling.Begin))
         oMyAxis.Scaling.Origin = oMyAxis.Scaling.Begin
-    if oMySheet.Index = 1:
-        if Context.AxisType = e2DAxisTypeY:
+    if oMySheet.Index == 1:
+        if Context.AxisType == e2DAxisTypeY:
             oMyAxis.Scaling.Begin = -MinMax
             oMyAxis.Scaling.End = +MinMax
     else:
-        if Context.AxisType = e2DAxisTypeY:
+        if Context.AxisType == e2DAxisTypeY:
             oMyAxis.Scaling.Begin = -MinMax * 2
             oMyAxis.Scaling.End = +MinMax * 2
 ```

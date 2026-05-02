@@ -23,7 +23,7 @@ obj.Key
     example was machine-translated from the VBScript source.
 
 ```python
-def ListBox1_EventInitialize(ByRef This):
+def ListBox1_EventInitialize(This):
     CreateDefaultTree(Tree1)
     FillListBox(Tree1)
 
@@ -33,11 +33,11 @@ def FillListBox(oNode):
             ListBox1.Items.Add(oMyNode.Key,0)
         FillListBox(oMyNode)
 
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
     oMyNode = Tree1.GetNode(ListBox1.Text)
     Tree1.ScrollNodeInView(oMyNode)
 
-def CreateDefaultTree(ByRef This):
+def CreateDefaultTree(This):
     oRoot = This.Nodes.Add("Tools")
     oRoot.Key = "tools"
     oRoot.Expanded = true

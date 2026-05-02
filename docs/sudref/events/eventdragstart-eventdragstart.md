@@ -23,28 +23,28 @@ dd.EventDragOver(ByRef This, ByRef DropInformation, ByRef DropEffect)
     example was machine-translated from the VBScript source.
 
 ```python
-def Tree1_EventInitialize(ByRef This):
+def Tree1_EventInitialize(This):
     CreateDefaultTree(This)
 
-def Tree1_EventDropAllowed(ByRef This, DropInformation, ByRef DropEffect):
+def Tree1_EventDropAllowed(This, DropInformation, DropEffect):
     if (DropInformation.Text != ""):
         DropEffect = eDropEffectCopy or eDropEffectMove
 
-def Tree1_EventDragStart(ByRef This, ByRef DropInformation, ByRef DropEffect):
+def Tree1_EventDragStart(This, DropInformation, DropEffect):
     oMySelNode = This.SelectedItem
     oMyDragItem = oMySelNode
     if (not oMySelNode Is None):
         DropInformation.Text = oMySelNode.Text
         DropEffect = eDropEffectCopy or eDropEffectMove
 
-def Tree1_EventDragCompleted(ByRef This, DropEffect):
-    if (DropEffect = eDropEffectMove):
+def Tree1_EventDragCompleted(This, DropEffect):
+    if (DropEffect == eDropEffectMove):
         if (not oMyDragItem Is None):
             RemoveTreeItem(this, oMyDragItem)
 
-def Tree1_EventDrop(ByRef This, DropInformation, ByRef DropEffect, ByRef Node):
+def Tree1_EventDrop(This, DropInformation, DropEffect, Node):
     if (not Node is None):
-        if (DropInformation.Text = Node.Text) and (DropEffect = eDropEffectMove):
+        if (DropInformation.Text == Node.Text) and (DropEffect == eDropEffectMove):
             DropEffect = eDropEffectNone
         else:
             oMyNewNode = Node.Nodes.Add(DropInformation.Text)
@@ -66,7 +66,7 @@ def RemoveTreeItem(Tree, Node):
             oMyParentNode.Nodes.Remove(Node.Index)
             oMyParentNode.Update(eUpdateModeNodeAndChilds)
 
-def CreateDefaultTree(ByRef This):
+def CreateDefaultTree(This):
     oRoot = This.Nodes.Add("Tools")
     oRoot.Key = "tools"
     oRoot.Expanded = true

@@ -24,7 +24,7 @@ return_value = obj.Properties
 
 ```python
 for Channel in ChannelGroup.Channels:
-    if Channel.IsKindOf(eDirectAccess) and (Channel.DataType = eR64):
+    if Channel.IsKindOf(eDirectAccess) and (Channel.DataType == eR64):
         ProcessedChn.Channels.Add(Channel)
 
 if not ProcessedChn.Properties.Exists("Sensor_type"):

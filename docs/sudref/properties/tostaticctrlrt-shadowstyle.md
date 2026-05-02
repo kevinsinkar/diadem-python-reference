@@ -23,7 +23,7 @@ obj.ShadowStyle
     example was machine-translated from the VBScript source.
 
 ```python
-Text1.ShadowStyle = 2 '0=None, 1 = Top/Left, 2=Bottom/Rigth, 3=Bottom/Left, 4=Top/Right
+Text1.ShadowStyle = 2  # 0=None, 1 = Top/Left, 2=Bottom/Rigth, 3=Bottom/Left, 4=Top/Right
 ```
 
 ## See also

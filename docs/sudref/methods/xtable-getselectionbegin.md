@@ -23,10 +23,10 @@ iGetSelectionBegin = Object.GetSelectionBegin()
     example was machine-translated from the VBScript source.
 
 ```python
-sOutPut = "Text: " + This.Text + VBCrLf
-sOutPut = sOutPut + "Selected text: " + Cell.GetSelectedText + VBCrLf
-sOutPut = sOutPut + "Selection begin: " + Cell.GetSelectionBegin + VBCrLf
-sOutPut = sOutPut + "Selection end: " + Cell.GetSelectionEnd + VBCrLf
+sOutPut = "Text: " + This.Text + "\r\n"
+sOutPut = sOutPut + "Selected text: " + Cell.GetSelectedText + "\r\n"
+sOutPut = sOutPut + "Selection begin: " + Cell.GetSelectionBegin + "\r\n"
+sOutPut = sOutPut + "Selection end: " + Cell.GetSelectionEnd + "\r\n"
 Text1.Text = sOutPut
 Text1.RefreshText
 ```

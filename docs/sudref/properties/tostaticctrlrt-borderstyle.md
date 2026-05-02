@@ -34,7 +34,7 @@ obj.BorderStyle
     example was machine-translated from the VBScript source.
 
 ```python
-Text1.BorderStyle = 1 '0=Line, 1=3D, 2=Sunken, 3=Raised, 4=None
+Text1.BorderStyle = 1  # 0=Line, 1=3D, 2=Sunken, 3=Raised, 4=None
 ```
 
 ## See also

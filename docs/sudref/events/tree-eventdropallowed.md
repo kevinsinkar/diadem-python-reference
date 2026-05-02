@@ -23,21 +23,21 @@ dd.EventDropAllowed(ByRef This, DropInformation, ByRef DropEffect)
     example was machine-translated from the VBScript source.
 
 ```python
-def Tree1_EventInitialize(ByRef This):
+def Tree1_EventInitialize(This):
     CreateDefaultTree(This)
 
-def Tree1_EventDropAllowed(ByRef This, DropInformation, ByRef DropEffect):
+def Tree1_EventDropAllowed(This, DropInformation, DropEffect):
     DropEffect = eDropEffectCopy
 
-def Tree1_EventDragOver(ByRef This, DropInformation, ByRef DropEffect, ByRef Node):
+def Tree1_EventDragOver(This, DropInformation, DropEffect, Node):
     if Node is None:
         DropEffect = eDropEffectNone
-        ElseIf Node.Level = 2 then
+    elif Node.Level == 2:
         DropEffect = eDropEffectCopy
     else:
         DropEffect = eDropEffectNone
 
-def CreateDefaultTree(ByRef This):
+def CreateDefaultTree(This):
     oRoot = This.Nodes.Add("Tools")
     oRoot.Key = "tools"
     oRoot.Expanded = true

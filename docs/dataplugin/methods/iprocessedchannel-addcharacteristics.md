@@ -36,7 +36,7 @@ obj.AddCharacteristics(Minimum, Maximum, Monotony, NoValueKey)
 
 ```python
 for Channel in ChannelGroup.Channels:
-    if Channel.IsKindOf(eDirectAccess) and (Channel.DataType = eR64):
+    if Channel.IsKindOf(eDirectAccess) and (Channel.DataType == eR64):
         ProcessedChn.Channels.Add(Channel)
 ProcessedChn.AddCharacteristics(0,1000,eMonotonyUnknown,eNoValueKyNotCalculated)
 ```

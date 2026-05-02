@@ -23,9 +23,10 @@ obj.RunClick()
     example was machine-translated from the VBScript source.
 
 ```python
-def Dialog_EventClick(ByRef This):
+def Dialog_EventClick(This):
+    pass
     # Do something
-def ComboBox1_EventChange(ByRef This):
+def ComboBox1_EventChange(This):
     Dialog.RunClick
 ```
 

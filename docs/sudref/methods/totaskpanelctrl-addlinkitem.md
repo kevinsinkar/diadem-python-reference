@@ -23,10 +23,10 @@ obj.AddLinkItem(GroupKey, Key, Text)
     example was machine-translated from the VBScript source.
 
 ```python
-def TaskPanel1_EventInitialize(ByRef This):
+def TaskPanel1_EventInitialize(This):
     CreateDefaultTaskPanel(This)
 
-def CreateDefaultTaskPanel(ByRef This):
+def CreateDefaultTaskPanel(This):
     This.AddGroup("electricGroup", "Electric Tools")
     This.AddGroup("handtoolGroup", "Hand Tools")
     This.AddGroup("textonlyGroup", "Info")
@@ -37,7 +37,7 @@ def CreateDefaultTaskPanel(ByRef This):
     This.AddLinkItem("handtoolGroup","tongs","Tongs")
     This.AddTextItem("textonlyGroup","version","Version 1.0")
 
-def TaskPanel1_EventChange(ByRef This):
+def TaskPanel1_EventChange(This):
     Text1.Text = This.SelectedItem
 ```
 

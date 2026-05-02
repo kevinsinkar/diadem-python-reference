@@ -25,7 +25,7 @@ obj.Count
 ```python
 for i in range(1, Root.ChannelGroups(1).Channels.Count + 1):
     for oMyProp in Root.ChannelGroups(1).Channels(I).Properties:
-        if oMyProp.Name = "Offset":
+        if oMyProp.Name == "Offset":
             oMyProp.Value = oMyProp.Value * 2
 ```
 

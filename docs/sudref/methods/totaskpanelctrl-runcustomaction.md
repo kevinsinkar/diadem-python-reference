@@ -23,23 +23,23 @@ obj.RunCustomAction(VarParam)
     example was machine-translated from the VBScript source.
 
 ```python
-def TaskPanel1_EventInitialize(ByRef This):
+def TaskPanel1_EventInitialize(This):
     CreateDefaultTaskPanel(This)
 
-def ButtonCollapse_EventClick(ByRef This):
+def ButtonCollapse_EventClick(This):
     TaskPanel1.RunCustomAction("Collapse")
 
-def ButtonExpand_EventClick(ByRef This):
+def ButtonExpand_EventClick(This):
     TaskPanel1.RunCustomAction("Expand")
 
-def TaskPanel1_EventCustomAction(ByRef This, VarParam):
+def TaskPanel1_EventCustomAction(This, VarParam):
     if TaskPanel1.IsKindOf(TaskPanel1.SelectedItem, eTaskPanelItemGroup):
-        if VarParam = "Expand":
+        if VarParam == "Expand":
             TaskPanel1.ExpandGroup(TaskPanel1.SelectedItem)
-            ElseIf VarParam = "Collapse" :
+        elif VarParam == "Collapse":
             TaskPanel1.CollapseGroup(TaskPanel1.SelectedItem)
 
-def CreateDefaultTaskPanel(ByRef This):
+def CreateDefaultTaskPanel(This):
     This.AddGroup("electricGroup", "Electric Tools")
     This.AddGroup("handtoolGroup", "Hand Tools")
     This.AddGroup("textonlyGroup", "Info")

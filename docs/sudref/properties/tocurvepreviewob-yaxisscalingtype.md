@@ -23,7 +23,7 @@ obj.YAxisScalingType
     example was machine-translated from the VBScript source.
 
 ```python
-Curve2DPreview1.YAxisScaling = 1 '0=linear, 1=logarithmic
+Curve2DPreview1.YAxisScaling = 1  # 0=linear, 1=logarithmic
 ```
 
 ## See also

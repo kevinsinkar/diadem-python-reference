@@ -24,7 +24,7 @@ obj.Skip(Characters)
 
 ```python
 def SkipCharacters(sFile):
-    Const ForReading = 1, ForWriting = 2
+    ForReading = 1; ForWriting = 2
     fso = CreateObject("Scripting.FileSystemObject")
     oMyFile= fso.OpenTextFile(sFile, ForWriting, True)
     oMyFile.Write "This is a text"

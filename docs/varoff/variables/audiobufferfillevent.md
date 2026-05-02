@@ -41,6 +41,7 @@ Specifies the user command that DIAdem calls when loading new data to the clipbo
 
 ```python
 def MyAudioOutCallback(AudioHandle, CurrentIndex, BlockSize, SampleRate, MaxIndex):
+    pass
     # Some commands
 ```
 

@@ -23,7 +23,7 @@ obj.RowCount
     example was machine-translated from the VBScript source.
 
 ```python
-def XTable1_EventInitialize(ByRef This):
+def XTable1_EventInitialize(This):
     This.RowCount = 50
 ```
 

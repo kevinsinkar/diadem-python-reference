@@ -24,7 +24,7 @@ return_value = obj.Item(GrpNameOrIndex)
 
 ```python
 for oMyChn in Root.ChannelGroups.Item(3).Channels:
-    if oMyChn.Name = "Meas_Cal":
+    if oMyChn.Name == "Meas_Cal":
         oMyChn.Properties.Add("Faktor", 5)
         oMyChn.Properties.Add("Offset", 50)
 ```

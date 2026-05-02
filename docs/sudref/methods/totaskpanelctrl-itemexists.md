@@ -23,14 +23,14 @@ bItemExists = Object.ItemExists(Key)
     example was machine-translated from the VBScript source.
 
 ```python
-def TaskPanel1_EventInitialize(ByRef This):
+def TaskPanel1_EventInitialize(This):
     CreateDefaultTaskPanel(This)
 
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
     if not TaskPanel1.ItemExists("newtoolGroup"):
         TaskPanel1.AddGroup("newtoolGroup", "New Tools")
 
-def CreateDefaultTaskPanel(ByRef This):
+def CreateDefaultTaskPanel(This):
     This.AddGroup("electricGroup", "Electric Tools")
     This.AddGroup("handtoolGroup", "Hand Tools")
     This.AddGroup("textonlyGroup", "Info")

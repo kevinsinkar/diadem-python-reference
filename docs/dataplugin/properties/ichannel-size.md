@@ -25,7 +25,7 @@ obj.Size
 ```python
 bIndexChn = FALSE
 for oMyChn in Root.ChannelGroups(1).Channels:
-    if (oMyChn.Name="MyChannel") and not bIndexChn:
+    if (oMyChn.Name=="MyChannel") and not bIndexChn:
         bIndexChn = TRUE
         Root.ChannelGroups(1).Channels.AddImplicitChannel("Index", 1, 1, oMyChn.Size, eI32)
 ```

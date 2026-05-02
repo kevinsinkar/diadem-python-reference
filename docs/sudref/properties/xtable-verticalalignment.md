@@ -23,7 +23,7 @@ obj.VerticalAlignment
     example was machine-translated from the VBScript source.
 
 ```python
-Cell.VerticalAlignment = 1 '0=Top, 1=Center, 2=Bottom
+Cell.VerticalAlignment = 1  # 0=Top, 1=Center, 2=Bottom
 ```
 
 ## See also

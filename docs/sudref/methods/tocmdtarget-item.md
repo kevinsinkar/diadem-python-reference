@@ -45,7 +45,7 @@ Page1.Controls(1).ForeColor = vbBlue
 
 ```python
 for i in range(1, Dialog.Controls.Count + 1):
-    if Dialog.Controls(i).ObjectType = "EditBox":
+    if Dialog.Controls(i).ObjectType == "EditBox":
         Dialog.Controls(i).Width = 100
 ```
 

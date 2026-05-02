@@ -61,7 +61,7 @@ if (rChnMin is None):
 ```python
 if (oMyDate is None):
     RaiseError
-Root.Properties.Add("Year/Month", oMyDate.Year&"/"oMyDate.Month)
+Root.Properties.Add("Year/Month", oMyDate.Year"/"oMyDate.Month)
 ```
 
 ---

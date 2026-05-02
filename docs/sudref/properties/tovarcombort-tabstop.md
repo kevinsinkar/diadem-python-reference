@@ -23,7 +23,7 @@ obj.TabStop
     example was machine-translated from the VBScript source.
 
 ```python
-EnumComboBox1.TabStop = 1 '0=No, 1=Yes
+EnumComboBox1.TabStop = 1  # 0=No, 1=Yes
 ```
 
 ## See also

@@ -25,7 +25,7 @@ bIsKindOf = Object.IsKindOf(Type)
 ```python
 if oBlock.IsKindOf(eBinaryBlock):
     oBlock.BlockLength = -1
-    ElseIf oBlock.IsKindOf(eStringBlock) :
+elif oBlock.IsKindOf(eStringBlock):
     oBlock.BlockLength = 20
 ```
 

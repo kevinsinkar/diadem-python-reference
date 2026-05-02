@@ -24,8 +24,8 @@ return_value = obj.OpenTextFile(FileName, [IOMode], [Create], [Format])
 
 ```python
 def ReadWriteAppend(sFile):
-    Const ForReading = 1, ForWriting = 2, ForAppending = 8
-    Const TristateUseDefault = -2, TristateTrue = -1, TristateFalse = 0
+    ForReading = 1; ForWriting = 2; ForAppending = 8
+    TristateUseDefault = -2; TristateTrue = -1; TristateFalse = 0
     fso = CreateObject("Scripting.FileSystemObject")
     # Open the file for output
     oMyFile = fso.OpenTextFile(sFile, ForWriting, True)

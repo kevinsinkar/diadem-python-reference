@@ -33,13 +33,14 @@ obj.DataType
 
 ```python
 for oMyProp in Document.Properties:
+    pass
     # select oMyprop.DataType
     # case eI32	sMyPrefix = "i_"
     # case eR64	sMyPrefix = "r_"
     # case eString	sMyPrefix = "s_"
     # case eTime	sMyPrefix = "t_"
     # case Else	sMyPrefix = ""
-Root.Properties.Add(sMyPrefix&oMyProp.Name, oMyProp.Value)
+Root.Properties.Add(sMyPrefixoMyProp.Name, oMyProp.Value)
 ```
 
 ## See also

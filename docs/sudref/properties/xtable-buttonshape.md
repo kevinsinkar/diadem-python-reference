@@ -23,7 +23,7 @@ obj.ButtonShape
     example was machine-translated from the VBScript source.
 
 ```python
-Cell.ButtonShape = 3 '0=Standard, 4=Button
+Cell.ButtonShape = 3  # 0=Standard, 4=Button
 ```
 
 ## See also

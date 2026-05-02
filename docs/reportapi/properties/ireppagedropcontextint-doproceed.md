@@ -32,10 +32,10 @@ obj.DoProceed
 def MyOnDropTextEvent(Context, DropContext):
     sOutput = "Names of dropped channels:"
     for oMyDropElement in DropContext.DiademElements:
-        sOutput = sOutput + VBCrLf + oMyDropElement.Name
+        sOutput = sOutput + "\r\n" + oMyDropElement.Name
     dd.MsgBox(sOutput)
     oMyText = Context.Text
-    dd.MsgBox(Context.Sheet.Name + VBCrLf + oMyText.Name + VBCrLf + oMyText.Text)
+    dd.MsgBox(Context.Sheet.Name + "\r\n" + oMyText.Name + "\r\n" + oMyText.Text)
     Context.DoProceed = TRUE
 ```
 

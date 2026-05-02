@@ -23,7 +23,7 @@ dd.EventPlayStatusChanged(ByRef This, bStartPlaying)
     example was machine-translated from the VBScript source.
 
 ```python
-def View_EventPlayStatusChanged(ByRef This, bStartPlaying):
+def View_EventPlayStatusChanged(This, bStartPlaying):
     if not None Is This.DisplayObj:
         LogFileWrite("Playing: " + str(This.DisplayObj.Area.Sheet.Cursor.IsPlaying))
 ```

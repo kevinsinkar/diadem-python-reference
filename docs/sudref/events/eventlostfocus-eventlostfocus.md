@@ -23,7 +23,7 @@ dd.EventLostFocus(ByRef This)
     example was machine-translated from the VBScript source.
 
 ```python
-def EditBox1_EventLostFocus(ByRef This):
+def EditBox1_EventLostFocus(This):
     if not IsNumeric(This.Text):
         MsgBoxDisp("No value")
         This.Text =""

@@ -61,16 +61,16 @@ dd.Report.Refresh()
 def MyCustomScalingEvent3D(Context):
     oMyAxisSystem = Context.AxisSystem
     oMySheet = Context.Sheet
-    if Context.AxisType = e3DAxisTypeY:
+    if Context.AxisType == e3DAxisTypeY:
         oMyAxis = oMyAxisSystem.AxisList.Y
         MinMax = ValMax(Abs(oMyAxis.Scaling.End),Abs(oMyAxis.Scaling.Begin))
         oMyAxis.Scaling.Origin = oMyAxis.Scaling.Begin
-    if oMySheet.Index = 1:
-        if Context.AxisType = e3DAxisTypeY:
+    if oMySheet.Index == 1:
+        if Context.AxisType == e3DAxisTypeY:
             oMyAxis.Scaling.Begin = -MinMax
             oMyAxis.Scaling.End = +MinMax
     else:
-        if Context.AxisType = e3DAxisTypeY:
+        if Context.AxisType == e3DAxisTypeY:
             oMyAxis.Scaling.Begin = -MinMax * 2
             oMyAxis.Scaling.End = +MinMax * 2
 ```

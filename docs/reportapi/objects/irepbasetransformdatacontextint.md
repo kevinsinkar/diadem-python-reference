@@ -50,12 +50,12 @@ def MyOnCurveTransformation(TransformDataContext):
     oMyDataContext = TransformDataContext.DataContext
     # select TransformDataContext.DataType
     # case e2DCurveTransformDataTypeXY
-    ChnCopy  (oMyDataContext.XChannelNumberIn ,oMyDataContext.XChannelNumberOut) 'Copy the input channel into the output channel
-    ChnSmooth(oMyDataContext.YChannelNumberIn, oMyDataContext.YChannelNumberOut, 100, "symmetric") 'Smooth the input channel and save the result as output channel
+    ChnCopy  (oMyDataContext.XChannelNumberIn ,oMyDataContext.XChannelNumberOut)  # Copy the input channel into the output channel
+    ChnSmooth(oMyDataContext.YChannelNumberIn, oMyDataContext.YChannelNumberOut, 100, "symmetric")  # Smooth the input channel and save the result as output channel
     # case e2DCurveTransformDataTypeXYY1
-    ChnCopy  (oMyDataContext.XChannelNumberIn ,oMyDataContext.XChannelNumberOut) 'Copy the input channel into the output channel
-    ChnSmooth(oMyDataContext.YChannelNumberIn, oMyDataContext.YChannelNumberOut, 2, "symmetric") 'Smooth the input channel and save the result as output channel
-    ChnSmooth(oMyDataContext.Y1ChannelNumberIn, oMyDataContext.Y1ChannelNumberOut, 2, "symmetric") 'Smooth the input channel and save the result as output channel
+    ChnCopy  (oMyDataContext.XChannelNumberIn ,oMyDataContext.XChannelNumberOut)  # Copy the input channel into the output channel
+    ChnSmooth(oMyDataContext.YChannelNumberIn, oMyDataContext.YChannelNumberOut, 2, "symmetric")  # Smooth the input channel and save the result as output channel
+    ChnSmooth(oMyDataContext.Y1ChannelNumberIn, oMyDataContext.Y1ChannelNumberOut, 2, "symmetric")  # Smooth the input channel and save the result as output channel
     # case e2DCurveTransformDataTypeCXCY
     oMyDataContext.ConstXOut = oMyDataContext.ConstXIn + 2
     oMyDataContext.ConstYOut = oMyDataContext.ConstYIn + 2

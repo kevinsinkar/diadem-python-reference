@@ -23,10 +23,11 @@ obj.RunColCtrlPreset(Column)
     example was machine-translated from the VBScript source.
 
 ```python
-def XTable1_EventColCtrlPreSet(ByRef This, Col, ByRef Cell, IsInputCell):
+def XTable1_EventColCtrlPreSet(This, Col, Cell, IsInputCell):
+    pass
     # Do something
 
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
     XTable1.RunColCtrlPreSet(-1)
 ```
 

@@ -33,7 +33,7 @@ dd.EventChange(ByRef This)
     example was machine-translated from the VBScript source.
 
 ```python
-def CheckBox1_EventChange(ByRef This):
+def CheckBox1_EventChange(This):
     MsgBoxDisp("CheckBox was changed")
 ```
 

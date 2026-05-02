@@ -24,7 +24,7 @@ obj.Name
 
 ```python
 for oMyGrp in Root.ChannelGroups:
-    if oMyGrp.Name = "QT_33-5_Upper":
+    if oMyGrp.Name == "QT_33-5_Upper":
         oMyGrp.Properties.Add("Test_Status","Pass")
 ```
 

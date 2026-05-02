@@ -23,9 +23,10 @@ obj.RunChange()
     example was machine-translated from the VBScript source.
 
 ```python
-def EnumComboBox1_EventChange(ByRef This):
+def EnumComboBox1_EventChange(This):
+    pass
     # Do something
-def ComboBox1_EventChange(ByRef This):
+def ComboBox1_EventChange(This):
     EnumComboBox1.RunChange
 ```
 

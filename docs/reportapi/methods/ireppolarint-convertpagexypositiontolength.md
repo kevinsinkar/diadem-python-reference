@@ -56,9 +56,9 @@ dd.Report.Refresh()
 
 ```python
 def MyClickEvent(Context):
-    Context.DoProceed = False'True
+    Context.DoProceed = False  # True
     # Check the key
-    if Chr(Context.KeyValue) = "C" or Chr(Context.KeyValue) = "c":
+    if Chr(Context.KeyValue) == "C" or Chr(Context.KeyValue) == "c":
         Context.DoProceed = True
         oSystem = Context.AxisSystemPolar
 
@@ -67,8 +67,8 @@ def MyClickEvent(Context):
         Angle  = oSystem.ConvertPageXYPositionToAngle(Context.Position.X, Context.Position.Y)
 
         # Build message text
-        sgMessage =  "Lenght: " + VBTab + Lenght + VBCrLf + "Angle: " + VBTab + Angle
-        MsgBoxDisp(sgMessage,,,,5,True)
+        sgMessage =  "Lenght: " + "\t" + Lenght + "\r\n" + "Angle: " + "\t" + Angle
+        MsgBoxDisp(sgMessage, None, None, None,5,True)
 ```
 
 ---

@@ -50,11 +50,11 @@ dd.Report.Refresh()
 
 ```python
 def MyClickEvent(Context):
-    Context.DoProceed = False'True
+    Context.DoProceed = False  # True
     # Check the key
-    if Chr(Context.KeyValue) = "C" or Chr(Context.KeyValue) = "c":
+    if Chr(Context.KeyValue) == "C" or Chr(Context.KeyValue) == "c":
         Context.DoProceed = True
-        if Context.SubObject.Type = e2DElementCurve:
+        if Context.SubObject.Type == e2DElementCurve:
             oSystem = Context.AxisSystem2D
 
             # Convert cursor position to axis coordinates
@@ -70,13 +70,13 @@ def MyClickEvent(Context):
             oPoint = oCurve.FindNearestValue(x,y)
 
             # Build message text
-            sgMessage =  "Point (" + oPoint.Index + ")" + VBCrLf + "X = " + RTT(oPoint.X) + VBCrLf + "Y = " + Str(oPoint.Y)
+            sgMessage =  "Point (" + oPoint.Index + ")" + "\r\n" + "X = " + RTT(oPoint.X) + "\r\n" + "Y = " + Str(oPoint.Y)
             oChannel = dd.Data.GetChannel(oCurve.Shape.YChannel.Reference)
-            sgMessage =  sgMessage + VBCrLf + "Assignment value: " + oChannel.Values(oPoint.Index)
+            sgMessage =  sgMessage + "\r\n" + "Assignment value: " + oChannel.Values(oPoint.Index)
         else:
             oSubObject = Context.SubObject
-            sgMessage = "Sheet: " + Context.Sheet.Name + VBCrLf + "Sub object" + VBCrLf + "Name: " + oSubObject.Name + VBCrLf + "Type: " + GetConstNameForREPORTSubObj(oSubObject, oSubObject.Type)
-        MsgBoxDisp(sgMessage,,,,5,True)
+            sgMessage = "Sheet: " + Context.Sheet.Name + "\r\n" + "Sub object" + "\r\n" + "Name: " + oSubObject.Name + "\r\n" + "Type: " + GetConstNameForREPORTSubObj(oSubObject, oSubObject.Type)
+        MsgBoxDisp(sgMessage, None, None, None,5,True)
 ```
 
 ## Members

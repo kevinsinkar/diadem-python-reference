@@ -23,7 +23,7 @@ obj.Refresh()
     example was machine-translated from the VBScript source.
 
 ```python
-def Slider2_EventChange(ByRef This):
+def Slider2_EventChange(This):
     Slider1.Value = Slider2.Value
     Slider1.Refresh
 ```

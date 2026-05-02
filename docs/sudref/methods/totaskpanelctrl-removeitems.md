@@ -23,14 +23,14 @@ obj.RemoveItems()
     example was machine-translated from the VBScript source.
 
 ```python
-def TaskPanel1_EventInitialize(ByRef This):
+def TaskPanel1_EventInitialize(This):
     CreateDefaultTaskPanel(This)
 
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
     TaskPanel1.RemoveItems
     CreateNewPanel(TaskPanel1)
 
-def CreateDefaultTaskPanel(ByRef This):
+def CreateDefaultTaskPanel(This):
     This.AddGroup("electricGroup", "Electric Tools")
     This.AddGroup("handtoolGroup", "Hand Tools")
     This.AddGroup("textonlyGroup", "Info")
@@ -41,7 +41,7 @@ def CreateDefaultTaskPanel(ByRef This):
     This.AddLinkItem("handtoolGroup","tongs","Tongs")
     This.AddTextItem("textonlyGroup","version","Version 1.0")
 
-def CreateNewPanel(ByRef This):
+def CreateNewPanel(This):
     This.AddGroup("animalGroup", "Animals")
     This.AddGroup("plantsGroup", "Plants")
     This.AddLinkItem("AnimalGroup","mouse","Mouse")

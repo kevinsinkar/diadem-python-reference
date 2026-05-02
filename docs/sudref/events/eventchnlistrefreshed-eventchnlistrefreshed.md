@@ -29,7 +29,7 @@ dd.EventChnListRefreshed(ByRef This)
     example was machine-translated from the VBScript source.
 
 ```python
-def ChnListBox1_EventChnListRefreshed(ByRef This):
+def ChnListBox1_EventChnListRefreshed(This):
     if (ChnNoMax > 1):
         This.Selection = 1
 ```

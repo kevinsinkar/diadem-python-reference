@@ -33,17 +33,17 @@ dd.EventPrePaint(ByRef This)
     example was machine-translated from the VBScript source.
 
 ```python
-def Curve2DPreview1_EventInitialize(ByRef This):
+def Curve2DPreview1_EventInitialize(This):
     This.Curves.RemoveAll
     This.Curves.Add("[1]/[1]","[1]/[2]")
 
-def Curve2DPreview1_EventPrePaint(ByRef This):
+def Curve2DPreview1_EventPrePaint(This):
     dd.Data.Root.ChannelGroups.Add("Temp")
     ChnSmooth("[1]/[2]","Temp/Smoothed",100,"maxNumber")
     oMyCurve = This.Curves.Add("[1]/[1]","Temp/Smoothed")
     oMyCurve.Color = vbBlue
 
-def Curve2DPreview1_EventPostPaint(ByRef This):
+def Curve2DPreview1_EventPostPaint(This):
     dd.Data.Root.ChannelGroups.Remove("Temp")
     This.Curves.Remove(2)
 ```

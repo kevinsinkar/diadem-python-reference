@@ -34,9 +34,9 @@ AddUserCommandToEvent("dd.Report.Events.OnDropPage", "MyOnDropPageEvent")
 def MyOnDropPageEvent(Context, DropContext):
     sOutput = "Names of dropped elements:"
     for oMyDropElement in DropContext.DiademElements:
-        sOutput = sOutput + VBCrLf + oMyDropElement.Name
+        sOutput = sOutput + "\r\n" + oMyDropElement.Name
     Msgbox(sOutput)
-    dd.MsgBox(Context.Sheet.Name + VBCrLf + Context.Position.X + VBCrLf + Context.Position.Y)
+    dd.MsgBox(Context.Sheet.Name + "\r\n" + Context.Position.X + "\r\n" + Context.Position.Y)
     Context.DoProceed = TRUE
 ```
 

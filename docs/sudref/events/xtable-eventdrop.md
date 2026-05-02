@@ -25,12 +25,13 @@ dd.EventDrop(ByRef This, Row, Col, DropInformation)
 ```python
 oMyCalc = CalculationSet.CalculationGroups(1).Calculations(1)
 
-def XTable1_EventInitialize(ByRef This):
+def XTable1_EventInitialize(This):
     This.RowCount = oMyCalc.Inputs.Count
     This.Columns.Count = 2
 
-def XTable1_EventValGet(ByRef This, Row, Col, ByRef Cell, IsInputCell):
-    if Row = 0:
+def XTable1_EventValGet(This, Row, Col, Cell, IsInputCell):
+    if Row == 0:
+        pass
         # select Col
         # case 0    Cell.Text = ""
         # case 1    Cell.Text = "DataType"
@@ -49,18 +50,18 @@ Cell.Text = oMyCalc.Inputs(Row).Reference.Channel
 # case eReferenceTypeChannelList
 Cell.Text = oMyCalc.Inputs(Row).Reference.ChannelList
 
-def XTable1_EventDropAllowed(ByRef This, Row, Col, DropInformation, ByRef DropEffect):
+def XTable1_EventDropAllowed(This, Row, Col, DropInformation, DropEffect):
     DropEffect = eDropEffectNone
-    if (Row > 0) and (Col = 2):
+    if (Row > 0) and (Col == 2):
         oMyElem = DropInformation.DiademElements
         if (oMyElem.Count > 0):
             if oMyElem(1).IsKindOf(eDataChannel):
                 DropEffect = eDropEffectCopy
-                ElseIf oMyElem(1).IsKindOf(eDataChannelGroup) and (oMyCalc.Inputs(Row).ReferenceType = eReferenceTypeChannelList) :
+            elif oMyElem(1).IsKindOf(eDataChannelGroup) and (oMyCalc.Inputs(Row).ReferenceType == eReferenceTypeChannelList):
                 DropEffect = eDropEffectCopy
 
-def XTable1_EventDrop(ByRef This, Row, Col, DropInformation):
-    if (Row > 0) and (Col = 2):
+def XTable1_EventDrop(This, Row, Col, DropInformation):
+    if (Row > 0) and (Col == 2):
         oMyElem = DropInformation.DiademElements
         # select oMyCalc.Inputs(Row).ReferenceType
         # case eReferenceTypeChannel

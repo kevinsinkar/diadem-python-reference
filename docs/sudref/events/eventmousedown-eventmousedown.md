@@ -23,7 +23,7 @@ dd.EventMouseDown(ByRef This, Button, Shift, X, Y)
     example was machine-translated from the VBScript source.
 
 ```python
-def Dialog_EventMouseDown(ByRef This, Button, Shift, X, Y):
+def Dialog_EventMouseDown(This, Button, Shift, X, Y):
     MsgBoxDisp("Mouse button pressed at X="& X &" Y="&Y)
 ```
 

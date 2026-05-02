@@ -23,20 +23,20 @@ obj.RunCustomAction(VarParam)
     example was machine-translated from the VBScript source.
 
 ```python
-def Tree1_EventInitialize(ByRef This):
+def Tree1_EventInitialize(This):
     CreateDefaultTree(This)
 
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
     Tree1.RunCustomAction("SetRed")
 
-def Tree1_EventCustomAction(ByRef This, VarParam):
-    if (VarParam = "SetRed"):
+def Tree1_EventCustomAction(This, VarParam):
+    if (VarParam == "SetRed"):
         oMyNode= Tree1.SelectedItem
         if (not oMyNode is None):
             oMyNode.ForeColor = RGB(255, 0, 0)
             oMyNode.Update(eUpdateModeNode)
 
-def CreateDefaultTree(ByRef This):
+def CreateDefaultTree(This):
     oFindRoot = This.Nodes.Add("Double click any node to add a sub node")
     oRoot = This.Nodes.Add("Tools")
     oRoot.Key = "tools"

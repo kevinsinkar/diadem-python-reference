@@ -23,9 +23,10 @@ obj.RunViewRefreshed()
     example was machine-translated from the VBScript source.
 
 ```python
-def ViewConnector_EventViewRefreshed(ByRef This):
+def ViewConnector_EventViewRefreshed(This):
+    pass
     # Do something
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
     ViewConnector.RunViewRefreshed
 ```
 

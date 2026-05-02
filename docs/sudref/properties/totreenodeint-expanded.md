@@ -23,11 +23,11 @@ obj.Expanded
     example was machine-translated from the VBScript source.
 
 ```python
-def Tree1_EventInitialize(ByRef This):
+def Tree1_EventInitialize(This):
     CreateDefaultTree(This)
     ExpandNode(This.Nodes, True)
 
-def CreateDefaultTree(ByRef This):
+def CreateDefaultTree(This):
     oRoot = This.Nodes.Add("Tools")
     oRoot.Key = "tools"
     oMainNode = oRoot.Nodes.Add("Electric Tools")

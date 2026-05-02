@@ -55,7 +55,7 @@ dd.Report.Sheets.Copy(1, dd.Report.Sheets(1).Name + " green", 2)
 
 ```python
 def OnDrawingFooterCell(Context, Cell):
-    if (Context.Sheet.Index = 2) and (Context.TitleNumber = 1):
+    if (Context.Sheet.Index == 2) and (Context.TitleNumber == 1):
         Cell.Font.Color.SetPredefinedColor(ePredefinedColorWhite)
         Cell.BackgroundColor.SetPredefinedColor(ePredefinedColorDarkGreen)
 ```

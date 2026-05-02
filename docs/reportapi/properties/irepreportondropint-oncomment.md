@@ -34,10 +34,10 @@ dd.Report.Events.Drop.OnComment = "MyOnDropCommentEvent"
 def MyOnDropCommentEvent(Context, DropContext):
     sOutput = "Names of dropped channels:"
     for oMyDropElement in DropContext.DiademElements:
-        sOutput = sOutput + VBCrLf + oMyDropElement.Name
+        sOutput = sOutput + "\r\n" + oMyDropElement.Name
     Msgbox(sOutput)
     oMyComment = Context.Comment
-    dd.MsgBox(Context.Sheet.Name + VBCrLf + oMyComment.Name)
+    dd.MsgBox(Context.Sheet.Name + "\r\n" + oMyComment.Name)
     Context.DoProceed = TRUE
 ```
 

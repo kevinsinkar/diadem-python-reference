@@ -27,7 +27,7 @@ The Text object corresponds to the Text control in an extended table of a user d
     example was machine-translated from the VBScript source.
 
 ```python
-Cell.Alignment = 2 '0=Left, 1=Center, 2=Right
+Cell.Alignment = 2  # 0=Left, 1=Center, 2=Right
 ```
 
 ## Members

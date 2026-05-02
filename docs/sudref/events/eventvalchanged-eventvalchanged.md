@@ -33,7 +33,7 @@ dd.EventValChanged(ByRef This, Row, Col, ByRef Cell)
     example was machine-translated from the VBScript source.
 
 ```python
-def XTable1_EventValChanged(ByRef This, Row, Col, ByRef Cell):
+def XTable1_EventValChanged(This, Row, Col, Cell):
     Text1.Text = "CellChanged (" + Row + "," + Col &"), Objecttype: "& Cell.ObjectType
 ```
 

@@ -32,7 +32,7 @@ obj.OnFinalizeSheetRefresh
 AddUserCommandToEvent("dd.Report.Events.OnFinalizeSheetRefresh", "MyOnFinalizeSheetRefresh")
 
 def MyOnFinalizeSheetRefresh(Sheet):
-    dd.MsgBox("Sheet: " + Sheet.Name + VBTab + "Number of objects: " + Sheet.Objects.Count)
+    dd.MsgBox("Sheet: " + Sheet.Name + "\t" + "Number of objects: " + Sheet.Objects.Count)
 ```
 
 ## See also

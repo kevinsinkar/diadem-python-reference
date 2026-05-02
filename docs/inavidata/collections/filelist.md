@@ -17,11 +17,11 @@ Specifies a file list you drag and drop to a different object.
     example was machine-translated from the VBScript source.
 
 ```python
-Sub Tree1_EventDropAllowed(ByRef This, DropInformation, ByRef DropEffect) 'Creataed Event Handler
-if (DropInformation.FileList.Count >0):
-    DropEffect = eDropEffectCopy
+def Tree1_EventDropAllowed(This, DropInformation, DropEffect):  # Creataed Event Handler
+    if (DropInformation.FileList.Count >0):
+        DropEffect = eDropEffectCopy
 
-def Tree1_EventDrop(ByRef This, DropInformation, ByRef DropEffect, ByRef Node):
+def Tree1_EventDrop(This, DropInformation, DropEffect, Node):
     if (DropInformation.FileList.Count >0):
         if (not Node Is None):
             for oMyFile in DropInformation.FileList:

@@ -23,7 +23,7 @@ obj.LastVisibleCol
     example was machine-translated from the VBScript source.
 
 ```python
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
     dd.MsgBox("Last visible row/column: " + XTable1.LastVisibleRow + " / " + XTable1.LastVisibleCol)
 ```
 

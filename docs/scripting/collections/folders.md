@@ -22,7 +22,7 @@ def CreateFolderList(sFolder):
     oMyFolder = fso.GetFolder(sFolder)
     oMySubFolders = oMyFolder.SubFolders
     for oMySubFolder in oMySubFolders:
-        sOutput = sOutput + oMySubFolder.Path + VbCrLf
+        sOutput = sOutput + oMySubFolder.Path + "\r\n"
         sOutput = sOutput + CreateFolderList(oMySubFolder.Path)
     CreateFolderList = sOutput
 ```

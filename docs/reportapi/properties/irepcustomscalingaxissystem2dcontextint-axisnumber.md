@@ -49,7 +49,7 @@ oMy2DCurve1.YAxisReference = oMy2DAxisSystem.YAxisList(1).Name
 oMy2DCurve2 = oMy2DAxisSystem.Curves2D.Add(e2DShapeLine, "My2DCurve2")
 oMy2DCurve2.Shape.XChannel.Reference = "[1]/[1]"
 oMy2DCurve2.Shape.YChannel.Reference = "[1]/[3]"
-oMy2DCurve2.YAxisReference = "SecondAxis" 'or oMySecondAxis.Name
+oMy2DCurve2.YAxisReference = "SecondAxis"  # or oMySecondAxis.Name
 # Creating custom scaling
 oMyCustomScalings = dd.Report.Settings.CustomScaling.AxisSystem2DList
 oMyCustomScalings.RemoveAll
@@ -71,7 +71,7 @@ dd.Report.Refresh()
 ```python
 def MyCustomScalingEvent2D(Context):
     oMyAxisSystem = Context.AxisSystem
-    if Context.AxisType = e2DAxisTypeY:
+    if Context.AxisType == e2DAxisTypeY:
         oMyAxis = oMyAxisSystem.YAxisList(Context.AxisNumber)
         MinMax = ValMax(Abs(oMyAxis.Scaling.End),Abs(oMyAxis.Scaling.Begin))
         oMyAxis.Scaling.Origin = oMyAxis.Scaling.Begin

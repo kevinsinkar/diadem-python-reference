@@ -23,10 +23,11 @@ obj.RunDefaultColCtrlPreset()
     example was machine-translated from the VBScript source.
 
 ```python
-def XTable1_EventDefaultColCtrlPreSet(ByRef This, ByRef Cell, IsInputCell):
+def XTable1_EventDefaultColCtrlPreSet(This, Cell, IsInputCell):
+    pass
     # Do something
 
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
     XTable1.RunDefaultColCtrlPreSet
 ```
 

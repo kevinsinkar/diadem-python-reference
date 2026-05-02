@@ -38,13 +38,13 @@ AddUserCommandToEvent("dd.Navigator.Events.OnInteractionLoading","MyInteractionL
 AddUserCommandToEvent("dd.Navigator.Events.OnInteractionLoaded","MyInteractionLoaded")
 
 def MyInteractionLoading():
-    # select MsgBoxDisp("Delete dd.Data Portal before loading new data?","MB_YESNO",,2)
+    # select MsgBoxDisp("Delete dd.Data Portal before loading new data?","MB_YESNO", None,2)
     # case "IDYes"
     dd.Data.Root.Clear
     # case "IDNo"
-    MsgBoxDisp("New data will be appended to existing data."&vbcrlf, "MB_NOBUTTON", "MsgTypeNoteNoIcon",, 3, TRUE)
+    MsgBoxDisp("New data will be appended to existing data."&"\r\n", "MB_NOBUTTON", "MsgTypeNoteNoIcon", None, 3, TRUE)
     # case "IDCancel"
-    MsgBoxDisp("Cancelled by user", "MB_NOBUTTON", "MsgTypeWarning",, 3)
+    MsgBoxDisp("Cancelled by user", "MB_NOBUTTON", "MsgTypeWarning", None, 3)
 
 def MyInteractionLoaded():
     MsgBoxDisp("Open dd.Report Wizard")

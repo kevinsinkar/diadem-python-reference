@@ -47,12 +47,12 @@ Specifies the user command that DIAdem executes when you drag and drop one or mo
 OnFilterDroppedFile = "MyOnFilterDroppedFile"
 
 def MyOnFilterDroppedFile(Panel, FileName, Reserved):
-    LogfileWrite("Execute OnFilterDroppedFile: Panel: " + Panel + VBCrLf + "Filename " + FileName)
-    if (UpC(NameSplit(Filename, "E")) = "TXT"):
-        MyOnFilterDroppedFile = False ' True
+    LogfileWrite("Execute OnFilterDroppedFile: Panel: " + Panel + "\r\n" + "Filename " + FileName)
+    if (UpC(NameSplit(Filename, "E")) == "TXT"):
+        MyOnFilterDroppedFile = False  # True
         # do something
     else:
-        MyOnFilterDroppedFile = False ' True
+        MyOnFilterDroppedFile = False  # True
         # do something else
 ```
 

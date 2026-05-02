@@ -23,14 +23,14 @@ dd.EventAfterLabelEdit(ByRef This, ByRef Node, ByRef Cancel, NewText)
     example was machine-translated from the VBScript source.
 
 ```python
-def Tree1_EventInitialize(ByRef This):
+def Tree1_EventInitialize(This):
     CreateDefaultTree(This)
 
-def Tree1_EventBeforeLabelEdit(ByRef This, ByRef Node, ByRef Cancel):
+def Tree1_EventBeforeLabelEdit(This, Node, Cancel):
     if Node.Nodes.Count > 0:
         Cancel = True
 
-def CreateDefaultTree(ByRef This):
+def CreateDefaultTree(This):
     oRoot = This.Nodes.Add("Tools")
     oRoot.Key = "tools"
     oRoot.Expanded = true

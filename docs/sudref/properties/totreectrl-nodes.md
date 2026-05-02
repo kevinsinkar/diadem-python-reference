@@ -23,7 +23,7 @@ return_value = obj.Nodes
     example was machine-translated from the VBScript source.
 
 ```python
-def Tree1_EventInitialize(ByRef This):
+def Tree1_EventInitialize(This):
     oRoot = This.Nodes.Add("Tools")
     oRoot.Key = "tools"
     oRoot.Expanded = true
@@ -37,24 +37,24 @@ def Tree1_EventInitialize(ByRef This):
     oMainNode.Nodes.Add("Screwdriver").Key = "screwdriver"
     oMainNode.Nodes.Add("Tongs").Key = "tongs"
 
-def Tree1_EventNodeClick(ByRef This, ByRef Node):
-    sOutPut = "Node clicked: " + Node.Text + VBCrLf
+def Tree1_EventNodeClick(This, Node):
+    sOutPut = "Node clicked: " + Node.Text + "\r\n"
     if Node.Parent is None:
-        sOutPut = sOutPut + "Node is root node" + VBCrLf
+        sOutPut = sOutPut + "Node is root node" + "\r\n"
     else:
-        sOutPut = sOutPut + "Parent: " + Node.Parent.Text + VBCrLf
+        sOutPut = sOutPut + "Parent: " + Node.Parent.Text + "\r\n"
     if Node.PreviousNode is None:
-        sOutPut = sOutPut + "Node is first node" + VBCrLf
+        sOutPut = sOutPut + "Node is first node" + "\r\n"
     else:
-        sOutPut = sOutPut + "Previous node: " + Node.PreviousNode.Text + VBCrLf
+        sOutPut = sOutPut + "Previous node: " + Node.PreviousNode.Text + "\r\n"
     if Node.NextNode is None:
-        sOutPut = sOutPut + "Node is last node" + VBCrLf
+        sOutPut = sOutPut + "Node is last node" + "\r\n"
     else:
-        sOutPut = sOutPut + "Next node: " + Node.NextNode.Text + VBCrLf
-    if Node.Nodes.Count = 0:
-        sOutPut = sOutPut + "Node has no children" + VBCrLf
+        sOutPut = sOutPut + "Next node: " + Node.NextNode.Text + "\r\n"
+    if Node.Nodes.Count == 0:
+        sOutPut = sOutPut + "Node has no children" + "\r\n"
     else:
-        sOutPut = sOutPut + "First child: " + Node.Nodes(1).Text + VBCrLf
+        sOutPut = sOutPut + "First child: " + Node.Nodes(1).Text + "\r\n"
     dd.MsgBox(sOutPut)
 ```
 

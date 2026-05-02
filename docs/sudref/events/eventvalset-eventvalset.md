@@ -33,8 +33,8 @@ dd.EventValSet(ByRef This, Row, Col, ByRef Cell)
     example was machine-translated from the VBScript source.
 
 ```python
-def XTable1_EventValGet(ByRef This, Row, Col, ByRef Cell, IsInputCell):
-    if Row = 0:
+def XTable1_EventValGet(This, Row, Col, Cell, IsInputCell):
+    if Row == 0:
         if Col != 0:
             Cell.Text = dd.Data.Root.ActiveChannelGroup.Channels(Col).Name
         else:
@@ -49,9 +49,9 @@ def XTable1_EventValGet(ByRef This, Row, Col, ByRef Cell, IsInputCell):
         else:
             Cell.Text = Str(dd.Data.Root.ActiveChannelGroup.Channels(Col).Values(Row),"d.d")
 
-Sub XTable1_EventValSet(ByRef This, Row, Col, ByRef Cell) 'Generated event handler
-if (Row > 0) and (Col > 0):
-    dd.Data.Root.ActiveChannelGroup.Channels(Col).Values(Row) = Val(Eval(Cell.Text))
+def XTable1_EventValSet(This, Row, Col, Cell):  # Generated event handler
+    if (Row > 0) and (Col > 0):
+        dd.Data.Root.ActiveChannelGroup.Channels(Col).Values(Row) = Val(Eval(Cell.Text))
 ```
 
 ## See also

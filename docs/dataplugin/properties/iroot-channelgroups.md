@@ -26,7 +26,7 @@ return_value = obj.ChannelGroups
 for j in range(1, Root.ChannelGroups.Count + 1):
     oMyProp = Root.ChannelGroups(j).Properties
     for i in range(1, oMyProp.Count + 1):
-        if oMyProp(i).Name = "Test_Status":
+        if oMyProp(i).Name == "Test_Status":
             oMyProp(i).Value = "failed"
 ```
 

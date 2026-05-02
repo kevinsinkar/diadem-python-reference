@@ -23,11 +23,11 @@ dd.EventRefresh(ByRef This)
     example was machine-translated from the VBScript source.
 
 ```python
-def Text1_EventRefresh(ByRef This):
+def Text1_EventRefresh(This):
     if IsNumeric(This.Text):
-        This.Enable = 1  '0=No, 1=Yes
+        This.Enable = 1  # 0=No, 1=Yes
     else:
-        This.Enable = 0  '0=No, 1=Yes
+        This.Enable = 0  # 0=No, 1=Yes
 ```
 
 ## See also

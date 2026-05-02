@@ -40,7 +40,7 @@ AddUserCommandToEvent("dd.Navigator.Events.OnLoaded","MyOnLoaded")
 def MyOnLoaded():
     Txt = ""
     for Element in LoadedElementList:
-        Txt = Txt + "Loaded Element: " + Element.Name + VBCrLf
+        Txt = Txt + "Loaded Element: " + Element.Name + "\r\n"
     MsgBoxDisp(Txt)
 ```
 

@@ -34,11 +34,11 @@ sItem = Object.Item(Index)
     example was machine-translated from the VBScript source.
 
 ```python
-Sub Tree1_EventDropAllowed(ByRef This, DropInformation, ByRef DropEffect) 'Created Event Handler
-if (DropInformation.FileList.Count >0):
-    DropEffect = eDropEffectCopy
+def Tree1_EventDropAllowed(This, DropInformation, DropEffect):  # Created Event Handler
+    if (DropInformation.FileList.Count >0):
+        DropEffect = eDropEffectCopy
 
-def Tree1_EventDrop(ByRef This, DropInformation, ByRef DropEffect, ByRef Node):
+def Tree1_EventDrop(This, DropInformation, DropEffect, Node):
     oMyFileList = DropInformation.FileList
     if (oMyFileList.Count > 0):
         if (not Node Is None):

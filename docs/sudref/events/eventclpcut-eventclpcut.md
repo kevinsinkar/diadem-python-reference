@@ -23,8 +23,8 @@ dd.EventClpCut(ByRef This)
     example was machine-translated from the VBScript source.
 
 ```python
-def XTable1_EventValGet(ByRef This, Row, Col, ByRef Cell, IsInputCell):
-    if Row = 0:
+def XTable1_EventValGet(This, Row, Col, Cell, IsInputCell):
+    if Row == 0:
         if Col != 0:
             Cell.Text = dd.Data.Root.ActiveChannelGroup.Channels(Col).Name
         else:
@@ -36,15 +36,15 @@ def XTable1_EventValGet(ByRef This, Row, Col, ByRef Cell, IsInputCell):
         # case else
         Cell.Text = Str(dd.Data.Root.ActiveChannelGroup.Channels(Col).Values(Row))
 
-Sub XTable1_EventClpCut(ByRef This) 'Generated event handler
-sCellValue = dd.Data.Root.ActiveChannelGroup.Channels(This.ActiveCellRow)
-TextToClipboard(sCellValue)
+def XTable1_EventClpCut(This):  # Generated event handler
+    sCellValue = dd.Data.Root.ActiveChannelGroup.Channels(This.ActiveCellRow)
+    TextToClipboard(sCellValue)
 
-def XTable1_EventClpPaste(ByRef This):
+def XTable1_EventClpPaste(This):
     oMyChannel = dd.Data.Root.ActiveChannelGroup.Channels(This.ActiveCellCol)
-    if oMyChannel.DataType = DataTypeChnString:
+    if oMyChannel.DataType == DataTypeChnString:
         oMyChannel.Values(This.ActiveCellRow) = TextFromClipBoard
-        ElseIf Isnumeric(TextFromClipBoard) :
+    elif Isnumeric(TextFromClipBoard):
         oMyChannel.Values(This.ActiveCellRow) = CDbl(TextFromClipBoard)
     This.RefreshRows(This.ActiveCellRow,This.ActiveCellRow)
 ```

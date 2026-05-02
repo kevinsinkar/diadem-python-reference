@@ -52,8 +52,8 @@ Column.Settings.Header.OnDrawingCell = "OnDrawingHeaderCell"
 
 ```python
 def OnDrawingHeaderCell(Context, Cell):
-    if (Context.TitleNumber = 2):
-        if (Context.Col = 1):
+    if (Context.TitleNumber == 2):
+        if (Context.Col == 1):
             # Show only channel unit
             Cell.Value = ChnUnit
         else:

@@ -17,22 +17,22 @@ Accesses the data that DIAdem reads from a UDI device, using the Read command in
     example was machine-translated from the VBScript source.
 
 ```python
-vData = oUDI.Read() ' Read all available data from the UDI object
-vValue = Parse(vData,"%2L") 'Read 2 bytes from vData and return the read value to the vData variable
+vData = oUDI.Read()  # Read all available data from the UDI object
+vValue = Parse(vData,"%2L")  # Read 2 bytes from vData and return the read value to the vData variable
 ```
 
 ```python
-vData = oUDI.Read() 'Read all available data from the UDI object
-vArray = oUDI.Parse(vData,"%2L%4L") 'Read a total of 6 bytes from vData and return 2 values to the field
-for L in range(1, UBound(vArray) 'Display the two values in a message box + 1):
+vData = oUDI.Read()  # Read all available data from the UDI object
+vArray = oUDI.Parse(vData,"%2L%4L")  # Read a total of 6 bytes from vData and return 2 values to the field
+for L in range(1, UBound(vArray) + 1):  # Display the two values in a message box
     dd.MsgBox(CStr(vArray(L))
 ```
 
 ```python
-vData = oUDI.Read() 'Read all available data from the UDI object
-vArray = oUDI.Parse(vData,"%2L<Trigger>%4L<Temperature>") 'Read a total of 6 bytes from vData and return 2 values to the vArray field
-vScaledValue = oUDI.NamedValueGet("Temperature ")*0.01'
-dd.MsgBox(vScaledValue) 'Directly accesses the specified "Temperature" value and displays the scaled value in a message box
+vData = oUDI.Read()  # Read all available data from the UDI object
+vArray = oUDI.Parse(vData,"%2L<Trigger>%4L<Temperature>")  # Read a total of 6 bytes from vData and return 2 values to the vArray field
+vScaledValue = oUDI.NamedValueGet("Temperature ")*0.01
+dd.MsgBox(vScaledValue)  # Directly accesses the specified "Temperature" value and displays the scaled value in a message box
 ```
 
 ---

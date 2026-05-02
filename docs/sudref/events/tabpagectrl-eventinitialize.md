@@ -29,7 +29,7 @@ dd.EventInitialize(ByRef This)
     example was machine-translated from the VBScript source.
 
 ```python
-def TabPageCtrl1_EventInitialize(ByRef This):
+def TabPageCtrl1_EventInitialize(This):
     MsgBoxDisp("Initialize")
 ```
 

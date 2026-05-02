@@ -38,6 +38,7 @@ def MyNavigatorOnShowingContextMenu(ParentObj, MenuPoints):
         MenuPoints.Add("My ResultsList Menu Point", 2)
 
 def MyNavigatorOnContextMenuPointSelected(ParentObj, MenuPoint):
+    pass
     # select MenuPoint.ID
     # case 1    MsgBoxDisp("DIAdem-NAVIGATOR: MyMenuPoint1 selected")
     # case 2    MsgBoxDisp("DIAdem-NAVIGATOR: MyMenuPoint2 selected")
@@ -47,12 +48,13 @@ AddUserCommandToEvent("dd.View.Events.OnShowingContextMenu","MyViewOnShowingCont
 AddUserCommandToEvent("dd.View.Events.OnContextMenuPointSelected","MyViewOnContextMenuPointSelected")
 
 def MyViewOnShowingContextMenu(Area, MenuPoints):
-    if (Area.DisplayObjType = "CurveChart2D"):
+    if (Area.DisplayObjType == "CurveChart2D"):
         MenuPoints.Add("My CurveChart Menu Point", 1)
-    if (Area.DisplayObjType = "ChannelTable"):
+    if (Area.DisplayObjType == "ChannelTable"):
         MenuPoints.Add("My ChannelTable Menu Point", 2)
 
 def MyViewOnContextMenuPointSelected(Area, MenuPoint):
+    pass
     # select MenuPoint.ID
     # case 1    MsgBoxDisp("DIAdem-VIEW: MyMenuPoint1 selected")
     # case 2    MsgBoxDisp("DIAdem-VIEW: MyMenuPoint2 selected")

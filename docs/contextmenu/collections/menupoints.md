@@ -38,6 +38,7 @@ def MyNavigatorOnShowingContextMenu(ParentObj, MenuPoints):
         MenuPoints.Add("My ResultsList Menu Point", 2)
 
 def MyNavigatorOnContextMenuPointSelected(ParentObj, MenuPoint):
+    pass
     # select MenuPoint.ID
     # case 1    MsgBoxDisp("DIAdem-NAVIGATOR: MyMenuPoint1 selected")
     # case 2    MsgBoxDisp("DIAdem-NAVIGATOR: MyMenuPoint2 selected")
@@ -47,38 +48,39 @@ AddUserCommandToEvent("dd.View.Events.OnShowingContextMenu","MyViewOnShowingCont
 AddUserCommandToEvent("dd.View.Events.OnContextMenuPointSelected","MyViewOnContextMenuPointSelected")
 
 def MyViewOnShowingContextMenu(Area, MenuPoints):
-    if (Area.DisplayObjType = "CurveChart2D"):
+    if (Area.DisplayObjType == "CurveChart2D"):
         MenuPoints.Add("My CurveChart Menu Point", 1)
-    if (Area.DisplayObjType = "ChannelTable"):
+    if (Area.DisplayObjType == "ChannelTable"):
         MenuPoints.Add("My ChannelTable Menu Point", 2)
 
 def MyViewOnContextMenuPointSelected(Area, MenuPoint):
+    pass
     # select MenuPoint.ID
     # case 1    MsgBoxDisp("DIAdem-VIEW: MyMenuPoint1 selected")
     # case 2    MsgBoxDisp("DIAdem-VIEW: MyMenuPoint2 selected")
 ```
 
 ```python
-def XTable1_EventContextMenuPointSelected(ByRef This, Row, Col, MenuPoint):
-    dd.MsgBox("Row: " + Row + "; Column: " + Col + VBCrLf + "Menu entry: " + MenuPoint.Text)
+def XTable1_EventContextMenuPointSelected(This, Row, Col, MenuPoint):
+    dd.MsgBox("Row: " + Row + "; Column: " + Col + "\r\n" + "Menu entry: " + MenuPoint.Text)
 
-def XTable1_EventContextMenuShowing(ByRef This, Row, Col, MenuPoints):
+def XTable1_EventContextMenuShowing(This, Row, Col, MenuPoints):
     MenuPoints.Add("Menu 1",1)
     MenuPoints.Add("Menu 2",2)
 ```
 
 ```python
-def Tree1_EventInitialize(ByRef This):
+def Tree1_EventInitialize(This):
     CreateDefaultTree(This)
 
-def Tree1_EventContextMenuShowing(ByRef This, ByRef Node, MenuPoints):
+def Tree1_EventContextMenuShowing(This, Node, MenuPoints):
     MenuPoints.Add("Menu 1",1)
     MenuPoints.Add("Menu 2",2)
 
-def Tree1_EventContextMenuPointSelected(ByRef This, ByRef Node, MenuPoint):
-    dd.MsgBox("Selected Node: " + Node.Text + VBCrLf + "Menu entry: " + MenuPoint.Text)
+def Tree1_EventContextMenuPointSelected(This, Node, MenuPoint):
+    dd.MsgBox("Selected Node: " + Node.Text + "\r\n" + "Menu entry: " + MenuPoint.Text)
 
-def CreateDefaultTree(ByRef This):
+def CreateDefaultTree(This):
     oRoot = This.Nodes.Add("Tools")
     oRoot.Key = "tools"
     oRoot.Expanded = true

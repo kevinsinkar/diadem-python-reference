@@ -18,14 +18,14 @@ The Control object corresponds to a control of a dialog box or a tab. A control 
 
 ```python
 for i in range(1, Dialog.Controls.Count + 1):
-    if Dialog.Controls(i).ObjectType = "EditBox":
+    if Dialog.Controls(i).ObjectType == "EditBox":
         Dialog.Controls(i).Left = 10
 ```
 
 ```python
-if dd.View.Sheets(1).Areas(1).DisplayObjType = "Dialog":
+if dd.View.Sheets(1).Areas(1).DisplayObjType == "Dialog":
     for oMyCtrl in oMyDlg.Controls:
-        if oMyCtrl.ObjectType = "Text":
+        if oMyCtrl.ObjectType == "Text":
             oMyCtrl.ForeColor = RGB(255, 0, 0)
 ```
 

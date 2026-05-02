@@ -17,7 +17,7 @@ The CheckBox object corresponds to the CheckBox control in a user dialog box. Yo
     example was machine-translated from the VBScript source.
 
 ```python
-CheckBox1.Value = 1 '0=Unchecked, 1=Checked, 2=Indeterminate
+CheckBox1.Value = 1  # 0=Unchecked, 1=Checked, 2=Indeterminate
 ```
 
 ## Members

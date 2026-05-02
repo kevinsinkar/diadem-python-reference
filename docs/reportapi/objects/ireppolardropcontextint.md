@@ -28,13 +28,13 @@ AddUserCommandToEvent("dd.Report.Events.OnDropPolarSystem", "MyOnDropPolarSystem
 def MyOnDropPolarSystemEvent(Context, DropContext):
     sOutput = "Names of dropped channels:"
     for oMyDropElement in DropContext.DiademElements:
-        sOutput = sOutput + VBCrLf + oMyDropElement.Name
+        sOutput = sOutput + "\r\n" + oMyDropElement.Name
     Msgbox(sOutput)
     oMyAxis = Context.PolarSystem
     if Context.CurveIndex>0:
-        dd.MsgBox(Context.Sheet.Name + VBCrLf + oMyAxis.Name + VBCrLf + oMyAxis.CurvesPolar.Item(Context.CurveIndex).Name)
+        dd.MsgBox(Context.Sheet.Name + "\r\n" + oMyAxis.Name + "\r\n" + oMyAxis.CurvesPolar.Item(Context.CurveIndex).Name)
     else:
-        dd.MsgBox(Context.Sheet.Name + VBCrLf + oMyAxis.Name)
+        dd.MsgBox(Context.Sheet.Name + "\r\n" + oMyAxis.Name)
     Context.DoProceed = TRUE
 ```
 

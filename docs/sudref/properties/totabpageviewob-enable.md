@@ -23,7 +23,7 @@ obj.Enable
     example was machine-translated from the VBScript source.
 
 ```python
-Page1.Enable = 0 '0=no, 1=yes
+Page1.Enable = 0  # 0=no, 1=yes
 ```
 
 ## See also

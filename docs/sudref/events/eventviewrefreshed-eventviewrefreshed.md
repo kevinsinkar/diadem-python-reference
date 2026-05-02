@@ -23,7 +23,7 @@ dd.EventViewRefreshed(ByRef This)
     example was machine-translated from the VBScript source.
 
 ```python
-def ViewConnector_EventViewRefreshed(ByRef This):
+def ViewConnector_EventViewRefreshed(This):
     LogFileWrite("dd.View refreshed")
 ```
 

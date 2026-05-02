@@ -23,7 +23,7 @@ obj.Add(Value)
     example was machine-translated from the VBScript source.
 
 ```python
-def Tree1_EventDragStart(ByRef This, ByRef DropInformation, ByRef DropEffect):
+def Tree1_EventDragStart(This, DropInformation, DropEffect):
     oMyFileList = DropInformation.FileList
     oMyFileList.RemoveAll
     oMyFileList.Add("C:\Test")

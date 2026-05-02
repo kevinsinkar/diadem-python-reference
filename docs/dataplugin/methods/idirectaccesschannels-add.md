@@ -57,7 +57,7 @@ return_value = obj.Add(Name, DataType)
 
 ```python
 File.Formatter.TrimCharacters = " "
-File.Formatter.LineFeeds  = vbNewLine
+File.Formatter.LineFeeds  = "\n"
 File.Formatter.TimeFormat = "DD.MM.YYYY"
 File.Formatter.Delimiters = ";"
 File.Formatter.Decimalpoint = "."

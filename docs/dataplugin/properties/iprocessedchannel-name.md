@@ -25,7 +25,7 @@ obj.Name
 ```python
 for i in range(1, Root.ChannelGroups.Count + 1):
     for oMyChn in Root.ChannelGroups(i).Channels:
-        if oMyChn.IsKindOf(eProcessed) and (oMyChn.Name = "MyChannel"):
+        if oMyChn.IsKindOf(eProcessed) and (oMyChn.Name == "MyChannel"):
             oMyChn.Properties.Add("Sensor_Type","TC-J")
 ```
 

@@ -36,18 +36,18 @@ obj.EscapeMode
     example was machine-translated from the VBScript source.
 
 ```python
-def Dialog_EventInitialize(ByRef This):
+def Dialog_EventInitialize(This):
     This.EscapeMode = 0
 ```
 
 ```python
-def Button1_EventClick(ByREf This):
+def Button1_EventClick(This):
     Dialog.EscapeMode = 0
     for i in range(1, 2000 + 1):
         MsgLineDisp(i)
         MyAnalysisFunction(i)
         if IsEscKeyPressed:
-            Exit For
+            break
     PostProcessing()
     Dialog1.EscapeMode = 1
 ```

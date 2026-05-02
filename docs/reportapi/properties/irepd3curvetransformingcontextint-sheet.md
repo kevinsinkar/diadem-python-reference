@@ -60,29 +60,29 @@ def MyOn3DCurveTransformation(TransformContext):
     oMyDataContext = TransformContext.DataContext
     # select TransformContext.DataType
     # case e3DCurveTransformDataTypeXYZ
-    if Context.Sheet.Name = "Trans":
-        ChnCopy  (oMyDataContext.XChannelNumberIn, oMyDataContext.XChannelNumberOut) 'Copy the input channel into the output channel
-        ChnCopy  (oMyDataContext.YChannelNumberIn, oMyDataContext.YChannelNumberOut) 'Copy the input channel into the output channel
-        ChnSmooth(oMyDataContext.ZChannelNumberIn, oMyDataContext.ZChannelNumberOut, 100, "symmetric") 'Smooth the input channel and save the result as output channel
+    if Context.Sheet.Name == "Trans":
+        ChnCopy  (oMyDataContext.XChannelNumberIn, oMyDataContext.XChannelNumberOut)  # Copy the input channel into the output channel
+        ChnCopy  (oMyDataContext.YChannelNumberIn, oMyDataContext.YChannelNumberOut)  # Copy the input channel into the output channel
+        ChnSmooth(oMyDataContext.ZChannelNumberIn, oMyDataContext.ZChannelNumberOut, 100, "symmetric")  # Smooth the input channel and save the result as output channel
     else:
-        ChnCopy  (oMyDataContext.XChannelNumberIn, oMyDataContext.XChannelNumberOut) 'Copy the input channel into the output channel
-        ChnSmooth(oMyDataContext.YChannelNumberIn, oMyDataContext.YChannelNumberOut, 100, "symmetric") 'Smooth the input channel and save the result as output channel
-        ChnSmooth(oMyDataContext.ZChannelNumberIn, oMyDataContext.ZChannelNumberOut, 100, "symmetric") 'Smooth the input channel and save the result as output channel
+        ChnCopy  (oMyDataContext.XChannelNumberIn, oMyDataContext.XChannelNumberOut)  # Copy the input channel into the output channel
+        ChnSmooth(oMyDataContext.YChannelNumberIn, oMyDataContext.YChannelNumberOut, 100, "symmetric")  # Smooth the input channel and save the result as output channel
+        ChnSmooth(oMyDataContext.ZChannelNumberIn, oMyDataContext.ZChannelNumberOut, 100, "symmetric")  # Smooth the input channel and save the result as output channel
     # case e3DCurveTransformDataTypeXYX1Y1
-    ChnCopy  (oMyDataContext.XChannelNumberIn ,oMyDataContext.XChannelNumberOut) 'Copy the input channel into the output channel
-    ChnCopy  (oMyDataContext.YChannelNumberIn ,oMyDataContext.YChannelNumberOut) 'Copy the input channel into the output channel
-    ChnSmooth(oMyDataContext.X1ChannelNumberIn, oMyDataContext.X1ChannelNumberOut, 2, "symmetric") 'Smooth the input channel and save the result as output channel
-    ChnSmooth(oMyDataContext.Y1ChannelNumberIn, oMyDataContext.Y1ChannelNumberOut, 2, "symmetric") 'Smooth the input channel and save the result as output channel
+    ChnCopy  (oMyDataContext.XChannelNumberIn ,oMyDataContext.XChannelNumberOut)  # Copy the input channel into the output channel
+    ChnCopy  (oMyDataContext.YChannelNumberIn ,oMyDataContext.YChannelNumberOut)  # Copy the input channel into the output channel
+    ChnSmooth(oMyDataContext.X1ChannelNumberIn, oMyDataContext.X1ChannelNumberOut, 2, "symmetric")  # Smooth the input channel and save the result as output channel
+    ChnSmooth(oMyDataContext.Y1ChannelNumberIn, oMyDataContext.Y1ChannelNumberOut, 2, "symmetric")  # Smooth the input channel and save the result as output channel
     # case e3DCurveTransformDataTypeXYZX1Y1Z1
-    ChnCopy  (oMyDataContext.XChannelNumberIn, oMyDataContext.XChannelNumberOut) 'Copy the input channel into the output channel
-    ChnCopy  (oMyDataContext.YChannelNumberIn, oMyDataContext.YChannelNumberOut) 'Copy the input channel into the output channel
-    ChnCopy  (oMyDataContext.ZChannelNumberIn, oMyDataContext.ZChannelNumberOut) 'Copy the input channel into the output channel
-    ChnSmooth(oMyDataContext.X1ChannelNumberIn, oMyDataContext.X1ChannelNumberOut, 2, "symmetric") 'Smooth the input channel and save the result as output channel
-    ChnSmooth(oMyDataContext.Y1ChannelNumberIn, oMyDataContext.Y1ChannelNumberOut, 2, "symmetric") 'Smooth the input channel and save the result as output channel
-    ChnSmooth(oMyDataContext.Z1ChannelNumberIn, oMyDataContext.Z1ChannelNumberOut, 2, "symmetric") 'Smooth the input channel and save the result as output channel
+    ChnCopy  (oMyDataContext.XChannelNumberIn, oMyDataContext.XChannelNumberOut)  # Copy the input channel into the output channel
+    ChnCopy  (oMyDataContext.YChannelNumberIn, oMyDataContext.YChannelNumberOut)  # Copy the input channel into the output channel
+    ChnCopy  (oMyDataContext.ZChannelNumberIn, oMyDataContext.ZChannelNumberOut)  # Copy the input channel into the output channel
+    ChnSmooth(oMyDataContext.X1ChannelNumberIn, oMyDataContext.X1ChannelNumberOut, 2, "symmetric")  # Smooth the input channel and save the result as output channel
+    ChnSmooth(oMyDataContext.Y1ChannelNumberIn, oMyDataContext.Y1ChannelNumberOut, 2, "symmetric")  # Smooth the input channel and save the result as output channel
+    ChnSmooth(oMyDataContext.Z1ChannelNumberIn, oMyDataContext.Z1ChannelNumberOut, 2, "symmetric")  # Smooth the input channel and save the result as output channel
     # case e3DCurveTransformDataTypeCXCYCZ
-    ChnCopy  (oMyDataContext.ConstXIn, oMyDataContext.ConstXOut) 'Copy the input channel into the output channel
-    ChnCopy  (oMyDataContext.ConstYIn, oMyDataContext.ConstYOut) 'Copy the input channel into the output channel
+    ChnCopy  (oMyDataContext.ConstXIn, oMyDataContext.ConstXOut)  # Copy the input channel into the output channel
+    ChnCopy  (oMyDataContext.ConstYIn, oMyDataContext.ConstYOut)  # Copy the input channel into the output channel
     oMyDataContext.ConstZOut = oMyDataContext.ConstZIn + 2
 ```
 

@@ -45,11 +45,11 @@ obj.DataType
 for oMyChn in oBlock.Channels:
     if oMyChn.Formatter.IsKindOf(eStringBlock):
         oMyChn.Properties.Add("StringBlock", oMyChn.Formatter.DataType)
-        ElseIf oMyChn.Formatter.IsKindOf(eBinaryBlock) :
+    elif oMyChn.Formatter.IsKindOf(eBinaryBlock):
         oMyChn.Properties.Add("BinaryBlock", oMyChn.Formatter.DataType)
-        ElseIf oMyChn.Formatter.IsKindOf(eFixedWidthBlock) :
+    elif oMyChn.Formatter.IsKindOf(eFixedWidthBlock):
         oMyChn.Properties.Add("FixedWidthBlock", oMyChn.Formatter.DataType)
-        ElseIf oMyChn.Formatter.IsKindOf(eCellBlock) :
+    elif oMyChn.Formatter.IsKindOf(eCellBlock):
         oMyChn.Properties.Add("CellBlock", oMyChn.Formatter.DataType)
 ```
 

@@ -23,9 +23,10 @@ obj.RunInitialize()
     example was machine-translated from the VBScript source.
 
 ```python
-def ActiveX1_EventInitialize(ByRef This):
+def ActiveX1_EventInitialize(This):
+    pass
     # Do something
-def EditBox1_EventChange(ByRef This):
+def EditBox1_EventChange(This):
     ActiveX1.RunInitialize
 ```
 

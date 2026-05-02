@@ -23,7 +23,7 @@ obj.HorizontalScroll
     example was machine-translated from the VBScript source.
 
 ```python
-XTable1.HorizontalScroll = 1  '1=Always
+XTable1.HorizontalScroll = 1  # 1=Always
 ```
 
 ## See also

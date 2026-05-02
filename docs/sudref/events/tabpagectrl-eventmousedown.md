@@ -23,7 +23,7 @@ dd.EventMouseDown(ByRef This, Index, Button, Shift, X, Y)
     example was machine-translated from the VBScript source.
 
 ```python
-def TabPageCtrl1_EventMouseDown(ByRef This, Index, Button, Shift, X, Y):
+def TabPageCtrl1_EventMouseDown(This, Index, Button, Shift, X, Y):
     MsgBoxDisp("Mouse button pressed at X="& X &" Y="&Y &", "&This.Pages(Index).Title)
 ```
 

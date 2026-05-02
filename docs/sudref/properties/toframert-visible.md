@@ -23,7 +23,7 @@ obj.Visible
     example was machine-translated from the VBScript source.
 
 ```python
-Frame1.Visible = 0 '0=No, 1=Yes
+Frame1.Visible = 0  # 0=No, 1=Yes
 ```
 
 ## See also

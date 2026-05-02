@@ -34,10 +34,10 @@ dd.Report.Events.Drop.OnAxisSystem3D = "MyOnDrop3DAxisSystemEvent"
 def MyOnDrop3DAxisSystemEvent(Context,DropContext):
     sOutput = "Names of dropped channels:"
     for oMyDropElement in DropContext.DiademElements:
-        sOutput = sOutput + VBCrLf + oMyDropElement.Name
+        sOutput = sOutput + "\r\n" + oMyDropElement.Name
     Msgbox(sOutput)
     oMyAxis = Context.AxisSystem
-    dd.MsgBox(Context.Sheet.Name + VBCrLf + oMyAxis.Name)
+    dd.MsgBox(Context.Sheet.Name + "\r\n" + oMyAxis.Name)
     Context.DoProceed = TRUE
 ```
 

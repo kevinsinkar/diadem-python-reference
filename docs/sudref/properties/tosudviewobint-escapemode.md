@@ -49,7 +49,7 @@ for i in range(1, 2000 + 1):
     MsgLineDisp(i)
     MyAnalysisFunction(i)
     if IsEscKeyPressed:
-        Exit For
+        break
 PostProcessing()
 oMyDlg.EscapeMode = 1
 ```

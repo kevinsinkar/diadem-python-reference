@@ -96,7 +96,7 @@ UiAutoRefreshSet(bRefreshStatus)
 ```
 
 ```python
-if SUDDlgShow("Dialog1","Example.sud") = "IDOk":
+if SUDDlgShow("Dialog1","Example.sud") == "IDOk":
     MsgBoxDisp ("You pressed OK")
 ```
 
@@ -119,19 +119,19 @@ End Class
 MyArguments = New ArgumentHelper
 MyArguments.MyPara1 = "Value 1"
 MyArguments.MyPara2 = "Value 2"
-if SudDlgShow("MySubDialog",ScriptReadPath + "Example.sud",MyArguments) = "IDOk":
-    sgT = "Return values" + VBCrLf + MyArguments.MyPara1 + vbCrLf + MyArguments.MyPara2
+if SudDlgShow("MySubDialog",ScriptReadPath + "Example.sud",MyArguments) == "IDOk":
+    sgT = "Return values" + "\r\n" + MyArguments.MyPara1 + "\r\n" + MyArguments.MyPara2
     MsgBoxDisp(sgT)
 ```
 
 ```python
-def Dialog_EventInitialize(ByRef This):
+def Dialog_EventInitialize(This):
     oDlgParams = This.GetArgument()
     if not (oDlgParams is None) and not isNull(oDlgParams):
-        sgT = "Input values" + VBCrLf + oDlgParams.MyPara1 + vbCrLf + oDlgParams.MyPara2
+        sgT = "Input values" + "\r\n" + oDlgParams.MyPara1 + "\r\n" + oDlgParams.MyPara2
         MsgBoxDisp(sgT)
 
-def OkButton_EventClick(ByRef This):
+def OkButton_EventClick(This):
     # write back params
     oDlgParams.MyPara1 = "New Value 1"
     oDlgParams.MyPara2 = "New Value 1"

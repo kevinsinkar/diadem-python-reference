@@ -24,7 +24,7 @@ bExists = Object.Exists(sName)
 
 ```python
 if Document.Properties.Exists("author"):
-    if Document.Properties("author").Value = "Meier":
+    if Document.Properties("author").Value == "Meier":
         sNamespace = "http://ns.adobe.com/xap/1.0/"
         if Document.Namespaces.Exists(sNamespace):
             oMyNamespaceProps = Document.Namespaces(sNamespace).Properties

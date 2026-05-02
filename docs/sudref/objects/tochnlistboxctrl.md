@@ -17,7 +17,7 @@ The ChnListBox object corresponds to the ChnListBox control in a user dialog box
     example was machine-translated from the VBScript source.
 
 ```python
-ChnListBox1.Syntax = 5 'channelname only
+ChnListBox1.Syntax = 5  # channelname only
 ```
 
 ## Members

@@ -53,8 +53,8 @@ Column.Settings.Footer.OnDrawingCell = "OnDrawingFooterCell"
 
 ```python
 def OnDrawingFooterCell(Context, Cell):
-    if (Context.TitleNumber = 1):
-        if val(Cell.Value) = 0:
+    if (Context.TitleNumber == 1):
+        if val(Cell.Value) == 0:
             Cell.Font.Color.SetPredefinedColor(ePredefinedColorWhite)
             Cell.BackgroundColor.SetPredefinedColor(ePredefinedColorDarkGreen)
 ```

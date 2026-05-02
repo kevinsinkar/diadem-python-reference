@@ -45,6 +45,7 @@ def MyNavigatorOnShowingContextMenu(ParentObj, MenuPoints):
     MenuPoints.Remove(3)
 
 def MyNavigatorOnContextMenuPointSelected(ParentObj, MenuPoint):
+    pass
     # select MenuPoint.ID
     # case 1    MsgBoxDisp("DIAdem-NAVIGATOR: MyMenuPoint1 selected")
     # case 2    MsgBoxDisp("DIAdem-NAVIGATOR: MyMenuPoint2 selected")
@@ -61,6 +62,7 @@ def MyViewOnShowingContextMenu(Area, MenuPoints):
     MenuPoints.Remove(3)
 
 def MyViewOnContextMenuPointSelected(Area, MenuPoint):
+    pass
     # select MenuPoint.ID
     # case 1    MsgBoxDisp("DIAdem-VIEW: MyMenuPoint1 selected")
     # case 2    MsgBoxDisp("DIAdem-VIEW: MyMenuPoint2 selected")

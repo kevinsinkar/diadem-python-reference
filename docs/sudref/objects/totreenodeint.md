@@ -17,7 +17,7 @@ The TreeNode object corresponds to a node in the tree of a user dialog box.
     example was machine-translated from the VBScript source.
 
 ```python
-def Tree1_EventInitialize(ByRef This):
+def Tree1_EventInitialize(This):
     oRoot = This.Nodes.Add("Tools")
     oRoot.Key = "tools"
     oRoot.Expanded = true
@@ -31,26 +31,26 @@ def Tree1_EventInitialize(ByRef This):
     oMainNode.Nodes.Add("Screwdriver").Key = "screwdriver"
     oMainNode.Nodes.Add("Tongs").Key = "tongs"
 
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
     oMyNode = tree1.SelectedItem
     if (not oMyNode Is None):
-        sOutPut = "Node selected: " + oMyNode.Text + VBCrLf
+        sOutPut = "Node selected: " + oMyNode.Text + "\r\n"
         if oMyNode.Parent is None:
-            sOutPut = sOutPut + "Node is root node" + VBCrLf
+            sOutPut = sOutPut + "Node is root node" + "\r\n"
         else:
-            sOutPut = sOutPut + "Parent: " + oMyNode.Parent.Text + VBCrLf
+            sOutPut = sOutPut + "Parent: " + oMyNode.Parent.Text + "\r\n"
         if oMyNode.PreviousNode is None:
-            sOutPut = sOutPut + "Node is first node" + VBCrLf
+            sOutPut = sOutPut + "Node is first node" + "\r\n"
         else:
-            sOutPut = sOutPut + "Previous node: " + oMyNode.PreviousNode.Text + VBCrLf
+            sOutPut = sOutPut + "Previous node: " + oMyNode.PreviousNode.Text + "\r\n"
         if oMyNode.NextNode is None:
-            sOutPut = sOutPut + "Node is last node" + VBCrLf
+            sOutPut = sOutPut + "Node is last node" + "\r\n"
         else:
-            sOutPut = sOutPut + "Next node: " + oMyNode.NextNode.Text + VBCrLf
-        if oMyNode.Nodes.Count = 0:
-            sOutPut = sOutPut + "Node has no children" + VBCrLf
+            sOutPut = sOutPut + "Next node: " + oMyNode.NextNode.Text + "\r\n"
+        if oMyNode.Nodes.Count == 0:
+            sOutPut = sOutPut + "Node has no children" + "\r\n"
         else:
-            sOutPut = sOutPut + "First child: " + oMyNode.Nodes(1).Text + VBCrLf
+            sOutPut = sOutPut + "First child: " + oMyNode.Nodes(1).Text + "\r\n"
     else:
         sOutPut = "No node selected."
     dd.MsgBox(sOutPut)

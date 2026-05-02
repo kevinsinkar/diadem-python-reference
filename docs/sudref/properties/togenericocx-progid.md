@@ -24,7 +24,7 @@ obj.ProgId
 
 ```python
 for oMyControl in Dialog.Controls:
-    if oMyControl.ObjectType = "ActiveX":
+    if oMyControl.ObjectType == "ActiveX":
         MsgBoxDisp(oMyControl.ProgID + " / " + oMyControl.ObjectCode)
 ```
 

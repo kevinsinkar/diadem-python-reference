@@ -29,7 +29,7 @@ obj.LockUpdate
     example was machine-translated from the VBScript source.
 
 ```python
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
 
     Table1.LockUpDate = TRUE
     Table1.Columns.Add

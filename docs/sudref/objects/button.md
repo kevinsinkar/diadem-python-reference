@@ -27,7 +27,7 @@ The Button object corresponds to the Button control in an extended table of a us
     example was machine-translated from the VBScript source.
 
 ```python
-Cell.ButtonShape = 3 '0=Standard, 3=Toolbar-Button, 4=Button
+Cell.ButtonShape = 3  # 0=Standard, 3=Toolbar-Button, 4=Button
 ```
 
 ## Members

@@ -35,8 +35,8 @@ dd.EventValGet(ByRef This, Row, Col, ByRef Cell, IsInputCell)
     example was machine-translated from the VBScript source.
 
 ```python
-def XTable1_EventValGet(ByRef This, Row, Col, ByRef Cell, IsInputCell):
-    if Row = 0:
+def XTable1_EventValGet(This, Row, Col, Cell, IsInputCell):
+    if Row == 0:
         if Col != 0:
             Cell.Text = dd.Data.Root.ActiveChannelGroup.Channels(Col).Name
         else:
@@ -51,7 +51,7 @@ def XTable1_EventValGet(ByRef This, Row, Col, ByRef Cell, IsInputCell):
         else:
             Cell.Text = Str(dd.Data.Root.ActiveChannelGroup.Channels(Col).Values(Row),"d.d")
 
-def XTable1_EventDefaultColCtrlPreset(Col, ByRef Cell, IsInputCell):
+def XTable1_EventDefaultColCtrlPreset(Col, Cell, IsInputCell):
     if IsInputCell:
         Cell.ForeColor = RGB(0, 0, 255)
     else:

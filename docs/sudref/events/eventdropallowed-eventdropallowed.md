@@ -23,15 +23,15 @@ dd.EventDropAllowed(ByRef This, DropInformation, ByRef DropEffect)
     example was machine-translated from the VBScript source.
 
 ```python
-def ChnComboBox1_EventDropAllowed(ByRef This, DropInformation, ByRef DropEffect):
+def ChnComboBox1_EventDropAllowed(This, DropInformation, DropEffect):
     oMyElem = DropInformation.DiademElements
     DropEffect = eDropEffectNone
     if oMyElem.Count > 0:
         if oMyElem(1).IsKindOf(eDataChannel):
-            if oMyElem(1).DataType = DataTypeFloat64:
+            if oMyElem(1).DataType == DataTypeFloat64:
                 DropEffect = eDropEffectCopy
 
-def ChnComboBox1_EventDrop(ByRef This, DropInformation, ByRef DoProceed):
+def ChnComboBox1_EventDrop(This, DropInformation, DoProceed):
     MsgBoxDisp(DropInformation.DiademElements(1).Name + " / " + DropInformation.DiademElements(1).Size)
     # further instructions
 ```

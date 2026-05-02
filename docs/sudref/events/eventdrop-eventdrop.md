@@ -23,15 +23,15 @@ dd.EventDrop(ByRef This, DropInformation, ByRef DoProceed)
     example was machine-translated from the VBScript source.
 
 ```python
-def ChnListBox1_EventDropAllowed(ByRef This, DropInformation, ByRef DropEffect):
+def ChnListBox1_EventDropAllowed(This, DropInformation, DropEffect):
     oMyElem = DropInformation.DiademElements
     DropEffect = eDropEffectNone
     if oMyElem.Count > 0:
         if oMyElem(1).IsKindOf(eDataChannel):
-            if oMyElem(1).DataType = DataTypeFloat64:
+            if oMyElem(1).DataType == DataTypeFloat64:
                 DropEffect = eDropEffectCopy
 
-def ChnListBox1_EventDrop(ByRef This, DropInformation, ByRef DoProceed):
+def ChnListBox1_EventDrop(This, DropInformation, DoProceed):
     MsgBoxDisp(DropInformation.DiademElements(1).Name + " / " + DropInformation.DiademElements(1).Size)
     # further instructions
 ```

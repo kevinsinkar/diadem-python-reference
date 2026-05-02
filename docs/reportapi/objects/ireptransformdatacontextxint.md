@@ -41,7 +41,7 @@ dd.Report.Refresh()
 ```python
 def MyOnChannelTransformation(TransformContext):
     oMyDataContext = TransformContext.DataContext
-    ChnSum(oMyDataContext.ChannelNumberIn, oMyDataContext.ChannelNumberOut) 'Calculates the sum of the channel values
+    ChnSum(oMyDataContext.ChannelNumberIn, oMyDataContext.ChannelNumberOut)  # Calculates the sum of the channel values
 ```
 
 ## Members

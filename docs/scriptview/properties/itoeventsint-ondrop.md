@@ -41,15 +41,15 @@ obj.OnDrop
 AddUserCommandToEvent("dd.View.Events.OnDropAllowed", "MyOnDropAllowed")
 AddUserCommandToEvent("dd.View.Events.OnDrop", "MyOnDrop")
 
-def MyOnDropAllowed(oContext, oDropInformation, ByRef DropEffect):
+def MyOnDropAllowed(oContext, oDropInformation, DropEffect):
     oMyElem = oDropInformation.DiademElements
     DropEffect = eDropEffectNone
-    if oMyElem.Count = 1:
+    if oMyElem.Count == 1:
         if oMyElem(1).IsKindOf(eDataChannel):
-            if oMyElem(1).DataType = DataTypeFloat64:
+            if oMyElem(1).DataType == DataTypeFloat64:
                 DropEffect = eDropEffectCopy
 
-def MyOnDrop(oContext, oDropInformation, ByRef bProceed):
+def MyOnDrop(oContext, oDropInformation, bProceed):
     MsgBoxDisp(oDropInformation.DIAdemElements(1).Name + " / " + oDropInformation.DIAdemElements(1).Size)
     bProceed = TRUE
 ```

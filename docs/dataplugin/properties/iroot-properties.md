@@ -24,7 +24,7 @@ return_value = obj.Properties
 
 ```python
 for oMyProp in Root.Properties:
-    if oMyProp.Name = "Sensor_Type":
+    if oMyProp.Name == "Sensor_Type":
         bfound = TRUE
 if not bFound:
     Root.Properties.Add("Sensor_type","TC-N")

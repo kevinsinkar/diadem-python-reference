@@ -37,21 +37,21 @@ def MyOnDropPageEvent(Context, DropInformation):
         sOutput = oMyDropElements.Count + " dropped elements:"
         for oMyDropElement in oMyDropElements:
             if oMyDropElement.IsKindOf(eDataRoot):
-                sOutput = sOutput + VBCrLf + "Root name:" + VBTab + oMyDropElement.Name
-                ElseIf oMyDropElement.IsKindOf(eDataChannelGroup) :
-                sOutput = sOutput + VBCrLf + "Group name:" + VBTab + oMyDropElement.Name
-                ElseIf oMyDropElement.IsKindOf(eDataChannel) :
-                sOutput = sOutput + VBCrLf + "Channel name:" + VBTab + oMyDropElement.Name
-        ElseIf  DropInformation.IsKindOf(eDropDIAdemProperty) :
+                sOutput = sOutput + "\r\n" + "Root name:" + "\t" + oMyDropElement.Name
+            elif oMyDropElement.IsKindOf(eDataChannelGroup):
+                sOutput = sOutput + "\r\n" + "Group name:" + "\t" + oMyDropElement.Name
+            elif oMyDropElement.IsKindOf(eDataChannel):
+                sOutput = sOutput + "\r\n" + "Channel name:" + "\t" + oMyDropElement.Name
+    elif DropInformation.IsKindOf(eDropDIAdemProperty):
         oMyDropProperties = DropInformation.DiademProperties
         sOutput = oMyDropProperties.Count + " dropped properties:"
         for oMyDropProperty in oMyDropProperties:
             if oMyDropProperty.Element.IsKindOf(eDataRoot):
-                sOutput = sOutput + VBCrLf + "Root property:" + VBTab + oMyDropProperty.Name + VBTab + "; DisplayName: " + oMyDropProperty.DisplayName
-                ElseIf oMyDropProperty.Element.IsKindOf(eDataChannelGroup) :
-                sOutput = sOutput + VBCrLf + "Group property:" + VBTab + oMyDropProperty.Name + VBTab + "; DisplayName: " + oMyDropProperty.DisplayName
-                ElseIf oMyDropProperty.Element.IsKindOf(eDataChannel) :
-                sOutput = sOutput + VBCrLf + "Channel property:" + VBTab + oMyDropProperty.Name + VBTab + "; DisplayName: " + oMyDropProperty.DisplayName
+                sOutput = sOutput + "\r\n" + "Root property:" + "\t" + oMyDropProperty.Name + "\t" + "; DisplayName: " + oMyDropProperty.DisplayName
+            elif oMyDropProperty.Element.IsKindOf(eDataChannelGroup):
+                sOutput = sOutput + "\r\n" + "Group property:" + "\t" + oMyDropProperty.Name + "\t" + "; DisplayName: " + oMyDropProperty.DisplayName
+            elif oMyDropProperty.Element.IsKindOf(eDataChannel):
+                sOutput = sOutput + "\r\n" + "Channel property:" + "\t" + oMyDropProperty.Name + "\t" + "; DisplayName: " + oMyDropProperty.DisplayName
     Msgbox(sOutput)
     Context.DoProceed = False
 ```

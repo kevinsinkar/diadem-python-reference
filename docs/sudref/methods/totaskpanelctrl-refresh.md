@@ -23,16 +23,16 @@ obj.Refresh()
     example was machine-translated from the VBScript source.
 
 ```python
-def CheckBox1_EventChange(ByRef This):
+def CheckBox1_EventChange(This):
     TaskPanel1.Refresh
 
-def TaskPanel1_EventRefresh(ByRef This):
-    if (CheckBox1.Value = 1):
+def TaskPanel1_EventRefresh(This):
+    if (CheckBox1.Value == 1):
         This.ExpandGroup("handtoolGroup")
     else:
         This.CollapseGroup("handtoolGroup")
 
-def CreateDefaultTaskPanel(ByRef This):
+def CreateDefaultTaskPanel(This):
     This.AddGroup("electricGroup", "Electric Tools")
     This.AddGroup("handtoolGroup", "Hand Tools")
     This.AddGroup("textonlyGroup", "Info")

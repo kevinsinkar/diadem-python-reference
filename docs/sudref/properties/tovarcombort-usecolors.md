@@ -23,7 +23,7 @@ obj.UseColors
     example was machine-translated from the VBScript source.
 
 ```python
-EnumComboBox1.UseColors = 0 '0=No, 1=Yes
+EnumComboBox1.UseColors = 0  # 0=No, 1=Yes
 ```
 
 ## See also

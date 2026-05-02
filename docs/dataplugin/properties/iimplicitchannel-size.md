@@ -23,7 +23,7 @@ obj.Size
     example was machine-translated from the VBScript source.
 
 ```python
-if ChannelType = "eI32":
+if ChannelType == "eI32":
     ChannelGroup.Channels.AddImplicitChannel(ChannelName, StartValue, Increment, ChannelSize, eI32)
 else:
     RaiseError("InvalidTypeString " + ChannelType)

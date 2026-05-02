@@ -23,7 +23,7 @@ obj.VerticalScroll
     example was machine-translated from the VBScript source.
 
 ```python
-XTable1.VerticalScroll = 1  '1=Always
+XTable1.VerticalScroll = 1  # 1=Always
 ```
 
 ## See also

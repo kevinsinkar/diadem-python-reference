@@ -23,14 +23,14 @@ obj.Count
     example was machine-translated from the VBScript source.
 
 ```python
-def Tree1_EventInitialize(ByRef This):
+def Tree1_EventInitialize(This):
     CreateDefaultTree(This)
 
-def Tree1_EventSelectedItemChanged(ByRef This):
+def Tree1_EventSelectedItemChanged(This):
     if This.SelectedItem.Nodes.Count > 0:
         This.SelectedItem = None
 
-def CreateDefaultTree(ByRef This):
+def CreateDefaultTree(This):
     oRoot = This.Nodes.Add("Tools")
     oRoot.Key = "tools"
     oRoot.Expanded = true

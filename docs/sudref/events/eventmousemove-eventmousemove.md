@@ -23,7 +23,7 @@ dd.EventMouseMove(ByRef This, Button, Shift, X, Y)
     example was machine-translated from the VBScript source.
 
 ```python
-def Dialog_EventMouseMove(ByRef This, Button, Shift, X, Y):
+def Dialog_EventMouseMove(This, Button, Shift, X, Y):
     if X > 10:
         MsgBoxDisp("Mouse move at X="& X &" Y="&Y)
 ```

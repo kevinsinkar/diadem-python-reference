@@ -23,7 +23,7 @@ dd.EventQueryClose(ByRef This, ByRef bCanClose, Reason)
     example was machine-translated from the VBScript source.
 
 ```python
-def Dialog_EventQueryClose(ByRef This, ByRef bCanClose, Reason):
+def Dialog_EventQueryClose(This, bCanClose, Reason):
     # select Reason
     # case "ERROR"
     MsgBoxDisp("Close due to Error")
@@ -31,7 +31,7 @@ def Dialog_EventQueryClose(ByRef This, ByRef bCanClose, Reason):
     # case "DIADEM_CLOSING"
     MsgBoxDisp("Do you really want to exit DIAdem?","MB_YesNo")
     bCanClose = (MsgState="IDYes")
-    # case Else ' OK or CANCEL
+    # case else
     bCanClose = True
 ```
 

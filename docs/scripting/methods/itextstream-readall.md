@@ -24,7 +24,7 @@ sReadAll = Object.ReadAll
 
 ```python
 def ReadFile(sFile):
-    Const ForReading = 1
+    ForReading = 1
     fso = CreateObject("Scripting.FileSystemObject")
     oMyFile = fso.OpenTextFile(sFile, ForReading, False)
     ReadFile = oMyFile.ReadAll

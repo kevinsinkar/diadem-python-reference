@@ -41,9 +41,9 @@ MyDic.Add ("a", MyArrA)
 MyDic.Add ("b", MyArrB)
 MyDic.Add ("c", MyArrC)
 MyItem = MyDic.Item("b")
-sOutPut = "Elements of ""Item(b)"":" + VBCrLf
+sOutPut = "Elements of ""Item(b)"":" + "\r\n"
 for MyArrayItem in MyItem:
-    sOutPut = sOutPut + MyArrayItem + VBCrLf
+    sOutPut = sOutPut + MyArrayItem + "\r\n"
 dd.MsgBox(sOutPut)
 ```
 

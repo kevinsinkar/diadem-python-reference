@@ -29,8 +29,8 @@ dd.EventToolTipShow(ByRef This, Row, Col, ByRef CellToolTip)
     example was machine-translated from the VBScript source.
 
 ```python
-def XTable1_EventToolTipShow(ByRef This, Row, Col, ByRef CellToolTip):
-    if (Row = 0):
+def XTable1_EventToolTipShow(This, Row, Col, CellToolTip):
+    if (Row == 0):
         CellToolTip = "Col " + Col
     else:
         CellToolTip = ChnName(Col)

@@ -23,13 +23,14 @@ obj.RunCustomActionAll(VarParam)
     example was machine-translated from the VBScript source.
 
 ```python
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
     sMyAction = "StoreData"
     TabPageCtrl1.RunCustomActionAll(sMyAction)
 ```
 
 ```python
-def TabPageCtrl1_EventCustomAction(ByRef This, VarParam):
+def TabPageCtrl1_EventCustomAction(This, VarParam):
+    pass
     # select VarParam
     # case "StoreData"
     # Store data in database

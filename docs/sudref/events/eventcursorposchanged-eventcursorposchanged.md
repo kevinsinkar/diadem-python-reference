@@ -23,7 +23,7 @@ dd.EventCursorPosChanged(ByRef This)
     example was machine-translated from the VBScript source.
 
 ```python
-def View_EventCursorPosChanged(ByRef This):
+def View_EventCursorPosChanged(This):
     if not (This.DisplayObj Is None):
         LogFileWrite("X1: " + This.DisplayObj.Area.Sheet.Cursor.X1)
 ```

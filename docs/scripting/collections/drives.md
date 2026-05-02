@@ -21,14 +21,14 @@ def CreateDriveList():
     fso = CreateObject("Scripting.FileSystemObject")
     oMyDrives = fso.Drives
     for oMyDrive in oMyDrives:
-        sOutput = sOutput + oMyDrive.DriveLetter + VBTab
-        if oMyDrive.DriveType = 3:
+        sOutput = sOutput + oMyDrive.DriveLetter + "\t"
+        if oMyDrive.DriveType == 3:
             sOutput = sOutput + oMyDrive.ShareName
-            ElseIf oMyDrive.IsReady :
+        elif oMyDrive.IsReady:
             sOutput = sOutput + oMyDrive.VolumeName
         else:
             sOutput = sOutput + "[not ready]"
-        sOutput = sOutput + VBCrLf
+        sOutput = sOutput + "\r\n"
     CreateDriveList = sOutput
 ```
 

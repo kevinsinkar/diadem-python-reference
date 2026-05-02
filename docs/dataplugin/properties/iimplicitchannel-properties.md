@@ -26,7 +26,7 @@ return_value = obj.Properties
 for oMyChn in Root.ChannelGroups(1).Channels:
     if oMyChn.IsKindOf(eImplicit):
         for oMyProp in oMyChn.Properties:
-            if oMyProp.Name = "Sensor_Type":
+            if oMyProp.Name == "Sensor_Type":
                 bFound = TRUE
         if not bFound:
             oMyChn.Properties.Add("Sensor_type","TC-N")

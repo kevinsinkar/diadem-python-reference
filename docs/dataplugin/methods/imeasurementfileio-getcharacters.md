@@ -33,12 +33,12 @@ BytesToRead = 1000
 if (BytesToRead > File.Size):
     BytesToRead = File.Size
 ByteStream = File.GetCharacters(BytesToRead))
-if (0 < Instr(ByteStream,vbNewLine)):
-    File.Formatter.LineFeeds = vbNewLine
-    ElseIf (0 < Instr(ByteStream,vbCR)) :
-    File.Formatter.LineFeeds = vbCR
-    ElseIf (0 < Instr(ByteStream,vbLF)) :
-    File.Formatter.LineFeeds = vbLF
+if (0 < Instr(ByteStream,"\n")):
+    File.Formatter.LineFeeds = "\n"
+elif (0 < Instr(ByteStream,"\r")):
+    File.Formatter.LineFeeds = "\r"
+elif (0 < Instr(ByteStream,"\n")):
+    File.Formatter.LineFeeds = "\n"
 ```
 
 ## See also

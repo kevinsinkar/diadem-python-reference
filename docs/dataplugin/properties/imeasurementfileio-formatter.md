@@ -30,7 +30,7 @@ return_value = obj.Formatter
 28.06.2004 16:28:24; 0,001683¶
 
 File.Formatter.TrimCharacters = " "
-File.Formatter.LineFeeds  = vbNewLine
+File.Formatter.LineFeeds  = "\n"
 File.Formatter.TimeFormat = "DD.MM.YYYY hh:mm:ss"
 File.Formatter.Delimiters = ";"
 File.Formatter.DecimalPoint = ","

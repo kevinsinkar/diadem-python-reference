@@ -29,7 +29,7 @@ MyDic.Add ("b", "Berlin")
 MyDic.Add ("c", "Chicago")
 MyKeys = MyDic.Keys
 for MyKey in MyKeys:
-    sOutput = sOutput + MyKey + VBCrLf
+    sOutput = sOutput + MyKey + "\r\n"
 dd.MsgBox(sOutput)
 ```
 

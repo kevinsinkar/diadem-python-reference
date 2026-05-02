@@ -80,25 +80,25 @@ def MyOn3DCurveTransformation(TransformContext):
     oMyDataContext = TransformContext.DataContext
     # select TransformContext.DataType
     # case e3DCurveTransformDataTypeXYZ
-    ChnCopy  (oMyDataContext.XChannelNumberIn, oMyDataContext.XChannelNumberOut) 'Copy the input channel into the output channel
-    ChnCopy  (oMyDataContext.YChannelNumberIn, oMyDataContext.YChannelNumberOut) 'Copy the input channel into the output channel
-    ChnSmooth(oMyDataContext.ZChannelNumberIn, oMyDataContext.ZChannelNumberOut, 100, "symmetric") 'Smooth the input channel and save the result as output channel
+    ChnCopy  (oMyDataContext.XChannelNumberIn, oMyDataContext.XChannelNumberOut)  # Copy the input channel into the output channel
+    ChnCopy  (oMyDataContext.YChannelNumberIn, oMyDataContext.YChannelNumberOut)  # Copy the input channel into the output channel
+    ChnSmooth(oMyDataContext.ZChannelNumberIn, oMyDataContext.ZChannelNumberOut, 100, "symmetric")  # Smooth the input channel and save the result as output channel
     # case e3DCurveTransformDataTypeXYX1Y1
-    ChnCopy  (oMyDataContext.XChannelNumberIn ,oMyDataContext.XChannelNumberOut) 'Copy the input channel into the output channel
-    ChnCopy  (oMyDataContext.YChannelNumberIn ,oMyDataContext.YChannelNumberOut) 'Copy the input channel into the output channel
-    ChnLinScale (oMyDataContext.X1ChannelNumberIn, oMyDataContext.X1ChannelNumberOut, 2, 0) 'Multiply the input channel with a value and save the result as output channel
-    ChnLinScale (oMyDataContext.Y1ChannelNumberIn, oMyDataContext.Y1ChannelNumberOut, 2, 0) 'Multiply the input channel with a value and save the result as output channel
+    ChnCopy  (oMyDataContext.XChannelNumberIn ,oMyDataContext.XChannelNumberOut)  # Copy the input channel into the output channel
+    ChnCopy  (oMyDataContext.YChannelNumberIn ,oMyDataContext.YChannelNumberOut)  # Copy the input channel into the output channel
+    ChnLinScale (oMyDataContext.X1ChannelNumberIn, oMyDataContext.X1ChannelNumberOut, 2, 0)  # Multiply the input channel with a value and save the result as output channel
+    ChnLinScale (oMyDataContext.Y1ChannelNumberIn, oMyDataContext.Y1ChannelNumberOut, 2, 0)  # Multiply the input channel with a value and save the result as output channel
     # case e3DCurveTransformDataTypeXYZX1Y1Z1
-    ChnCopy  (oMyDataContext.XChannelNumberIn, oMyDataContext.XChannelNumberOut) 'Copy the input channel into the output channel
-    ChnCopy  (oMyDataContext.YChannelNumberIn, oMyDataContext.YChannelNumberOut) 'Copy the input channel into the output channel
-    ChnCopy  (oMyDataContext.ZChannelNumberIn, oMyDataContext.ZChannelNumberOut) 'Copy the input channel into the output channel
-    ChnLinScale (oMyDataContext.X1ChannelNumberIn, oMyDataContext.X1ChannelNumberOut, 2, 0) 'Multiply the input channel with a value and save the result as output channel
-    ChnLinScale (oMyDataContext.Y1ChannelNumberIn, oMyDataContext.Y1ChannelNumberOut, 2, 0) 'Multiply the input channel with a value and save the result as output channel
-    ChnLinScale (oMyDataContext.Z1ChannelNumberIn, oMyDataContext.Z1ChannelNumberOut, 2, 0) 'Multiply the input channel with a value and save the result as output channel
+    ChnCopy  (oMyDataContext.XChannelNumberIn, oMyDataContext.XChannelNumberOut)  # Copy the input channel into the output channel
+    ChnCopy  (oMyDataContext.YChannelNumberIn, oMyDataContext.YChannelNumberOut)  # Copy the input channel into the output channel
+    ChnCopy  (oMyDataContext.ZChannelNumberIn, oMyDataContext.ZChannelNumberOut)  # Copy the input channel into the output channel
+    ChnLinScale (oMyDataContext.X1ChannelNumberIn, oMyDataContext.X1ChannelNumberOut, 2, 0)  # Multiply the input channel with a value and save the result as output channel
+    ChnLinScale (oMyDataContext.Y1ChannelNumberIn, oMyDataContext.Y1ChannelNumberOut, 2, 0)  # Multiply the input channel with a value and save the result as output channel
+    ChnLinScale (oMyDataContext.Z1ChannelNumberIn, oMyDataContext.Z1ChannelNumberOut, 2, 0)  # Multiply the input channel with a value and save the result as output channel
     # case e3DCurveTransformDataTypeCXCYCZ
-    oMyDataContext.ConstXOut = oMyDataContext.ConstXIn + 20 'Add value to input constant
-    oMyDataContext.ConstYOut = oMyDataContext.ConstYIn + 20 'Add value to input constant
-    oMyDataContext.ConstZOut = oMyDataContext.ConstZIn + 20 'Add value to input constant
+    oMyDataContext.ConstXOut = oMyDataContext.ConstXIn + 20  # Add value to input constant
+    oMyDataContext.ConstYOut = oMyDataContext.ConstYIn + 20  # Add value to input constant
+    oMyDataContext.ConstZOut = oMyDataContext.ConstZIn + 20  # Add value to input constant
 ```
 
 ## See also

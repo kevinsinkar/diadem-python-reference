@@ -23,7 +23,7 @@ dd.EventInitFinalize(ByRef This)
     example was machine-translated from the VBScript source.
 
 ```python
-def Dialog_EventInitFinalize(ByRef This):
+def Dialog_EventInitFinalize(This):
     MsgBoxDisp("Initialization terminated")
 ```
 

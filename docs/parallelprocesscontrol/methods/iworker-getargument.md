@@ -47,7 +47,7 @@ aInputArg = LocalWorker.GetArgument
 ArrayToChannels(aInputArg(0), Array("tempChannel"))
 oTempChannel = dd.Data.GetChannel("/tempChannel")
 
-RMS(oTempChannel,aInputArg(2))  ' Do some analysis
+RMS(oTempChannel,aInputArg(2))  # Do some analysis
 
 aResults(0) = ChannelsToArray("/tempChannel")
 aResults(1) = aInputArg(1)

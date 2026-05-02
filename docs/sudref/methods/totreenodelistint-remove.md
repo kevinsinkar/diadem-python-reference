@@ -23,10 +23,10 @@ obj.Remove(KeyOrIndex)
     example was machine-translated from the VBScript source.
 
 ```python
-def Tree1_EventInitialize(ByRef This):
+def Tree1_EventInitialize(This):
     CreateDefaultTree(This)
 
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
     oMyNode= Tree1.SelectedItem
     if (not oMyNode is None):
         oParentNode = oMyNode.Parent
@@ -37,7 +37,7 @@ def Button1_EventClick(ByRef This):
             oParentNode.Nodes.Remove(oMyNode.Index)
             oParentNode.Update(eUpdateModeNodeAndChilds)
 
-def CreateDefaultTree(ByRef This):
+def CreateDefaultTree(This):
     oFindRoot = This.Nodes.Add("Double click any subnode to remove it")
     oRoot = This.Nodes.Add("Tools")
     oRoot.Key = "tools"

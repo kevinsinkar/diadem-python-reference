@@ -32,7 +32,7 @@ NV; 3,451496¶
 
 ```python
 File.Formatter.TrimCharacters = " "
-File.Formatter.LineFeeds  = vbNewLine
+File.Formatter.LineFeeds  = "\n"
 File.Formatter.DecimalPoint = ","
 File.Formatter.Delimiters = ";"
 File.Formatter.NoValueSign = "NV"

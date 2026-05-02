@@ -23,7 +23,7 @@ dd.EventDblClick(ByRef This)
     example was machine-translated from the VBScript source.
 
 ```python
-def Dialog_EventDblClick(ByRef This):
+def Dialog_EventDblClick(This):
     MsgBoxDisp("Double-Click")
 ```
 

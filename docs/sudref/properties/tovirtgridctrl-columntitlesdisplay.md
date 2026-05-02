@@ -29,7 +29,7 @@ obj.ColumnTitlesDisplay
     example was machine-translated from the VBScript source.
 
 ```python
-XTable1.ColumnTitlesDisplay = 0 '0=No, 1=Yes
+XTable1.ColumnTitlesDisplay = 0  # 0=No, 1=Yes
 ```
 
 ## See also

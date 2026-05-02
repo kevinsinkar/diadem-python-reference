@@ -23,7 +23,7 @@ obj.AutoHeaderWidth
     example was machine-translated from the VBScript source.
 
 ```python
-Table1.AutoHeaderWidth = 1 '0=No, 1=Yes
+Table1.AutoHeaderWidth = 1  # 0=No, 1=Yes
 ```
 
 ## See also

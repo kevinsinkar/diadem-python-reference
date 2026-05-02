@@ -44,7 +44,7 @@ def MyOnPolarCurveDrawEvent(Context, CurrCurve):
     # case ePolarShapeDifferential
     oMyCurve.Shape.DifferentialLine.Color.SetPredefinedColor(ePredefinedColorDarkTurquoise)
 
-dd.MsgBox("Sheet: " + Context.Sheet.Name + VBCrLf + "Axis system: " + oMyAxis.Name + "Curve name: " + oMyCurve.Name)
+dd.MsgBox("Sheet: " + Context.Sheet.Name + "\r\n" + "Axis system: " + oMyAxis.Name + "Curve name: " + oMyCurve.Name)
 ```
 
 ## See also

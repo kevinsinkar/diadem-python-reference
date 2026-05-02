@@ -52,8 +52,8 @@ Specifies which user command DIAdem executes when the Help is called.
 OnCallingHelp = "MyOnHelp"
 
 def MyOnHelp(Context):
-    LogfileWrite(Context.Filename + VBTab &Context.Topic + VBTab + Context.DoProceed)
-    if (Context.Topic = "GENREPORT_OVERVIEW"):
+    LogfileWrite(Context.Filename + "\t" &Context.Topic + "\t" + Context.DoProceed)
+    if (Context.Topic == "GENREPORT_OVERVIEW"):
         CustomHelpShow("Customize.chm", "Customize.chm::/report.htm")
         Context.DoProceed = False
     else:

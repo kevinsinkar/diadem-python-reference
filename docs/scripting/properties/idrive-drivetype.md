@@ -27,7 +27,7 @@ def CreateDriveTypeList():
     fso = CreateObject("Scripting.FileSystemObject")
     oMyDrives = fso.Drives
     for oMyDrive in oMyDrives:
-        sOutput = sOutput + oMyDrive.DriveLetter + VBTab
+        sOutput = sOutput + oMyDrive.DriveLetter + "\t"
         # select oMyDrive.DriveType
         # case 0
         sOutput = sOutput + "Unknown"
@@ -41,7 +41,7 @@ def CreateDriveTypeList():
         sOutput = sOutput + "CD-ROM"
         # case 5
         sOutput = sOutput + "RAM Disk"
-    sOutput = sOutput + VBCrLf
+    sOutput = sOutput + "\r\n"
 CreateDriveTypeList = sOutput
 ```
 

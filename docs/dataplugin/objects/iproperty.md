@@ -18,7 +18,7 @@ The Property object provides a property for the Root object, for the ChannelGrou
 
 ```python
 for oMyProp in Root.Properties:
-    if oMyProp.Name = "Sensor_Type":
+    if oMyProp.Name == "Sensor_Type":
         bfound = TRUE
 if not bFound:
     Root.Properties.Add("Sensor_type","TC-N")

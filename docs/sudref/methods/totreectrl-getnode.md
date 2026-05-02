@@ -23,14 +23,14 @@ return_value = obj.GetNode(Key)
     example was machine-translated from the VBScript source.
 
 ```python
-def Tree1_EventInitialize(ByRef This):
+def Tree1_EventInitialize(This):
     CreateDefaultTree(This)
 
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
     oMyNode = Tree1.GetNode("hammer")
     Tree1.ScrollNodeInView(oMyNode)
 
-def CreateDefaultTree(ByRef This):
+def CreateDefaultTree(This):
     oFindRoot = This.Nodes.Add("Double click to find hammer")
     oRoot = This.Nodes.Add("Tools")
     oRoot.Key = "tools"

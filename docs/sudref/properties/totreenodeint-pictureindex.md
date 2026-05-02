@@ -23,7 +23,7 @@ obj.PictureIndex
     example was machine-translated from the VBScript source.
 
 ```python
-def Tree1_EventInitialize(ByRef This):
+def Tree1_EventInitialize(This):
     CreateDefaultTree(This)
 
 def SetNodesPictureLevel(oNode):
@@ -31,7 +31,7 @@ def SetNodesPictureLevel(oNode):
         oMyNode.PictureIndex = oMyNode.Level
         SetNodesPictureLevel(oMyNode)
 
-def CreateDefaultTree(ByRef This):
+def CreateDefaultTree(This):
     This.Nodes.RemoveAll
     oRoot = This.Nodes.Add("Tools")
     oRoot.Bold = True

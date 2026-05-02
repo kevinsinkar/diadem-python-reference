@@ -23,7 +23,7 @@ obj.Refresh()
     example was machine-translated from the VBScript source.
 
 ```python
-def ComboBox1_EventChange(ByRef This):
+def ComboBox1_EventChange(This):
     ComboBox2.Value = 2
     ComboBox2.Refresh
 ```

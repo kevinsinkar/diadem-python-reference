@@ -37,7 +37,7 @@ obj.OnAllowSearch
 AddUserCommandToEvent("dd.Navigator.Events.OnAllowSearch","MyOnAllowSearch")
 
 def MyOnAllowSearch(AllowSearch):
-    if dd.Navigator.Display.CurrDataFinder.QueryForm.ReturnType = eSearchChannel:
+    if dd.Navigator.Display.CurrDataFinder.QueryForm.ReturnType == eSearchChannel:
         AllowSearch = TRUE
     else:
         AllowSearch = FALSE

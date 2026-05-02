@@ -29,14 +29,14 @@ return_value = obj.Item(KeyOrIndex)
     example was machine-translated from the VBScript source.
 
 ```python
-def Tree1_EventInitialize(ByRef This):
+def Tree1_EventInitialize(This):
     CreateDefaultTree(This)
 
-def Tree1_EventNodeDblClick(ByRef This, ByRef Node):
+def Tree1_EventNodeDblClick(This, Node):
     if not (Node.Parent is None):
         Msgbox ("Key of first item: " + Node.Parent.Nodes.Item(1).Key)
 
-def CreateDefaultTree(ByRef This):
+def CreateDefaultTree(This):
     oFindRoot = This.Nodes.Add("Double click any node to add a sub node")
     oRoot = This.Nodes.Add("Tools")
     oRoot.Key = "tools"

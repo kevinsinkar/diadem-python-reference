@@ -23,17 +23,17 @@ dd.EventContextMenuPointSelected(ByRef This, ByRef Node, MenuPoint)
     example was machine-translated from the VBScript source.
 
 ```python
-def Tree1_EventInitialize(ByRef This):
+def Tree1_EventInitialize(This):
     CreateDefaultTree(This)
 
-def Tree1_EventContextMenuShowing(ByRef This, ByRef Node, MenuPoints):
+def Tree1_EventContextMenuShowing(This, Node, MenuPoints):
     MenuPoints.Add("Menu 1",1)
     MenuPoints.Add("Menu 2",2)
 
-def Tree1_EventContextMenuPointSelected(ByRef This, ByRef Node, MenuPoint):
-    dd.MsgBox("Selected Node: " + Node.Text + VBCrLf + "Menu entry: " + MenuPoint.Text)
+def Tree1_EventContextMenuPointSelected(This, Node, MenuPoint):
+    dd.MsgBox("Selected Node: " + Node.Text + "\r\n" + "Menu entry: " + MenuPoint.Text)
 
-def CreateDefaultTree(ByRef This):
+def CreateDefaultTree(This):
     oRoot = This.Nodes.Add("Tools")
     oRoot.Key = "tools"
     oRoot.Expanded = true

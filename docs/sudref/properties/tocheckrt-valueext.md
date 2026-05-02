@@ -23,7 +23,7 @@ obj.ValueExt
     example was machine-translated from the VBScript source.
 
 ```python
-CheckBox1.ValueExt = 1 '0=Unchecked, 1=Checked, 2=Indeterminate
+CheckBox1.ValueExt = 1  # 0=Unchecked, 1=Checked, 2=Indeterminate
 ```
 
 ## See also

@@ -29,7 +29,7 @@ MyDic.Add("b", "Berlin")
 MyDic.Add("c", "Chicago")
 MyItems = MyDic.Items
 for MyItem in MyItems:
-    sOutput = sOutput + MyItem + VBCrLf
+    sOutput = sOutput + MyItem + "\r\n"
 dd.MsgBox(sOutput)
 ```
 

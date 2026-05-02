@@ -20,7 +20,7 @@ Collection of all Curves of the Curve2DPreview control in user dialog boxes.
 Curve2DPreview1.Curves.RemoveAll
 oMyCurve = Curve2DPreview1.Curves.Add("[1]/[1]","[1]/[2]")
 oMyCurve.Color = vbBlue
-oMyCurve.Type = 1 '1=Spikes
+oMyCurve.Type = 1  # 1=Spikes
 Curve2DPreview1.Refresh
 ```
 

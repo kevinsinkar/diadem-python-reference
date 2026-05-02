@@ -27,7 +27,7 @@ Dialog.Height = 200
 ```
 
 ```python
-def Dialog_EventClick(ByRef This):
+def Dialog_EventClick(This):
     MsgBoxDisp("Click")
 ```
 

@@ -25,7 +25,7 @@ return_value = obj.GetSpecialFolder(SpecialFolder)
 ```python
 def CreateTempFile():
     fso = CreateObject("Scripting.FileSystemObject")
-    Const TemporaryFolder = 2
+    TemporaryFolder = 2
     oMyTempFolder = fso.GetSpecialFolder(TemporaryFolder)
     sTempName = fso.GetTempName
     CreateTempFile = oMyTempFolder.CreateTextFile(sTempName)

@@ -23,14 +23,14 @@ return_value = obj.SelectedItem
     example was machine-translated from the VBScript source.
 
 ```python
-def Tree1_EventInitialize(ByRef This):
+def Tree1_EventInitialize(This):
     CreateDefaultTree(This)
 
-def Tree1_EventSelectedItemChanged(ByRef This):
+def Tree1_EventSelectedItemChanged(This):
     if This.SelectedItem.Nodes.Count > 0:
         This.SelectedItem = None
 
-def CreateDefaultTree(ByRef This):
+def CreateDefaultTree(This):
     oRoot = This.Nodes.Add("Tools")
     oRoot.Key = "tools"
     oRoot.Expanded = true
@@ -46,7 +46,7 @@ def CreateDefaultTree(ByRef This):
 ```
 
 ```python
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
     oMyNode = Tree1.GetNode("saw")
     Tree1.SelectedItem = oMyNode
     Tree1.ScrollNodeInView(oMyNode)

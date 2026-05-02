@@ -23,7 +23,7 @@ obj.EditType
     example was machine-translated from the VBScript source.
 
 ```python
-Table1.Columns(5).EditType = 0 '0=EditBox, 1=ComboBox
+Table1.Columns(5).EditType = 0  # 0=EditBox, 1=ComboBox
 ```
 
 ## See also

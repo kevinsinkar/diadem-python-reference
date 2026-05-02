@@ -24,10 +24,10 @@ if XTable1.SelectedElements.Count > 0:
         if XTable1.SelectedElements(i).IsRows:
             lNumRow = XTable1.SelectedElements(i).LastRow - XTable1.SelectedElements(i).FirstRow + 1
             MsgBoxDisp (i + ", NumRow:"& lNumRow)
-            ElseIf XTable1.SelectedElements(i).IsCols :
+        elif XTable1.SelectedElements(i).IsCols:
             lNumCol = XTable1.SelectedElements(i).LastCol - XTable1.SelectedElements(i).FirstCol + 1
             MsgBoxDisp (i + ", NumCol:"& lNumCol)
-            ElseIf XTable1.SelectedElements(i).IsCells :
+        elif XTable1.SelectedElements(i).IsCells:
             lNumCol = XTable1.SelectedElements(i).LastCol - XTable1.SelectedElements(i).FirstCol + 1
             MsgBoxDisp (i + ", NumCol:"& lNumCol)
             lNumRow = XTable1.SelectedElements(i).LastRow - XTable1.SelectedElements(i).FirstRow + 1

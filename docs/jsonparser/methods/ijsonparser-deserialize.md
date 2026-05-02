@@ -29,9 +29,9 @@ oJsonParser.Deserialize(sJsonString, oVbsObject)
 sPath = oVbsObject.Item("path")
 oAggregates = oVbsObject.Item("aggregates")
 sAvg = oAggregates.Item("avg")
-sJsonString = oJsonParser.Serialize(oVbsObject, True) ' make pretty for viewing
+sJsonString = oJsonParser.Serialize(oVbsObject, True)  # make pretty for viewing
 LogFileWrite(sJsonString)
-LogFileWrite("path: " + sPath + vbCRLF + "avg: " + sAvg)
+LogFileWrite("path: " + sPath + "\r\n" + "avg: " + sAvg)
 ```
 
 ## See also

@@ -31,7 +31,7 @@ obj.AddWaveformProperties(Increment, StartOffset, [XChannelName], [XChannelUnit]
 
 ```python
 for Channel in Channelgroup.Channels:
-    if Channel.IsKindOf(eDirectAccess) and (Channel.DataType = eR64):
+    if Channel.IsKindOf(eDirectAccess) and (Channel.DataType == eR64):
         ProcessedChn.Channels.Add(Channel)
 ProcessedChn.AddWaveformProperties(1, 0, "Time", "s")
 ```

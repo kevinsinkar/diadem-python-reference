@@ -30,7 +30,7 @@ oMyDlg.Width = oMyDlg.MaxScreenWidth/2
 
 ```python
 oMyDlg = SudDlgCreate("Input","Example.sud")
-MsgBoxDisp("MaxScreenWidth  = " + oMyDlg.MapXDluToPixel(oMyDlg.MaxScreenWidth) + vbCrlf + "MaxScreenHeight = " + (oMyDlg.MapYDluToPixel(oMyDlg.MaxScreenHeight) - oMyDlg.BorderWidthPix + oMyDlg.TitleHeightPix)
+MsgBoxDisp("MaxScreenWidth  = " + oMyDlg.MapXDluToPixel(oMyDlg.MaxScreenWidth) + "\r\n" + "MaxScreenHeight = " + (oMyDlg.MapYDluToPixel(oMyDlg.MaxScreenHeight) - oMyDlg.BorderWidthPix + oMyDlg.TitleHeightPix)
 ```
 
 ## See also

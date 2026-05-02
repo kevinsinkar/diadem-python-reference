@@ -23,14 +23,14 @@ obj.RunCustomAction(VarParam)
     example was machine-translated from the VBScript source.
 
 ```python
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
     sMyAction = "UpperLimit"
     ChnListBox1.RunCustomAction(sMyAction)
 ```
 
 ```python
-def ChnListBox1_EventCustomAction(Byref This, VarParam):
-    if VarParam = "UpperLimit":
+def ChnListBox1_EventCustomAction(This, VarParam):
+    if VarParam == "UpperLimit":
         This.Value = This.Items.Count-1
 ```
 

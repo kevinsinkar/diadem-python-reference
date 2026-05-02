@@ -46,9 +46,9 @@ vGetNextStringValue = Object.GetNextStringValue(DataType)
     example was machine-translated from the VBScript source.
 
 ```python
-File.Formatter.LineFeeds = vbNewLine
+File.Formatter.LineFeeds = "\n"
 File.Formatter.Delimiters = ":"
-while not File.Position = File.Size:
+while not File.Position == File.Size:
     PropName  = File.GetNextStringValue(eString)
     PropValue = File.GetNextStringValue(eString)
     Root.Properties.Add(PropName, PropValue)

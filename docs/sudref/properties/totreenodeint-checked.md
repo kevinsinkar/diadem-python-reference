@@ -23,24 +23,24 @@ obj.Checked
     example was machine-translated from the VBScript source.
 
 ```python
-def Tree1_EventInitialize(ByRef This):
+def Tree1_EventInitialize(This):
     CreateDefaultTree(This)
 
-def Tree1_EventNodeCheckboxChanged(ByRef This, ByRef Node):
-    sOutput = "Checked nodes:" + VBCrLf
+def Tree1_EventNodeCheckboxChanged(This, Node):
+    sOutput = "Checked nodes:" + "\r\n"
     for oMyNode in This.Nodes:
         if oMyNode.Checked:
-            sOutput = sOutput + oMyNode.Text + VBCrLf
+            sOutput = sOutput + oMyNode.Text + "\r\n"
         GetCheckedNodes(oMyNode)
     Msgbox(sOutput)
 
 def GetCheckedNodes(oNode):
     for oMyNode in oNode.Nodes:
         if oMyNode.Checked:
-            sOutput = sOutput + oMyNode.Text + VBCrLf
+            sOutput = sOutput + oMyNode.Text + "\r\n"
         GetCheckedNodes(oMyNode)
 
-def CreateDefaultTree(ByRef This):
+def CreateDefaultTree(This):
     This.Checkboxes = True
     oRoot = This.Nodes.Add("Tools")
     oRoot.Key = "tools"

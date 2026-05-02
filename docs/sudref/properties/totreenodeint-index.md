@@ -23,10 +23,10 @@ obj.Index
     example was machine-translated from the VBScript source.
 
 ```python
-def Tree1_EventInitialize(ByRef This):
+def Tree1_EventInitialize(This):
     CreateDefaultTree(This)
 
-def CreateDefaultTree(ByRef This):
+def CreateDefaultTree(This):
     This.Nodes.RemoveAll
     oRoot = This.Nodes.Add("Tools")
     oRoot.Bold = True
@@ -42,7 +42,7 @@ def CreateDefaultTree(ByRef This):
     oMainNode.Nodes.Add("Hammer").Key = "hammer"
     oMainNode.Nodes.Add("Screwdriver").Key = "screwdriver"
 
-def Tree1_EventNodeDblClick(ByRef This, ByRef Node):
+def Tree1_EventNodeDblClick(This, Node):
     MsgBoxDisp("Current node = "&  Node.Index)
 ```
 

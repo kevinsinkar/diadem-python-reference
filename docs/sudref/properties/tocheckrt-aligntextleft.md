@@ -23,7 +23,7 @@ obj.AlignTextLeft
     example was machine-translated from the VBScript source.
 
 ```python
-CheckBox1.AlignTextLeft = 1 '0=No, 1=Yes
+CheckBox1.AlignTextLeft = 1  # 0=No, 1=Yes
 ```
 
 ## See also

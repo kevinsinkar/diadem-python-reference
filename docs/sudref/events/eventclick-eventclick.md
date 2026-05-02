@@ -23,7 +23,7 @@ dd.EventClick(ByRef This)
     example was machine-translated from the VBScript source.
 
 ```python
-def Dialog_EventClick(ByRef This):
+def Dialog_EventClick(This):
     MsgBoxDisp("Click")
 ```
 

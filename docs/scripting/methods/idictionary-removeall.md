@@ -30,7 +30,7 @@ MyDic.Add ("c", "Chicago")
 MyDic.RemoveAll
 MyKeys = MyDic.Keys
 for MyKey in MyKeys:
-    sOutput = sOutput + MyKey + VBCrLf
+    sOutput = sOutput + MyKey + "\r\n"
 dd.MsgBox(sOutput)
 ```
 

@@ -23,7 +23,7 @@ dd.EventChange(ByRef This, ThumbTracking)
     example was machine-translated from the VBScript source.
 
 ```python
-def Slider1_EventChange(ByRef This, ThumbTracking):
+def Slider1_EventChange(This, ThumbTracking):
     if ThumbTracking:
         This.ToolTipText = "Current value " + This.Value
     else:

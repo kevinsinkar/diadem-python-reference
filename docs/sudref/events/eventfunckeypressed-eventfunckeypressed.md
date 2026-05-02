@@ -23,7 +23,7 @@ dd.EventFuncKeyPressed(ByRef This, KeyName, Ctrl, Shift, ByRef DoProceed)
     example was machine-translated from the VBScript source.
 
 ```python
-def Dialog_EventFuncKeyPressed(ByRef This, KeyName, Ctrl, Shift, ByRef DoProceed):
+def Dialog_EventFuncKeyPressed(This, KeyName, Ctrl, Shift, DoProceed):
     # select KeyName
     # case "F1"
     MsgBoxDisp("F1 pressed")

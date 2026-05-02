@@ -34,7 +34,7 @@ AddUserCommandToEvent("dd.Report.Events.OnDrawing2DTableColumn", "MMyOnDrawing2D
 def MyOnDrawing2DTableColumn(Context, Column):
     oMyTable = Context.Table
     oMyColumn = Column
-    if Context.Sheet.Index = 1 AND oMyTable.Index = 1:
+    if Context.Sheet.Index == 1 AND oMyTable.Index == 1:
         # select oMyColumn.Type
         # case e2DTableColumnChannel
         oMyColumn.Settings.Format = "d.d"

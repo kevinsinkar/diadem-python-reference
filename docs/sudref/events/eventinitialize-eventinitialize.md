@@ -30,7 +30,7 @@ dd.EventInitialize(ByRef This)
     example was machine-translated from the VBScript source.
 
 ```python
-def EditBox_EventInitialize(ByRef This):
+def EditBox_EventInitialize(This):
     This.Text = "x"
 ```
 

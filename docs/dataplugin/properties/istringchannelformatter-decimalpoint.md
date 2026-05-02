@@ -32,7 +32,7 @@ obj.DecimalPoint
 
 ```python
 File.Formatter.TrimCharacters = " "
-File.Formatter.LineFeeds  = vbNewLine
+File.Formatter.LineFeeds  = "\n"
 File.Formatter.DecimalPoint = ","
 File.Formatter.Delimiters = ";"
 

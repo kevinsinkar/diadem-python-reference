@@ -23,7 +23,7 @@ obj.Remove(Index)
     example was machine-translated from the VBScript source.
 
 ```python
-def Tree1_EventDragStart(ByRef This, ByRef DropInformation, ByRef DropEffect):
+def Tree1_EventDragStart(This, DropInformation, DropEffect):
     oMyFileList = DropInformation.FileList
     if oMyFileList.Count > 0:
         oMyFileList.Remove(oMyFileList.Count)

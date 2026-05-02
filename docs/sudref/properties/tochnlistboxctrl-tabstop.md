@@ -23,7 +23,7 @@ obj.TabStop
     example was machine-translated from the VBScript source.
 
 ```python
-ChnListBox1.TabStop = 1 '0=No, 1=Yes
+ChnListBox1.TabStop = 1  # 0=No, 1=Yes
 ```
 
 ## See also

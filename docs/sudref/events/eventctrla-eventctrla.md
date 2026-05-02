@@ -33,7 +33,7 @@ dd.EventCtrlA(ByRef This)
     example was machine-translated from the VBScript source.
 
 ```python
-def Dialog_EventCtrlA(ByRef This):
+def Dialog_EventCtrlA(This):
     MsgBoxDisp("Ctrl-Shift-C")
 ```
 

@@ -23,7 +23,7 @@ obj.WrapAround
     example was machine-translated from the VBScript source.
 
 ```python
-SpinBox1.WrapAround = 0 'No
+SpinBox1.WrapAround = 0  # No
 ```
 
 ## See also

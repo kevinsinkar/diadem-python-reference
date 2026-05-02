@@ -23,7 +23,7 @@ obj.RefreshCols(FromCol, ToCol)
     example was machine-translated from the VBScript source.
 
 ```python
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
     # Do something
     XTable1.RefreshCols(2,3)
 ```

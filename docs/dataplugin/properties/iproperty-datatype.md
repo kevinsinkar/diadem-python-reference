@@ -43,7 +43,7 @@ obj.DataType
 
 ```python
 oMyProp = Root.ChannelGroups(1).Channels(1).Properties(1)
-MsgBoxDisp("Property name: "& oMyProp.Name + vbCrLf &"dd.Data type: " + oMyProp.DataType)
+MsgBoxDisp("Property name: "& oMyProp.Name + "\r\n" &"dd.Data type: " + oMyProp.DataType)
 ```
 
 ## See also

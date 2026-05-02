@@ -25,7 +25,7 @@ return_value = obj.ChannelGroup
 ```python
 for i in range(1, Root.ChannelGroups.Count + 1):
     for oMyChn in Root.ChannelGroups(i).Channels:
-        if oMyChn.Name = "Temp":
+        if oMyChn.Name == "Temp":
             MsgBoxDisp(oMyChn.ChannelGroup.Name)
 ```
 

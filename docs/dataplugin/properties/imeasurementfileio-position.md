@@ -23,7 +23,7 @@ obj.Position
     example was machine-translated from the VBScript source.
 
 ```python
-File.Formatter.LineFeeds = vbNewLine
+File.Formatter.LineFeeds = "\n"
 File.Formatter.Delimiters = ":"
 while File.Position != File.Size:
     PropName  = File.GetNextStringValue(eString)

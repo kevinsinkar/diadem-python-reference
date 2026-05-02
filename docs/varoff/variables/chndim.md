@@ -28,7 +28,7 @@ Valid names: ChnDim, CD
 ```
 
 ```python
-@@dd.Data.GetChannel("[1]/[1]").Name@@ [@@dd.Data.GetChannel("[1]/[1]").UnitSymbol@@]
+@@dd.Data.GetChannel("[1]/[1]").Name [@@dd.Data.GetChannel("[1]/[1]").UnitSymbol]
 ```
 
 ```python

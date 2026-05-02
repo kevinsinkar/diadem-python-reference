@@ -29,7 +29,7 @@ bMergeCells = Object.MergeCells(FromRow, FromCol, ToRow, ToCol)
     example was machine-translated from the VBScript source.
 
 ```python
-if XTable1.SelectedElements.Count = 1:
+if XTable1.SelectedElements.Count == 1:
     P1 = XTable1.SelectedElements(1).FirstRow
     P2 = XTable1.SelectedElements(1).FirstCol
     P3 = XTable1.SelectedElements(1).LastRow

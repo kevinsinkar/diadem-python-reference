@@ -23,10 +23,10 @@ dd.EventContextMenuShowing(ByRef This, Row, Col, MenuPoints)
     example was machine-translated from the VBScript source.
 
 ```python
-def XTable1_EventContextMenuPointSelected(ByRef This, Row, Col, MenuPoint):
-    dd.MsgBox("Row: " + Row + "; Column: " + Col + VBCrLf + "Menu entry: " + MenuPoint.Text)
+def XTable1_EventContextMenuPointSelected(This, Row, Col, MenuPoint):
+    dd.MsgBox("Row: " + Row + "; Column: " + Col + "\r\n" + "Menu entry: " + MenuPoint.Text)
 
-def XTable1_EventContextMenuShowing(ByRef This, Row, Col, MenuPoints):
+def XTable1_EventContextMenuShowing(This, Row, Col, MenuPoints):
     MenuPoints.Add("Menu 1",1)
     MenuPoints.Add("Menu 2",2)
 ```

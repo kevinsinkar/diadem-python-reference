@@ -35,9 +35,9 @@ obj.Enable
 
 ```python
 oMyDlg = SudDlgCreate("Input","Example.sud")
-oMyDlg.Enable = 0 '0=No, 1=Yes
+oMyDlg.Enable = 0  # 0=No, 1=Yes
 dd.Report.Refresh()
-oMyDlg.Enable = 1 '0=no, 1=yes
+oMyDlg.Enable = 1  # 0=no, 1=yes
 ```
 
 ## See also

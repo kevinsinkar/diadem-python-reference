@@ -23,7 +23,7 @@ obj.BorderStyle
     example was machine-translated from the VBScript source.
 
 ```python
-Tree1.BorderStyle = 1 '0=None, 1=3D, 2=Line
+Tree1.BorderStyle = 1  # 0=None, 1=3D, 2=Line
 ```
 
 ## See also

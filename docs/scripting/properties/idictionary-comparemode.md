@@ -23,15 +23,15 @@ obj.CompareMode
     example was machine-translated from the VBScript source.
 
 ```python
-Const BinaryCompare = 0
-Const TextCompare = 1
+BinaryCompare = 0
+TextCompare = 1
 MyDic = CreateObject("Scripting.Dictionary")
 MyDic.CompareMode = BinaryCompare
 MyDic.Add ("a", "Austin")
 MyDic.Add ("A", "Aachen")
 MyKeys = MyDic.Keys
 for MyKey in MyKeys:
-    sOutput = sOutput + MyKey + VBCrLf
+    sOutput = sOutput + MyKey + "\r\n"
 dd.MsgBox(sOutput)
 ```
 

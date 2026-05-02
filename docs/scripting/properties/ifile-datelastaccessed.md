@@ -26,9 +26,9 @@ return_value = obj.DateLastAccessed
 def ShowFileInfo(sFile):
     fso = CreateObject("Scripting.FileSystemObject")
     oMyFile = fso.GetFile(sFile)
-    sOutput = "File: " + oMyFile.Name + VBCrLf
-    sOutput = sOutput + "Created: " + oMyFile.DateCreated + VBCrLf
-    sOutput = sOutput + "Last Accessed: " + oMyFile.DateLastAccessed + VBCrLf
+    sOutput = "File: " + oMyFile.Name + "\r\n"
+    sOutput = sOutput + "Created: " + oMyFile.DateCreated + "\r\n"
+    sOutput = sOutput + "Last Accessed: " + oMyFile.DateLastAccessed + "\r\n"
     sOutput = sOutput + "Last Modified: " + oMyFile.DateLastModified
     ShowFileInfo = sOutput
 ```

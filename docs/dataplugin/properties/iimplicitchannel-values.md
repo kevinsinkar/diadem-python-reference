@@ -31,7 +31,7 @@ obj.Values(iIndex)
 ```python
 oMyChn = Root.ChannelGroup(1).Channels(1)
 if (oMyChn.IsKindOf(eDataImplicitChannel)):
-    MsgBoxDisp("Channel name: " + oMyChn.Name + vbCrLf + "First value: " + oMyChn.Values(1))
+    MsgBoxDisp("Channel name: " + oMyChn.Name + "\r\n" + "First value: " + oMyChn.Values(1))
 else:
     MsgBoxDisp("No implicit channel")
 ```

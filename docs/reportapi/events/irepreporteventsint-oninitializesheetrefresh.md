@@ -32,7 +32,7 @@ obj.OnInitializeSheetRefresh
 AddUserCommandToEvent("dd.Report.Events.OnInitializeSheetRefresh", "MyOnInitializeSheetRefresh")
 
 def MyOnInitializeSheetRefresh(Sheet):
-    dd.MsgBox("Sheet: " + Sheet.Name + VBTab + "Number of objects: " + Sheet.Objects.Count)
+    dd.MsgBox("Sheet: " + Sheet.Name + "\t" + "Number of objects: " + Sheet.Objects.Count)
 ```
 
 ## See also

@@ -23,7 +23,7 @@ obj.Syntax
     example was machine-translated from the VBScript source.
 
 ```python
-Cell.Syntax = 5 'channelname only
+Cell.Syntax = 5  # channelname only
 ```
 
 ## See also

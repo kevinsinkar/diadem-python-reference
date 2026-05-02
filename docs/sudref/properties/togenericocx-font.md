@@ -33,7 +33,7 @@ obj.Font
     example was machine-translated from the VBScript source.
 
 ```python
-ActiveX1.Font = -FontPointsToPixels(10) + ",,0,0,0,400,0,0,0,0,3,2,1,34,Arial"
+ActiveX1.Font = -FontPointsToPixels(10) + ", None,0,0,0,400,0,0,0,0,3,2,1,34,Arial"
 ```
 
 ## See also

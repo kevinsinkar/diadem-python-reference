@@ -23,9 +23,10 @@ obj.RunPlayStatusChanged(bStartPlaying)
     example was machine-translated from the VBScript source.
 
 ```python
-def ViewConnector_EventPlayStatusChanged(ByRef This, bStartPlaying):
+def ViewConnector_EventPlayStatusChanged(This, bStartPlaying):
+    pass
     # Do something
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
     ViewConnector.RunPlayStatusChange(FALSE)
 ```
 

@@ -23,7 +23,7 @@ obj.Alignment
     example was machine-translated from the VBScript source.
 
 ```python
-Text1.Alignment = 2 '0=Left, 1=Center, 2=Right
+Text1.Alignment = 2  # 0=Left, 1=Center, 2=Right
 ```
 
 ## See also

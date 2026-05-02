@@ -33,7 +33,7 @@ XTable1.SetActiveCell(XTable1.ActiveCellRow+1, XTable1.ActiveCellCol+1)
 ```
 
 ```python
-def XTable1_EventInitialize(ByRef This):
+def XTable1_EventInitialize(This):
     if This.ActiveCellRow <=0:
         This.SetActiveCell(1,1)
 ```

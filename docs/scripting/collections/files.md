@@ -22,7 +22,7 @@ def CreateFileList(sFolder):
     oMyFolder = fso.GetFolder(sFolder)
     oMyFiles = oMyFolder.Files
     for oMyFile in oMyFiles:
-        sOutput = sOutput + oMyFile.Path + VBCrLf
+        sOutput = sOutput + oMyFile.Path + "\r\n"
     CreateFileList = sOutput
 ```
 

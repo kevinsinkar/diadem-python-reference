@@ -34,9 +34,9 @@ obj.Enable
     example was machine-translated from the VBScript source.
 
 ```python
-Dialog.Enable = 0 '0=No, 1=Yes
+Dialog.Enable = 0  # 0=No, 1=Yes
 dd.Report.Refresh()
-Dialog.Enable = 1 '0=no, 1=yes
+Dialog.Enable = 1  # 0=no, 1=yes
 ```
 
 ## See also

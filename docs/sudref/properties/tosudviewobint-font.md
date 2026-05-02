@@ -24,7 +24,7 @@ obj.Font
 
 ```python
 oMyDlg = SudDlgCreate("Input","Example.sud")
-oMyDlg.Font = -FontPointsToPixels(10) + ",,0,0,0,400,0,0,0,0,3,2,1,34,Arial"
+oMyDlg.Font = -FontPointsToPixels(10) + ", None,0,0,0,400,0,0,0,0,3,2,1,34,Arial"
 ```
 
 ## See also

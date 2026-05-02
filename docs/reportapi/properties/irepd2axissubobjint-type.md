@@ -51,7 +51,7 @@ dd.Report.Refresh()
 
 ```python
 def MyToolTipEvent(Context,ToolTipText):
-    if Context.SubObject.Type = e2DElementCurve:
+    if Context.SubObject.Type == e2DElementCurve:
         oSystem = Context.AxisSystem2D
 
         # Find curve, x and y-axis to convert the coordinate to value
@@ -67,13 +67,13 @@ def MyToolTipEvent(Context,ToolTipText):
         oPoint = oCurve.FindNearestValue(x,y)
 
         # Build tooltip text
-        ToolTipText =  ToolTipText + VBCrLf + "Point (" + oPoint.Index + ")" + VBCrLf + "X = " + RTT(oPoint.X) + VBCrLf + "Y = " + Str(oPoint.Y)
+        ToolTipText =  ToolTipText + "\r\n" + "Point (" + oPoint.Index + ")" + "\r\n" + "X = " + RTT(oPoint.X) + "\r\n" + "Y = " + Str(oPoint.Y)
         # Add assignment value which categorizes the value as a string value based on value limits
         oChannel = dd.Data.GetChannel(oCurve.Shape.YChannel.Reference)
-        ToolTipText =  ToolTipText + VBCrLf + "Assignment value: " + oChannel.Values(oPoint.Index)
+        ToolTipText =  ToolTipText + "\r\n" + "Assignment value: " + oChannel.Values(oPoint.Index)
     else:
         oSubObject = Context.SubObject
-        ToolTipText = "Sheet: " + Context.Sheet.Name + VBCrLf + "Sub object" + VBCrLf + "Name: " + oSubObject.Name + VBCrLf + "Type: " + GetConstNameForREPORTSubObj(oSubObject, oSubObject.Type)
+        ToolTipText = "Sheet: " + Context.Sheet.Name + "\r\n" + "Sub object" + "\r\n" + "Name: " + oSubObject.Name + "\r\n" + "Type: " + GetConstNameForREPORTSubObj(oSubObject, oSubObject.Type)
 ```
 
 ## See also

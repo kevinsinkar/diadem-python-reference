@@ -29,7 +29,7 @@ dd.EventSelChanged(ByRef This)
     example was machine-translated from the VBScript source.
 
 ```python
-def XTable1_EventSelChanged(ByRef This):
+def XTable1_EventSelChanged(This):
     for i in range(1, This.SelectedElements.Count + 1):
         N = This.SelectedElements(i).LastRow - This.SelectedElements(i).FirstRow + 1
         MsgBoxDisp(i + ", Number: " + N)

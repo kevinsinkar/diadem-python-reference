@@ -32,7 +32,7 @@ obj.StringSign
 
 ```python
 File.Formatter.TrimCharacters = " "
-File.Formatter.LineFeeds  = vbNewLine
+File.Formatter.LineFeeds  = "\n"
 File.Formatter.Delimiters = ";"
 File.Formatter.StringSign = Char(34)
 

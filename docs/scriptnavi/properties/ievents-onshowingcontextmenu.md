@@ -34,27 +34,25 @@ AddUserCommandToEvent("dd.Navigator.Events.OnShowingContextMenu","MyOnShowingCon
 AddUserCommandToEvent("dd.Navigator.Events.OnContextMenuPointSelected","MyOnContextMenuPointSelected")
 
 def MyOnShowingContextMenu(ParentObj, MenuPoints):
-    if (ParentObj.IsKindOf(eDataBrowser)):
-        ' eDataStoreBrowser or eDataFinderBrowser
-    MenuPoints.Add("My Browser Menu Point", 1)
-    if (ParentObj.IsKindOf(eDataFinderBrowser)):
-        ' eDataStoreBrowser or eDataFinderBrowser
-    MenuPoints.Add("My DataFinder Browser Menu Point", 2)
-    ElseIf (ParentObj.IsKindOf(eDataStoreBrowser)) then           ' eDataStoreBrowser or eDataFinderBrowser
-    MenuPoints.Add("My DataStore Browser Menu Point", 3)
-ElseIf (ParentObj.IsKindOf(eDataResultsList)) then       ' eDataStoreResultsList or eDataFinderResultsList
-MenuPoints.Add("My Results List Menu Point", 4)
-if (ParentObj.IsKindOf(eDataFinderResultsList)):
-    ' eDataStoreResultsList or eDataFinderResultsList
-MenuPoints.Add("My DataFinder Results List Menu Point", 5)
-ElseIf (ParentObj.IsKindOf(eDataStoreResultsList)) then       ' eDataStoreResultsList or eDataFinderResultsList
-MenuPoints.Add("My DataStore Results List Menu Point", 6)
-ElseIf (ParentObj.IsKindOf(eChannelPreview)) then
-MenuPoints.Add("My Preview Area Channel Menu Point", 7)
-ElseIf (ParentObj.IsKindOf(ePropertyListPreview)) then
-MenuPoints.Add("My Preview Area Properties Menu Point", 8)
+    if (ParentObj.IsKindOf(eDataBrowser)):  # eDataStoreBrowser or eDataFinderBrowser
+        MenuPoints.Add("My Browser Menu Point", 1)
+        if (ParentObj.IsKindOf(eDataFinderBrowser)):  # eDataStoreBrowser or eDataFinderBrowser
+            MenuPoints.Add("My DataFinder Browser Menu Point", 2)
+        elif (ParentObj.IsKindOf(eDataStoreBrowser)):  # eDataStoreBrowser or eDataFinderBrowser
+            MenuPoints.Add("My DataStore Browser Menu Point", 3)
+    elif (ParentObj.IsKindOf(eDataResultsList)):  # eDataStoreResultsList or eDataFinderResultsList
+        MenuPoints.Add("My Results List Menu Point", 4)
+        if (ParentObj.IsKindOf(eDataFinderResultsList)):  # eDataStoreResultsList or eDataFinderResultsList
+            MenuPoints.Add("My DataFinder Results List Menu Point", 5)
+        elif (ParentObj.IsKindOf(eDataStoreResultsList)):  # eDataStoreResultsList or eDataFinderResultsList
+            MenuPoints.Add("My DataStore Results List Menu Point", 6)
+    elif (ParentObj.IsKindOf(eChannelPreview)):
+        MenuPoints.Add("My Preview Area Channel Menu Point", 7)
+    elif (ParentObj.IsKindOf(ePropertyListPreview)):
+        MenuPoints.Add("My Preview Area Properties Menu Point", 8)
 
 def MyOnContextMenuPointSelected(ParentObj, MenuPoint):
+    pass
     # select MenuPoint.ID
     # case 1 dd.MsgBox "DataStore or DataFinder Browser Entry"
     # case 2 dd.MsgBox "DataStore Browser Entry"

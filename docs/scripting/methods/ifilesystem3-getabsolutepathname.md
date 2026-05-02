@@ -27,13 +27,13 @@ def GetAbsolutePath(sPath):
     fso = CreateObject("Scripting.FileSystemObject")
     GetAbsolutePath = fso.GetAbsolutePathName(sPath)
 
-dd.MsgBox(GetAbsolutePath("c:"))                         'Returns C:\Program Files\DIAdem
-dd.MsgBox(GetAbsolutePath("c:.."))                       'Returns C:\Program Files
-dd.MsgBox(GetAbsolutePath("c:\"))                        'Returns C:\
-dd.MsgBox(GetAbsolutePath("c:*.*\test"))                 'Returns C:\Program Files\DIAdem\*.*\test
-dd.MsgBox(GetAbsolutePath("test"))                       'Returns C:\Program Files\DIAdem\test
-dd.MsgBox(GetAbsolutePath("c:\..\..\test"))              'Returns C:\test
-dd.MsgBox(GetAbsolutePath("C:\Program Files\DIAdem\..")) 'Returns C:\Program Files\
+dd.MsgBox(GetAbsolutePath("c:"))  # Returns C:\Program Files\DIAdem
+dd.MsgBox(GetAbsolutePath("c:.."))  # Returns C:\Program Files
+dd.MsgBox(GetAbsolutePath("c:\"))  # Returns C:\
+dd.MsgBox(GetAbsolutePath("c:*.*\test"))  # Returns C:\Program Files\DIAdem\*.*\test
+dd.MsgBox(GetAbsolutePath("test"))  # Returns C:\Program Files\DIAdem\test
+dd.MsgBox(GetAbsolutePath("c:\..\..\test"))  # Returns C:\test
+dd.MsgBox(GetAbsolutePath("C:\Program Files\DIAdem\.."))  # Returns C:\Program Files\
 ```
 
 ## See also

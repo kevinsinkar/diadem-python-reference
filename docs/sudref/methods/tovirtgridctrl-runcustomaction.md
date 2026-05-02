@@ -23,14 +23,14 @@ obj.RunCustomAction(VarParam)
     example was machine-translated from the VBScript source.
 
 ```python
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
     sMyAction = "UpperLimit"
     XTable1.RunCustomAction(sMyAction)
 ```
 
 ```python
-def XTable1_EventCustomAction(ByRef This, VarParam):
-    if VarParam = "UpperLimit":
+def XTable1_EventCustomAction(This, VarParam):
+    if VarParam == "UpperLimit":
         This.BackColor= RGB(255, 0, 0)
 ```
 

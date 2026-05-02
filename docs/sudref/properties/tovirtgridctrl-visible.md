@@ -29,7 +29,7 @@ obj.Visible
     example was machine-translated from the VBScript source.
 
 ```python
-XTable1.Columns(3).Visible = 0 '0=No, 1=Yes
+XTable1.Columns(3).Visible = 0  # 0=No, 1=Yes
 ```
 
 ---

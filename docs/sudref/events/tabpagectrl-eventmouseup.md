@@ -23,8 +23,8 @@ dd.EventMouseUp(ByRef This, Index, Button, Shift, X, Y)
     example was machine-translated from the VBScript source.
 
 ```python
-def TabPageCtrl_EventMouseUp(ByRef This, Index, Button, Shift, X, Y):
-    MsgBoxDisp("Mouse button released at X="& X &" Y="&Y&", "&This.Pages(Index).Title)
+def TabPageCtrl_EventMouseUp(This, Index, Button, Shift, X, Y):
+    MsgBoxDisp("Mouse button released at X="& X &" Y="&Y", "&This.Pages(Index).Title)
 ```
 
 ## See also

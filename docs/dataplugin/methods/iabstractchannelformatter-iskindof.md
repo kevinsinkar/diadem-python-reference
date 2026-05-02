@@ -26,11 +26,11 @@ bIsKindOf = Object.IsKindOf(Type)
 for oMyChn in oBlock.Channels:
     if oMyChn.Formatter.IsKindOf(eStringBlock):
         oMyChn.Properties.Add("BlockType", "StringBlock")
-        ElseIf oMyChn.Formatter.IsKindOf(eBinaryBlock) :
+    elif oMyChn.Formatter.IsKindOf(eBinaryBlock):
         oMyChn.Properties.Add("BlockType", "BinaryBlock")
-        ElseIf oMyChn.Formatter.IsKindOf(eFixedWidthBlock) :
+    elif oMyChn.Formatter.IsKindOf(eFixedWidthBlock):
         oMyChn.Properties.Add("BlockType", "FixedWidthBlock")
-        ElseIf oMyChn.Formatter.IsKindOf(eCellBlock) :
+    elif oMyChn.Formatter.IsKindOf(eCellBlock):
         oMyChn.Properties.Add("BlockType", "CellBlock")
 ```
 

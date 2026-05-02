@@ -23,7 +23,7 @@ obj.Value
     example was machine-translated from the VBScript source.
 
 ```python
-def SpinBox1_EventButtonUpClick(ByRef This):
+def SpinBox1_EventButtonUpClick(This):
     This.Value = This.Value + 3
 ```
 

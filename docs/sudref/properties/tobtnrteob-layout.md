@@ -23,7 +23,7 @@ obj.Layout
     example was machine-translated from the VBScript source.
 
 ```python
-Button1.Layout = 0 '0=Center, 1=Left, 2=Right, 3=Top, 4=Bottom
+Button1.Layout = 0  # 0=Center, 1=Left, 2=Right, 3=Top, 4=Bottom
 ```
 
 ## See also

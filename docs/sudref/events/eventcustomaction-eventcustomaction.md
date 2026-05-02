@@ -23,15 +23,15 @@ dd.EventCustomAction(ByRef This, VarParam)
     example was machine-translated from the VBScript source.
 
 ```python
-def EditBox1_EventCustomAction(ByRef This, VarParam):
-    if VarParam = "UpperLimit":
+def EditBox1_EventCustomAction(This, VarParam):
+    if VarParam == "UpperLimit":
         This.Value = MinV(This.Value, 200)
     else:
         This.Value = MaxV(This.Value, 10)
 ```
 
 ```python
-def Button1_EventClick(Byref This):
+def Button1_EventClick(This):
     sMyAction = "UpperLimit"
     EditBox1.RunCustomAction(sMyAction)
 ```

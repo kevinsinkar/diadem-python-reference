@@ -31,19 +31,19 @@ bIsKindOf = Object.IsKindOf(Key, Type)
     example was machine-translated from the VBScript source.
 
 ```python
-def TaskPanel1_EventInitialize(ByRef This):
+def TaskPanel1_EventInitialize(This):
     CreateDefaultTaskPanel(This)
 
-def ButtonCollapse_EventClick(ByRef This):
+def ButtonCollapse_EventClick(This):
     if TaskPanel1.IsKindOf(TaskPanel1.SelectedItem,eTaskPanelItemGroup):
         TaskPanel1.CollapseGroup(TaskPanel1.SelectedItem)
 
-def ButtonExpand_EventClick(ByRef This):
+def ButtonExpand_EventClick(This):
     if TaskPanel1.IsKindOf(TaskPanel1.SelectedItem, eTaskPanelItemGroup):
         TaskPanel1.ExpandGroup(TaskPanel1.SelectedItem)
 
 
-def CreateDefaultTaskPanel(ByRef This):
+def CreateDefaultTaskPanel(This):
     This.AddGroup("electricGroup", "Electric Tools")
     This.AddGroup("handtoolGroup", "Hand Tools")
     This.AddGroup("textonlyGroup", "Info")

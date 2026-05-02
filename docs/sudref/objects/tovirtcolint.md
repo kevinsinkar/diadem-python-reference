@@ -17,7 +17,7 @@ The XTableColumn object corresponds to a column in an extended table in a user d
     example was machine-translated from the VBScript source.
 
 ```python
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
 
     Width = XTable1.Width - XTable1.RowTitlesWidth
     for i in range(1, 3 + 1):

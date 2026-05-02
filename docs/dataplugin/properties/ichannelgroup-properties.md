@@ -25,7 +25,7 @@ return_value = obj.Properties
 ```python
 oMyGrp = Root.ChannelGroups(1)
 for oMyProp in oMyGrp.Properties:
-    if oMyProp.Name = "Test_Status":
+    if oMyProp.Name == "Test_Status":
         bfound = TRUE
 if not bFound:
     oMyGrp.Properties.Add("Test_Status","Pass")

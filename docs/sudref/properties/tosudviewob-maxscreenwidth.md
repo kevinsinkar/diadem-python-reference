@@ -28,7 +28,7 @@ Dialog.Width = Dialog.MaxScreenWidth/2
 ```
 
 ```python
-MsgBoxDisp("MaxScreenWidth  = " + Dialog.MapXDluToPixel(Dialog.MaxScreenWidth) + vbCrlf + "MaxScreenHeight = " + (Dialog.MapYDluToPixel(Dialog.MaxScreenHeight) - Dialog.BorderWidthPix + Dialog.TitleHeightPix)
+MsgBoxDisp("MaxScreenWidth  = " + Dialog.MapXDluToPixel(Dialog.MaxScreenWidth) + "\r\n" + "MaxScreenHeight = " + (Dialog.MapYDluToPixel(Dialog.MaxScreenHeight) - Dialog.BorderWidthPix + Dialog.TitleHeightPix)
 ```
 
 ## See also

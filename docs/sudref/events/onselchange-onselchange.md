@@ -23,7 +23,7 @@ dd.OnSelChange(ByRef This)
     example was machine-translated from the VBScript source.
 
 ```python
-def Table1_OnSelChange(ByRef This):
+def Table1_OnSelChange(This):
     MsgBoxDisp("Selection in table was changed, new SelRow = " + This.SelRow + ", new SelColumn = " + This.SelColumn)
 ```
 

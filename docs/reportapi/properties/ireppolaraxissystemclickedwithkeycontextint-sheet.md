@@ -56,11 +56,11 @@ dd.Report.Refresh()
 
 ```python
 def MyClickEvent(Context):
-    Context.DoProceed = False'True
+    Context.DoProceed = False  # True
     # Check the key
-    if Chr(Context.KeyValue) = "C" or Chr(Context.KeyValue) = "c":
+    if Chr(Context.KeyValue) == "C" or Chr(Context.KeyValue) == "c":
         Context.DoProceed = True
-        if Context.SubObject.Type = ePolarElementMain:
+        if Context.SubObject.Type == ePolarElementMain:
             oSystem = Context.AxisSystemPolar
 
             # Map cursor point to length and angle
@@ -68,11 +68,11 @@ def MyClickEvent(Context):
             Angle  = oSystem.ConvertPageXYPositionToAngle(Context.Position.X, Context.Position.Y)
 
             # Build message text
-            sgMessage =  "Lenght: " + VBTab + Lenght + VBCrLf + "Angle: " + VBTab + Angle
+            sgMessage =  "Lenght: " + "\t" + Lenght + "\r\n" + "Angle: " + "\t" + Angle
         else:
             oSubObject = Context.SubObject
-            sgMessage = "Sheet: " + Context.Sheet.Name + VBCrLf + "Sub object" + VBCrLf + "Name: " + oSubObject.Name + VBCrLf + "Type: " + GetConstNameForREPORTSubObj(oSubObject, oSubObject.Type)
-        MsgBoxDisp(sgMessage,,,,5,True)
+            sgMessage = "Sheet: " + Context.Sheet.Name + "\r\n" + "Sub object" + "\r\n" + "Name: " + oSubObject.Name + "\r\n" + "Type: " + GetConstNameForREPORTSubObj(oSubObject, oSubObject.Type)
+        MsgBoxDisp(sgMessage, None, None, None,5,True)
 ```
 
 ## See also

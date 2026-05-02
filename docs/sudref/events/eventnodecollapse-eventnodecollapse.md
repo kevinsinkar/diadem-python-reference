@@ -23,13 +23,13 @@ dd.EventNodeCollapse(ByRef This, ByRef Node)
     example was machine-translated from the VBScript source.
 
 ```python
-def Tree1_EventInitialize(ByRef This):
+def Tree1_EventInitialize(This):
     CreateDefaultTree(This)
 
-def Tree1_EventNodeCollapse(ByRef This, ByRef Node):
+def Tree1_EventNodeCollapse(This, Node):
     Node.Expanded = True
 
-def CreateDefaultTree(ByRef This):
+def CreateDefaultTree(This):
     oRoot = This.Nodes.Add("Tools")
     oRoot.Key = "tools"
     oRoot.Expanded = true

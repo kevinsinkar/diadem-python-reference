@@ -23,7 +23,7 @@ obj.RunCustomActionAll(VarParam)
     example was machine-translated from the VBScript source.
 
 ```python
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
     sMyAction = "StoreData"
     Dialog.RunCustomActionAll(sMyAction)
 ```

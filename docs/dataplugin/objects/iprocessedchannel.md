@@ -18,7 +18,7 @@ The ProcessedChannel object provides a channel, which combines values from other
 
 ```python
 for Channel in Channelgroup.Channels:
-    if Channel.IsKindOf(eDirectAccess) and (Channel.DataType = eR64):
+    if Channel.IsKindOf(eDirectAccess) and (Channel.DataType == eR64):
         ProcessedChn.Channels.Add(Channel)
 ```
 

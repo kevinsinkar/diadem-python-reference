@@ -39,7 +39,7 @@ obj.TimeFormat
 
 ```python
 File.Formatter.TrimCharacters = " "
-File.Formatter.LineFeeds  = vbNewLine
+File.Formatter.LineFeeds  = "\n"
 File.Formatter.Delimiters = ";"
 File.Formatter.TimeFormat = "DD.MM.YYYY hh:mm:ss"
 oGrp = Root.ChannelGroups.Add("MyChannelGroup")
@@ -61,7 +61,7 @@ oGrp.Channels.AddDirectAccessChannel(oChn)
 
 ```python
 File.Formatter.Delimiters = ";"
-File.Formatter.LineFeeds  = vbNewLine
+File.Formatter.LineFeeds  = "\n"
 File.Formatter.TimeFormat = "hh:mm:ss"
 
 

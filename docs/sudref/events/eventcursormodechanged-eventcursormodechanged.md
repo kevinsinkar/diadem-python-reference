@@ -23,7 +23,7 @@ dd.EventCursorModeChanged(ByRef This)
     example was machine-translated from the VBScript source.
 
 ```python
-def View_EventCursorModeChanged(ByRef This):
+def View_EventCursorModeChanged(This):
     if not (This.DisplayObj Is None):
         LogFileWrite("CursorMode: " + This.DisplayObj.Area.Sheet.Cursor.Mode)
 ```

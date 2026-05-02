@@ -26,7 +26,7 @@ obj.Type
 Curve2DPreview1.Curves.RemoveAll
 oMyCurve = Curve2DPreview1.Curves.Add("[1]/[1]","[1]/[2]"
 oMyCurve.Color = RGB(0, 0, 255)
-oMyCurve.Type = 1 '0=Line, 1=Spike, 2=Step curve, 3=Marker
+oMyCurve.Type = 1  # 0=Line, 1=Spike, 2=Step curve, 3=Marker
 ```
 
 ## See also

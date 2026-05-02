@@ -23,9 +23,10 @@ obj.RunTerminate()
     example was machine-translated from the VBScript source.
 
 ```python
-def Dialog_EventTerminate(ByRef This):
+def Dialog_EventTerminate(This):
+    pass
     # Do something
-def ComboBox1_EventChange(ByRef This):
+def ComboBox1_EventChange(This):
     Dialog.RunTerminate
 ```
 

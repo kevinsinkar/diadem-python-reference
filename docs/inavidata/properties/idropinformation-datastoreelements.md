@@ -23,16 +23,16 @@ return_value = obj.DataStoreElements
     example was machine-translated from the VBScript source.
 
 ```python
-def XTable1_EventDrop(ByRef This, Row, Col, DropInformation):
+def XTable1_EventDrop(This, Row, Col, DropInformation):
     if DropInformation.IsKindOf(eDropText):
         Msgbox(DropInformation.Text)
-        ElseIf DropInformation.IsKindOf(eDropDataStoreElement) :
+    elif DropInformation.IsKindOf(eDropDataStoreElement):
         Msgbox(DropInformation.DataStoreElements.Count)
 
-def XTable1_EventValGet(ByRef This, Row, Col, ByRef Cell, IsInputCell):
+def XTable1_EventValGet(This, Row, Col, Cell, IsInputCell):
     Cell.Text = ""
 
-def XTable1_EventDropAllowed(ByRef This, Row, Col, DropInformation, ByRef DropEffect):
+def XTable1_EventDropAllowed(This, Row, Col, DropInformation, DropEffect):
     DropEffect = eDropEffectCopy
 ```
 

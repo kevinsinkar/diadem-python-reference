@@ -4,7 +4,7 @@ title: "DIAdem Python Scripting Reference"
 
 # DIAdem Python Scripting Reference
 
-Consolidated from the **DIAdem 2026 Q2** (Edition April 2026) help bundle. 13,431 elements across 29 sources. Generated 2026-05-01 21:59 UTC.
+Consolidated from the **DIAdem 2026 Q2** (Edition April 2026) help bundle. 13,431 elements across 29 sources. Generated 2026-05-02 01:33 UTC.
 
 ## Getting started
 

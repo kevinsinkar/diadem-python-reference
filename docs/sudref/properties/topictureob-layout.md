@@ -34,7 +34,7 @@ obj.Layout
     example was machine-translated from the VBScript source.
 
 ```python
-Picture1.Layout = 0 '0=Center
+Picture1.Layout = 0  # 0=Center
 ```
 
 ## See also

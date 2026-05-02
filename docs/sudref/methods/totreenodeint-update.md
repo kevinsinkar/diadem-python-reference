@@ -30,16 +30,16 @@ obj.Update(Mode)
     example was machine-translated from the VBScript source.
 
 ```python
-def Tree1_EventInitialize(ByRef This):
+def Tree1_EventInitialize(This):
     CreateDefaultTree(This)
 
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
     oMyNode= Tree1.SelectedItem
     if (not oMyNode is None):
         oMyNode.ForeColor = RGB(255, 0, 0)
         oMyNode.Update(eUpdateModeNode)
 
-def CreateDefaultTree(ByRef This):
+def CreateDefaultTree(This):
     oRoot = This.Nodes.Add("Tools")
     oRoot.Key = "tools"
     oRoot.Expanded = true

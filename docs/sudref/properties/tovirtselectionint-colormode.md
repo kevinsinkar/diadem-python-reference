@@ -23,7 +23,7 @@ obj.ColorMode
     example was machine-translated from the VBScript source.
 
 ```python
-XTable1.SelectedElements.ColorMode = 0 ' 0 = System
+XTable1.SelectedElements.ColorMode = 0  # 0 = System
 ```
 
 ## See also

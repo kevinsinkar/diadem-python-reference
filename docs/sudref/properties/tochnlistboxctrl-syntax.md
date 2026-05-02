@@ -23,7 +23,7 @@ obj.Syntax
     example was machine-translated from the VBScript source.
 
 ```python
-ChnComboBox1.Syntax = 5 'channelname only
+ChnComboBox1.Syntax = 5  # channelname only
 ```
 
 ## See also

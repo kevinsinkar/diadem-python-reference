@@ -34,10 +34,10 @@ dd.Report.Events.Drop.OnTable3D = "MyOnDrop3DTableEvent"
 def MyOnDrop3DTableEvent(Context, DropContext):
     sOutput = "Names of dropped channels:"
     for oMyDropElement in DropContext.DiademElements:
-        sOutput = sOutput + VBCrLf + oMyDropElement.Name
+        sOutput = sOutput + "\r\n" + oMyDropElement.Name
     Msgbox(sOutput)
     oMyTable = Context.Table
-    dd.MsgBox(Context.Sheet.Name + VBCrLf + oMyTable.Name)
+    dd.MsgBox(Context.Sheet.Name + "\r\n" + oMyTable.Name)
     Context.DoProceed = TRUE
 ```
 

@@ -46,9 +46,9 @@ oMyColumn1.Settings.OnDrawingCell = "MyOnDrawingCell"
 
 ```python
 def MyOnDrawingCell(Context, Cell):
-    if (Context.Table.Name = "My2DTable"):
+    if (Context.Table.Name == "My2DTable"):
         Cell.Font.Color.SetRGBColor(RGB(255, 128, 128))
-        if Context.Row = 1:
+        if Context.Row == 1:
             Cell.Value = Cell.Value + " Sheet: " + Context.Sheet.Name
         else:
             Cell.Value = Cell.Value + " Col: " + Context.Col + "; Row: " + Context.Row + "; Rel. row: " + Context.RelativeRow

@@ -20,9 +20,9 @@ You can use the Folder object to access the properties of a folder.
 def ShowFolderInfo(sFolder):
     fso = CreateObject("Scripting.FileSystemObject")
     oMyFolder = fso.GetFolder(sFolder)
-    sOutput = "Folder: " + oMyFolder.Name + VBCrLf
-    sOutput = sOutput + "Created: " + oMyFolder.DateCreated + VBCrLf
-    sOutput = sOutput + "Last Accessed: " + oMyFolder.DateLastAccessed + VBCrLf
+    sOutput = "Folder: " + oMyFolder.Name + "\r\n"
+    sOutput = sOutput + "Created: " + oMyFolder.DateCreated + "\r\n"
+    sOutput = sOutput + "Last Accessed: " + oMyFolder.DateLastAccessed + "\r\n"
     sOutput = sOutput + "Last Modified: " + oMyFolder.DateLastModified
     ShowFolderInfo = sOutput
 ```

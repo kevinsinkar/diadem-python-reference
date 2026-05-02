@@ -23,7 +23,7 @@ dd.OnItemChange(ByRef This, Row, Col)
     example was machine-translated from the VBScript source.
 
 ```python
-def Table1_OnItemChange(ByRef This, Row, Col):
+def Table1_OnItemChange(This, Row, Col):
     MsgBoxDisp("Cell at Row=" + Row + " Column=" + Col &" was changed")
 ```
 

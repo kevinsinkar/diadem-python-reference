@@ -23,17 +23,17 @@ obj.RemoveAll()
     example was machine-translated from the VBScript source.
 
 ```python
-def Tree1_EventInitialize(ByRef This):
+def Tree1_EventInitialize(This):
     CreateDefaultTree(This)
 
-def Tree1_EventNodeExpand(ByRef This, ByRef Node):
-    if Node.Key = "handtool":
+def Tree1_EventNodeExpand(This, Node):
+    if Node.Key == "handtool":
         Node.Nodes.RemoveAll
         Node.Nodes.Add("Hammer").Key = "hammer"
         Node.Nodes.Add("Screwdriver").Key = "screwdriver"
         Node.Nodes.Add("Tongs").Key = "tongs"
 
-def CreateDefaultTree(ByRef This):
+def CreateDefaultTree(This):
     oRoot = This.Nodes.Add("Tools")
     oRoot.Key = "tools"
     oRoot.Expanded = true

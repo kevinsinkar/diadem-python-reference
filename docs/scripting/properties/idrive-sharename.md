@@ -26,7 +26,7 @@ obj.ShareName
 def DriveInfo(sDrv):
     fso = CreateObject("Scripting.FileSystemObject")
     oMyDrive = fso.GetDrive(fso.GetDriveName(fso.GetAbsolutePathName(sDrv)))
-    DriveInfo = "Drive: " + oMyDrive.DriveLetter + VBCrLf + "Shared name: " + oMyDrive.ShareName
+    DriveInfo = "Drive: " + oMyDrive.DriveLetter + "\r\n" + "Shared name: " + oMyDrive.ShareName
 ```
 
 ## See also

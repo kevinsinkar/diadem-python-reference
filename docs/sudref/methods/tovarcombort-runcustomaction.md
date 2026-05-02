@@ -23,14 +23,14 @@ obj.RunCustomAction(VarParam)
     example was machine-translated from the VBScript source.
 
 ```python
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
     sMyAction = "UpperLimit"
     EnumComboBox1.RunCustomAction(sMyAction)
 ```
 
 ```python
-def EnumComboBox1_EventCustomAction(ByRef This, VarParam):
-    if VarParam = "UpperLimit":
+def EnumComboBox1_EventCustomAction(This, VarParam):
+    if VarParam == "UpperLimit":
         This.Value = This.Items.Count-1
 ```
 

@@ -34,10 +34,10 @@ obj.BackColor
     example was machine-translated from the VBScript source.
 
 ```python
-def Tree1_EventInitialize(ByRef This):
+def Tree1_EventInitialize(This):
     CreateDefaultTree(This)
 
-def CreateDefaultTree(ByRef This):
+def CreateDefaultTree(This):
     This.Nodes.RemoveAll
     oRoot = This.Nodes.Add("Tools")
     oRoot.BackColor = RGB(255, 0, 0)

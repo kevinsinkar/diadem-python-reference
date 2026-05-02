@@ -23,7 +23,7 @@ dd.EventMouseUp(ByRef This, Button, Shift, X, Y)
     example was machine-translated from the VBScript source.
 
 ```python
-def Dialog_EventMouseUp(ByRef This, Button, Shift, X, Y):
+def Dialog_EventMouseUp(This, Button, Shift, X, Y):
     MsgBoxDisp("Mouse button released at X="& X &" Y="&Y)
 ```
 

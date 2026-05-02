@@ -23,14 +23,14 @@ obj.RunInitialize()
     example was machine-translated from the VBScript source.
 
 ```python
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
     Tree1.RunInitialize
     Tree1.Refresh
 
-def Tree1_EventInitialize(ByRef This):
+def Tree1_EventInitialize(This):
     CreateDefaultTree(This)
 
-def CreateDefaultTree(ByRef This):
+def CreateDefaultTree(This):
     This.Nodes.RemoveAll
     oRoot = This.Nodes.Add("Tools")
     oRoot.Key = "tools"

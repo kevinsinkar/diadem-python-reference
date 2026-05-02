@@ -52,24 +52,24 @@ obj.CellCtrlAutoReset
     example was machine-translated from the VBScript source.
 
 ```python
-def XTable1_EventValGet(ByRef This, Row, Col, ByRef Cell, IsInputCell):
-    if Row = 1:
+def XTable1_EventValGet(This, Row, Col, Cell, IsInputCell):
+    if Row == 1:
         Cell.Text = "Test"
 ```
 
 ```python
-def XTable1_EventvalGet(ByRef This, Row, Col, ByRef Cell, IsInputCell):
-    if Row = 1:
+def XTable1_EventvalGet(This, Row, Col, Cell, IsInputCell):
+    if Row == 1:
         Cell.Text = "Test"
     else:
         Cell.Text = ""
 ```
 
 ```python
-def XTable1_EventInitialize(ByRef This):
+def XTable1_EventInitialize(This):
     This.CellCtrlAutoReset = 0
-def XTable1_EventValGet(ByRef This, Row, Col, ByRef Cell, IsInputCell):
-    if Row = 1:
+def XTable1_EventValGet(This, Row, Col, Cell, IsInputCell):
+    if Row == 1:
         Cell.Text = "Test"
     else:
         Cell.Text = ""

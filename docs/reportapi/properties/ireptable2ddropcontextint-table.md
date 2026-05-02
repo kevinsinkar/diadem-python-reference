@@ -34,13 +34,13 @@ AddUserCommandToEvent("dd.Report.Events.OnDrop2DTable", "MyOnDrop2DTableEvent")
 def MyOnDrop2DTableEvent(Context, DropContext):
     sOutput = "Names of dropped channels:"
     for oMyDropElement in DropContext.DiademElements:
-        sOutput = sOutput + VBCrLf + oMyDropElement.Name
+        sOutput = sOutput + "\r\n" + oMyDropElement.Name
     Msgbox(sOutput)
     oMyTable = Context.Table
     if Context.ColumnIndex>0:
-        dd.MsgBox(Context.Sheet.Name + VBCrLf + oMyTable.Name + VBCrLf + oMyTable.Columns.Item(Context.ColumnIndex).Type)
+        dd.MsgBox(Context.Sheet.Name + "\r\n" + oMyTable.Name + "\r\n" + oMyTable.Columns.Item(Context.ColumnIndex).Type)
     else:
-        dd.MsgBox(Context.Sheet.Name + VBCrLf + oMyTable.Name)
+        dd.MsgBox(Context.Sheet.Name + "\r\n" + oMyTable.Name)
     Context.DoProceed = TRUE
 ```
 

@@ -17,7 +17,7 @@ The Tree object corresponds to the Tree control in a user dialog box. Use the Tr
     example was machine-translated from the VBScript source.
 
 ```python
-def Tree1_EventInitialize(ByRef This):
+def Tree1_EventInitialize(This):
     oRoot = This.Nodes.Add("Tools")
     oRoot.Key = "tools"
     oRoot.Expanded = true
@@ -29,14 +29,14 @@ def Tree1_EventInitialize(ByRef This):
     oMainNode.Key = "handtool"
     oMainNode.Nodes.Add("Dummy").Key = "dummy"
 
-def Tree1_EventNodeExpand(ByRef This, ByRef Node):
-    if Node.Key = "handtool":
+def Tree1_EventNodeExpand(This, Node):
+    if Node.Key == "handtool":
         Node.Nodes.RemoveAll
         Node.Nodes.Add("Hammer").Key = "hammer"
         Node.Nodes.Add("Screwdriver").Key = "screwdriver"
         Node.Nodes.Add("Tongs").Key = "tongs"
 
-def Tree1_EventNodeClick(ByRef This, ByRef Node):
+def Tree1_EventNodeClick(This, Node):
     dd.MsgBox(Node.Text + " clicked")
 ```
 

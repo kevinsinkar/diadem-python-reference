@@ -36,13 +36,13 @@ return_value = obj.Area
 AddUserCommandToEvent("dd.View.Events.OnDropAllowed", "MyOnDropAllowed")
 AddUserCommandToEvent("dd.View.Events.OnDrop", "MyOnDrop")
 
-def MyOnDropAllowed(Context, DropInformation, ByRef DropEffect):
-    if Context.Area.DisplayObjType = "CurveChart2D":
+def MyOnDropAllowed(Context, DropInformation, DropEffect):
+    if Context.Area.DisplayObjType == "CurveChart2D":
         DropEffect = eDropEffectCopy
     else:
         DropEffect = eDropEffectNone
 
-def MyOnDrop(Context, DropInformation, ByRef DoProceed):
+def MyOnDrop(Context, DropInformation, DoProceed):
     MsgBoxDisp(DropInformation.DIAdemElements(1).Name)
     DoProceed = TRUE
 ```

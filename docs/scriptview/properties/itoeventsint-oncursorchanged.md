@@ -41,16 +41,16 @@ obj.OnCursorChanged
 AddUserCommandToEvent("dd.View.Events.OnCursorChanged","DisplayCursor")
 
 def DisplayCursor(oCursor):
-    Text = Text + "Mode : " + oCursor.Mode + vbCrLf
-    Text = Text + "Type : " + oCursor.Type + vbCrLf
-    Text = Text + "X1   : " + oCursor.X1 + vbCrLf
-    Text = Text + "Y1   : " + oCursor.Y1 + vbCrLf
-    Text = Text + "X2   : " + oCursor.X2 + vbCrLf
-    Text = Text + "Y2   : " + oCursor.Y2 + vbCrLf
-    Text = Text + "dX   : " + oCursor.dX + vbCrLf
-    Text = Text + "dY   : " + oCursor.dY + vbCrLf
-    Text = Text + "P1   : " + oCursor.P1 + vbCrLf
-    Text = Text + "P2   : " + oCursor.P2 + vbCrLf
+    Text = Text + "Mode : " + oCursor.Mode + "\r\n"
+    Text = Text + "Type : " + oCursor.Type + "\r\n"
+    Text = Text + "X1   : " + oCursor.X1 + "\r\n"
+    Text = Text + "Y1   : " + oCursor.Y1 + "\r\n"
+    Text = Text + "X2   : " + oCursor.X2 + "\r\n"
+    Text = Text + "Y2   : " + oCursor.Y2 + "\r\n"
+    Text = Text + "dX   : " + oCursor.dX + "\r\n"
+    Text = Text + "dY   : " + oCursor.dY + "\r\n"
+    Text = Text + "P1   : " + oCursor.P1 + "\r\n"
+    Text = Text + "P2   : " + oCursor.P2 + "\r\n"
     oCursor.Sheet.Areas(2).DisplayObj.Text = Text
 ```
 

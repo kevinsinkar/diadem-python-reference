@@ -53,10 +53,9 @@ Subsequence()
 # Initialization
 # Procedure for evaluating a channel name
 def GetChnName(intChannelId):
-    strChannelName ="" ' Initialize string
-    if intChannelNo <= dd.Data.Root.ActiveChannelGroup.Channels.Count:
-        ' Less then maximum channel number
-    strChannelName = dd.Data.Root.ActiveChannelGroup.Channels(intChannelId)
+    strChannelName =""  # Initialize string
+    if intChannelNo <= dd.Data.Root.ActiveChannelGroup.Channels.Count:  # Less then maximum channel number
+        strChannelName = dd.Data.Root.ActiveChannelGroup.Channels(intChannelId)
 ```
 
 ---

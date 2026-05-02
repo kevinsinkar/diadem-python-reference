@@ -41,6 +41,7 @@ obj.DataType
 
 ```python
 for i in range(1, oBlock.Channels.Count + 1):
+    pass
     # select oBlock.Channels(i).DataType
     # case eString   MyType = "String"
     # case eTime     MyType = "Time"

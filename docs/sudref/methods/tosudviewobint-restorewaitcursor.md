@@ -34,10 +34,10 @@ obj.RestoreWaitCursor()
     example was machine-translated from the VBScript source.
 
 ```python
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
     Dialog.BeginWaitCursor
     Pause(3)
-    FileNameGet("Any","FileRead",DataReadPath,"TDM data (*.tdm),*.tdm",,TRUE,"dd.Data selection")
+    FileNameGet("Any","FileRead",DataReadPath,"TDM data (*.tdm),*.tdm", None,TRUE,"dd.Data selection")
     Dialog.RestoreWaitCursor
     DataFileLoad(FileDlgFileName)
     Pause(3)

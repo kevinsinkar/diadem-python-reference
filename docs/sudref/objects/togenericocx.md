@@ -28,7 +28,7 @@ The ActiveX object provides in a user dialog box an ActiveX control that is alre
 
 ```python
 for oMyControl in Dialog.Controls:
-    if oMyControl.ObjectType = "ActiveX":
+    if oMyControl.ObjectType == "ActiveX":
         MsgBoxDisp(oMyControl.ProgID + " / " + oMyControl.ObjectCode)
 ```
 

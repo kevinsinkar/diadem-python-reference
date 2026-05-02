@@ -24,7 +24,7 @@ obj.Column
 
 ```python
 def GetFileColumn(sFile):
-    Const ForReading = 1
+    ForReading = 1
     fso = CreateObject("Scripting.FileSystemObject")
     oMyFile = fso.OpenTextFile(sFile, ForReading, False)
     while oMyFile.AtEndOfLine != True:

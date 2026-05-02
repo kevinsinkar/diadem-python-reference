@@ -25,7 +25,7 @@ return_value = obj.Properties
 ```python
 oMyChn = Root.ChannelGroups(1).Channels(3)
 for oMyProp in oMyChn.Properties:
-    if oMyProp.Name = "Sensor_Type":
+    if oMyProp.Name == "Sensor_Type":
         bFound = TRUE
 if not bFound:
     oMyChn.Properties.Add("Sensor_type","TC-N")

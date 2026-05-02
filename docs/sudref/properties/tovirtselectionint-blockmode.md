@@ -30,7 +30,7 @@ obj.BlockMode
     example was machine-translated from the VBScript source.
 
 ```python
-XTable1.SelectedElements.BlockMode = 2 ' 2 = MultiBlock
+XTable1.SelectedElements.BlockMode = 2  # 2 = MultiBlock
 ```
 
 ## See also

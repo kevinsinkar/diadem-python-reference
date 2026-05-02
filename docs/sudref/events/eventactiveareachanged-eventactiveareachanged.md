@@ -23,7 +23,7 @@ dd.EventActiveaAreaChanged(ByRef This, bIsActive)
     example was machine-translated from the VBScript source.
 
 ```python
-def View_EventActiveAreaChanged(ByRef This, bIsActive):
+def View_EventActiveAreaChanged(This, bIsActive):
     if not (This.DisplayObj Is None):
         LogFileWrite("Name: " + This.DisplayObj.Area.Sheet.Name)
 ```

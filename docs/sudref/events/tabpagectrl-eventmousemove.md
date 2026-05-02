@@ -23,9 +23,9 @@ dd.EventMouseMove(ByRef This, Index, Button, Shift, X, Y)
     example was machine-translated from the VBScript source.
 
 ```python
-def TabPageCtrl1_EventMouseMove(ByRef This, Index, Button, Shift, X, Y):
+def TabPageCtrl1_EventMouseMove(This, Index, Button, Shift, X, Y):
     if X > 10:
-        MsgBoxDisp("Mouse move at X="& X &" Y="&Y&", "&This.Pages(Index).Title)
+        MsgBoxDisp("Mouse move at X="& X &" Y="&Y", "&This.Pages(Index).Title)
 ```
 
 ## See also

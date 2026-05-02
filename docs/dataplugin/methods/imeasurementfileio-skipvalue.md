@@ -27,7 +27,7 @@ XAxis; ;1.000.000; 2.000; 301¶
 ```
 
 ```python
-File.Formatter.LineFeeds = vbNewLine
+File.Formatter.LineFeeds = "\n"
 File.Formatter.Delimiters = ";"
 File.Formatter.ThousandSeparator = "."
 File.SkipValue()

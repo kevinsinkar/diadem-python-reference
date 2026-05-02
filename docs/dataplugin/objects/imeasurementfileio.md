@@ -17,7 +17,7 @@ The File object provides information such as the name, origin, and size of the f
     example was machine-translated from the VBScript source.
 
 ```python
-File.Formatter.LineFeeds = vbNewLine
+File.Formatter.LineFeeds = "\n"
 File.Formatter.Delimiters = ":"
 while (File.Position != File.Size):
     PropName  = File.GetNextStringValue(eString)

@@ -30,8 +30,8 @@ dd.EventCellClick(ByRef This, Row, Col)
     example was machine-translated from the VBScript source.
 
 ```python
-def XTable1_EventCellClick(ByRef This, Row, Col):
-    MsgBoxDisp("Click in ("& Row + "," + Col& ")")
+def XTable1_EventCellClick(This, Row, Col):
+    MsgBoxDisp("Click in ("& Row + "," + Col ")")
 ```
 
 ## See also

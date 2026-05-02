@@ -33,19 +33,19 @@ dd.Report.Events.OnDropPage = "MyOnDropPageEvent"
 
 def MyOnDropPageEvent(Context, DropContext):
     if DropContext.IsKindOf(eDropDIAdemElement):
-        if False:
-            oMyDropElements = dd.Data.Root.ActiveChannelGroup.Channels(1) 'This is a dummy statement for autocompletion
+        if False:  # This is a dummy statement for autocompletion
+            oMyDropElements = dd.Data.Root.ActiveChannelGroup.Channels(1)
         oMyDropElements = DropContext.DiademElements
         sOutput = oMyDropElements.Count + " dropped elements:"
         for oMyDropElement in oMyDropElements:
-            sOutput = sOutput + VBCrLf + "Name: " + oMyDropElement.Name
-        ElseIf  DropContext.IsKindOf(eDropDIAdemProperty) :
-        if False:
-            oMyDropProperties = dd.Data.Root.ChannelGroups(1).Channels(1).Properties  'This is a dummy statement for autocompletion
+            sOutput = sOutput + "\r\n" + "Name: " + oMyDropElement.Name
+    elif DropContext.IsKindOf(eDropDIAdemProperty):
+        if False:  # This is a dummy statement for autocompletion
+            oMyDropProperties = dd.Data.Root.ChannelGroups(1).Channels(1).Properties
         oMyDropProperties = DropContext.DiademProperties
         sOutput = oMyDropProperties.Count + " dropped properties:"
         for oMyDropProperty in oMyDropProperties:
-            sOutput = sOutput + VBCrLf + "Name: " + oMyDropProperty.Name + VBTab + "DisplayName: " + oMyDropProperty.DisplayName
+            sOutput = sOutput + "\r\n" + "Name: " + oMyDropProperty.Name + "\t" + "DisplayName: " + oMyDropProperty.DisplayName
     Msgbox(sOutput)
     Context.DoProceed = False
 ```

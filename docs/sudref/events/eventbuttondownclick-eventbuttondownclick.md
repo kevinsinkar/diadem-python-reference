@@ -23,7 +23,7 @@ dd.EventButtonDownClick(ByRef This)
     example was machine-translated from the VBScript source.
 
 ```python
-def SpinBox1_EventButtonDownClick(ByRef This):
+def SpinBox1_EventButtonDownClick(This):
     MsgBoxDisp("ButtonDownClick")
 ```
 

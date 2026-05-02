@@ -23,9 +23,10 @@ obj.RunInitialize()
     example was machine-translated from the VBScript source.
 
 ```python
-def Slider1_EventInitialize(ByRef This):
+def Slider1_EventInitialize(This):
+    pass
     # Do something
-def ComboBox1_EventChange(ByRef This):
+def ComboBox1_EventChange(This):
     Slider1.RunInitialize
 ```
 

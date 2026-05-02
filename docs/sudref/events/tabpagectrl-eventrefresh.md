@@ -23,7 +23,7 @@ dd.EventRefresh(ByRef This)
     example was machine-translated from the VBScript source.
 
 ```python
-def Page1_EventRefresh(ByRef This):
+def Page1_EventRefresh(This):
     MsgBoxDisp("Page refresh")
 ```
 

@@ -47,6 +47,7 @@ def MyOnShowingContextMenu(oArea, oMenuPoints):
     oMenuPoints.Add("MyMenuPoint2", 2)
 
 def MyOnContextMenuPointSelected(oArea, oMenuPoint):
+    pass
     # select oMenuPoint.ID
     # case 1    MsgBoxDisp("MyMenuPoint1 selected")
     # case 2    MsgBoxDisp("MyMenuPoint2 selected")

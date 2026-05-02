@@ -23,7 +23,7 @@ dd.EventClick(ByRef This)
     example was machine-translated from the VBScript source.
 
 ```python
-def Page1_EventClick(ByRef This):
+def Page1_EventClick(This):
     MsgBoxDisp("Click")
 ```
 

@@ -39,7 +39,7 @@ obj.CharacterFormat
 
 ```python
 File.Formatter.TrimCharacters = " "
-File.Formatter.LineFeeds = vbNewLine
+File.Formatter.LineFeeds = "\n"
 File.Formatter.Delimiters = ";"
 File.Formatter.CharacterFormat = eUTF16
 oMyGrp.Channels.AddDirectAccessChannel(Channel)

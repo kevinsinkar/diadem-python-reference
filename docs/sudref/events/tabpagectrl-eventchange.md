@@ -23,7 +23,7 @@ dd.EventChange(ByRef This)
     example was machine-translated from the VBScript source.
 
 ```python
-def TabPageCtrl1_EventChange(ByRef This):
+def TabPageCtrl1_EventChange(This):
     MsgBoxDisp("Active Page= "&TabPageCtrl1.Activepage.Title)
 ```
 

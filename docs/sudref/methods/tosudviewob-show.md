@@ -23,7 +23,7 @@ obj.Show()
     example was machine-translated from the VBScript source.
 
 ```python
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
     Dialog.Hide
     Pause(5)
     Dialog.Show

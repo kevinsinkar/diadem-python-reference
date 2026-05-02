@@ -23,7 +23,7 @@ obj.Refresh()
     example was machine-translated from the VBScript source.
 
 ```python
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
     Picture1.Picture = "c:\temp\example.wmf"
     Picture1.Refresh
 ```

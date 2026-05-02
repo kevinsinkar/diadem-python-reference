@@ -29,8 +29,8 @@ oMyDlg.RunCustomAction(sMyAction)
 ```
 
 ```python
-def Dialog_EventCustomAction(ByRef This, VarParam):
-    if VarParam = "UpperLimit":
+def Dialog_EventCustomAction(This, VarParam):
+    if VarParam == "UpperLimit":
         This.Color = RGB(255, 0, 0)
 ```
 

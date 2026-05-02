@@ -23,7 +23,7 @@ obj.RefreshAll()
     example was machine-translated from the VBScript source.
 
 ```python
-def ComboBox1_EventChange(ByRef This):
+def ComboBox1_EventChange(This):
     L1 = 3
     Page1.RefreshAll
 ```

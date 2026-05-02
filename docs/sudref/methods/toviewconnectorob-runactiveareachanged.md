@@ -23,9 +23,10 @@ obj.RunActiveAreaChanged(bIsActive)
     example was machine-translated from the VBScript source.
 
 ```python
-def ViewConnector_EventActiveAreaChanged(ByRef This, bIsActive):
+def ViewConnector_EventActiveAreaChanged(This, bIsActive):
+    pass
     # Do something
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
     ViewConnector.RunActiveAreaChanged(TRUE)
 ```
 

@@ -34,7 +34,7 @@ obj.ScrollHeight
     example was machine-translated from the VBScript source.
 
 ```python
-Page1.ScrollBars = 1 '0=No, 1=Yes
+Page1.ScrollBars = 1  # 0=No, 1=Yes
 Page1.ScrollHeight = 100
 Page1.ScrollWidth = 100
 ```

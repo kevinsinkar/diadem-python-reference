@@ -137,10 +137,9 @@ Subsequence()
 # Initialization
 # Procedure for evaluating a channel name
 def GetChnName(intChannelNo):
-    strChannelName ="<Channel does not exist!>" ' Initialize string
-    if intChannelNo <= GlobUsedCHn:
-        ' Less then maximum channel number
-    strChannelName = ChnName(intChannelNo)
+    strChannelName ="<Channel does not exist!>"  # Initialize string
+    if intChannelNo <= GlobUsedCHn:  # Less then maximum channel number
+        strChannelName = ChnName(intChannelNo)
 ```
 
 ---

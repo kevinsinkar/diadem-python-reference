@@ -23,7 +23,7 @@ return_value = obj.Columns
     example was machine-translated from the VBScript source.
 
 ```python
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
 
     XTable1.Columns.Add("NewCol")
     Width = XTable1.Width-XTable1.RowTitlesWidth

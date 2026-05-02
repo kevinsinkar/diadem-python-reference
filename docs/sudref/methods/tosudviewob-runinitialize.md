@@ -23,9 +23,10 @@ obj.RunInitialize()
     example was machine-translated from the VBScript source.
 
 ```python
-def Dialog_EventInitialize(ByRef This):
+def Dialog_EventInitialize(This):
+    pass
     # Do something
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
     Dialog.RunInitialize
 ```
 

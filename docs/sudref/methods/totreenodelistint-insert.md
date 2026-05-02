@@ -23,16 +23,16 @@ return_value = obj.Insert(Text, Index)
     example was machine-translated from the VBScript source.
 
 ```python
-def Tree1_EventInitialize(ByRef This):
+def Tree1_EventInitialize(This):
     CreateDefaultTree(This)
 
-def Button1_EventClick(ByRef This):
+def Button1_EventClick(This):
     oMyNodes = Tree1.Nodes(1).Nodes
     sNewName = InPutBox("Enter name of new node","New Node")
     oMyNewNode = oMyNodes.Insert(sNewName,1)
     Tree1.Nodes(1).Update(eUpdateModeNodeAndChilds)
 
-def CreateDefaultTree(ByRef This):
+def CreateDefaultTree(This):
     oFindRoot = This.Nodes.Add("Double click any node to add a sub node")
     oRoot = This.Nodes.Add("Tools")
     oRoot.Key = "tools"

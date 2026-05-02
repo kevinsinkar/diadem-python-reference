@@ -30,7 +30,7 @@ dd.EventDefaultColCtrlPreSet(ByRef This, ByRef Cell, IsInputCell)
     example was machine-translated from the VBScript source.
 
 ```python
-def XTable1_EventDefaultColCtrlPreSet(ByRef This, ByRef Cell, IsInputCell):
+def XTable1_EventDefaultColCtrlPreSet(This, Cell, IsInputCell):
     Cell.Items.RemoveAll
     Cell.FillItemsByVar("ColorLst",True)
     if IsInputCell:

@@ -28,13 +28,13 @@ AddUserCommandToEvent("dd.Report.Events.OnDrop2DAxisSystem", " MyOnDrop2DAxisSys
 def MyOnDrop2DAxisSystemEvent(Context, DropContext):
     sOutput = "Names of dropped channels:"
     for oMyDropElement in DropContext.DiademElements:
-        sOutput = sOutput + VBCrLf + oMyDropElement.Name
+        sOutput = sOutput + "\r\n" + oMyDropElement.Name
     Msgbox(sOutput)
     oMyAxis = Context.AxisSystem
     if Context.CurveIndex>0:
-        dd.MsgBox(Context.Sheet.Name + VBCrLf + oMyAxis.Name + VBCrLf + oMyAxis.Curves2D.Item(Context.CurveIndex).Name)
+        dd.MsgBox(Context.Sheet.Name + "\r\n" + oMyAxis.Name + "\r\n" + oMyAxis.Curves2D.Item(Context.CurveIndex).Name)
     else:
-        dd.MsgBox(Context.Sheet.Name + VBCrLf + oMyAxis.Name)
+        dd.MsgBox(Context.Sheet.Name + "\r\n" + oMyAxis.Name)
     Context.DoProceed = TRUE
 ```
 

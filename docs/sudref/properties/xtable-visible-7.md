@@ -23,7 +23,7 @@ obj.Visible
     example was machine-translated from the VBScript source.
 
 ```python
-Cell.Visible = 0 '0=No, 1=Yes
+Cell.Visible = 0  # 0=No, 1=Yes
 ```
 
 ## See also

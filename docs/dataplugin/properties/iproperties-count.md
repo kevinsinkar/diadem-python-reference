@@ -25,7 +25,7 @@ obj.Count
 ```python
 oMyProp = Root.ChannelGroups(1).Properties
 for i in range(1, oMyProp.Count + 1):
-    if oMyProp(i).Name = "Test_Status":
+    if oMyProp(i).Name == "Test_Status":
         oMyProp(i).Value = "failed"
 ```
 

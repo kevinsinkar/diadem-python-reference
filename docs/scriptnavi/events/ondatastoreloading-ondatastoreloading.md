@@ -69,7 +69,7 @@ def MyOnDataStoreLoading(NaviLoadControl, ElementListOrABS, ImportAction):
         for Element in ElementListOrABS:
             MsgBoxDisp("Element name: " + Element.Name)
     else:
-        MsgBoxDisp("Event Parameter StorageABS" + VBCrLf + ElementListOrABS)
+        MsgBoxDisp("Event Parameter StorageABS" + "\r\n" + ElementListOrABS)
 ```
 
 ## See also

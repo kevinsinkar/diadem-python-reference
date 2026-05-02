@@ -35,12 +35,13 @@ AddUserCommandToEvent("dd.Navigator.Events.OnContextMenuPointSelected","MyNaviga
 def MyNavigatorOnShowingContextMenu(ParentObj, MenuPoints):
     MenuPoints.RemoveAll
     MenuPoints.Add("MyMenuPoint1", 1)
-    MenuPoints.Add("", 0)  ' Separator
-    oMyMenuPoint = MenuPoints.Add("Main", 2) 'Main entry
-    oMyMenuPoint.MenuPoints.Add("SubMenupoint21", 21) 'Sub entry
-    oMyMenuPoint.MenuPoints.Add("SubMenupoint22", 22) 'Sub entry
+    MenuPoints.Add("", 0)  # Separator
+    oMyMenuPoint = MenuPoints.Add("Main", 2)  # Main entry
+    oMyMenuPoint.MenuPoints.Add("SubMenupoint21", 21)  # Sub entry
+    oMyMenuPoint.MenuPoints.Add("SubMenupoint22", 22)  # Sub entry
 
 def MyNavigatorOnContextMenuPointSelected(ParentObj, MenuPoint):
+    pass
     # select MenuPoint.ID
     # case 1    dd.MsgBox("DIAdem-NAVIGATOR: MyMenuPoint1 selected")
     # case 2    dd.MsgBox("DIAdem-NAVIGATOR: MyMenuPoint2 selected")
@@ -57,6 +58,7 @@ def MyViewOnShowingContextMenu(Area, MenuPoints):
     MenuPoints.Add("MyMenuPoint2", 2)
 
 def MyViewOnContextMenuPointSelected(Area, MenuPoint):
+    pass
     # select MenuPoint.ID
     # case 1    dd.MsgBox("DIAdem-VIEW: MyMenuPoint1 selected")
     # case 2    dd.MsgBox("DIAdem-VIEW: MyMenuPoint2 selected")

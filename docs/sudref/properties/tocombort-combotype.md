@@ -23,7 +23,7 @@ obj.ComboType
     example was machine-translated from the VBScript source.
 
 ```python
-ComboBox1.ComboType = 2 '2=StaticDropDown
+ComboBox1.ComboType = 2  # 2=StaticDropDown
 ```
 
 ## See also

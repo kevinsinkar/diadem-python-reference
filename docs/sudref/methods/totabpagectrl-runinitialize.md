@@ -23,9 +23,10 @@ obj.RunInitialize()
     example was machine-translated from the VBScript source.
 
 ```python
-def TabPageCtrl1_EventInitialize(ByRef This):
+def TabPageCtrl1_EventInitialize(This):
+    pass
     # Do something
-def ComboBox1_EventChange(ByRef This):
+def ComboBox1_EventChange(This):
     TabPageCtrl1.RunInitialize
 ```
 

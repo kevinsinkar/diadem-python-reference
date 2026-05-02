@@ -17,7 +17,7 @@ The Button object corresponds to the Button control in a user dialog box. You us
     example was machine-translated from the VBScript source.
 
 ```python
-Button1.ButtonShape = 3 '0=Standard, 3=Toolbar-Button, 4=Button
+Button1.ButtonShape = 3  # 0=Standard, 3=Toolbar-Button, 4=Button
 ```
 
 ## Members

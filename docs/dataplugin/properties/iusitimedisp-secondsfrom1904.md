@@ -24,7 +24,7 @@ obj.SecondsFrom1904
 
 ```python
 oMyTimeObj = CreateTime(2013,9,13,10,51,44,123,456,789)
-MsgBoxDisp("Fractions: " + oMyTimeObj.Fraction + vbCrLf + "Seconds from 0000: " + oMyTimeObj.SecondsFrom0000 + vbCrLf + "Seconds from 1904: " + oMyTimeObj.SecondsFrom1904)
+MsgBoxDisp("Fractions: " + oMyTimeObj.Fraction + "\r\n" + "Seconds from 0000: " + oMyTimeObj.SecondsFrom0000 + "\r\n" + "Seconds from 1904: " + oMyTimeObj.SecondsFrom1904)
 ```
 
 ## See also

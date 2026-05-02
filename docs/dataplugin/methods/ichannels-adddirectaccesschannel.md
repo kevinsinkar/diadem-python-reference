@@ -33,7 +33,7 @@ return_value = obj.AddDirectAccessChannel(oDAChn)
 
 ```python
 File.Formatter.TrimCharacters = " "
-File.Formatter.LineFeeds  = vbNewLine
+File.Formatter.LineFeeds  = "\n"
 File.Formatter.TimeFormat = "DD.MM.YYYY"
 File.Formatter.Delimiters = ";"
 File.Formatter.Decimalpoint = "."

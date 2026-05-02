@@ -29,8 +29,8 @@ dd.EventActionDel(ByRef This, ByRef BDone)
     example was machine-translated from the VBScript source.
 
 ```python
-def XTable1_EventActionDel(ByRef This, ByRef bDone):
-    if This.SelectedElements.Count = 1:
+def XTable1_EventActionDel(This, bDone):
+    if This.SelectedElements.Count == 1:
         oMyChannel = dd.Data.Root.ActiveChannelGroup.Channels(MySel.FirstCol)
         for i in range(MySel.FirstRow, MySel.LastRow + 1):
             oMyChannel.Values(i) = NoValue
@@ -39,8 +39,8 @@ def XTable1_EventActionDel(ByRef This, ByRef bDone):
     else:
         BDone = FALSE
 
-def XTable1_EventValGet(ByRef This, Row, Col, ByRef Cell, IsInputCell):
-    if Row = 0:
+def XTable1_EventValGet(This, Row, Col, Cell, IsInputCell):
+    if Row == 0:
         if Col != 0:
             Cell.Text = ChnName(Col)
         else:
